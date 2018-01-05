@@ -1,0 +1,42 @@
+---
+layout: blog
+---
+
+<div class="section-title">
+  <img src="{{ "/assets/img/blog/" | append: page.image | prepend: site.baseurl }}" />
+  <h2 class="wow fadeIn" data-wow-delay="0.25s">{{ page.title }}</h2>
+  <span class="wow fadeIn" data-wow-delay="0.5s"></span>
+  <p class="wow fadeIn" data-wow-delay="0.75s">
+    {{ page.excerpt | remove: '<p>' | remove: '</p>' }}
+    <br>
+    <strong class="badge badge-secondary">
+      {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+    </strong>
+  </p>
+</div>
+
+<article class="post-content">
+  {{ page.content | remove: page.excerpt }}
+  <div class="tags">
+    {% for tag in page.tags %}
+      <strong class="badge badge-pill badge-primary">
+        <i class="icofont icofont-tag"></i>
+        {{ tag }}
+      </strong>
+    {% endfor %}
+  </div>
+
+</article>
+
+{% if page.comments %}
+  <div id="disqus_thread"></div>
+  <script>
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = '//edux87.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}

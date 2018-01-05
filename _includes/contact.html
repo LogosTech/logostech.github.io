@@ -1,0 +1,83 @@
+<div id="contact" class="contact section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="contact-details">
+        <div class="col-md-12">
+          <div class="section-title">
+            <p class="wow fadeIn"><small>Tienes dudas?</small></p>
+            <h2 class="wow fadeIn" data-wow-delay="0.25s">Sientete libre de escribirnos</h2>
+            <span class="wow fadeIn" data-wow-delay="0.5s"></span>
+            <p class="wow fadeIn" data-wow-delay="0.75s">Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
+          </div>
+          <div class="contact-info-inner">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="wow fadeIn">
+                  <div class="contact-info">
+                    <div class="contact-icon">
+                      <i class="icofont icofont-location-pin"></i>
+                    </div>
+                    <p>{{ site.office_address }}<br>{{ site.office_location }}</p>
+                  </div>
+                </div>
+                <div class="wow fadeIn" data-wow-delay="0.25s">
+                  <div class="contact-info">
+                    <div class="contact-icon">
+                      <i class="icofont icofont-phone"></i>
+                    </div>
+                    <p>{{ site.contact_phone }}<br>{{ site.contact_phone }}</p>
+                  </div>
+                </div>
+                <div class="wow fadeIn" data-wow-delay="0.50s">
+                  <div class="contact-info">
+                    <div class="contact-icon">
+                      <i class="icofont icofont-envelope"></i>
+                    </div>
+                    <p>{{ site.email }}<br>{{ site.email }}</p>
+                  </div>
+                </div>
+                <div class="wow fadeIn" data-wow-delay="0.75s">
+                  <div class="contact-info">
+                    <div class="contact-icon">
+                      <i class="icofont icofont-support-faq"></i>
+                    </div>
+                    <p>Skype: ecastaneda87<br>Skype: logostechperu</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <!-- Contact Form -->
+                <form id="ajax-contact" class="contact-form" action="assets/php/mailer.php" method="post">
+                  <div class="row">
+                    <div class="form-group col-md-6">
+                      <input name="fName" type="text" autocomplete="off" class="form-control" id="fName" placeholder="Nombre" required="required">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input name="lName" type="text" autocomplete="off" class="form-control" id="lName" placeholder="Apellido" required="required">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input name="em" type="email" autocomplete="off" class="form-control" id="em" placeholder="Email" required="required">
+                  </div>
+                  <div class="form-group">
+                    <input name="phone" type="text" autocomplete="off" class="form-control" id="phone" placeholder="Tel&eacute;fono (Optional)">
+                  </div>
+                  <div class="form-group">
+                    <input name="cSubject" type="text" autocomplete="off" class="form-control" id="cSubject" placeholder="Asunto" required="required">
+                  </div>
+                  <div class="form-group">
+                    <textarea name="message" class="form-control" id="message" rows="6" placeholder="Escribe tu mensaje" required="required"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-contact btn-submit">Preguntanos Ahora!</button>
+                </form>
+                <!-- Submit Status -->
+                <div id="form-messages"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Contact -->

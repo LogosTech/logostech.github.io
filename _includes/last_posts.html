@@ -1,0 +1,32 @@
+<div id="blog" class="blog section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <p class="wow fadeIn"><small>Siempre Actualizados</small></p>
+        <h2 class="wow fadeIn" data-wow-delay="0.25s">Ultimas Publicaciones</h2>
+        <span class="wow fadeIn" data-wow-delay="0.5s"></span>
+        <p class="wow fadeIn" data-wow-delay="0.75s">Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
+      </div>
+
+      {% for post in site.posts limit:3 %}
+        <div class="col-md-4 wow fadeIn">
+          <div class="single-blog">
+            <div class="blog-img">
+              <!-- 450 x 300 -->
+              <img src="{{ "/assets/img/blog/" | append: post.image | prepend: site.baseurl }}" alt="">
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+              <div class="blog-meta">
+                <p><i class="icofont icofont-clock-time"></i> <small>{{ post.date | date: "%b %-d, %Y" }}</small></p>
+              </div>
+              <p>{{ post.excerpt }}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+<!-- /Blog -->

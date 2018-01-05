@@ -1,0 +1,15 @@
+root = true
+; Always use Unix style new lines with new line
+; ending on every file and trim whitespace
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+; Salt state files, YAML format, 2 spaces
+[*.sls, *.yaml, *.yml]
+indent_style = space
+indent_size = 2
