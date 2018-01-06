@@ -1319,12 +1319,12 @@ small {
     text-align: center;
   }
 
-  .post img {
+  /*.post img {
     height: 150px;
     width: 150px;
     margin-bottom: 1em;
     border-radius: 50%!important;
-  }
+  }*/
 
   .icon-service i {
     position: relative;
@@ -1338,4 +1338,49 @@ small {
     transform: translateY(-10px);
     -webkit-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
+  }
+
+
+  .FlexEmbed {
+    border-radius: 1%!important;
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .FlexEmbed:before {
+    content: "";
+    display: block;
+    width: 100%;
+  }
+
+  .FlexEmbed--3by1:before {
+    padding-bottom: 33.33333%;
+  }
+
+  .FlexEmbed--2by1:before {
+    padding-bottom: 50%;
+  }
+
+  .FlexEmbed--16by9:before {
+    padding-bottom: 56.25%;
+  }
+
+  .FlexEmbed--4by3:before {
+    padding-bottom: 75%;
+  }
+
+  .CoverImage {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto 1em;
+    max-height: 600px;
+    max-width: 300px;
+  }
+
+  .is_chart {
+    border: 1px solid #f1f2f6;
+    border-radius: 4px;
+    padding: 1em;
   }

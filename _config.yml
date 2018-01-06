@@ -37,6 +37,9 @@ analytics: google
 
 # Build settings
 # paginate: 3
+sass:
+  sass_dir: _sass
+  style: compressed
 permalink: pretty
 # excerpt_separator: <!--more-->
 markdown: kramdown

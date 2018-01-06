@@ -3,7 +3,9 @@ layout: blog
 ---
 
 <div class="section-title">
-  <img src="{{ "/assets/img/blog/" | append: page.image | prepend: site.baseurl }}" />
+  <div class="CoverImage FlexEmbed FlexEmbed--3by1"
+    style="background-image:url({{ "/assets/img/blog/" | append: page.image | prepend: site.baseurl }})">
+  </div>
   <h2 class="wow fadeIn" data-wow-delay="0.25s">{{ page.title }}</h2>
   <span class="wow fadeIn" data-wow-delay="0.5s"></span>
   <p class="wow fadeIn" data-wow-delay="0.75s">
@@ -16,6 +18,22 @@ layout: blog
 </div>
 
 <article class="post-content">
+  {% if page.keywords %}
+    <div class="row">
+      <div class="col-md-8 wow fadeIn" data-wow-delay="0.75s">
+        <div class="is_chart">
+          <div class="ct-chart ct-minor-seventh" id="chart1"></div>
+        </div>
+      </div>
+      <div class="col-md-4 wow fadeIn" data-wow-delay="0.75s">
+        <div class="is_chart">
+          <div class="ct-chart ct-square" id="chart2"></div>
+        </div>
+      </div>
+    </div>
+    <br/>
+  {% endif %}
+
   {{ page.content | remove: page.excerpt }}
   <div class="tags">
     {% for tag in page.tags %}
