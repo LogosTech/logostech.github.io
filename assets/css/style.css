@@ -1309,7 +1309,7 @@ small {
     font-weight: bold;
   }
 
-  .serivces a {
+  .services a {
     color: #001D26;
     font-weight: lighter;
     border-bottom: 1px dashed #001D26;
@@ -1325,6 +1325,10 @@ small {
     margin-bottom: 1em;
     border-radius: 50%!important;
   }*/
+
+  .header .logo {
+    padding: 23px;
+  }
 
   .icon-service i {
     position: relative;
@@ -1380,7 +1384,42 @@ small {
   }
 
   .is_chart {
+    padding: 0.5em;
     border: 1px solid #f1f2f6;
     border-radius: 4px;
-    padding: 1em;
+    /*max-height: 8em;*/
   }
+
+  code {
+    color: #576276;
+    background-color: #A2B7B4;
+  }
+
+  .chart_card {
+    margin-bottom: 1em;
+  }
+
+  .chart_card h1 {
+    margin: 0;
+    padding: 1em;
+    font-size: .8em;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  .bg_a { background-color: #719EAB;}
+  .bg_b { background-color: #6b0392;}
+  .bg_c { background-color: #D6CB96;}
+  .bg_d { background-color: #453d3f;}
+  .bg_e { background-color: #b2c326;}
+  .bg_f { background-color: #f4c63d;}
+
+.metrics {
+  text-align: center;
+}
+.metrics span {
+  font-weight: normal;
+}
+.tags span {
+  font-weight: normal;
+}

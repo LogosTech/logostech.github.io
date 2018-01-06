@@ -235,18 +235,42 @@
     End of Ajax Contact Form
     *****************************************/
     var data = {
-      labels: ['Week1', 'Week2', 'Week3', 'Week4', 'Week5', 'Week6'],
+      // labels: ['Week1', 'Week2', 'Week3', 'Week4', 'Week5'],
       series: [
-        [5, 4, 3, 7, 5, 10],
-        [3, 2, 9, 5, 4, 6],
-        [2, 1, -3, -4, -2, 0]
+        [7.2, 6.8, 6, 2.6, 7, 6.5, 5, 2.3, 3, 7.2],
+        [6, 5, 4, 2, 1, 5, 4, 3, 5, 6],
+        [5, 3, 9, 1, 0.5, 2, 1, 5, 4, 3,]
       ]
     };
 
-    var options = { low: 0, showArea: true	};
+    var data_pie = {
+      labels: ['Bananas', 'Apples', 'Grapes'],
+      series: [7.2, 6.8, 2.6, 6, 1]
+    };
 
-		new Chartist.Line('#chart1', data, options);
-		new Chartist.Line('#chart2', data, options);
+    var options = {
+      stackBars: true,
+      // showLine: true,
+      // lineSmooth: false,
+      plugins: [
+        Chartist.plugins.tooltip()
+      ],
+      showPoint: true,
+      // fullWidth: true,
+      axisX: {
+        showGrid: false
+      }
+    };
+    var sum = function(a, b) { return a + b };
+		new Chartist.Bar('#chart1', data, options);
+		new Chartist.Bar('#chart3', data, options);
+		new Chartist.Bar('#chart4', data, options);
+		new Chartist.Pie('#chart2', data_pie, {
+      donut: true,
+      showLabel: false,
+      donutWidth: 60,
+      startAngle: 270,
+    });
 		// new Chartist.Line('#chart3', data, { low: 0, showArea: true	});
 
 
