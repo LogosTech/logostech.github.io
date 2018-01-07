@@ -1407,6 +1407,15 @@ small {
     text-align: center;
   }
 
+  .chart_card h2 {
+    margin: 0;
+    padding: 1em;
+    padding-top: 0;
+    font-size: .6em;
+    font-weight: lighter;
+    text-align: center;
+  }
+
   .bg_a { background-color: #719EAB;}
   .bg_b { background-color: #6b0392;}
   .bg_c { background-color: #D6CB96;}
@@ -1429,4 +1438,50 @@ small {
   text-shadow: -1px 0px 7px rgb(0, 29, 38);
   font-weight: normal;
   font-size: 1.2rem;
+}
+
+.indicator {
+  width: 100%;
+  height: 5px;
+  color: #414042;
+  margin-bottom: 5px;
+  margin-top: .5em;
+}
+.indicator span {
+  display: inline-block;
+  height: 100%;
+  box-sizing: border-box;
+  float: left;
+  font-weight: bold;
+}
+.words_box {
+  padding: 1em;
+  padding-bottom: 0;
+}
+.words_box h3 {
+  font-size: .7em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: lighter;
+}
+.influencer_box h3 {
+  font-size: .7em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: lighter;
+}
+
+.influencer_box {
+  text-align: center;
+  padding: 1em;
+  padding-bottom: 0;
+}
+.influencer_box img {
+  border-radius: 50%;
+  margin-bottom: .5em;
+}
+.mg_bottom {
+  margin-bottom: .5em;
 }

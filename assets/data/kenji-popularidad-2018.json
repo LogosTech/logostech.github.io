@@ -1,463 +1,427 @@
 {
-  "took": 1733,
+  "took": 612,
   "timed_out": false,
   "_shards": {
-    "total": 4,
-    "successful": 4,
+    "total": 11,
+    "successful": 11,
     "failed": 0
   },
   "hits": {
-    "total": 191640,
+    "total": 5386,
     "max_score": 0,
     "hits": []
   },
   "aggregations": {
-    "agg_terms_sample_hashtags.keyword": {
-      "doc_count_error_upper_bound": 355,
-      "sum_other_doc_count": 25653,
-      "buckets": [
-        {
-          "key": "ppk",
-          "doc_count": 12823,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 6629
-              },
-              {
-                "key": "neg",
-                "doc_count": 4399
-              },
-              {
-                "key": "pos",
-                "doc_count": 1795
-              }
-            ]
-          }
-        },
-        {
-          "key": "mensajealanacion",
-          "doc_count": 1203,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 628
-              },
-              {
-                "key": "pos",
-                "doc_count": 343
-              },
-              {
-                "key": "neutral",
-                "doc_count": 232
-              }
-            ]
-          }
-        },
-        {
-          "key": "crisispresidencial",
-          "doc_count": 1108,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 479
-              },
-              {
-                "key": "neutral",
-                "doc_count": 460
-              },
-              {
-                "key": "pos",
-                "doc_count": 169
-              }
-            ]
-          }
-        },
-        {
-          "key": "sevantodos",
-          "doc_count": 1005,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 709
-              },
-              {
-                "key": "pos",
-                "doc_count": 283
-              },
-              {
-                "key": "neg",
-                "doc_count": 13
-              }
-            ]
-          }
-        },
-        {
-          "key": "odebrecht",
-          "doc_count": 935,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 462
-              },
-              {
-                "key": "neutral",
-                "doc_count": 391
-              },
-              {
-                "key": "pos",
-                "doc_count": 82
-              }
-            ]
-          }
-        },
-        {
-          "key": "exclusivo",
-          "doc_count": 917,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 554
-              },
-              {
-                "key": "neg",
-                "doc_count": 235
-              },
-              {
-                "key": "pos",
-                "doc_count": 128
-              }
-            ]
-          }
-        },
-        {
-          "key": "vacanciapresidencial",
-          "doc_count": 910,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 383
-              },
-              {
-                "key": "neg",
-                "doc_count": 269
-              },
-              {
-                "key": "pos",
-                "doc_count": 258
-              }
-            ]
-          }
-        },
-        {
-          "key": "video",
-          "doc_count": 739,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 404
-              },
-              {
-                "key": "neg",
-                "doc_count": 252
-              },
-              {
-                "key": "pos",
-                "doc_count": 83
-              }
-            ]
-          }
-        },
-        {
-          "key": "noalgolpefujimorista",
-          "doc_count": 589,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 301
-              },
-              {
-                "key": "neutral",
-                "doc_count": 199
-              },
-              {
-                "key": "pos",
-                "doc_count": 89
-              }
-            ]
-          }
-        },
-        {
-          "key": "urgente",
-          "doc_count": 553,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 337
-              },
-              {
-                "key": "neg",
-                "doc_count": 146
-              },
-              {
-                "key": "pos",
-                "doc_count": 70
-              }
-            ]
-          }
-        }
-      ]
-    },
     "agg_terms_sample_words": {
-      "doc_count_error_upper_bound": 6792,
-      "sum_other_doc_count": 2135559,
+      "doc_count_error_upper_bound": 135,
+      "sum_other_doc_count": 29868,
       "buckets": [
         {
-          "key": "ppk",
-          "doc_count": 175704,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 79381
-              },
-              {
-                "key": "neutral",
-                "doc_count": 63249
-              },
-              {
-                "key": "pos",
-                "doc_count": 33074
-              }
-            ]
-          }
-        },
-        {
-          "key": "vacancia",
-          "doc_count": 26390,
+          "key": "kenji",
+          "doc_count": 1025,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 10550
-              },
-              {
-                "key": "neg",
-                "doc_count": 10492
+                "doc_count": 443
               },
               {
                 "key": "pos",
-                "doc_count": 5348
-              }
-            ]
-          }
-        },
-        {
-          "key": "keiko",
-          "doc_count": 20680,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
+                "doc_count": 300
+              },
               {
                 "key": "neg",
-                "doc_count": 11167
-              },
-              {
-                "key": "neutral",
-                "doc_count": 7982
-              },
-              {
-                "key": "pos",
-                "doc_count": 1531
+                "doc_count": 282
               }
             ]
           }
         },
         {
           "key": "fujimori",
-          "doc_count": 18763,
+          "doc_count": 658,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "neg",
-                "doc_count": 12215
-              },
-              {
                 "key": "neutral",
-                "doc_count": 3992
+                "doc_count": 324
               },
               {
                 "key": "pos",
-                "doc_count": 2556
-              }
-            ]
-          }
-        },
-        {
-          "key": "presidente",
-          "doc_count": 18477,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
+                "doc_count": 183
+              },
               {
                 "key": "neg",
-                "doc_count": 7585
-              },
-              {
-                "key": "neutral",
-                "doc_count": 6772
-              },
-              {
-                "key": "pos",
-                "doc_count": 4120
-              }
-            ]
-          }
-        },
-        {
-          "key": "perú",
-          "doc_count": 18246,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 10402
-              },
-              {
-                "key": "neutral",
-                "doc_count": 4250
-              },
-              {
-                "key": "pos",
-                "doc_count": 3594
-              }
-            ]
-          }
-        },
-        {
-          "key": "contra",
-          "doc_count": 15052,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 8268
-              },
-              {
-                "key": "neutral",
-                "doc_count": 4796
-              },
-              {
-                "key": "pos",
-                "doc_count": 1988
-              }
-            ]
-          }
-        },
-        {
-          "key": "congreso",
-          "doc_count": 13745,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 6329
-              },
-              {
-                "key": "neutral",
-                "doc_count": 4486
-              },
-              {
-                "key": "pos",
-                "doc_count": 2930
+                "doc_count": 151
               }
             ]
           }
         },
         {
           "key": "indulto",
-          "doc_count": 12972,
+          "doc_count": 510,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 314
+              },
+              {
+                "key": "neg",
+                "doc_count": 127
+              },
+              {
+                "key": "pos",
+                "doc_count": 69
+              }
+            ]
+          }
+        },
+        {
+          "key": "ppk",
+          "doc_count": 399,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 167
+              },
+              {
+                "key": "pos",
+                "doc_count": 121
+              },
+              {
+                "key": "neg",
+                "doc_count": 111
+              }
+            ]
+          }
+        },
+        {
+          "key": "keiko",
+          "doc_count": 254,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neg",
-                "doc_count": 6727
+                "doc_count": 145
               },
               {
                 "key": "neutral",
-                "doc_count": 4111
+                "doc_count": 89
               },
               {
                 "key": "pos",
-                "doc_count": 2134
+                "doc_count": 20
+              }
+            ]
+          }
+        },
+        {
+          "key": "alberto",
+          "doc_count": 251,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 141
+              },
+              {
+                "key": "pos",
+                "doc_count": 83
+              },
+              {
+                "key": "neg",
+                "doc_count": 27
+              }
+            ]
+          }
+        },
+        {
+          "key": "asesor",
+          "doc_count": 218,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 139
+              },
+              {
+                "key": "pos",
+                "doc_count": 62
+              },
+              {
+                "key": "neg",
+                "doc_count": 17
+              }
+            ]
+          }
+        },
+        {
+          "key": "humanitario",
+          "doc_count": 202,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 147
+              },
+              {
+                "key": "pos",
+                "doc_count": 44
+              },
+              {
+                "key": "neg",
+                "doc_count": 11
+              }
+            ]
+          }
+        },
+        {
+          "key": "fujimoristas",
+          "doc_count": 193,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 89
+              },
+              {
+                "key": "neutral",
+                "doc_count": 86
+              },
+              {
+                "key": "pos",
+                "doc_count": 18
+              }
+            ]
+          }
+        },
+        {
+          "key": "reconciliación",
+          "doc_count": 192,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 154
+              },
+              {
+                "key": "neg",
+                "doc_count": 30
+              },
+              {
+                "key": "pos",
+                "doc_count": 8
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agg_terms_sample_hashtags.keyword": {
+      "doc_count_error_upper_bound": 4,
+      "sum_other_doc_count": 319,
+      "buckets": [
+        {
+          "key": "loúltimo",
+          "doc_count": 57,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 57
+              }
+            ]
+          }
+        },
+        {
+          "key": "kenji",
+          "doc_count": 29,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 19
+              },
+              {
+                "key": "neg",
+                "doc_count": 7
+              },
+              {
+                "key": "pos",
+                "doc_count": 3
+              }
+            ]
+          }
+        },
+        {
+          "key": "ppk",
+          "doc_count": 27,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 16
+              },
+              {
+                "key": "neg",
+                "doc_count": 9
+              },
+              {
+                "key": "pos",
+                "doc_count": 2
+              }
+            ]
+          }
+        },
+        {
+          "key": "último",
+          "doc_count": 16,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 15
+              },
+              {
+                "key": "neg",
+                "doc_count": 1
+              }
+            ]
+          }
+        },
+        {
+          "key": "kojukenji",
+          "doc_count": 14,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 10
+              },
+              {
+                "key": "pos",
+                "doc_count": 4
+              }
+            ]
+          }
+        },
+        {
+          "key": "reconciliacion",
+          "doc_count": 14,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "pos",
+                "doc_count": 13
+              },
+              {
+                "key": "neutral",
+                "doc_count": 1
+              }
+            ]
+          }
+        },
+        {
+          "key": "tomalacalle",
+          "doc_count": 14,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 14
+              }
+            ]
+          }
+        },
+        {
+          "key": "fuerzapopular",
+          "doc_count": 9,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 6
+              },
+              {
+                "key": "neg",
+                "doc_count": 2
+              },
+              {
+                "key": "pos",
+                "doc_count": 1
+              }
+            ]
+          }
+        },
+        {
+          "key": "fuji",
+          "doc_count": 9,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 6
+              },
+              {
+                "key": "pos",
+                "doc_count": 2
+              },
+              {
+                "key": "neutral",
+                "doc_count": 1
               }
             ]
           }
         },
         {
           "key": "odebrecht",
-          "doc_count": 12811,
+          "doc_count": 8,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neg",
-                "doc_count": 6313
-              },
-              {
-                "key": "neutral",
-                "doc_count": 5607
-              },
-              {
-                "key": "pos",
-                "doc_count": 891
+                "doc_count": 8
               }
             ]
           }
@@ -470,238 +434,238 @@
       "buckets": [
         {
           "key": "neg",
-          "doc_count": 84778
+          "doc_count": 2240
         },
         {
           "key": "neutral",
-          "doc_count": 71219
+          "doc_count": 2102
         },
         {
           "key": "pos",
-          "doc_count": 35643
+          "doc_count": 1044
         }
       ]
     },
     "agg_terms_sample_mentions.keyword": {
-      "doc_count_error_upper_bound": 1387,
-      "sum_other_doc_count": 184073,
+      "doc_count_error_upper_bound": 117,
+      "sum_other_doc_count": 8583,
       "buckets": [
         {
-          "key": "ppkamigo",
-          "doc_count": 8706,
+          "key": "KenjiFujimoriH",
+          "doc_count": 2576,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neg",
-                "doc_count": 3932
-              },
-              {
-                "key": "pos",
-                "doc_count": 2993
+                "doc_count": 1100
               },
               {
                 "key": "neutral",
-                "doc_count": 1781
+                "doc_count": 1012
+              },
+              {
+                "key": "pos",
+                "doc_count": 464
+              }
+            ]
+          }
+        },
+        {
+          "key": "albertofujimori",
+          "doc_count": 742,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 310
+              },
+              {
+                "key": "neg",
+                "doc_count": 289
+              },
+              {
+                "key": "pos",
+                "doc_count": 143
               }
             ]
           }
         },
         {
           "key": "rmapalacios",
-          "doc_count": 6486,
+          "doc_count": 685,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 2982
+                "doc_count": 419
               },
               {
                 "key": "neg",
-                "doc_count": 2249
+                "doc_count": 219
               },
               {
                 "key": "pos",
-                "doc_count": 1255
+                "doc_count": 47
               }
             ]
           }
         },
         {
-          "key": "YeniVilcatoma2",
-          "doc_count": 5596,
+          "key": "KeikoFujimori",
+          "doc_count": 657,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 2232
+                "doc_count": 374
               },
               {
                 "key": "neg",
-                "doc_count": 2009
+                "doc_count": 222
               },
               {
                 "key": "pos",
-                "doc_count": 1355
+                "doc_count": 61
               }
             ]
           }
         },
         {
-          "key": "JBCPERU",
-          "doc_count": 4635,
+          "key": "ppkamigo",
+          "doc_count": 605,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 2431
+                "doc_count": 289
               },
               {
                 "key": "neg",
-                "doc_count": 1763
+                "doc_count": 239
               },
               {
                 "key": "pos",
-                "doc_count": 441
+                "doc_count": 77
               }
             ]
           }
         },
         {
-          "key": "chicharronpress",
-          "doc_count": 4197,
+          "key": "BankadaFP",
+          "doc_count": 298,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 4140
+                "doc_count": 130
               },
               {
                 "key": "neg",
-                "doc_count": 46
+                "doc_count": 124
               },
               {
                 "key": "pos",
-                "doc_count": 11
+                "doc_count": 44
               }
             ]
           }
         },
         {
-          "key": "heduardo50",
-          "doc_count": 3754,
+          "key": "MaritzaGarciaJ",
+          "doc_count": 281,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "neg",
-                "doc_count": 1650
+                "key": "neutral",
+                "doc_count": 139
               },
               {
-                "key": "neutral",
-                "doc_count": 1388
+                "key": "neg",
+                "doc_count": 92
               },
               {
                 "key": "pos",
-                "doc_count": 716
+                "doc_count": 50
               }
             ]
           }
         },
         {
-          "key": "Politica_ECpe",
-          "doc_count": 2957,
+          "key": "alvarezrodrich",
+          "doc_count": 216,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "neutral",
-                "doc_count": 1157
+                "key": "neg",
+                "doc_count": 99
               },
               {
-                "key": "neg",
-                "doc_count": 1146
+                "key": "neutral",
+                "doc_count": 78
               },
               {
                 "key": "pos",
-                "doc_count": 654
+                "doc_count": 39
               }
             ]
           }
         },
         {
           "key": "canalN_",
-          "doc_count": 2503,
+          "doc_count": 212,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "neg",
-                "doc_count": 1220
+                "key": "neutral",
+                "doc_count": 82
               },
               {
-                "key": "neutral",
-                "doc_count": 806
+                "key": "neg",
+                "doc_count": 77
               },
               {
                 "key": "pos",
-                "doc_count": 477
+                "doc_count": 53
               }
             ]
           }
         },
         {
-          "key": "larepublica_pe",
-          "doc_count": 2473,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 1063
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1015
-              },
-              {
-                "key": "pos",
-                "doc_count": 395
-              }
-            ]
-          }
-        },
-        {
-          "key": "MadeleineOster3",
-          "doc_count": 2440,
+          "key": "diariocorreo",
+          "doc_count": 199,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 1068
-              },
-              {
-                "key": "pos",
-                "doc_count": 781
+                "doc_count": 82
               },
               {
                 "key": "neg",
-                "doc_count": 591
+                "doc_count": 81
+              },
+              {
+                "key": "pos",
+                "doc_count": 36
               }
             ]
           }
@@ -710,48 +674,395 @@
     },
     "agg_terms_author_screen_name.keyword": {
       "doc_count_error_upper_bound": -1,
-      "sum_other_doc_count": 191617,
+      "sum_other_doc_count": 5370,
       "buckets": [
         {
-          "key": "la_patilla",
-          "doc_count": 5,
+          "key": "rmapalacios",
+          "doc_count": 7,
           "agg_avg_author_followers_count": {
-            "value": 6693328.8
+            "value": 2717619.8571428573
           }
         },
         {
-          "key": "RevistaSemana",
+          "key": "noticiAmerica",
+          "doc_count": 3,
+          "agg_avg_author_followers_count": {
+            "value": 2491469
+          }
+        },
+        {
+          "key": "Capital967",
+          "doc_count": 1,
+          "agg_avg_author_followers_count": {
+            "value": 2027807
+          }
+        },
+        {
+          "key": "alvarezrodrich",
           "doc_count": 2,
           "agg_avg_author_followers_count": {
-            "value": 3880531
+            "value": 1954190.5
           }
         },
         {
-          "key": "DeniseDresserG",
+          "key": "latercera",
           "doc_count": 1,
           "agg_avg_author_followers_count": {
-            "value": 3819752
+            "value": 1846219
           }
         },
         {
-          "key": "malditaternura",
-          "doc_count": 7,
+          "key": "larepublica_pe",
+          "doc_count": 2,
           "agg_avg_author_followers_count": {
-            "value": 3401475.5714285714
+            "value": 1752773.5
+          }
+        }
+      ]
+    },
+    "agg_date_histogram_sample_created_at": {
+      "buckets": [
+        {
+          "key_as_string": "1514782800000",
+          "key": 1514782800000,
+          "doc_count": 577,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 182
+              },
+              {
+                "key": "mad",
+                "doc_count": 167
+              },
+              {
+                "key": "glad",
+                "doc_count": 158
+              },
+              {
+                "key": "sad",
+                "doc_count": 50
+              },
+              {
+                "key": "scared",
+                "doc_count": 20
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "pos",
+                "doc_count": 199
+              },
+              {
+                "key": "neutral",
+                "doc_count": 198
+              },
+              {
+                "key": "neg",
+                "doc_count": 180
+              }
+            ]
           }
         },
         {
-          "key": "24HorasTVN",
-          "doc_count": 7,
-          "agg_avg_author_followers_count": {
-            "value": 3271837.285714286
+          "key_as_string": "1514869200000",
+          "key": 1514869200000,
+          "doc_count": 470,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mad",
+                "doc_count": 188
+              },
+              {
+                "key": "neutral",
+                "doc_count": 159
+              },
+              {
+                "key": "sad",
+                "doc_count": 54
+              },
+              {
+                "key": "glad",
+                "doc_count": 47
+              },
+              {
+                "key": "scared",
+                "doc_count": 22
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 236
+              },
+              {
+                "key": "neg",
+                "doc_count": 150
+              },
+              {
+                "key": "pos",
+                "doc_count": 84
+              }
+            ]
           }
         },
         {
-          "key": "nelsonbocaranda",
-          "doc_count": 1,
-          "agg_avg_author_followers_count": {
-            "value": 2894537
+          "key_as_string": "1514955600000",
+          "key": 1514955600000,
+          "doc_count": 563,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 226
+              },
+              {
+                "key": "mad",
+                "doc_count": 208
+              },
+              {
+                "key": "sad",
+                "doc_count": 67
+              },
+              {
+                "key": "glad",
+                "doc_count": 51
+              },
+              {
+                "key": "scared",
+                "doc_count": 11
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 234
+              },
+              {
+                "key": "neutral",
+                "doc_count": 189
+              },
+              {
+                "key": "pos",
+                "doc_count": 140
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "1515042000000",
+          "key": 1515042000000,
+          "doc_count": 1584,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mad",
+                "doc_count": 739
+              },
+              {
+                "key": "neutral",
+                "doc_count": 364
+              },
+              {
+                "key": "sad",
+                "doc_count": 286
+              },
+              {
+                "key": "glad",
+                "doc_count": 125
+              },
+              {
+                "key": "scared",
+                "doc_count": 70
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 662
+              },
+              {
+                "key": "neg",
+                "doc_count": 660
+              },
+              {
+                "key": "pos",
+                "doc_count": 262
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "1515128400000",
+          "key": 1515128400000,
+          "doc_count": 1314,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mad",
+                "doc_count": 657
+              },
+              {
+                "key": "neutral",
+                "doc_count": 299
+              },
+              {
+                "key": "sad",
+                "doc_count": 168
+              },
+              {
+                "key": "glad",
+                "doc_count": 138
+              },
+              {
+                "key": "scared",
+                "doc_count": 52
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 581
+              },
+              {
+                "key": "neutral",
+                "doc_count": 495
+              },
+              {
+                "key": "pos",
+                "doc_count": 238
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "1515214800000",
+          "key": 1515214800000,
+          "doc_count": 697,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mad",
+                "doc_count": 291
+              },
+              {
+                "key": "neutral",
+                "doc_count": 229
+              },
+              {
+                "key": "sad",
+                "doc_count": 88
+              },
+              {
+                "key": "glad",
+                "doc_count": 56
+              },
+              {
+                "key": "scared",
+                "doc_count": 33
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 352
+              },
+              {
+                "key": "neutral",
+                "doc_count": 245
+              },
+              {
+                "key": "pos",
+                "doc_count": 100
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "1515301200000",
+          "key": 1515301200000,
+          "doc_count": 181,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mad",
+                "doc_count": 67
+              },
+              {
+                "key": "neutral",
+                "doc_count": 63
+              },
+              {
+                "key": "glad",
+                "doc_count": 24
+              },
+              {
+                "key": "sad",
+                "doc_count": 21
+              },
+              {
+                "key": "scared",
+                "doc_count": 6
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 83
+              },
+              {
+                "key": "neutral",
+                "doc_count": 77
+              },
+              {
+                "key": "pos",
+                "doc_count": 21
+              }
+            ]
           }
         }
       ]
@@ -762,656 +1073,15 @@
       "buckets": [
         {
           "key": "u",
-          "doc_count": 110019
+          "doc_count": 2998
         },
         {
           "key": "m",
-          "doc_count": 42593
+          "doc_count": 1261
         },
         {
           "key": "f",
-          "doc_count": 39028
-        }
-      ]
-    },
-    "agg_date_histogram_sample_created_at": {
-      "buckets": [
-        {
-          "key_as_string": "1513659600000",
-          "key": 1513659600000,
-          "doc_count": 33928,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 18695
-              },
-              {
-                "key": "neutral",
-                "doc_count": 10362
-              },
-              {
-                "key": "sad",
-                "doc_count": 3470
-              },
-              {
-                "key": "scared",
-                "doc_count": 787
-              },
-              {
-                "key": "glad",
-                "doc_count": 614
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 14881
-              },
-              {
-                "key": "neutral",
-                "doc_count": 14752
-              },
-              {
-                "key": "pos",
-                "doc_count": 4295
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1513746000000",
-          "key": 1513746000000,
-          "doc_count": 40337,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 19358
-              },
-              {
-                "key": "neutral",
-                "doc_count": 14911
-              },
-              {
-                "key": "sad",
-                "doc_count": 3245
-              },
-              {
-                "key": "glad",
-                "doc_count": 1593
-              },
-              {
-                "key": "scared",
-                "doc_count": 1230
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 16974
-              },
-              {
-                "key": "neg",
-                "doc_count": 16548
-              },
-              {
-                "key": "pos",
-                "doc_count": 6815
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1513832400000",
-          "key": 1513832400000,
-          "doc_count": 51825,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 26225
-              },
-              {
-                "key": "neutral",
-                "doc_count": 15879
-              },
-              {
-                "key": "sad",
-                "doc_count": 5860
-              },
-              {
-                "key": "scared",
-                "doc_count": 1994
-              },
-              {
-                "key": "glad",
-                "doc_count": 1867
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 22438
-              },
-              {
-                "key": "neutral",
-                "doc_count": 18719
-              },
-              {
-                "key": "pos",
-                "doc_count": 10668
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1513918800000",
-          "key": 1513918800000,
-          "doc_count": 20329,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 8986
-              },
-              {
-                "key": "neutral",
-                "doc_count": 6707
-              },
-              {
-                "key": "sad",
-                "doc_count": 2860
-              },
-              {
-                "key": "glad",
-                "doc_count": 1232
-              },
-              {
-                "key": "scared",
-                "doc_count": 544
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 9069
-              },
-              {
-                "key": "neutral",
-                "doc_count": 6090
-              },
-              {
-                "key": "pos",
-                "doc_count": 5170
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514005200000",
-          "key": 1514005200000,
-          "doc_count": 4375,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 2305
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1326
-              },
-              {
-                "key": "sad",
-                "doc_count": 419
-              },
-              {
-                "key": "glad",
-                "doc_count": 176
-              },
-              {
-                "key": "scared",
-                "doc_count": 149
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 1925
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1383
-              },
-              {
-                "key": "pos",
-                "doc_count": 1067
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514091600000",
-          "key": 1514091600000,
-          "doc_count": 5478,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 3274
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1309
-              },
-              {
-                "key": "sad",
-                "doc_count": 355
-              },
-              {
-                "key": "glad",
-                "doc_count": 281
-              },
-              {
-                "key": "scared",
-                "doc_count": 259
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 2493
-              },
-              {
-                "key": "pos",
-                "doc_count": 1555
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1430
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514178000000",
-          "key": 1514178000000,
-          "doc_count": 5781,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 3392
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1353
-              },
-              {
-                "key": "sad",
-                "doc_count": 397
-              },
-              {
-                "key": "scared",
-                "doc_count": 347
-              },
-              {
-                "key": "glad",
-                "doc_count": 292
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 3184
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1442
-              },
-              {
-                "key": "pos",
-                "doc_count": 1155
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514264400000",
-          "key": 1514264400000,
-          "doc_count": 5293,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 2806
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1637
-              },
-              {
-                "key": "sad",
-                "doc_count": 354
-              },
-              {
-                "key": "glad",
-                "doc_count": 263
-              },
-              {
-                "key": "scared",
-                "doc_count": 233
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 3051
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1407
-              },
-              {
-                "key": "pos",
-                "doc_count": 835
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514350800000",
-          "key": 1514350800000,
-          "doc_count": 5135,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 2805
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1694
-              },
-              {
-                "key": "sad",
-                "doc_count": 336
-              },
-              {
-                "key": "glad",
-                "doc_count": 173
-              },
-              {
-                "key": "scared",
-                "doc_count": 127
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 2686
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1380
-              },
-              {
-                "key": "pos",
-                "doc_count": 1069
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514437200000",
-          "key": 1514437200000,
-          "doc_count": 5065,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 3077
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1351
-              },
-              {
-                "key": "sad",
-                "doc_count": 326
-              },
-              {
-                "key": "scared",
-                "doc_count": 158
-              },
-              {
-                "key": "glad",
-                "doc_count": 153
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 2362
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1853
-              },
-              {
-                "key": "pos",
-                "doc_count": 850
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514523600000",
-          "key": 1514523600000,
-          "doc_count": 5025,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 2600
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1788
-              },
-              {
-                "key": "sad",
-                "doc_count": 356
-              },
-              {
-                "key": "scared",
-                "doc_count": 144
-              },
-              {
-                "key": "glad",
-                "doc_count": 137
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 2244
-              },
-              {
-                "key": "neutral",
-                "doc_count": 2144
-              },
-              {
-                "key": "pos",
-                "doc_count": 637
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514610000000",
-          "key": 1514610000000,
-          "doc_count": 4839,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 2835
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1656
-              },
-              {
-                "key": "sad",
-                "doc_count": 178
-              },
-              {
-                "key": "scared",
-                "doc_count": 106
-              },
-              {
-                "key": "glad",
-                "doc_count": 64
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 2112
-              },
-              {
-                "key": "neutral",
-                "doc_count": 2090
-              },
-              {
-                "key": "pos",
-                "doc_count": 637
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514696400000",
-          "key": 1514696400000,
-          "doc_count": 4230,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 2221
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1375
-              },
-              {
-                "key": "sad",
-                "doc_count": 291
-              },
-              {
-                "key": "scared",
-                "doc_count": 219
-              },
-              {
-                "key": "glad",
-                "doc_count": 124
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 1785
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1555
-              },
-              {
-                "key": "pos",
-                "doc_count": 890
-              }
-            ]
-          }
+          "doc_count": 1127
         }
       ]
     },
@@ -1421,11 +1091,11 @@
       "buckets": [
         {
           "key": "mas25",
-          "doc_count": 183447
+          "doc_count": 4647
         },
         {
           "key": "menos25",
-          "doc_count": 8193
+          "doc_count": 739
         }
       ]
     }

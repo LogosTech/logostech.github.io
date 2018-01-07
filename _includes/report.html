@@ -1,14 +1,85 @@
+<!-- TEMPLATE ZONE -->
+
+<script type="text/template" class="tmpl_render_words_sent">
+  <% _.each( items, function( item ){ %>
+    <div class="row mg_bottom">
+      <div class="col-md-6">
+        <a href="<%- item.href %>" target="_blank">
+          <h3><%- item.key %></h3>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <div class="indicator">
+          <span class="bg_a" style="width:<%- item.scores[0] %>%"></span>
+          <span class="bg_b" style="width:<%- item.scores[1] %>%"></span>
+          <span class="bg_c" style="width:<%- item.scores[2] %>%"></span>
+        </div>
+      </div>
+    </div>
+  <% }); %>
+</script>
+
+<script type="text/template" class="tmpl_top_influencers">
+  <div class="row mg_bottom">
+  <% _.each( items, function( item ){ %>
+    <div class="col-md-2 col-sm-4">
+      <img src="https://twitter.com/<%- item.account %>/profile_image?size=bigger">
+      <a href="<%- item.href %>" target="_blank">
+        <h3><%- item.key %></h3>
+        <span class="badge badge-pill bg_a"><%- item.score %></span>
+      </a>
+    </div>
+  <% }); %>
+  </div>
+</script>
+
+<!-- TEMPLATE ZONE -->
+
 <div class="row">
   <div class="chart_card col-md-12 wow fadeIn" data-wow-delay="0.75s">
     <div class="is_chart">
-      <h1>
-        <span id="samples_count">0</span> Muestras Analizadas
-        desde el <span id="range_from">*</span> hasta <span id="range_to">*</span>
-      </h1>
+      <h1><span id="samples_count">0</span> Muestras Analizadas</h1>
+      <h2>desde el <span id="range_from">*</span> hasta <span id="range_to">*</span></h2>
       <div class="ct-chart ct-major-tenth" id="chart1"></div>
     </div>
   </div>
 </div>
+<div class="row">
+  <div class="chart_card col-md-4 wow fadeIn" data-wow-delay="0.75s">
+    <div class="is_chart">
+      <h1>Edades</h1>
+      <div class="metrics">
+        <span class="badge badge-pill bg_a">&plus;25</span>
+        <span class="badge badge-pill bg_b">&minus;25</span>
+      </div>
+      <div class="ct-chart ct-minor-seventh" id="chart4"></div>
+    </div>
+  </div>
+
+  <div class="chart_card col-md-4 wow fadeIn" data-wow-delay="0.75s">
+    <div class="is_chart">
+      <h1>Genero</h1>
+      <div class="metrics">
+        <span class="badge badge-pill bg_a">Hombres</span>
+        <span class="badge badge-pill bg_b">Mujeres</span>
+      </div>
+      <div class="ct-chart ct-minor-seventh" id="chart5"></div>
+    </div>
+  </div>
+
+  <div class="chart_card col-md-4 wow fadeIn" data-wow-delay="0.75s">
+    <div class="is_chart">
+      <h1>Sentimiento</h1>
+      <div class="metrics">
+        <span class="badge badge-pill bg_a">Negativo</span>
+        <span class="badge badge-pill bg_b">Neutral</span>
+        <span class="badge badge-pill bg_c">Positivo</span>
+      </div>
+      <div class="ct-chart ct-minor-seventh" id="chart6"></div>
+    </div>
+  </div>
+</div>
+
 <div class="row">
   <div class="chart_card col-md-6 wow fadeIn" data-wow-delay="0.75s">
     <div class="is_chart">
@@ -35,38 +106,49 @@
     </div>
   </div>
 </div>
+
 <div class="row">
   <div class="chart_card col-md-4 wow fadeIn" data-wow-delay="0.75s">
     <div class="is_chart">
-      <h1>Edades</h1>
-      <div class="metrics">
-        <span class="badge badge-pill bg_a">&plus;25</span>
-        <span class="badge badge-pill bg_b">&minus;25</span>
-      </div>
-      <div class="ct-chart ct-square" id="chart4"></div>
-    </div>
-  </div>
-
-  <div class="chart_card col-md-4 wow fadeIn" data-wow-delay="0.75s">
-    <div class="is_chart">
-      <h1>Genero</h1>
-      <div class="metrics">
-        <span class="badge badge-pill bg_a">Hombres</span>
-        <span class="badge badge-pill bg_b">Mujeres</span>
-      </div>
-      <div class="ct-chart ct-square" id="chart5"></div>
-    </div>
-  </div>
-
-  <div class="chart_card col-md-4 wow fadeIn" data-wow-delay="0.75s">
-    <div class="is_chart">
-      <h1>Sentimiento</h1>
+      <h1>sentimiento en palabras</h1>
       <div class="metrics">
         <span class="badge badge-pill bg_a">Negativo</span>
         <span class="badge badge-pill bg_b">Neutral</span>
         <span class="badge badge-pill bg_c">Positivo</span>
       </div>
-      <div class="ct-chart ct-square" id="chart6"></div>
+      <div id="sentiment_of_words" class="words_box"></div>
     </div>
+  </div>
+  <div class="chart_card col-md-4 wow fadeIn" data-wow-delay="0.75s">
+    <div class="is_chart">
+      <h1>sentimiento en Hashtags</h1>
+      <div class="metrics">
+        <span class="badge badge-pill bg_a">Negativo</span>
+        <span class="badge badge-pill bg_b">Neutral</span>
+        <span class="badge badge-pill bg_c">Positivo</span>
+      </div>
+      <div id="sentiment_of_hashtags" class="words_box"></div>
+    </div>
+  </div>
+  <div class="chart_card col-md-4 wow fadeIn" data-wow-delay="0.75s">
+    <div class="is_chart">
+      <h1>sentimiento en menciones</h1>
+      <div class="metrics">
+        <span class="badge badge-pill bg_a">Negativo</span>
+        <span class="badge badge-pill bg_b">Neutral</span>
+        <span class="badge badge-pill bg_c">Positivo</span>
+      </div>
+      <div id="sentiment_of_mentions" class="words_box"></div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="chart_card col-md-12 wow fadeIn" data-wow-delay="0.75s">
+
+    <div class="is_chart">
+      <h1>influenciadores principales</h1>
+      <div id="top_influencers" class="influencer_box"></div>
+    </div>
+
   </div>
 </div>

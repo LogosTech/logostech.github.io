@@ -370,6 +370,79 @@
           return tmp_data[key] ? tmp_data[key] : 0;
         });
 
+        // ANALISIS SEMANTICO
+        // WORDS
+        var pattern = ['neg', 'neutral', 'pos'];
+        var buckets = data
+          .aggregations
+          .agg_terms_sample_words
+          .buckets;
+        render_data.words = buckets.map(function(item) {
+          var total = item.doc_count;
+          var scores = item['agg_terms_sample_sentiment.keyword'].buckets;
+          var result = {};
+          for (var i of scores) { result[i.key] = i.doc_count;}
+          return {
+            key: item.key,
+            href: 'https://twitter.com/search?q=' + item.key,
+            scores: pattern.map(function(key) {
+              return result[key] ? result[key] / total * 100 : 0;
+            })
+          }
+        });
+        // MENTIONS
+        var buckets = data
+          .aggregations
+          ['agg_terms_sample_mentions.keyword']
+          .buckets;
+        render_data.mentions = buckets.map(function(item) {
+          var total = item.doc_count;
+          var scores = item['agg_terms_sample_sentiment.keyword'].buckets;
+          var result = {};
+          for (var i of scores) { result[i.key] = i.doc_count;}
+          return {
+            key: '@' + item.key,
+            href: 'https://twitter.com/' + item.key,
+            scores: pattern.map(function(key) {
+              return result[key] ? result[key] / total * 100 : 0;
+            })
+          }
+        });
+        // HASHTAGS
+        var buckets = data
+          .aggregations
+          ['agg_terms_sample_hashtags.keyword']
+          .buckets;
+        render_data.hashtags = buckets.map(function(item) {
+          var total = item.doc_count;
+          var scores = item['agg_terms_sample_sentiment.keyword'].buckets;
+          var result = {};
+          for (var i of scores) { result[i.key] = i.doc_count;}
+          return {
+            key: '#' + item.key,
+            href: 'https://twitter.com/hashtag/' + item.key,
+            scores: pattern.map(function(key) {
+              return result[key] ? result[key] / total * 100 : 0;
+            })
+          }
+        });
+
+        // INFLUENCERS
+        var buckets = data
+          .aggregations
+          ['agg_terms_author_screen_name.keyword']
+          .buckets;
+        render_data.influencers = buckets.map(function(item) {
+          var total = item.doc_count;
+          return {
+            key: '@' + item.key,
+            account: item.key,
+            href: 'https://twitter.com/' + item.key,
+            score: parseInt(item.agg_avg_author_followers_count.value)
+              .toLocaleString()
+          }
+        });
+
         console.log(render_data);
 
         // RENDER GRAPHS
@@ -425,7 +498,7 @@
           }
         };
 
-        new Chartist.Line('#chart1', render_data.chart1, options_line);
+        new Chartist.Bar('#chart1', render_data.chart1, options_bar);
         new Chartist.Bar('#chart2', render_data.chart2, options_bar);
         new Chartist.Bar('#chart3', render_data.chart3, options_bar);
 
@@ -445,21 +518,21 @@
           get_options_pie(render_data.chart6.series)
         );
 
+        // RENDER WORDS
+        var template = _.template($('script.tmpl_render_words_sent').html());
+        $('#sentiment_of_words').html(template({ items: render_data.words }));
+        $('#sentiment_of_hashtags').html(template({ items: render_data.hashtags }));
+        $('#sentiment_of_mentions').html(template({ items: render_data.mentions }));
+
+        // RENDER INFLUENCERS
+        var template = _.template($('script.tmpl_top_influencers').html());
+        $('#top_influencers').html(template({ items: render_data.influencers }));
+
       })
       .fail(function() {
         console.log( "error" );
       });
 
     }
-
-
-
-    // var sum = function(a, b) { return a + b };
-		// new Chartist.Pie('#chart2', data_pie, {
-    //   donut: true,
-    //   showLabel: false,
-    //   donutWidth: 60,
-    //   startAngle: 270,
-    // });
 
 }(jQuery));
