@@ -1423,3 +1423,10 @@ small {
 .tags span {
   font-weight: normal;
 }
+
+.ct-chart-donut .ct-label{
+  fill: white;
+  text-shadow: -1px 0px 7px rgb(0, 29, 38);
+  font-weight: normal;
+  font-size: 1.2rem;
+}

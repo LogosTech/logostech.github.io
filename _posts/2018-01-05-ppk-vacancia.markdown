@@ -5,8 +5,7 @@ date:   2018-01-05 07:40:15 +0000
 categories: politica
 image: ppk.jpg
 comments: true
-keywords:
-  - ppk
+show_report: ppk-vacancia.json
 tags:
   - infografia
   - actualidad

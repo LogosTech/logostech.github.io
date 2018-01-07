@@ -234,44 +234,232 @@
     /*****************************************
     End of Ajax Contact Form
     *****************************************/
-    var data = {
-      // labels: ['Week1', 'Week2', 'Week3', 'Week4', 'Week5'],
-      series: [
-        [7.2, 6.8, 6, 2.6, 7, 6.5, 5, 2.3, 3, 7.2],
-        [6, 5, 4, 2, 1, 5, 4, 3, 5, 6],
-        [5, 3, 9, 1, 0.5, 2, 1, 5, 4, 3,]
-      ]
-    };
 
-    var data_pie = {
-      labels: ['Bananas', 'Apples', 'Grapes'],
-      series: [7.2, 6.8, 2.6, 6, 1]
-    };
+    /*****************************************
+    Load Report if Exist
+    *****************************************/
 
-    var options = {
-      stackBars: true,
-      // showLine: true,
-      // lineSmooth: false,
-      plugins: [
-        Chartist.plugins.tooltip()
-      ],
-      showPoint: true,
-      // fullWidth: true,
-      axisX: {
-        showGrid: false
-      }
-    };
-    var sum = function(a, b) { return a + b };
-		new Chartist.Bar('#chart1', data, options);
-		new Chartist.Bar('#chart3', data, options);
-		new Chartist.Bar('#chart4', data, options);
-		new Chartist.Pie('#chart2', data_pie, {
-      donut: true,
-      showLabel: false,
-      donutWidth: 60,
-      startAngle: 270,
-    });
-		// new Chartist.Line('#chart3', data, { low: 0, showArea: true	});
+    var report_file = $("#main").attr("data-load-report");
+    if (report_file) {
+      var path = '/assets/data/';
+      var jqxhr = $.getJSON(path + report_file, function() {
+        console.log( "success" );
+      })
+      .done(function(data) {
+        console.log(data);
 
+        var render_data = {
+          count: 0,
+          chart1: { labels: [], series: [] },
+          chart2: { labels: [], series: [] },
+          chart3: { labels: [], series: [] },
+          chart4: { labels: [], series: [] },
+          chart5: { labels: [], series: [] },
+          chart6: { labels: [], series: [] },
+        };
+
+        // COUNTER: ACUMULADO DE MUESTRAS
+        render_data.count = data.hits.total;
+
+        // GET HISTOGRAM
+        var histogram = data
+          .aggregations
+          .agg_date_histogram_sample_created_at
+          .buckets;
+
+        // CHART 1: ACUMULADO DE MUESTRAS
+        render_data.chart1.labels = histogram
+          .map(function(item) {
+            return item.key;
+          });
+
+        render_data.range = {
+          from: moment(render_data.chart1.labels[0]).format('DD/MM/YY'),
+          to: moment(render_data.chart1.labels.slice(-1)[0]).format('DD/MM/YY')
+        }
+
+        render_data.chart1.series.push(histogram
+          .map(function(item) {
+            return item.doc_count;
+          }));
+
+        // CHART 2: ACUMULADO DE EMO x DIAS
+        var pattern = ['mad', 'neutral', 'sad', 'glad', 'scared'];
+        var tmp_data = histogram
+          .map(function(item) {
+            var buckets = item['agg_terms_sample_emotions.keyword'].buckets;
+            var result = {};
+            for (var i of buckets) { result[i.key] = i.doc_count;}
+            return result;
+          });
+        render_data.chart2.labels = render_data.chart1.labels;
+        for (var key of pattern) {
+          var serie_x = [];
+          for (var item of tmp_data) {
+            serie_x.push(item[key] ? item[key] : 0);
+          }
+          render_data.chart2.series.push(serie_x);
+        }
+
+        // CHART 3: ACUMULADO DE SENTIMIENTO x DIAS
+        var pattern = ['neg', 'neutral', 'pos'];
+        var tmp_data = histogram
+          .map(function(item) {
+            var buckets = item['agg_terms_sample_sentiment.keyword'].buckets;
+            var result = {};
+            for (var i of buckets) { result[i.key] = i.doc_count;}
+            return result;
+          });
+        render_data.chart3.labels = render_data.chart1.labels;
+        for (var key of pattern) {
+          var serie_x = [];
+          for (var item of tmp_data) {
+            serie_x.push(item[key] ? item[key] : 0);
+          }
+          render_data.chart3.series.push(serie_x);
+        }
+
+        // CHART 4: PIE AGE
+        var pattern = ['mas25', 'menos25'];
+        // render_data.chart4.labels = pattern
+
+        var buckets = data
+          .aggregations
+          ['agg_terms_author_age.keyword']
+          .buckets;
+
+        var result = {};
+        for (var i of buckets) { result[i.key] = i.doc_count;}
+        var tmp_data = result;
+
+        render_data.chart4.series = pattern.map(function(key) {
+          return tmp_data[key] ? tmp_data[key] : 0;
+        });
+
+        // CHART 5: PIE GENDER
+        var pattern = ['m', 'f'];
+        // render_data.chart5.labels = pattern
+
+        var buckets = data
+          .aggregations
+          ['agg_terms_author_gender.keyword']
+          .buckets;
+
+        var result = {};
+        for (var i of buckets) { result[i.key] = i.doc_count;}
+        var tmp_data = result;
+
+        render_data.chart5.series = pattern.map(function(key) {
+          return tmp_data[key] ? tmp_data[key] : 0;
+        });
+
+        // CHART 6: PIE SENTIMENT
+        var pattern = ['neg', 'neutral', 'pos'];
+        // render_data.chart6.labels = pattern
+
+        var buckets = data
+          .aggregations
+          ['agg_terms_sample_sentiment.keyword']
+          .buckets;
+
+        var result = {};
+        for (var i of buckets) { result[i.key] = i.doc_count;}
+        var tmp_data = result;
+
+        render_data.chart6.series = pattern.map(function(key) {
+          return tmp_data[key] ? tmp_data[key] : 0;
+        });
+
+        console.log(render_data);
+
+        // RENDER GRAPHS
+
+        $('#samples_count').text(render_data.count.toLocaleString());
+        $('#range_from').text(render_data.range.from);
+        $('#range_to').text(render_data.range.to);
+
+        var tooltip = Chartist.plugins.tooltip();
+        var options_line = {
+          showArea: true,
+          showLine: false,
+          // lineSmooth: false,
+          plugins: [tooltip],
+          // showPoint: true,
+          fullWidth: true,
+          axisX: {
+            showGrid: false,
+            labelInterpolationFnc: function(value, index) {
+              // return index % 2 === 0 ? moment(value).format('DD') : null;
+              return moment(value).format('DD');
+            }
+          }
+        };
+
+        var options_bar = {
+          stackBars: true,
+          // showLine: true,
+          // lineSmooth: false,
+          plugins: [tooltip],
+          showPoint: true,
+          // fullWidth: true,
+          axisX: {
+            showGrid: false,
+            labelInterpolationFnc: function(value, index) {
+              // return index % 2 === 0 ? moment(value).format('DD') : null;
+              return moment(value).format('DD');
+            }
+          }
+        };
+        var get_options_pie = function (series) {
+          var sum = function(a, b) { return a + b };
+          return {
+            plugins: [tooltip],
+            donut: true,
+            // showLabel: false,
+            donutWidth: 30,
+            startAngle: 150,
+            labelInterpolationFnc: function(value) {
+              console.log(value, series.reduce(sum));
+              return Math.round(value / series.reduce(sum) * 100) + '%';
+            }
+          }
+        };
+
+        new Chartist.Line('#chart1', render_data.chart1, options_line);
+        new Chartist.Bar('#chart2', render_data.chart2, options_bar);
+        new Chartist.Bar('#chart3', render_data.chart3, options_bar);
+
+        new Chartist.Pie(
+          '#chart4',
+          render_data.chart4,
+          get_options_pie(render_data.chart4.series)
+        );
+        new Chartist.Pie(
+          '#chart5',
+          render_data.chart5,
+          get_options_pie(render_data.chart5.series)
+        );
+        new Chartist.Pie(
+          '#chart6',
+          render_data.chart6,
+          get_options_pie(render_data.chart6.series)
+        );
+
+      })
+      .fail(function() {
+        console.log( "error" );
+      });
+
+    }
+
+
+
+    // var sum = function(a, b) { return a + b };
+		// new Chartist.Pie('#chart2', data_pie, {
+    //   donut: true,
+    //   showLabel: false,
+    //   donutWidth: 60,
+    //   startAngle: 270,
+    // });
 
 }(jQuery));

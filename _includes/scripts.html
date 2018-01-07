@@ -16,6 +16,9 @@
 <!-- WOW JS -->
 <script src="{{ "/assets/js/wow.js" | prepend: site.baseurl }}"></script>
 
+<!-- MOMENT JS -->
+<script src="{{ "/assets/js/moment.min.js" | prepend: site.baseurl }}"></script>
+
 <!-- Magnific Popup -->
 <script src="{{ "/assets/js/jquery.magnific-popup.min.js" | prepend: site.baseurl }}"></script>
 
@@ -24,7 +27,7 @@
 <script src="{{ "/assets/js/chartist-plugin-tooltip.min.js" | prepend: site.baseurl }}"></script>
 
 <!-- Main JS -->
-<script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+<script id="main" src="{{ "/assets/js/main.js" | prepend: site.baseurl }}" data-load-report="{{ page.show_report }}"></script>
 
 <!-- Google Analytics -->
 {% if site.analytics == 'google' %}

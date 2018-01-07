@@ -18,84 +18,8 @@ layout: blog
 </div>
 
 <article class="post-content">
-  {% if page.keywords %}
-    <div class="row">
-      <div class="chart_card col-md-12 wow fadeIn" data-wow-delay="0.75s">
-        <div class="is_chart">
-          <h1>135k Muestras Analisadas</h1>
-          <div class="metrics">
-            <span class="badge badge-pill bg_a">Positivo</span>
-            <span class="badge badge-pill bg_b">Neutral</span>
-            <span class="badge badge-pill bg_c">Negativo</span>
-          </div>
-          <div class="ct-chart ct-major-tenth" id="chart1"></div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="chart_card col-md-6 wow fadeIn" data-wow-delay="0.75s">
-        <div class="is_chart">
-          <h1>Emociones Acumuladas por Dia </h1>
-          <div class="metrics">
-            <span class="badge badge-pill bg_a">Enojo</span>
-            <span class="badge badge-pill bg_b">Neutral</span>
-            <span class="badge badge-pill bg_c">Miedo</span>
-            <span class="badge badge-pill bg_d">Alegria</span>
-            <span class="badge badge-pill bg_e">Tristeza</span>
-          </div>
-          <div class="ct-chart ct-perfect-fifth" id="chart3"></div>
-        </div>
-      </div>
-      <div class="chart_card col-md-6 wow fadeIn" data-wow-delay="0.75s">
-        <div class="is_chart">
-          <h1>Sentimiento Acumulado por Dia </h1>
-          <div class="metrics">
-            <span class="badge badge-pill bg_a">Enojo</span>
-            <span class="badge badge-pill bg_b">Neutral</span>
-            <span class="badge badge-pill bg_c">Miedo</span>
-            <span class="badge badge-pill bg_d">Alegria</span>
-            <span class="badge badge-pill bg_e">Tristeza</span>
-          </div>
-          <div class="ct-chart ct-perfect-fifth" id="chart3"></div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="chart_card col-md-4 wow fadeIn" data-wow-delay="0.75s">
-        <div class="is_chart">
-          <h1>Edades</h1>
-          <div class="metrics">
-            <span class="badge badge-pill bg_a">&minus;25</span>
-            <span class="badge badge-pill bg_b">&plus;25</span>
-          </div>
-          <div class="ct-chart ct-square" id="chart2"></div>
-        </div>
-      </div>
-
-      <div class="chart_card col-md-4 wow fadeIn" data-wow-delay="0.75s">
-        <div class="is_chart">
-          <h1>Genero</h1>
-          <div class="metrics">
-            <span class="badge badge-pill bg_a">Mujeres</span>
-            <span class="badge badge-pill bg_b">Hombres</span>
-          </div>
-          <div class="ct-chart ct-square" id="chart4"></div>
-        </div>
-      </div>
-
-      <div class="chart_card col-md-4 wow fadeIn" data-wow-delay="0.75s">
-        <div class="is_chart">
-          <h1>Sentimiento</h1>
-          <div class="metrics">
-            <span class="badge badge-pill bg_a">Positivo</span>
-            <span class="badge badge-pill bg_b">Negativo</span>
-            <span class="badge badge-pill bg_c">Neutral</span>
-          </div>
-          <div class="ct-chart ct-square" id="chart4"></div>
-        </div>
-      </div>
-
-    </div>
+  {% if page.show_report %}
+    {% include report.html %}
   {% endif %}
 
   {{ page.content | remove: page.excerpt }}
