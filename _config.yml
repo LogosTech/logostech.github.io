@@ -40,7 +40,8 @@ pricing:
   medio: 18
   avanzado: 37
 # Build settings
-# paginate: 3
+paginate: 3
+paginate_path: "/blog/page:num/"
 sass:
   sass_dir: _sass
   style: compressed
@@ -51,6 +52,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-minifier
+  - jekyll-sitemap
 
 defaults:
   - scope:

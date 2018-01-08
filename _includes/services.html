@@ -1,6 +1,12 @@
 <div id="services" class="services section-padding">
   <div class="container">
     <div class="row">
+      {% if include.minimal %}
+      <div class="section-title">
+        <h2 class="wow fadeIn" data-wow-delay="0.25s">Servicios</h2>
+        <span class="wow fadeIn" data-wow-delay="0.5s"></span>
+      </div>
+      {% else %}
       <div class="section-title">
         <p class="wow fadeIn"><small>{{ site.slogan }}</small></p>
         <h2 class="wow fadeIn" data-wow-delay="0.25s">Servicios</h2>
@@ -11,6 +17,7 @@
           de texto y machine learning.
         </p>
       </div>
+      {% endif %}
 
       <div class="col-md-4 col-sm-4 col-xs-12 no-padding">
         <div class="single_service wow fadeIn" data-wow-delay="0.25s">
