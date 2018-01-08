@@ -285,6 +285,7 @@
 
         // CHART 2: ACUMULADO DE EMO x DIAS
         var pattern = ['mad', 'neutral', 'sad', 'glad', 'scared'];
+        var pattern = ['mad', 'sad', 'glad', 'scared'];
         var tmp_data = histogram
           .map(function(item) {
             var buckets = item['agg_terms_sample_emotions.keyword'].buckets;
@@ -478,7 +479,7 @@
           axisX: {
             showGrid: false,
             labelInterpolationFnc: function(value, index) {
-              // return index % 2 === 0 ? moment(value).format('DD') : null;
+              return index % 2 === 0 ? moment(value).format('DD') : null;
               return moment(value).format('DD');
             }
           }

@@ -394,7 +394,7 @@ small {
   ## Header
   ********************/
   .header {
-    padding: 15px 0;
+    /*padding: 15px 0;*/
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -1315,8 +1315,18 @@ small {
     border-bottom: 1px dashed #001D26;
   }
 
+  #blog .section-title a {
+    color: #001D26;
+    font-weight: lighter;
+    border-bottom: 1px dashed #001D26;
+  }
+
   .post-content .tags {
     text-align: center;
+  }
+
+  .post-content span {
+    font-weight: normal;
   }
 
   /*.post img {
@@ -1427,9 +1437,6 @@ small {
   text-align: center;
 }
 .metrics span {
-  font-weight: normal;
-}
-.tags span {
   font-weight: normal;
 }
 

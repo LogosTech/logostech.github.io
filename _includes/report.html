@@ -26,8 +26,11 @@
       <img src="https://twitter.com/<%- item.account %>/profile_image?size=bigger">
       <a href="<%- item.href %>" target="_blank">
         <h3><%- item.key %></h3>
-        <span class="badge badge-pill bg_a"><%- item.score %></span>
       </a>
+      <span class="badge badge-pill bg_a">
+        <i class="icofont icofont-users-social"></i>
+        <%- item.score %>
+      </span>
     </div>
   <% }); %>
   </div>
@@ -86,10 +89,10 @@
       <h1>Emociones Acumuladas por Dia </h1>
       <div class="metrics">
         <span class="badge badge-pill bg_a">Enojo</span>
-        <span class="badge badge-pill bg_b">Neutral</span>
-        <span class="badge badge-pill bg_c">Miedo</span>
-        <span class="badge badge-pill bg_d">Alegria</span>
-        <span class="badge badge-pill bg_e">Tristeza</span>
+        <!-- <span class="badge badge-pill bg_b">Neutral</span> -->
+        <span class="badge badge-pill bg_b">Miedo</span>
+        <span class="badge badge-pill bg_c">Alegria</span>
+        <span class="badge badge-pill bg_d">Tristeza</span>
       </div>
       <div class="ct-chart ct-perfect-fifth" id="chart2"></div>
     </div>

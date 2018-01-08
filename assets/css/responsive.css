@@ -1,4 +1,4 @@
-/*****************************************  
+/*****************************************
 Author: ThemeRed
 Version: 1.0
 URL: http://themered.com
@@ -14,73 +14,73 @@ URL: http://themered.com
     body {
         font-size: 16px;
     }
-    
+
     .section-padding {
         padding: 80px 0;
     }
-    
+
     .no-padding-top {
         padding-top: 0;
     }
-    
+
     .no-padding-bottom {
         padding-bottom: 0;
     }
-    
+
     .section-title {
         margin-bottom: 80px;
     }
-    
+
     .list-inline>li {
         padding-left: 2px;
         padding-right: 3px;
     }
-    
+
     .top-header ul li:after {
         height: 3px;
         width: 3px;
         margin-left: 5px;
     }
-    
+
     .header .navbar-nav li a {
         margin: 0;
         padding: 20px 10px;
     }
-    
-    .pricing .pricing_table, 
-    .team .single-member, 
-    .blog .single-blog, 
+
+    .pricing .pricing_table,
+    .team .single-member,
+    .blog .single-blog,
     .contact .contact-info {
         max-width: 550px;
         margin: 0 auto;
     }
-    
+
     .single-slide-item {
         text-align: center;
     }
-    
+
     .homepage-slides-wrapper .owl-controls {
         display: none;
     }
-    
-    .pricing, 
+
+    .pricing,
     .team,
     .blog,
     .contact {
         padding-bottom: 50px;
     }
-    
+
     .pricing .pricing_table,
     .team .single-member,
     .blog .single-blog,
     .contact .contact-info {
         margin-bottom: 30px;
     }
-    
+
     .single_service {
         padding: 30px 20px;
     }
-    
+
     .testimonials .client-say .client-item {
         padding: 30px;
     }
@@ -96,16 +96,16 @@ URL: http://themered.com
     .homepage-slides .owl-nav {
         width: 970px;
     }
-    
+
     .pricing_top {
         padding: 45px 20px;
     }
-    
+
     .pricing_middle {
         margin-left: 175px;
         padding: 30px;
     }
-    
+
     .single-blog .blog-content {
         padding: 25px 35px;
         transform: translateY(0);
@@ -114,7 +114,7 @@ URL: http://themered.com
         border-color: #f1f2f6;
         border-radius: 0;
     }
-    
+
     .contact-info {
         padding: 30px 20px;
     }
@@ -122,17 +122,17 @@ URL: http://themered.com
 
 
 /*****************************************
-               Tablet 
+               Tablet
 *****************************************/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    
+
 }
 
 
 
 
 
-/***************************************** 
+/*****************************************
                 Mobile
 *****************************************/
 
@@ -140,55 +140,55 @@ URL: http://themered.com
     img {
         margin: 0 auto;
     }
-    
+
     .section-padding {
         padding: 60px 0;
     }
-    
+
     .section-padding.no-padding-top {
         padding-top: 0;
     }
-    
+
     .section-padding.no-padding-bottom {
         padding-bottom: 0;
     }
-    
+
     .section-title {
         margin-bottom: 60px;
     }
-    
+
     .top-header {
         display: none;
     }
-    
+
     .fixed-nav .header {
         z-index: 3;
     }
-    
-    .pricing, 
+
+    .pricing,
     .team,
     .blog,
     .contact {
         padding-bottom: 30px;
     }
-    
+
     .social,
     .contact-min {
         text-align: center;
     }
-    
+
     .header .logo {
-        padding: 10px 0;
+        padding: 15px 0;
     }
-    
+
     .single_service {
         max-width: 350px;
         margin: 0 auto;
     }
-    
-    .pricing .pricing_table, 
-    .team .single-member, 
-    .blog .single-blog, 
+
+    .pricing .pricing_table,
+    .team .single-member,
+    .blog .single-blog,
     .contact .contact-info {
         margin: 0 auto;
         margin-bottom: 30px;
@@ -200,7 +200,7 @@ URL: http://themered.com
 
 
 
-/***************************************** 
+/*****************************************
               Small Mobile
 *****************************************/
 @media only screen and (max-width: 480px) {
@@ -209,7 +209,7 @@ URL: http://themered.com
         padding-bottom: 189px;
         max-width: 330px;
     }
-    
+
     .pricing_top {
         position: absolute;
         bottom: 0;
@@ -219,11 +219,11 @@ URL: http://themered.com
         padding: 40px 0;
         z-index: 2;
     }
-    
+
     .pricing_middle h3:before {
         display: none;
     }
-    
+
     .pricing_top:before {
         content: "";
         position: absolute;
@@ -232,24 +232,24 @@ URL: http://themered.com
         border-bottom-color: #001d26;
         margin-left: -10px;
     }
-    
+
     .pricing_top p {
         display: inline-block;
     }
-    
+
     .pricing_top h6 {
         display: none;
     }
-    
+
     .btn-price {
         padding: 10px 20px;
     }
-    
+
     .pricing_middle {
         margin-left: 0;
         text-align: center;
     }
-    
+
     .pricing_top .pricing-price {
         margin-top: 0;
     }

@@ -5,7 +5,12 @@
         <p class="wow fadeIn"><small>Siempre Actualizados</small></p>
         <h2 class="wow fadeIn" data-wow-delay="0.25s">Ultimas Publicaciones</h2>
         <span class="wow fadeIn" data-wow-delay="0.5s"></span>
-        <p class="wow fadeIn" data-wow-delay="0.75s">Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
+        <p class="wow fadeIn" data-wow-delay="0.75s">
+          Infograf&iacute;as construidas con nuestros servicios, novedades y noticias del mundo de la informática.
+          <a href="{{ "/blog" | prepend: site.baseurl }}">
+            Visita nuestro Blog.
+          </a>
+        </p>
       </div>
 
       {% for post in site.posts limit:3 %}
@@ -16,7 +21,9 @@
               <img src="{{ "/assets/img/blog/" | append: post.image | prepend: site.baseurl }}" alt="">
             </div>
             <div class="blog-content">
-              <h3 class="blog-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+              <h3 class="blog-title">
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h3>
               <div class="blog-meta">
                 <p><i class="icofont icofont-clock-time"></i> <small>{{ post.date | date: "%b %-d, %Y" }}</small></p>
               </div>

@@ -1,7 +1,7 @@
 bodybuilder()
   .query(
     'query_string', 'query', 'ppk', {
-      fields: ['sample_text', 'sample_post_tags']
+      fields: ['sample_text', 'sample_post_tags', 'source_fanpage_id']
     })
   .query('range', 'sample_created_at', {
     'gte': 1513659600000,

@@ -34,7 +34,11 @@ twitter_username: ltechper
 facebook_page: logostechperu
 github_username:  edux87
 analytics: google
-
+pricing:
+  base: 0
+  principiante: 9
+  medio: 18
+  avanzado: 37
 # Build settings
 # paginate: 3
 sass:
