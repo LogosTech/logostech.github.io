@@ -134,7 +134,18 @@ h4 {
 img {
   max-width: 100%;
 }
+img:not(.initial) {
+  transition: opacity 1s;
+}
+img.initial,
+img.loaded,
+img.error {
+  opacity: 1;
+}
 
+img:not([src]) {
+  visibility: hidden;
+}
 hr {
   margin: 18px 0;
 }
@@ -1491,4 +1502,19 @@ small {
 }
 .mg_bottom {
   margin-bottom: .5em;
+}
+.mg_bottom_1 {
+  margin-bottom: 1em;
+}
+.pagination a {
+  color: #001D26;
+}
+.pagination>.active>span {
+  background-color: #719EAB;
+}
+.pagination>li>span {
+  color: #001D26;
+}
+.align_center {
+  text-align: center;
 }

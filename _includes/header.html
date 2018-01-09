@@ -27,7 +27,7 @@
     <!-- Navigation starts -->
     <div class="navbar">
       <div class="navbar-header">
-        <a class="navbar-brand logo" href="{{ site.baseurl }}/">
+        <a id="brand" class="navbar-brand logo" href="{{ site.baseurl }}/">
           <span class="brand_text">
             <strong>LOGOS.</strong>TECH
           </span>
@@ -43,13 +43,19 @@
       <div class="navbar-collapse collapse">
         <nav>
           <ul class="nav navbar-nav navbar-right text-uppercase">
-            <li><a href="#">Inicio</a></li>
-            <li><a class="smooth_scroll" href="#services">Servicios</a></li>
-            <li><a class="smooth_scroll" href="#pricing">Precios</a></li>
-            <li><a class="smooth_scroll" href="#portfolio">Portafolio</a></li>
-            <li><a class="smooth_scroll" href="#team">Equipo</a></li>
+            {% assign prefix = '' %}
+            {% assign class = 'smooth_scroll' %}
+            {% unless page.url == '/' %}
+              {% assign class = '' %}
+              {% assign prefix = '../' %}
+            {% endunless %}
+            <li><a class="{{ class }}" href="{{ prefix }}#top-header">Inicio</a></li>
+            <li><a class="{{ class }}" href="{{ prefix }}#services">Servicios</a></li>
+            <li><a class="{{ class }}" href="{{ prefix }}#pricing">Precios</a></li>
+            <li><a class="{{ class }}" href="{{ prefix }}#portfolio">Portafolio</a></li>
+            <li><a class="{{ class }}" href="{{ prefix }}#team">Equipo</a></li>
             <li><a href="/blog">Blog</a></li>
-            <li><a class="smooth_scroll" href="#contact">Contacto</a></li>
+            <li><a class="{{ class }}" href="#contact">Contacto</a></li>
           </ul>
         </nav>
       </div>

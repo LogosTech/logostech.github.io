@@ -54,7 +54,7 @@
         });
 
         $scrollup.on('click',function(){
-            $html,$body.animate({ scrollTop: 0 }, 600);
+            $body.animate({ scrollTop: 0 }, 600);
             return false;
         });
     });
@@ -528,6 +528,8 @@
         // RENDER INFLUENCERS
         var template = _.template($('script.tmpl_top_influencers').html());
         $('#top_influencers').html(template({ items: render_data.influencers }));
+
+        new LazyLoad();
 
       })
       .fail(function() {
