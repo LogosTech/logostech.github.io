@@ -1,146 +1,162 @@
 {
-  "took": 612,
+  "took": 82,
   "timed_out": false,
   "_shards": {
-    "total": 11,
-    "successful": 11,
+    "total": 4,
+    "successful": 4,
     "failed": 0
   },
   "hits": {
-    "total": 5386,
+    "total": 5006,
     "max_score": 0,
     "hits": []
   },
   "aggregations": {
-    "agg_terms_sample_words": {
-      "doc_count_error_upper_bound": 135,
-      "sum_other_doc_count": 29868,
+    "agg_terms_sample_hashtags.keyword": {
+      "doc_count_error_upper_bound": 3,
+      "sum_other_doc_count": 310,
       "buckets": [
         {
           "key": "kenji",
-          "doc_count": 1025,
+          "doc_count": 106,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 443
-              },
-              {
-                "key": "pos",
-                "doc_count": 300
+                "doc_count": 79
               },
               {
                 "key": "neg",
-                "doc_count": 282
+                "doc_count": 16
+              },
+              {
+                "key": "pos",
+                "doc_count": 11
               }
             ]
           }
         },
         {
-          "key": "fujimori",
-          "doc_count": 658,
+          "key": "chinomicasaestucasa",
+          "doc_count": 79,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "neutral",
-                "doc_count": 324
-              },
-              {
                 "key": "pos",
-                "doc_count": 183
+                "doc_count": 70
               },
               {
                 "key": "neg",
-                "doc_count": 151
+                "doc_count": 6
+              },
+              {
+                "key": "neutral",
+                "doc_count": 3
               }
             ]
           }
         },
         {
-          "key": "indulto",
-          "doc_count": 510,
+          "key": "albertofujimori",
+          "doc_count": 70,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 314
+                "doc_count": 40
               },
               {
                 "key": "neg",
-                "doc_count": 127
+                "doc_count": 28
               },
               {
                 "key": "pos",
-                "doc_count": 69
+                "doc_count": 2
               }
             ]
           }
         },
         {
-          "key": "ppk",
-          "doc_count": 399,
+          "key": "loúltimo",
+          "doc_count": 65,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 167
-              },
-              {
-                "key": "pos",
-                "doc_count": 121
-              },
-              {
-                "key": "neg",
-                "doc_count": 111
+                "doc_count": 65
               }
             ]
           }
         },
         {
           "key": "keiko",
-          "doc_count": 254,
+          "doc_count": 47,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "neg",
-                "doc_count": 145
+                "key": "neutral",
+                "doc_count": 25
               },
               {
-                "key": "neutral",
-                "doc_count": 89
+                "key": "neg",
+                "doc_count": 13
               },
               {
                 "key": "pos",
-                "doc_count": 20
+                "doc_count": 9
               }
             ]
           }
         },
         {
-          "key": "alberto",
-          "doc_count": 251,
+          "key": "ppk",
+          "doc_count": 31,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 141
+                "doc_count": 22
               },
               {
-                "key": "pos",
-                "doc_count": 83
-              },
+                "key": "neg",
+                "doc_count": 9
+              }
+            ]
+          }
+        },
+        {
+          "key": "último",
+          "doc_count": 30,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 30
+              }
+            ]
+          }
+        },
+        {
+          "key": "últimominuto",
+          "doc_count": 27,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
               {
                 "key": "neg",
                 "doc_count": 27
@@ -149,279 +165,271 @@
           }
         },
         {
-          "key": "asesor",
-          "doc_count": 218,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 139
-              },
-              {
-                "key": "pos",
-                "doc_count": 62
-              },
-              {
-                "key": "neg",
-                "doc_count": 17
-              }
-            ]
-          }
-        },
-        {
-          "key": "humanitario",
-          "doc_count": 202,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 147
-              },
-              {
-                "key": "pos",
-                "doc_count": 44
-              },
-              {
-                "key": "neg",
-                "doc_count": 11
-              }
-            ]
-          }
-        },
-        {
-          "key": "fujimoristas",
-          "doc_count": 193,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 89
-              },
-              {
-                "key": "neutral",
-                "doc_count": 86
-              },
-              {
-                "key": "pos",
-                "doc_count": 18
-              }
-            ]
-          }
-        },
-        {
-          "key": "reconciliación",
-          "doc_count": 192,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 154
-              },
-              {
-                "key": "neg",
-                "doc_count": 30
-              },
-              {
-                "key": "pos",
-                "doc_count": 8
-              }
-            ]
-          }
-        }
-      ]
-    },
-    "agg_terms_sample_hashtags.keyword": {
-      "doc_count_error_upper_bound": 4,
-      "sum_other_doc_count": 319,
-      "buckets": [
-        {
-          "key": "loúltimo",
-          "doc_count": 57,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 57
-              }
-            ]
-          }
-        },
-        {
-          "key": "kenji",
-          "doc_count": 29,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 19
-              },
-              {
-                "key": "neg",
-                "doc_count": 7
-              },
-              {
-                "key": "pos",
-                "doc_count": 3
-              }
-            ]
-          }
-        },
-        {
-          "key": "ppk",
-          "doc_count": 27,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 16
-              },
-              {
-                "key": "neg",
-                "doc_count": 9
-              },
-              {
-                "key": "pos",
-                "doc_count": 2
-              }
-            ]
-          }
-        },
-        {
-          "key": "último",
-          "doc_count": 16,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 15
-              },
-              {
-                "key": "neg",
-                "doc_count": 1
-              }
-            ]
-          }
-        },
-        {
           "key": "kojukenji",
-          "doc_count": 14,
+          "doc_count": 20,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "neg",
+                "key": "pos",
                 "doc_count": 10
               },
               {
-                "key": "pos",
+                "key": "neg",
+                "doc_count": 6
+              },
+              {
+                "key": "neutral",
                 "doc_count": 4
               }
             ]
           }
         },
         {
+          "key": "fujimori",
+          "doc_count": 17,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 7
+              },
+              {
+                "key": "pos",
+                "doc_count": 6
+              },
+              {
+                "key": "neutral",
+                "doc_count": 4
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agg_terms_sample_words": {
+      "doc_count_error_upper_bound": 245,
+      "sum_other_doc_count": 59189,
+      "buckets": [
+        {
+          "key": "kenji",
+          "doc_count": 3605,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 1497
+              },
+              {
+                "key": "neg",
+                "doc_count": 1216
+              },
+              {
+                "key": "pos",
+                "doc_count": 892
+              }
+            ]
+          }
+        },
+        {
+          "key": "keiko",
+          "doc_count": 2887,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 1197
+              },
+              {
+                "key": "neutral",
+                "doc_count": 1166
+              },
+              {
+                "key": "pos",
+                "doc_count": 524
+              }
+            ]
+          }
+        },
+        {
+          "key": "fujimori",
+          "doc_count": 1423,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 624
+              },
+              {
+                "key": "pos",
+                "doc_count": 401
+              },
+              {
+                "key": "neg",
+                "doc_count": 398
+              }
+            ]
+          }
+        },
+        {
+          "key": "ppk",
+          "doc_count": 1316,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 596
+              },
+              {
+                "key": "neg",
+                "doc_count": 403
+              },
+              {
+                "key": "pos",
+                "doc_count": 317
+              }
+            ]
+          }
+        },
+        {
+          "key": "alberto",
+          "doc_count": 960,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 494
+              },
+              {
+                "key": "pos",
+                "doc_count": 298
+              },
+              {
+                "key": "neg",
+                "doc_count": 168
+              }
+            ]
+          }
+        },
+        {
+          "key": "indulto",
+          "doc_count": 956,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 605
+              },
+              {
+                "key": "neg",
+                "doc_count": 187
+              },
+              {
+                "key": "pos",
+                "doc_count": 164
+              }
+            ]
+          }
+        },
+        {
+          "key": "fuerza",
+          "doc_count": 573,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 257
+              },
+              {
+                "key": "pos",
+                "doc_count": 171
+              },
+              {
+                "key": "neg",
+                "doc_count": 145
+              }
+            ]
+          }
+        },
+        {
           "key": "reconciliacion",
-          "doc_count": 14,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 13
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1
-              }
-            ]
-          }
-        },
-        {
-          "key": "tomalacalle",
-          "doc_count": 14,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 14
-              }
-            ]
-          }
-        },
-        {
-          "key": "fuerzapopular",
-          "doc_count": 9,
+          "doc_count": 564,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 6
+                "doc_count": 388
               },
               {
                 "key": "neg",
-                "doc_count": 2
+                "doc_count": 113
               },
               {
                 "key": "pos",
-                "doc_count": 1
+                "doc_count": 63
               }
             ]
           }
         },
         {
-          "key": "fuji",
-          "doc_count": 9,
+          "key": "popular",
+          "doc_count": 560,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 6
-              },
-              {
-                "key": "pos",
-                "doc_count": 2
-              },
               {
                 "key": "neutral",
-                "doc_count": 1
+                "doc_count": 256
+              },
+              {
+                "key": "pos",
+                "doc_count": 158
+              },
+              {
+                "key": "neg",
+                "doc_count": 146
               }
             ]
           }
         },
         {
-          "key": "odebrecht",
-          "doc_count": 8,
+          "key": "perú",
+          "doc_count": 511,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
+                "key": "neutral",
+                "doc_count": 256
+              },
+              {
                 "key": "neg",
-                "doc_count": 8
+                "doc_count": 174
+              },
+              {
+                "key": "pos",
+                "doc_count": 81
               }
             ]
           }
@@ -433,213 +441,403 @@
       "sum_other_doc_count": 0,
       "buckets": [
         {
-          "key": "neg",
-          "doc_count": 2240
+          "key": "neutral",
+          "doc_count": 2060
         },
         {
-          "key": "neutral",
-          "doc_count": 2102
+          "key": "neg",
+          "doc_count": 1798
         },
         {
           "key": "pos",
-          "doc_count": 1044
+          "doc_count": 1148
         }
       ]
     },
     "agg_terms_sample_mentions.keyword": {
-      "doc_count_error_upper_bound": 117,
-      "sum_other_doc_count": 8583,
+      "doc_count_error_upper_bound": 61,
+      "sum_other_doc_count": 5562,
       "buckets": [
         {
           "key": "KenjiFujimoriH",
-          "doc_count": 2576,
+          "doc_count": 1324,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neg",
-                "doc_count": 1100
+                "doc_count": 593
               },
               {
                 "key": "neutral",
-                "doc_count": 1012
+                "doc_count": 477
               },
               {
                 "key": "pos",
-                "doc_count": 464
-              }
-            ]
-          }
-        },
-        {
-          "key": "albertofujimori",
-          "doc_count": 742,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 310
-              },
-              {
-                "key": "neg",
-                "doc_count": 289
-              },
-              {
-                "key": "pos",
-                "doc_count": 143
-              }
-            ]
-          }
-        },
-        {
-          "key": "rmapalacios",
-          "doc_count": 685,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 419
-              },
-              {
-                "key": "neg",
-                "doc_count": 219
-              },
-              {
-                "key": "pos",
-                "doc_count": 47
-              }
-            ]
-          }
-        },
-        {
-          "key": "KeikoFujimori",
-          "doc_count": 657,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 374
-              },
-              {
-                "key": "neg",
-                "doc_count": 222
-              },
-              {
-                "key": "pos",
-                "doc_count": 61
+                "doc_count": 254
               }
             ]
           }
         },
         {
           "key": "ppkamigo",
-          "doc_count": 605,
+          "doc_count": 849,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 289
+                "doc_count": 366
               },
               {
                 "key": "neg",
-                "doc_count": 239
+                "doc_count": 317
               },
               {
                 "key": "pos",
-                "doc_count": 77
+                "doc_count": 166
               }
             ]
           }
         },
         {
-          "key": "BankadaFP",
-          "doc_count": 298,
+          "key": "KeikoFujimori",
+          "doc_count": 616,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 130
+                "doc_count": 302
               },
               {
                 "key": "neg",
-                "doc_count": 124
+                "doc_count": 211
               },
               {
                 "key": "pos",
-                "doc_count": 44
+                "doc_count": 103
               }
             ]
           }
         },
         {
-          "key": "MaritzaGarciaJ",
-          "doc_count": 281,
+          "key": "rmapalacios",
+          "doc_count": 462,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 139
+                "doc_count": 263
               },
               {
                 "key": "neg",
-                "doc_count": 92
+                "doc_count": 153
               },
               {
                 "key": "pos",
-                "doc_count": 50
+                "doc_count": 46
               }
             ]
+          }
+        },
+        {
+          "key": "albertofujimori",
+          "doc_count": 379,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 153
+              },
+              {
+                "key": "neutral",
+                "doc_count": 116
+              },
+              {
+                "key": "pos",
+                "doc_count": 110
+              }
+            ]
+          }
+        },
+        {
+          "key": "DanielUrresti1",
+          "doc_count": 274,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 235
+              },
+              {
+                "key": "neg",
+                "doc_count": 22
+              },
+              {
+                "key": "pos",
+                "doc_count": 17
+              }
+            ]
+          }
+        },
+        {
+          "key": "lamula",
+          "doc_count": 199,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "pos",
+                "doc_count": 188
+              },
+              {
+                "key": "neg",
+                "doc_count": 6
+              },
+              {
+                "key": "neutral",
+                "doc_count": 5
+              }
+            ]
+          }
+        },
+        {
+          "key": "MecheAF",
+          "doc_count": 157,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 69
+              },
+              {
+                "key": "neg",
+                "doc_count": 55
+              },
+              {
+                "key": "pos",
+                "doc_count": 33
+              }
+            ]
+          }
+        },
+        {
+          "key": "PasquinDeM",
+          "doc_count": 147,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "pos",
+                "doc_count": 71
+              },
+              {
+                "key": "neutral",
+                "doc_count": 70
+              },
+              {
+                "key": "neg",
+                "doc_count": 6
+              }
+            ]
+          }
+        },
+        {
+          "key": "LDavelouis",
+          "doc_count": 143,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 131
+              },
+              {
+                "key": "neg",
+                "doc_count": 8
+              },
+              {
+                "key": "pos",
+                "doc_count": 4
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "agg_terms_author_screen_name.keyword": {
+      "doc_count_error_upper_bound": -1,
+      "sum_other_doc_count": 4996,
+      "buckets": [
+        {
+          "key": "Latina_pe",
+          "doc_count": 2,
+          "agg_avg_author_followers_count": {
+            "value": 2863751
+          }
+        },
+        {
+          "key": "T13",
+          "doc_count": 1,
+          "agg_avg_author_followers_count": {
+            "value": 2858918
+          }
+        },
+        {
+          "key": "rmapalacios",
+          "doc_count": 3,
+          "agg_avg_author_followers_count": {
+            "value": 2718598
+          }
+        },
+        {
+          "key": "Capital967",
+          "doc_count": 1,
+          "agg_avg_author_followers_count": {
+            "value": 2027809
           }
         },
         {
           "key": "alvarezrodrich",
-          "doc_count": 216,
+          "doc_count": 1,
+          "agg_avg_author_followers_count": {
+            "value": 1951795
+          }
+        },
+        {
+          "key": "MilagrosLeivaG",
+          "doc_count": 2,
+          "agg_avg_author_followers_count": {
+            "value": 1858142.5
+          }
+        }
+      ]
+    },
+    "agg_terms_author_gender.keyword": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "u",
+          "doc_count": 2992
+        },
+        {
+          "key": "m",
+          "doc_count": 1108
+        },
+        {
+          "key": "f",
+          "doc_count": 906
+        }
+      ]
+    },
+    "agg_date_histogram_sample_created_at": {
+      "buckets": [
+        {
+          "key_as_string": "1514782800000",
+          "key": 1514782800000,
+          "doc_count": 334,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 143
+              },
+              {
+                "key": "mad",
+                "doc_count": 138
+              },
+              {
+                "key": "glad",
+                "doc_count": 29
+              },
+              {
+                "key": "sad",
+                "doc_count": 18
+              },
+              {
+                "key": "scared",
+                "doc_count": 6
+              }
+            ]
+          },
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neg",
-                "doc_count": 99
-              },
-              {
-                "key": "neutral",
-                "doc_count": 78
+                "doc_count": 126
               },
               {
                 "key": "pos",
-                "doc_count": 39
+                "doc_count": 109
+              },
+              {
+                "key": "neutral",
+                "doc_count": 99
               }
             ]
           }
         },
         {
-          "key": "canalN_",
-          "doc_count": 212,
+          "key_as_string": "1514869200000",
+          "key": 1514869200000,
+          "doc_count": 304,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mad",
+                "doc_count": 203
+              },
+              {
+                "key": "neutral",
+                "doc_count": 83
+              },
+              {
+                "key": "sad",
+                "doc_count": 7
+              },
+              {
+                "key": "scared",
+                "doc_count": 6
+              },
+              {
+                "key": "glad",
+                "doc_count": 5
+              }
+            ]
+          },
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 82
+                "doc_count": 143
               },
               {
                 "key": "neg",
-                "doc_count": 77
+                "doc_count": 108
               },
               {
                 "key": "pos",
@@ -649,204 +847,32 @@
           }
         },
         {
-          "key": "diariocorreo",
-          "doc_count": 199,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 82
-              },
-              {
-                "key": "neg",
-                "doc_count": 81
-              },
-              {
-                "key": "pos",
-                "doc_count": 36
-              }
-            ]
-          }
-        }
-      ]
-    },
-    "agg_terms_author_screen_name.keyword": {
-      "doc_count_error_upper_bound": -1,
-      "sum_other_doc_count": 5370,
-      "buckets": [
-        {
-          "key": "rmapalacios",
-          "doc_count": 7,
-          "agg_avg_author_followers_count": {
-            "value": 2717619.8571428573
-          }
-        },
-        {
-          "key": "noticiAmerica",
-          "doc_count": 3,
-          "agg_avg_author_followers_count": {
-            "value": 2491469
-          }
-        },
-        {
-          "key": "Capital967",
-          "doc_count": 1,
-          "agg_avg_author_followers_count": {
-            "value": 2027807
-          }
-        },
-        {
-          "key": "alvarezrodrich",
-          "doc_count": 2,
-          "agg_avg_author_followers_count": {
-            "value": 1954190.5
-          }
-        },
-        {
-          "key": "latercera",
-          "doc_count": 1,
-          "agg_avg_author_followers_count": {
-            "value": 1846219
-          }
-        },
-        {
-          "key": "larepublica_pe",
-          "doc_count": 2,
-          "agg_avg_author_followers_count": {
-            "value": 1752773.5
-          }
-        }
-      ]
-    },
-    "agg_date_histogram_sample_created_at": {
-      "buckets": [
-        {
-          "key_as_string": "1514782800000",
-          "key": 1514782800000,
-          "doc_count": 577,
+          "key_as_string": "1514955600000",
+          "key": 1514955600000,
+          "doc_count": 554,
           "agg_terms_sample_emotions.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 182
+                "doc_count": 284
               },
               {
                 "key": "mad",
-                "doc_count": 167
-              },
-              {
-                "key": "glad",
-                "doc_count": 158
+                "doc_count": 196
               },
               {
                 "key": "sad",
-                "doc_count": 50
-              },
-              {
-                "key": "scared",
-                "doc_count": 20
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 199
-              },
-              {
-                "key": "neutral",
-                "doc_count": 198
-              },
-              {
-                "key": "neg",
-                "doc_count": 180
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514869200000",
-          "key": 1514869200000,
-          "doc_count": 470,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 188
-              },
-              {
-                "key": "neutral",
-                "doc_count": 159
-              },
-              {
-                "key": "sad",
-                "doc_count": 54
-              },
-              {
-                "key": "glad",
                 "doc_count": 47
               },
               {
                 "key": "scared",
-                "doc_count": 22
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 236
-              },
-              {
-                "key": "neg",
-                "doc_count": 150
-              },
-              {
-                "key": "pos",
-                "doc_count": 84
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514955600000",
-          "key": 1514955600000,
-          "doc_count": 563,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 226
-              },
-              {
-                "key": "mad",
-                "doc_count": 208
-              },
-              {
-                "key": "sad",
-                "doc_count": 67
+                "doc_count": 15
               },
               {
                 "key": "glad",
-                "doc_count": 51
-              },
-              {
-                "key": "scared",
-                "doc_count": 11
+                "doc_count": 12
               }
             ]
           },
@@ -855,16 +881,16 @@
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "neg",
-                "doc_count": 234
+                "key": "neutral",
+                "doc_count": 244
               },
               {
-                "key": "neutral",
-                "doc_count": 189
+                "key": "neg",
+                "doc_count": 171
               },
               {
                 "key": "pos",
-                "doc_count": 140
+                "doc_count": 139
               }
             ]
           }
@@ -872,30 +898,30 @@
         {
           "key_as_string": "1515042000000",
           "key": 1515042000000,
-          "doc_count": 1584,
+          "doc_count": 1505,
           "agg_terms_sample_emotions.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "mad",
-                "doc_count": 739
+                "doc_count": 680
               },
               {
                 "key": "neutral",
-                "doc_count": 364
+                "doc_count": 616
               },
               {
                 "key": "sad",
-                "doc_count": 286
+                "doc_count": 133
               },
               {
                 "key": "glad",
-                "doc_count": 125
+                "doc_count": 46
               },
               {
                 "key": "scared",
-                "doc_count": 70
+                "doc_count": 30
               }
             ]
           },
@@ -905,15 +931,15 @@
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 662
+                "doc_count": 625
               },
               {
                 "key": "neg",
-                "doc_count": 660
+                "doc_count": 554
               },
               {
                 "key": "pos",
-                "doc_count": 262
+                "doc_count": 326
               }
             ]
           }
@@ -921,26 +947,26 @@
         {
           "key_as_string": "1515128400000",
           "key": 1515128400000,
-          "doc_count": 1314,
+          "doc_count": 1291,
           "agg_terms_sample_emotions.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "mad",
-                "doc_count": 657
+                "doc_count": 503
               },
               {
                 "key": "neutral",
-                "doc_count": 299
-              },
-              {
-                "key": "sad",
-                "doc_count": 168
+                "doc_count": 384
               },
               {
                 "key": "glad",
-                "doc_count": 138
+                "doc_count": 265
+              },
+              {
+                "key": "sad",
+                "doc_count": 87
               },
               {
                 "key": "scared",
@@ -953,16 +979,16 @@
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "neg",
-                "doc_count": 581
+                "key": "neutral",
+                "doc_count": 583
               },
               {
-                "key": "neutral",
-                "doc_count": 495
+                "key": "neg",
+                "doc_count": 449
               },
               {
                 "key": "pos",
-                "doc_count": 238
+                "doc_count": 259
               }
             ]
           }
@@ -970,30 +996,30 @@
         {
           "key_as_string": "1515214800000",
           "key": 1515214800000,
-          "doc_count": 697,
+          "doc_count": 551,
           "agg_terms_sample_emotions.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "mad",
-                "doc_count": 291
-              },
-              {
                 "key": "neutral",
-                "doc_count": 229
+                "doc_count": 234
               },
               {
-                "key": "sad",
-                "doc_count": 88
+                "key": "mad",
+                "doc_count": 232
               },
               {
                 "key": "glad",
-                "doc_count": 56
+                "doc_count": 37
+              },
+              {
+                "key": "sad",
+                "doc_count": 32
               },
               {
                 "key": "scared",
-                "doc_count": 33
+                "doc_count": 16
               }
             ]
           },
@@ -1003,15 +1029,15 @@
             "buckets": [
               {
                 "key": "neg",
-                "doc_count": 352
+                "doc_count": 237
               },
               {
                 "key": "neutral",
-                "doc_count": 245
+                "doc_count": 202
               },
               {
                 "key": "pos",
-                "doc_count": 100
+                "doc_count": 112
               }
             ]
           }
@@ -1019,30 +1045,30 @@
         {
           "key_as_string": "1515301200000",
           "key": 1515301200000,
-          "doc_count": 181,
+          "doc_count": 467,
           "agg_terms_sample_emotions.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "mad",
-                "doc_count": 67
+                "key": "neutral",
+                "doc_count": 185
               },
               {
-                "key": "neutral",
-                "doc_count": 63
+                "key": "mad",
+                "doc_count": 173
               },
               {
                 "key": "glad",
-                "doc_count": 24
+                "doc_count": 75
               },
               {
                 "key": "sad",
-                "doc_count": 21
+                "doc_count": 19
               },
               {
                 "key": "scared",
-                "doc_count": 6
+                "doc_count": 15
               }
             ]
           },
@@ -1051,37 +1077,19 @@
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "neg",
-                "doc_count": 83
+                "key": "neutral",
+                "doc_count": 164
               },
               {
-                "key": "neutral",
-                "doc_count": 77
+                "key": "neg",
+                "doc_count": 153
               },
               {
                 "key": "pos",
-                "doc_count": 21
+                "doc_count": 150
               }
             ]
           }
-        }
-      ]
-    },
-    "agg_terms_author_gender.keyword": {
-      "doc_count_error_upper_bound": 0,
-      "sum_other_doc_count": 0,
-      "buckets": [
-        {
-          "key": "u",
-          "doc_count": 2998
-        },
-        {
-          "key": "m",
-          "doc_count": 1261
-        },
-        {
-          "key": "f",
-          "doc_count": 1127
         }
       ]
     },
@@ -1091,11 +1099,11 @@
       "buckets": [
         {
           "key": "mas25",
-          "doc_count": 4647
+          "doc_count": 4785
         },
         {
           "key": "menos25",
-          "doc_count": 739
+          "doc_count": 221
         }
       ]
     }

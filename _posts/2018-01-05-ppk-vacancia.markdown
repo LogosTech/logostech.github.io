@@ -4,7 +4,7 @@ title:  "Vacancia!"
 date:   2018-01-05 07:40:15 +0000
 categories: politica
 image: ppk.jpg
-comments: false
+comments: true
 show_report: ppk-vacancia.json
 tags:
   - infografia

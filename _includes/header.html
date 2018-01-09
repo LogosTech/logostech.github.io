@@ -47,7 +47,7 @@
             {% assign class = 'smooth_scroll' %}
             {% unless page.url == '/' %}
               {% assign class = '' %}
-              {% assign prefix = '../' %}
+              {% assign prefix = site.url %}
             {% endunless %}
             <li><a class="{{ class }}" href="{{ prefix }}#top-header">Inicio</a></li>
             <li><a class="{{ class }}" href="{{ prefix }}#services">Servicios</a></li>

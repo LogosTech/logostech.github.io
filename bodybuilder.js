@@ -1,6 +1,6 @@
 bodybuilder()
   .query(
-    'query_string', 'query', 'ppk', {
+    'query_string', 'query', 'KenjiFujimoriH, "kenji fujimori"', {
       fields: ['sample_text', 'sample_post_tags', 'source_fanpage_id']
     })
   .query('range', 'sample_created_at', {

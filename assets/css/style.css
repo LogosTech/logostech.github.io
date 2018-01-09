@@ -1297,15 +1297,18 @@ small {
   }
 
   .post-content h1 {
-    margin-bottom: .5em;
+    margin-bottom: 1em;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: bold;
+    font-size: 1.3em;
     margin-top: .5em;
   }
 
   .post-content h2 {
-    margin-bottom: .5em;
+    margin-bottom: 1em;
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1em;
     margin-top: .5em;
   }
 
@@ -1313,11 +1316,18 @@ small {
     text-transform: uppercase;
     margin-bottom: .5em;
     margin-top: .5em;
+    font-weight: bold;
+    font-size: .9em;
+  }
+
+  .post-content .highlight {
+    margin-bottom: 1.5em;
   }
 
   .post-content a {
     color: #001D26;
-    font-weight: bold;
+    font-weight: lighter;
+    border-bottom: 1px dashed #001D26;
   }
 
   .services a {
@@ -1410,6 +1420,9 @@ small {
     border-radius: 4px;
     /*max-height: 8em;*/
   }
+  .is_chart i {
+    font-size: 1.1em;
+  }
 
   code {
     color: #576276;
@@ -1497,7 +1510,7 @@ small {
   padding-bottom: 0;
 }
 .influencer_box img {
-  border-radius: 50%;
+  border-radius: 5%;
   margin-bottom: .5em;
 }
 .mg_bottom {
@@ -1517,4 +1530,10 @@ small {
 }
 .align_center {
   text-align: center;
+}
+.right {
+  float: right !important;
+}
+.badge {
+  font-size: .65em;
 }

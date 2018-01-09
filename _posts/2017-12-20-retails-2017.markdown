@@ -4,7 +4,7 @@ title:  "Retails 2017"
 date:   2017-12-26 08:30:15 +0000
 categories: retail
 image: retail-2017.jpg
-comments: false
+comments: true
 show_report: retails-2017.json
 tags:
   - infografia
