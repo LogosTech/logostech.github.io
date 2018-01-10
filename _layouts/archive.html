@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Header -->
+    {% include header.html %}
+
+    <!-- Content -->
+    <div id="blog" class="post section-padding">
+      <div class="container">
+        {{ content }}
+      </div>
+    </div>
+
+    <!-- Footer -->
+    {% include footer.html %}
+
+    <!-- Scripts -->
+    {% include scripts.html %}
+
+  </body>
+</html>

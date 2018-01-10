@@ -1,5 +1,5 @@
 ---
-layout: services
+layout: archive
 ---
 
 <div id="blog" class="blog">
@@ -12,9 +12,10 @@ layout: services
           Infograf&iacute;as construidas con nuestros servicios, novedades y noticias del mundo de la informática.
         </p>
       </div>
-
+    </div>
+    <div class="masonry-grid">
       {% for post in paginator.posts %}
-        <div class="col-md-4 wow fadeIn">
+        <div class="masonry-column wow fadeIn">
           <div class="single-blog">
             <div class="blog-img">
               <!-- 450 x 300 -->

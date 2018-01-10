@@ -17,7 +17,7 @@ title: Logos | Technology
 email: info@logos.technology
 contact_phone: "+(511)-564-5744"
 location: "Lima - Perú"
-slogan: "si ud. lo sueña, nosotros lo hacemos realidad"
+slogan: "si ud. lo sueña, nosotros lo creamos"
 office_address: "Calle Elvira García y García 2642 Piso 4"
 office_location: "Urb. Los Cipreses"
 description: >- # this means to ignore newlines until "baseurl:"
@@ -29,7 +29,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   mercado de la siguientes olas de tecnología aplicada a las necesidades
   empresariales.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://logos.technology" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "http://logos.technology" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://logostech.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 show_comments: true
 twitter_username: ltechper
 facebook_page: logostechperu
