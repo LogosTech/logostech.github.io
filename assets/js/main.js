@@ -246,8 +246,9 @@
         console.log( "success" );
       })
       .done(function(data) {
+        var exlude_terms = $("#main").attr("data-exclude-terms") ? $("#main").attr("data-exclude-terms").split(" ") : [];
         console.log(data);
-
+        console.log(exlude_terms);
         var render_data = {
           count: 0,
           chart1: { labels: [], series: [] },
@@ -271,6 +272,29 @@
         render_data.chart1.labels = histogram
           .map(function(item) {
             return item.key;
+          });
+
+        render_data.timeline = histogram
+          .map(function(item) {
+            var words = [];
+            var buckets_words = item
+              .agg_terms_sample_words
+              .buckets;
+            var sample = item
+              ['agg_terms_sample_text.keyword']
+              .buckets[0].key;
+
+            for (var word of buckets_words) {
+              if (!exlude_terms.includes(word.key)) {
+                words.push(word.key);
+              }
+            }
+            var result = {
+              date: moment(item.key).format('DD-MMM-YY'),
+              words: words.slice(0, 3),
+              sample: sample
+            };
+            return result;
           });
 
         render_data.range = {
@@ -532,11 +556,12 @@
         new LazyLoad();
 
         // RENDER TIMELINE
-
+        var template = _.template($('script.tmpl_timeline').html());
+        $('#render_timeline').html(template({ items: render_data.timeline }));
 
       })
-      .fail(function() {
-        console.log( "error" );
+      .fail(function(a, b) {
+        console.log( a, b);
       });
 
     }

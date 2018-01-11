@@ -33,7 +33,12 @@
 <script src="{{ "/assets/js/lazyload.min.js" | prepend: site.baseurl }}"></script>
 
 <!-- Main JS -->
-<script id="main" src="{{ "/assets/js/main.js" | prepend: site.baseurl }}" data-load-report="{{ page.show_report }}"></script>
+<script
+  id="main"
+  src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"
+  data-load-report="{{ page.social_tracker.file }}"
+  data-exclude-terms="{{ page.social_tracker.exclude_terms | join: " "  }}">
+</script>
 
 <!-- Google Analytics -->
 {% if site.analytics == 'google' %}

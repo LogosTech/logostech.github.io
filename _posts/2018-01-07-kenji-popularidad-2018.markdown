@@ -5,7 +5,13 @@ date:   2018-01-07 08:30:15 +0000
 categories: politica
 image: kenji.jpg
 comments: true
-show_report: kenji-popularidad-2018.json
+
+social_tracker:
+  file: kenji-popularidad-2018.json
+  type: infografia
+  exclude_terms:
+    - kenji
+    - fujimori
 tags:
   - infografia
   - actualidad

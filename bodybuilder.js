@@ -16,6 +16,21 @@ bodybuilder()
     (a) => {
       a.agg('terms', 'sample_sentiment.keyword');
       a.agg('terms', 'sample_emotions.keyword');
+      a.agg('terms', 'sample_words', { size: 5, order: {'_count': 'desc'}});
+      a.agg('terms', 'sample_text.keyword', { size: 2, order: {'_count': 'desc'}});
+  	  a.agg('terms', 'sample_hashtags.keyword', { size: 5, order: {'_count': 'desc'}});
+      a.agg('terms', 'author_screen_name.keyword', {
+          size: 3,
+          order: {
+            'agg_avg_author_followers_count': 'desc'
+          }
+        },
+        (a) => {
+          a.agg('avg', 'author_followers_count');
+          return a
+        }
+      )
+
       return a;
     }
   )

@@ -1,5 +1,5 @@
 {
-  "took": 744,
+  "took": 3038,
   "timed_out": false,
   "_shards": {
     "total": 11,
@@ -7,231 +7,231 @@
     "failed": 0
   },
   "hits": {
-    "total": 8551,
+    "total": 17421,
     "max_score": 0,
     "hits": []
   },
   "aggregations": {
     "agg_terms_sample_words": {
-      "doc_count_error_upper_bound": 271,
-      "sum_other_doc_count": 73525,
+      "doc_count_error_upper_bound": 627,
+      "sum_other_doc_count": 141110,
       "buckets": [
         {
           "key": "fujimori",
-          "doc_count": 1538,
+          "doc_count": 3205,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 674
+                "doc_count": 1734
               },
               {
                 "key": "neg",
-                "doc_count": 472
+                "doc_count": 892
               },
               {
                 "key": "pos",
-                "doc_count": 392
+                "doc_count": 579
               }
             ]
           }
         },
         {
           "key": "kenji",
-          "doc_count": 1252,
+          "doc_count": 3055,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 510
+                "doc_count": 1608
               },
               {
                 "key": "neg",
-                "doc_count": 384
+                "doc_count": 856
               },
               {
                 "key": "pos",
-                "doc_count": 358
+                "doc_count": 591
               }
             ]
           }
         },
         {
           "key": "indulto",
-          "doc_count": 1119,
+          "doc_count": 1540,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 561
+                "doc_count": 729
               },
               {
                 "key": "neg",
-                "doc_count": 390
+                "doc_count": 594
               },
               {
                 "key": "pos",
-                "doc_count": 168
+                "doc_count": 217
               }
             ]
           }
         },
         {
           "key": "ppk",
-          "doc_count": 548,
+          "doc_count": 1237,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neg",
-                "doc_count": 213
+                "doc_count": 573
               },
               {
                 "key": "neutral",
-                "doc_count": 183
+                "doc_count": 366
               },
               {
                 "key": "pos",
-                "doc_count": 152
-              }
-            ]
-          }
-        },
-        {
-          "key": "perú",
-          "doc_count": 511,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 185
-              },
-              {
-                "key": "neutral",
-                "doc_count": 166
-              },
-              {
-                "key": "pos",
-                "doc_count": 160
+                "doc_count": 298
               }
             ]
           }
         },
         {
           "key": "presidente",
-          "doc_count": 463,
+          "doc_count": 982,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "pos",
-                "doc_count": 184
+                "key": "neutral",
+                "doc_count": 445
               },
               {
-                "key": "neutral",
-                "doc_count": 177
+                "key": "pos",
+                "doc_count": 276
               },
               {
                 "key": "neg",
-                "doc_count": 102
+                "doc_count": 261
+              }
+            ]
+          }
+        },
+        {
+          "key": "vacancia",
+          "doc_count": 956,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 426
+              },
+              {
+                "key": "neutral",
+                "doc_count": 387
+              },
+              {
+                "key": "pos",
+                "doc_count": 143
+              }
+            ]
+          }
+        },
+        {
+          "key": "perú",
+          "doc_count": 880,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 364
+              },
+              {
+                "key": "neg",
+                "doc_count": 319
+              },
+              {
+                "key": "pos",
+                "doc_count": 197
               }
             ]
           }
         },
         {
           "key": "alberto",
-          "doc_count": 457,
+          "doc_count": 691,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 278
+                "doc_count": 420
               },
               {
                 "key": "pos",
-                "doc_count": 113
+                "doc_count": 148
               },
               {
                 "key": "neg",
-                "doc_count": 66
+                "doc_count": 123
               }
             ]
           }
         },
         {
-          "key": "padre",
-          "doc_count": 308,
+          "key": "maritza",
+          "doc_count": 662,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "neg",
-                "doc_count": 152
-              },
-              {
                 "key": "neutral",
-                "doc_count": 97
+                "doc_count": 624
               },
               {
                 "key": "pos",
-                "doc_count": 59
+                "doc_count": 26
+              },
+              {
+                "key": "neg",
+                "doc_count": 12
               }
             ]
           }
         },
         {
-          "key": "feliz",
-          "doc_count": 277,
+          "key": "contra",
+          "doc_count": 652,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
-                "key": "pos",
-                "doc_count": 239
+                "key": "neutral",
+                "doc_count": 373
               },
               {
                 "key": "neg",
-                "doc_count": 27
-              },
-              {
-                "key": "neutral",
-                "doc_count": 11
-              }
-            ]
-          }
-        },
-        {
-          "key": "kuczynski",
-          "doc_count": 235,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 99
-              },
-              {
-                "key": "neutral",
-                "doc_count": 98
+                "doc_count": 219
               },
               {
                 "key": "pos",
-                "doc_count": 38
+                "doc_count": 60
               }
             ]
           }
@@ -239,19 +239,147 @@
       ]
     },
     "agg_terms_sample_hashtags.keyword": {
-      "doc_count_error_upper_bound": 7,
-      "sum_other_doc_count": 582,
+      "doc_count_error_upper_bound": 20,
+      "sum_other_doc_count": 1863,
       "buckets": [
         {
-          "key": "loúltimo",
-          "doc_count": 57,
+          "key": "teamkenji",
+          "doc_count": 217,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 57
+                "doc_count": 217
+              }
+            ]
+          }
+        },
+        {
+          "key": "loúltimo",
+          "doc_count": 215,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 140
+              },
+              {
+                "key": "neutral",
+                "doc_count": 74
+              },
+              {
+                "key": "pos",
+                "doc_count": 1
+              }
+            ]
+          }
+        },
+        {
+          "key": "vacanciapresidencial",
+          "doc_count": 123,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 110
+              },
+              {
+                "key": "neg",
+                "doc_count": 8
+              },
+              {
+                "key": "pos",
+                "doc_count": 5
+              }
+            ]
+          }
+        },
+        {
+          "key": "fuerzapopular",
+          "doc_count": 122,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 118
+              },
+              {
+                "key": "neg",
+                "doc_count": 3
+              },
+              {
+                "key": "pos",
+                "doc_count": 1
+              }
+            ]
+          }
+        },
+        {
+          "key": "crisispresidencial",
+          "doc_count": 91,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 86
+              },
+              {
+                "key": "pos",
+                "doc_count": 3
+              },
+              {
+                "key": "neg",
+                "doc_count": 2
+              }
+            ]
+          }
+        },
+        {
+          "key": "video",
+          "doc_count": 75,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 55
+              },
+              {
+                "key": "neutral",
+                "doc_count": 16
+              },
+              {
+                "key": "pos",
+                "doc_count": 4
+              }
+            ]
+          }
+        },
+        {
+          "key": "goldenglobes",
+          "doc_count": 64,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "pos",
+                "doc_count": 60
+              },
+              {
+                "key": "neutral",
+                "doc_count": 4
               }
             ]
           }
@@ -279,137 +407,41 @@
           }
         },
         {
-          "key": "goldenglobes",
-          "doc_count": 34,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 34
-              }
-            ]
-          }
-        },
-        {
-          "key": "estamosenlos90s",
-          "doc_count": 28,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 28
-              }
-            ]
-          }
-        },
-        {
-          "key": "terrorismonuncamas",
-          "doc_count": 26,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 18
-              },
-              {
-                "key": "neutral",
-                "doc_count": 7
-              },
-              {
-                "key": "neg",
-                "doc_count": 1
-              }
-            ]
-          }
-        },
-        {
-          "key": "ahora",
-          "doc_count": 23,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 23
-              }
-            ]
-          }
-        },
-        {
-          "key": "tomalacalle",
-          "doc_count": 22,
+          "key": "ppk",
+          "doc_count": 53,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neg",
-                "doc_count": 22
-              }
-            ]
-          }
-        },
-        {
-          "key": "kojukenji",
-          "doc_count": 18,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
+                "doc_count": 30
+              },
               {
-                "key": "neg",
-                "doc_count": 13
+                "key": "neutral",
+                "doc_count": 16
               },
               {
                 "key": "pos",
-                "doc_count": 4
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1
-              }
-            ]
-          }
-        },
-        {
-          "key": "indultoesinsulto",
-          "doc_count": 17,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 10
-              },
-              {
-                "key": "neutral",
                 "doc_count": 7
               }
             ]
           }
         },
         {
-          "key": "último",
-          "doc_count": 16,
+          "key": "sodalicio",
+          "doc_count": 52,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neutral",
-                "doc_count": 15
+                "doc_count": 49
               },
               {
                 "key": "neg",
-                "doc_count": 1
+                "doc_count": 3
               }
             ]
           }
@@ -422,238 +454,238 @@
       "buckets": [
         {
           "key": "neg",
-          "doc_count": 3564
+          "doc_count": 7366
         },
         {
           "key": "neutral",
-          "doc_count": 3165
+          "doc_count": 6633
         },
         {
           "key": "pos",
-          "doc_count": 1822
+          "doc_count": 3422
         }
       ]
     },
     "agg_terms_sample_mentions.keyword": {
-      "doc_count_error_upper_bound": 245,
-      "sum_other_doc_count": 20783,
+      "doc_count_error_upper_bound": 462,
+      "sum_other_doc_count": 42387,
       "buckets": [
         {
           "key": "KenjiFujimoriH",
-          "doc_count": 6536,
+          "doc_count": 12151,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neg",
-                "doc_count": 2958
+                "doc_count": 5531
               },
               {
                 "key": "neutral",
-                "doc_count": 2278
+                "doc_count": 4141
               },
               {
                 "key": "pos",
-                "doc_count": 1300
+                "doc_count": 2479
               }
             ]
           }
         },
         {
           "key": "albertofujimori",
-          "doc_count": 2470,
+          "doc_count": 3289,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neg",
-                "doc_count": 1092
+                "doc_count": 1493
               },
               {
                 "key": "neutral",
-                "doc_count": 793
+                "doc_count": 1078
               },
               {
                 "key": "pos",
-                "doc_count": 585
+                "doc_count": 718
               }
             ]
           }
         },
         {
           "key": "ppkamigo",
-          "doc_count": 1937,
+          "doc_count": 2892,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neg",
-                "doc_count": 835
+                "doc_count": 1334
               },
               {
                 "key": "neutral",
-                "doc_count": 677
+                "doc_count": 977
               },
               {
                 "key": "pos",
-                "doc_count": 425
+                "doc_count": 581
               }
             ]
           }
         },
         {
           "key": "KeikoFujimori",
-          "doc_count": 1508,
+          "doc_count": 2201,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neg",
-                "doc_count": 611
+                "doc_count": 980
               },
               {
                 "key": "neutral",
-                "doc_count": 607
+                "doc_count": 815
               },
               {
                 "key": "pos",
-                "doc_count": 290
+                "doc_count": 406
               }
             ]
           }
         },
         {
           "key": "BankadaFP",
-          "doc_count": 824,
+          "doc_count": 1482,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neg",
-                "doc_count": 359
+                "doc_count": 641
               },
               {
                 "key": "neutral",
-                "doc_count": 324
+                "doc_count": 514
               },
               {
                 "key": "pos",
-                "doc_count": 141
-              }
-            ]
-          }
-        },
-        {
-          "key": "rmapalacios",
-          "doc_count": 709,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 434
-              },
-              {
-                "key": "neg",
-                "doc_count": 218
-              },
-              {
-                "key": "pos",
-                "doc_count": 57
-              }
-            ]
-          }
-        },
-        {
-          "key": "hectorbecerrilr",
-          "doc_count": 567,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 373
-              },
-              {
-                "key": "neutral",
-                "doc_count": 107
-              },
-              {
-                "key": "pos",
-                "doc_count": 87
-              }
-            ]
-          }
-        },
-        {
-          "key": "Manifiesto_pe",
-          "doc_count": 479,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 261
-              },
-              {
-                "key": "neutral",
-                "doc_count": 176
-              },
-              {
-                "key": "pos",
-                "doc_count": 42
-              }
-            ]
-          }
-        },
-        {
-          "key": "LaFuerzape",
-          "doc_count": 465,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 251
-              },
-              {
-                "key": "neutral",
-                "doc_count": 125
-              },
-              {
-                "key": "pos",
-                "doc_count": 89
+                "doc_count": 327
               }
             ]
           }
         },
         {
           "key": "canalN_",
-          "doc_count": 400,
+          "doc_count": 920,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 393
+              },
+              {
+                "key": "neg",
+                "doc_count": 340
+              },
+              {
+                "key": "pos",
+                "doc_count": 187
+              }
+            ]
+          }
+        },
+        {
+          "key": "Politica_ECpe",
+          "doc_count": 780,
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
             "buckets": [
               {
                 "key": "neg",
-                "doc_count": 167
+                "doc_count": 446
               },
               {
                 "key": "neutral",
-                "doc_count": 153
+                "doc_count": 231
               },
               {
                 "key": "pos",
-                "doc_count": 80
+                "doc_count": 103
+              }
+            ]
+          }
+        },
+        {
+          "key": "BienvenidoRamrz",
+          "doc_count": 763,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 431
+              },
+              {
+                "key": "neutral",
+                "doc_count": 190
+              },
+              {
+                "key": "pos",
+                "doc_count": 142
+              }
+            ]
+          }
+        },
+        {
+          "key": "MaritzaGarciaJ",
+          "doc_count": 747,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 310
+              },
+              {
+                "key": "neutral",
+                "doc_count": 293
+              },
+              {
+                "key": "pos",
+                "doc_count": 144
+              }
+            ]
+          }
+        },
+        {
+          "key": "rmapalacios",
+          "doc_count": 746,
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 450
+              },
+              {
+                "key": "neg",
+                "doc_count": 231
+              },
+              {
+                "key": "pos",
+                "doc_count": 65
               }
             ]
           }
@@ -662,54 +694,1758 @@
     },
     "agg_terms_author_screen_name.keyword": {
       "doc_count_error_upper_bound": -1,
-      "sum_other_doc_count": 8537,
+      "sum_other_doc_count": 17396,
       "buckets": [
         {
-          "key": "rmapalacios",
+          "key": "ElUniversal",
           "doc_count": 2,
           "agg_avg_author_followers_count": {
-            "value": 2716732.5
+            "value": 4777755
+          }
+        },
+        {
+          "key": "rmapalacios",
+          "doc_count": 4,
+          "agg_avg_author_followers_count": {
+            "value": 2703843.5
           }
         },
         {
           "key": "noticiAmerica",
-          "doc_count": 4,
+          "doc_count": 11,
           "agg_avg_author_followers_count": {
-            "value": 2488979
+            "value": 2489347.727272727
+          }
+        },
+        {
+          "key": "canalN_",
+          "doc_count": 5,
+          "agg_avg_author_followers_count": {
+            "value": 2382111.8
+          }
+        },
+        {
+          "key": "ecuavisa",
+          "doc_count": 1,
+          "agg_avg_author_followers_count": {
+            "value": 2178556
           }
         },
         {
           "key": "Capital967",
-          "doc_count": 1,
+          "doc_count": 2,
           "agg_avg_author_followers_count": {
-            "value": 2015235
-          }
-        },
-        {
-          "key": "larepublica_pe",
-          "doc_count": 3,
-          "agg_avg_author_followers_count": {
-            "value": 1750258.3333333333
-          }
-        },
-        {
-          "key": "RPPNoticias",
-          "doc_count": 1,
-          "agg_avg_author_followers_count": {
-            "value": 1524329
-          }
-        },
-        {
-          "key": "Cuarto_Poder",
-          "doc_count": 3,
-          "agg_avg_author_followers_count": {
-            "value": 1489772.6666666667
+            "value": 2021885
           }
         }
       ]
     },
     "agg_date_histogram_sample_created_at": {
       "buckets": [
+        {
+          "key_as_string": "1513054800000",
+          "key": 1513054800000,
+          "doc_count": 36,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "sad",
+                "doc_count": 16
+              },
+              {
+                "key": "mad",
+                "doc_count": 8
+              },
+              {
+                "key": "glad",
+                "doc_count": 4
+              },
+              {
+                "key": "neutral",
+                "doc_count": 4
+              },
+              {
+                "key": "scared",
+                "doc_count": 4
+              }
+            ]
+          },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 226,
+            "buckets": [
+              {
+                "key": "año",
+                "doc_count": 5
+              },
+              {
+                "key": "cabeza",
+                "doc_count": 3
+              },
+              {
+                "key": "kenji",
+                "doc_count": 3
+              },
+              {
+                "key": "ley",
+                "doc_count": 3
+              },
+              {
+                "key": "personaje",
+                "doc_count": 3
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 4,
+            "buckets": [
+              {
+                "key": "acuerdonacional",
+                "doc_count": 3
+              },
+              {
+                "key": "comisiondeetica",
+                "doc_count": 3
+              },
+              {
+                "key": "creciendoenlínea",
+                "doc_count": 3
+              },
+              {
+                "key": "reconstruccionconcambios",
+                "doc_count": 3
+              },
+              {
+                "key": "ahoradilosinllorar",
+                "doc_count": 1
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 17
+              },
+              {
+                "key": "neutral",
+                "doc_count": 16
+              },
+              {
+                "key": "pos",
+                "doc_count": 3
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 32,
+            "buckets": [
+              {
+                "key": "gabrielitaaa10",
+                "doc_count": 2,
+                "agg_avg_author_followers_count": {
+                  "value": 2942
+                }
+              },
+              {
+                "key": "airamanacmm",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 2083
+                }
+              },
+              {
+                "key": "JuanBrionesAste",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 2023
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 20,
+            "buckets": [
+              {
+                "key": "Quién es el personaje del Año 2017 👇#CreciendoEnLínea #ComisiondeEtica #ReconstruccionConCambios #AcuerdoNacional @KenjiFujimoriH @alvinaruiza @VinelliU @laurabozzo @josemarvinpalma @Kenji_Lover @JovenesKenji ",
+                "doc_count": 3
+              },
+              {
+                "key": "#Vota #MejorPersonaje #Año2017 #Perú Conocemos a @KenjiFujimoriH y su labor 👇👇  ",
+                "doc_count": 1
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "1513141200000",
+          "key": 1513141200000,
+          "doc_count": 159,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mad",
+                "doc_count": 86
+              },
+              {
+                "key": "neutral",
+                "doc_count": 30
+              },
+              {
+                "key": "sad",
+                "doc_count": 26
+              },
+              {
+                "key": "scared",
+                "doc_count": 9
+              },
+              {
+                "key": "glad",
+                "doc_count": 8
+              }
+            ]
+          },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 899,
+            "buckets": [
+              {
+                "key": "conocer",
+                "doc_count": 28
+              },
+              {
+                "key": "grave",
+                "doc_count": 28
+              },
+              {
+                "key": "información",
+                "doc_count": 28
+              },
+              {
+                "key": "ppk",
+                "doc_count": 15
+              },
+              {
+                "key": "kenji",
+                "doc_count": 13
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 11,
+            "buckets": [
+              {
+                "key": "figari",
+                "doc_count": 4
+              },
+              {
+                "key": "kenjicaín",
+                "doc_count": 4
+              },
+              {
+                "key": "renunciappk",
+                "doc_count": 3
+              },
+              {
+                "key": "fiscal",
+                "doc_count": 2
+              },
+              {
+                "key": "noalabusosexual",
+                "doc_count": 2
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 70
+              },
+              {
+                "key": "neg",
+                "doc_count": 66
+              },
+              {
+                "key": "pos",
+                "doc_count": 23
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 156,
+            "buckets": [
+              {
+                "key": "carloswaite",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 16602
+                }
+              },
+              {
+                "key": "IuliusAlfonsus",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 10190
+                }
+              },
+              {
+                "key": "Piery71",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 4413
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 95,
+            "buckets": [
+              {
+                "key": "El cura Figari Mendoza del sodalicio es primo hermano de Pier Figari, asesor de Keiko, por eso el lobby pedófilo que denunció @KenjiFujimoriH Luis es el jefe",
+                "doc_count": 10
+              },
+              {
+                "key": "@Majindice @KenjiFujimoriH @albertofujimori Igualmente apoyo, por que la libertad no tiene precio, NO tiene precio, Alberto Fujimori no puede morir en la carcel! #Mistica #Justicia #Libertad #FujimoriLibertad ",
+                "doc_count": 2
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "1513227600000",
+          "key": 1513227600000,
+          "doc_count": 205,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mad",
+                "doc_count": 101
+              },
+              {
+                "key": "neutral",
+                "doc_count": 52
+              },
+              {
+                "key": "sad",
+                "doc_count": 28
+              },
+              {
+                "key": "glad",
+                "doc_count": 19
+              },
+              {
+                "key": "scared",
+                "doc_count": 5
+              }
+            ]
+          },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 1436,
+            "buckets": [
+              {
+                "key": "país",
+                "doc_count": 41
+              },
+              {
+                "key": "presidente",
+                "doc_count": 36
+              },
+              {
+                "key": "kenji",
+                "doc_count": 31
+              },
+              {
+                "key": "ppk",
+                "doc_count": 30
+              },
+              {
+                "key": "días",
+                "doc_count": 28
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 15,
+            "buckets": [
+              {
+                "key": "renunciappk",
+                "doc_count": 32
+              },
+              {
+                "key": "ppk",
+                "doc_count": 4
+              },
+              {
+                "key": "fujimorinuncamas",
+                "doc_count": 2
+              },
+              {
+                "key": "lacalabazadelcongreso",
+                "doc_count": 2
+              },
+              {
+                "key": "noakenji",
+                "doc_count": 2
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 129
+              },
+              {
+                "key": "neutral",
+                "doc_count": 44
+              },
+              {
+                "key": "pos",
+                "doc_count": 32
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 202,
+            "buckets": [
+              {
+                "key": "AdrianzenEduard",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 246155
+                }
+              },
+              {
+                "key": "rodrigosp82",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 20083
+                }
+              },
+              {
+                "key": "Majindice",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 9940
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 135,
+            "buckets": [
+              {
+                "key": "Señor Presidente @ppkamigo evite al país estos días de zozobra, preocupación y de un paso al costado #RenunciaPPK #RenunciaPPK @victori39804465 @cenvall .@KenjiFujimoriH @delurens @LucelCastillo @manarellidiego ",
+                "doc_count": 27
+              },
+              {
+                "key": "@rmapalacios Si @KenjiFujimoriH no mentía respecto a su respeto a la democracia y realmente hay un subgrupo de fujimoristas moderados que lo siguen, podrían evitar el descalabro del país.",
+                "doc_count": 5
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "1513314000000",
+          "key": 1513314000000,
+          "doc_count": 246,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mad",
+                "doc_count": 125
+              },
+              {
+                "key": "neutral",
+                "doc_count": 61
+              },
+              {
+                "key": "sad",
+                "doc_count": 40
+              },
+              {
+                "key": "glad",
+                "doc_count": 14
+              },
+              {
+                "key": "scared",
+                "doc_count": 6
+              }
+            ]
+          },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 1890,
+            "buckets": [
+              {
+                "key": "kenji",
+                "doc_count": 52
+              },
+              {
+                "key": "vacancia",
+                "doc_count": 49
+              },
+              {
+                "key": "inocencia",
+                "doc_count": 47
+              },
+              {
+                "key": "presunción",
+                "doc_count": 47
+              },
+              {
+                "key": "contra",
+                "doc_count": 38
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 31,
+            "buckets": [
+              {
+                "key": "video",
+                "doc_count": 10
+              },
+              {
+                "key": "ppk",
+                "doc_count": 9
+              },
+              {
+                "key": "kojukenji",
+                "doc_count": 3
+              },
+              {
+                "key": "renunciappk",
+                "doc_count": 3
+              },
+              {
+                "key": "crisispresidencial",
+                "doc_count": 2
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 105
+              },
+              {
+                "key": "neutral",
+                "doc_count": 87
+              },
+              {
+                "key": "pos",
+                "doc_count": 54
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 243,
+            "buckets": [
+              {
+                "key": "noticias_tvperu",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 641378
+                }
+              },
+              {
+                "key": "VersionFinal",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 228987
+                }
+              },
+              {
+                "key": "peruenlanoticia",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 148707
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 190,
+            "buckets": [
+              {
+                "key": "En la @PPKbancada no votaron Mercedes Aráoz (primera ministra) y Moises Guia Pianto (quien hace meses pidió vacancia de @ppkamigo por la “ideología de género”). El fujimorista @KenjiFujimoriH también votó en contra de la admisión de la moción de vacancia. ",
+                "doc_count": 22
+              },
+              {
+                "key": "#VIDEO | @KenjiFujimoriH exhorta al @congresoperu “respetar presunción de inocencia” de @ppkamigo  ",
+                "doc_count": 8
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "1513400400000",
+          "key": 1513400400000,
+          "doc_count": 251,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 87
+              },
+              {
+                "key": "sad",
+                "doc_count": 76
+              },
+              {
+                "key": "mad",
+                "doc_count": 70
+              },
+              {
+                "key": "glad",
+                "doc_count": 14
+              },
+              {
+                "key": "scared",
+                "doc_count": 4
+              }
+            ]
+          },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 2398,
+            "buckets": [
+              {
+                "key": "contra",
+                "doc_count": 115
+              },
+              {
+                "key": "vacancia",
+                "doc_count": 107
+              },
+              {
+                "key": "presidente",
+                "doc_count": 64
+              },
+              {
+                "key": "idiota",
+                "doc_count": 51
+              },
+              {
+                "key": "pueblo",
+                "doc_count": 50
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 22,
+            "buckets": [
+              {
+                "key": "crisispresidencial",
+                "doc_count": 4
+              },
+              {
+                "key": "ppk",
+                "doc_count": 3
+              },
+              {
+                "key": "urgente",
+                "doc_count": 3
+              },
+              {
+                "key": "yocreoenppk",
+                "doc_count": 3
+              },
+              {
+                "key": "yocreoentippk",
+                "doc_count": 3
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 150
+              },
+              {
+                "key": "neutral",
+                "doc_count": 72
+              },
+              {
+                "key": "pos",
+                "doc_count": 29
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 248,
+            "buckets": [
+              {
+                "key": "diariocorreo",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 739958
+                }
+              },
+              {
+                "key": "ugluis",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 8610
+                }
+              },
+              {
+                "key": "pecywei",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 5521
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 153,
+            "buckets": [
+              {
+                "key": "Quiero dejar constancia PUBLICA que EL IDIOTA DEL PUEBLO, @KenjiFujimoriH, acaba de votar EN CONTRA de la vacancia a un Presidente abiertamente CORRUPTO. Ni el Frente Amplio ha votado en CONTRA. Solo un perfecto imbecil puede re-elegir a este payaso.",
+                "doc_count": 44
+              },
+              {
+                "key": "El único parlamentario fujimorista que votó en contra de la moción de vacancia presidencial fue @KenjiFujimoriH.",
+                "doc_count": 25
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "1513486800000",
+          "key": 1513486800000,
+          "doc_count": 171,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mad",
+                "doc_count": 65
+              },
+              {
+                "key": "neutral",
+                "doc_count": 45
+              },
+              {
+                "key": "sad",
+                "doc_count": 35
+              },
+              {
+                "key": "glad",
+                "doc_count": 18
+              },
+              {
+                "key": "scared",
+                "doc_count": 8
+              }
+            ]
+          },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 1481,
+            "buckets": [
+              {
+                "key": "kenji",
+                "doc_count": 20
+              },
+              {
+                "key": "ppk",
+                "doc_count": 17
+              },
+              {
+                "key": "padre",
+                "doc_count": 15
+              },
+              {
+                "key": "fujimori",
+                "doc_count": 14
+              },
+              {
+                "key": "perú",
+                "doc_count": 14
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 32,
+            "buckets": [
+              {
+                "key": "ppk",
+                "doc_count": 3
+              },
+              {
+                "key": "notecreoppk",
+                "doc_count": 2
+              },
+              {
+                "key": "bicameralidad",
+                "doc_count": 1
+              },
+              {
+                "key": "caviar",
+                "doc_count": 1
+              },
+              {
+                "key": "corrupcion",
+                "doc_count": 1
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 77
+              },
+              {
+                "key": "neutral",
+                "doc_count": 56
+              },
+              {
+                "key": "pos",
+                "doc_count": 38
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 167,
+            "buckets": [
+              {
+                "key": "_OctavioSalazar",
+                "doc_count": 2,
+                "agg_avg_author_followers_count": {
+                  "value": 27499
+                }
+              },
+              {
+                "key": "juanalvarezm",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 20438
+                }
+              },
+              {
+                "key": "RecuerdosPeru",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 15379
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 116,
+            "buckets": [
+              {
+                "key": "@KenjiFujimoriH sera el outsider..? ya aparecen en encuestas para la presidencia. @Berkeliana @danielurbinah @SiaKenjiF @xdalexander @ranulfolopezc @Viviana21201800 @Carla_minerva ",
+                "doc_count": 6
+              },
+              {
+                "key": "Clara encuesta ahora si considerando a @KenjiFujimoriH llegara lejos, en esta legislacion siempre esta pensando en las #Minorias y la forma de Cambiar el control politico del congreso #Bicameralidad. Por ello te apoyamos. @Berkeliana ",
+                "doc_count": 5
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "1513573200000",
+          "key": 1513573200000,
+          "doc_count": 237,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mad",
+                "doc_count": 130
+              },
+              {
+                "key": "neutral",
+                "doc_count": 69
+              },
+              {
+                "key": "sad",
+                "doc_count": 22
+              },
+              {
+                "key": "scared",
+                "doc_count": 12
+              },
+              {
+                "key": "glad",
+                "doc_count": 4
+              }
+            ]
+          },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 2746,
+            "buckets": [
+              {
+                "key": "vacancia",
+                "doc_count": 82
+              },
+              {
+                "key": "congresista",
+                "doc_count": 72
+              },
+              {
+                "key": "indulto",
+                "doc_count": 65
+              },
+              {
+                "key": "fujimori",
+                "doc_count": 52
+              },
+              {
+                "key": "presidente",
+                "doc_count": 48
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 15,
+            "buckets": [
+              {
+                "key": "ppkcompravotos",
+                "doc_count": 7
+              },
+              {
+                "key": "anavega",
+                "doc_count": 5
+              },
+              {
+                "key": "figari",
+                "doc_count": 5
+              },
+              {
+                "key": "aunquenotelopidan",
+                "doc_count": 2
+              },
+              {
+                "key": "destitucionpablosanchezya",
+                "doc_count": 2
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 120
+              },
+              {
+                "key": "neg",
+                "doc_count": 94
+              },
+              {
+                "key": "pos",
+                "doc_count": 23
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 234,
+            "buckets": [
+              {
+                "key": "noticiAmerica",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 2478576
+                }
+              },
+              {
+                "key": "heduardo50",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 680452
+                }
+              },
+              {
+                "key": "Frospigliosi",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 306520
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 112,
+            "buckets": [
+              {
+                "key": "Otro que a partir del jueves no podrá ser Presidente del Perú es @KenjiFujimoriH, que siendo congresista no creó un fideicomiso ciego para su empresa Limasa, manteniendo el 21% de la empresa e incurriendo en causal de vacancia ",
+                "doc_count": 41
+              },
+              {
+                "key": "Milagros Salazar: “Han ofrecido indulto a Alberto Fujimori por vacancia” (VIDEO): Congresista fujimorista señala que plantearon esa opción a Kenji Fujimori  ",
+                "doc_count": 20
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "1513659600000",
+          "key": 1513659600000,
+          "doc_count": 291,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mad",
+                "doc_count": 160
+              },
+              {
+                "key": "glad",
+                "doc_count": 53
+              },
+              {
+                "key": "neutral",
+                "doc_count": 46
+              },
+              {
+                "key": "sad",
+                "doc_count": 24
+              },
+              {
+                "key": "scared",
+                "doc_count": 8
+              }
+            ]
+          },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 3032,
+            "buckets": [
+              {
+                "key": "perú",
+                "doc_count": 90
+              },
+              {
+                "key": "jueves",
+                "doc_count": 75
+              },
+              {
+                "key": "presidente",
+                "doc_count": 75
+              },
+              {
+                "key": "vacancia",
+                "doc_count": 70
+              },
+              {
+                "key": "limasa",
+                "doc_count": 68
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 15,
+            "buckets": [
+              {
+                "key": "noalgolpefujimorista",
+                "doc_count": 10
+              },
+              {
+                "key": "figari",
+                "doc_count": 5
+              },
+              {
+                "key": "vota",
+                "doc_count": 5
+              },
+              {
+                "key": "anavega",
+                "doc_count": 4
+              },
+              {
+                "key": "consecuestradoresnosenegocia",
+                "doc_count": 2
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 135
+              },
+              {
+                "key": "neg",
+                "doc_count": 124
+              },
+              {
+                "key": "pos",
+                "doc_count": 32
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 288,
+            "buckets": [
+              {
+                "key": "Canchitacenteno",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 70887
+                }
+              },
+              {
+                "key": "fabiolamorales",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 19851
+                }
+              },
+              {
+                "key": "IuliusAlfonsus",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 10316
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 139,
+            "buckets": [
+              {
+                "key": "Otro que a partir del jueves no podrá ser Presidente del Perú es @KenjiFujimoriH, que siendo congresista no creó un fideicomiso ciego para su empresa Limasa, manteniendo el 21% de la empresa e incurriendo en causal de vacancia ",
+                "doc_count": 62
+              },
+              {
+                "key": "Vamos.. @KenjiFujimoriH No caigas en el juego de @ppkamigo el solo quiere seguir lucrando con nuestra patria, sabemos que quieres la libertad de tu padre como todos los fujimoristas, Pero.! No siendo cómplices de la corrupción Odebrecht. #PPKCompraVotos",
+                "doc_count": 16
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "1513746000000",
+          "key": 1513746000000,
+          "doc_count": 289,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mad",
+                "doc_count": 164
+              },
+              {
+                "key": "neutral",
+                "doc_count": 53
+              },
+              {
+                "key": "glad",
+                "doc_count": 29
+              },
+              {
+                "key": "sad",
+                "doc_count": 29
+              },
+              {
+                "key": "scared",
+                "doc_count": 14
+              }
+            ]
+          },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 28,
+            "sum_other_doc_count": 2851,
+            "buckets": [
+              {
+                "key": "vacancia",
+                "doc_count": 63
+              },
+              {
+                "key": "kenji",
+                "doc_count": 52
+              },
+              {
+                "key": "ppk",
+                "doc_count": 51
+              },
+              {
+                "key": "indulto",
+                "doc_count": 34
+              },
+              {
+                "key": "democracia",
+                "doc_count": 33
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 1,
+            "sum_other_doc_count": 30,
+            "buckets": [
+              {
+                "key": "congresistasestamosvigilantes",
+                "doc_count": 17
+              },
+              {
+                "key": "abstención",
+                "doc_count": 9
+              },
+              {
+                "key": "ojo",
+                "doc_count": 9
+              },
+              {
+                "key": "ana",
+                "doc_count": 2
+              },
+              {
+                "key": "congreso",
+                "doc_count": 2
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 135
+              },
+              {
+                "key": "neutral",
+                "doc_count": 114
+              },
+              {
+                "key": "pos",
+                "doc_count": 40
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 286,
+            "buckets": [
+              {
+                "key": "periodismoperu",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 58068
+                }
+              },
+              {
+                "key": "ZarellaSierra",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 17110
+                }
+              },
+              {
+                "key": "CibernautasFP",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 13785
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 1,
+            "sum_other_doc_count": 165,
+            "buckets": [
+              {
+                "key": "Congresiata .@KenjiFujimoriH yo que usted le pediría a .@ppkamigo el papelito del indulto a su papi. Ya sabe después el sr. se olvida. Ah y agradezcale a los rojos que estén ayudando al indulto si no vacan a PPK.",
+                "doc_count": 18
+              },
+              {
+                "key": "@KeikoFujimori rehuyendo por tercera vez a una citación. Miedo? Parece, no? O esperara la vacancia? @rosamariabartra @dsalaverryv @hectorbecerrilr @KenjiFujimoriH @rauldiezcanseco @CayetanaAljovin @AlanGarciaPeru @BuendiaReynaldo @Cluzcar ",
+                "doc_count": 4
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "1513832400000",
+          "key": 1513832400000,
+          "doc_count": 609,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mad",
+                "doc_count": 347
+              },
+              {
+                "key": "neutral",
+                "doc_count": 102
+              },
+              {
+                "key": "sad",
+                "doc_count": 88
+              },
+              {
+                "key": "glad",
+                "doc_count": 54
+              },
+              {
+                "key": "scared",
+                "doc_count": 18
+              }
+            ]
+          },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 65,
+            "sum_other_doc_count": 6227,
+            "buckets": [
+              {
+                "key": "kenji",
+                "doc_count": 242
+              },
+              {
+                "key": "fujimori",
+                "doc_count": 213
+              },
+              {
+                "key": "bustos",
+                "doc_count": 95
+              },
+              {
+                "key": "herrera",
+                "doc_count": 95
+              },
+              {
+                "key": "palma",
+                "doc_count": 94
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 1,
+            "sum_other_doc_count": 54,
+            "buckets": [
+              {
+                "key": "crisispresidencial",
+                "doc_count": 42
+              },
+              {
+                "key": "vacanciapresidencial",
+                "doc_count": 29
+              },
+              {
+                "key": "fuerzapopular",
+                "doc_count": 26
+              },
+              {
+                "key": "video",
+                "doc_count": 9
+              },
+              {
+                "key": "noalgolpefujimorista",
+                "doc_count": 4
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 291
+              },
+              {
+                "key": "neg",
+                "doc_count": 224
+              },
+              {
+                "key": "pos",
+                "doc_count": 94
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 606,
+            "buckets": [
+              {
+                "key": "rmapalacios",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 2688546
+                }
+              },
+              {
+                "key": "eleconomista",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 354278
+                }
+              },
+              {
+                "key": "Politica_ECpe",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 134817
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 3,
+            "sum_other_doc_count": 432,
+            "buckets": [
+              {
+                "key": "[LO ÚLTIMO] #CrisisPresidencial Kenji Fujimori y Miguel Torres protagonizan acalorada discusión en uno de los ambientes del Congreso ►  ",
+                "doc_count": 30
+              },
+              {
+                "key": "Falso anuncio de indulto, la jugada para justificar votos de algunos en el Frente Amplio. Es el nivel del debate. En Fuerza Popular algunos colegas de @KenjiFujimoriH que coinciden con él no lo seguirán (mucho miedo).",
+                "doc_count": 27
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "1513918800000",
+          "key": 1513918800000,
+          "doc_count": 2258,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mad",
+                "doc_count": 1198
+              },
+              {
+                "key": "neutral",
+                "doc_count": 402
+              },
+              {
+                "key": "sad",
+                "doc_count": 388
+              },
+              {
+                "key": "glad",
+                "doc_count": 215
+              },
+              {
+                "key": "scared",
+                "doc_count": 55
+              }
+            ]
+          },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 357,
+            "sum_other_doc_count": 29078,
+            "buckets": [
+              {
+                "key": "kenji",
+                "doc_count": 1013
+              },
+              {
+                "key": "fujimori",
+                "doc_count": 974
+              },
+              {
+                "key": "maritza",
+                "doc_count": 508
+              },
+              {
+                "key": "palma",
+                "doc_count": 508
+              },
+              {
+                "key": "bienvenido",
+                "doc_count": 494
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 5,
+            "sum_other_doc_count": 247,
+            "buckets": [
+              {
+                "key": "teamkenji",
+                "doc_count": 195
+              },
+              {
+                "key": "vacanciapresidencial",
+                "doc_count": 78
+              },
+              {
+                "key": "fuerzapopular",
+                "doc_count": 71
+              },
+              {
+                "key": "crisispresidencial",
+                "doc_count": 39
+              },
+              {
+                "key": "video",
+                "doc_count": 14
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neutral",
+                "doc_count": 1031
+              },
+              {
+                "key": "neg",
+                "doc_count": 695
+              },
+              {
+                "key": "pos",
+                "doc_count": 532
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 2254,
+            "buckets": [
+              {
+                "key": "noticiAmerica",
+                "doc_count": 2,
+                "agg_avg_author_followers_count": {
+                  "value": 2482434
+                }
+              },
+              {
+                "key": "VeroLinaresC",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 1478728
+                }
+              },
+              {
+                "key": "uterope",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 1200487
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 13,
+            "sum_other_doc_count": 1296,
+            "buckets": [
+              {
+                "key": "La imagen de la noche @KenjiFujimoriH y @JuanSheput juntos mientras @UrsulaLetonaP abandona el hemiciclo malhumorada @noticiAmerica @canalN_ ",
+                "doc_count": 158
+              },
+              {
+                "key": "Los 10 PERROS traidores del Fujimorismo: Guillermo Bocángel Estelita Bustos Sonia Echevarría Kenji Fujimori Clayton Galván Maritza García Marita Herrera José Palma Bienvenido Ramirez Lizbeth Robles",
+                "doc_count": 71
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "1514005200000",
+          "key": 1514005200000,
+          "doc_count": 1022,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mad",
+                "doc_count": 468
+              },
+              {
+                "key": "neutral",
+                "doc_count": 252
+              },
+              {
+                "key": "sad",
+                "doc_count": 138
+              },
+              {
+                "key": "glad",
+                "doc_count": 95
+              },
+              {
+                "key": "scared",
+                "doc_count": 69
+              }
+            ]
+          },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 62,
+            "sum_other_doc_count": 11841,
+            "buckets": [
+              {
+                "key": "fujimori",
+                "doc_count": 243
+              },
+              {
+                "key": "kenji",
+                "doc_count": 241
+              },
+              {
+                "key": "ppk",
+                "doc_count": 142
+              },
+              {
+                "key": "padre",
+                "doc_count": 95
+              },
+              {
+                "key": "voto",
+                "doc_count": 93
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 1,
+            "sum_other_doc_count": 69,
+            "buckets": [
+              {
+                "key": "médico",
+                "doc_count": 29
+              },
+              {
+                "key": "centenario",
+                "doc_count": 13
+              },
+              {
+                "key": "hipotensión",
+                "doc_count": 13
+              },
+              {
+                "key": "loúltimo",
+                "doc_count": 13
+              },
+              {
+                "key": "teamkenji",
+                "doc_count": 13
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 428
+              },
+              {
+                "key": "neutral",
+                "doc_count": 353
+              },
+              {
+                "key": "pos",
+                "doc_count": 241
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 1019,
+            "buckets": [
+              {
+                "key": "rmapalacios",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 2693363
+                }
+              },
+              {
+                "key": "ecuavisa",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 2178556
+                }
+              },
+              {
+                "key": "EcuavisaInforma",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 1145365
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 7,
+            "sum_other_doc_count": 646,
+            "buckets": [
+              {
+                "key": "Lagrimas, sorpresa y felicidad de los congresistas que con su voto se liberaron de la opresión en @BankadaFP. @KenjiFujimoriH logró lo que @KeikoFujimori nunca podrá lograr felicidad en sus seguidores. ",
+                "doc_count": 52
+              },
+              {
+                "key": ".@KenjiFujimoriH ha creido en la promesa de .@ppkamigo en el sentido de que indultará a su papá .@albertofujimori y por eso votó cómo votó, puso primero a su padre que a la lucha contra la corrupción, pero creo que es emocionalmente comprensible. ",
+                "doc_count": 22
+              }
+            ]
+          }
+        },
         {
           "key_as_string": "1514091600000",
           "key": 1514091600000,
@@ -740,6 +2476,58 @@
               }
             ]
           },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 53,
+            "sum_other_doc_count": 11364,
+            "buckets": [
+              {
+                "key": "fujimori",
+                "doc_count": 274
+              },
+              {
+                "key": "kenji",
+                "doc_count": 255
+              },
+              {
+                "key": "indulto",
+                "doc_count": 155
+              },
+              {
+                "key": "perú",
+                "doc_count": 129
+              },
+              {
+                "key": "ppk",
+                "doc_count": 122
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 2,
+            "sum_other_doc_count": 70,
+            "buckets": [
+              {
+                "key": "ahora",
+                "doc_count": 9
+              },
+              {
+                "key": "ppk",
+                "doc_count": 8
+              },
+              {
+                "key": "teamkenji",
+                "doc_count": 6
+              },
+              {
+                "key": "fujimorilibertad",
+                "doc_count": 5
+              },
+              {
+                "key": "fujimori",
+                "doc_count": 4
+              }
+            ]
+          },
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
@@ -755,6 +2543,47 @@
               {
                 "key": "pos",
                 "doc_count": 265
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 1070,
+            "buckets": [
+              {
+                "key": "noticiAmerica",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 2483204
+                }
+              },
+              {
+                "key": "Capital967",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 2015235
+                }
+              },
+              {
+                "key": "Publimetrope",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 167357
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 6,
+            "sum_other_doc_count": 718,
+            "buckets": [
+              {
+                "key": "qué vergüenza para el Perú. Que quede claro que a @KenjiFujimoriH jamás le importó la democracia. solo tiene un objetivo y @ppkamigo jamás entendió el mensaje. #IndultoViciado",
+                "doc_count": 33
+              },
+              {
+                "key": "Al margen de que esté bien o mal, cada uno sacará sus propias conclusiones, @Mov_NuevoPeru también impidió la vacancia. Kenji Fujimori se lleva todos los créditos, pero Nuevo Perú también fue determinante.",
+                "doc_count": 27
               }
             ]
           }
@@ -789,6 +2618,58 @@
               }
             ]
           },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 50,
+            "sum_other_doc_count": 10914,
+            "buckets": [
+              {
+                "key": "fujimori",
+                "doc_count": 234
+              },
+              {
+                "key": "kenji",
+                "doc_count": 223
+              },
+              {
+                "key": "indulto",
+                "doc_count": 146
+              },
+              {
+                "key": "presidente",
+                "doc_count": 104
+              },
+              {
+                "key": "navidad",
+                "doc_count": 98
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 1,
+            "sum_other_doc_count": 49,
+            "buckets": [
+              {
+                "key": "indultodelincuencial",
+                "doc_count": 15
+              },
+              {
+                "key": "ahora",
+                "doc_count": 14
+              },
+              {
+                "key": "indulto",
+                "doc_count": 5
+              },
+              {
+                "key": "llegolahora",
+                "doc_count": 5
+              },
+              {
+                "key": "albertofujimori",
+                "doc_count": 4
+              }
+            ]
+          },
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
@@ -804,6 +2685,47 @@
               {
                 "key": "pos",
                 "doc_count": 293
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 995,
+            "buckets": [
+              {
+                "key": "larepublica_pe",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 1745228
+                }
+              },
+              {
+                "key": "karinaCalmet",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 515076
+                }
+              },
+              {
+                "key": "ReporteYa",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 514868
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 4,
+            "sum_other_doc_count": 675,
+            "buckets": [
+              {
+                "key": "La influencia de Kenji Fujimori es tan nociva que convirtió a Pedro Pablo Kuczynski en Pedro Pablo Fujimori. Si el indulto ya era un insulto, ese mensaje fue peor. Un error histórico que pagaremos todos los peruanos",
+                "doc_count": 33
+              },
+              {
+                "key": "La próxima semana @albertofujimori unirá a @KeikoFujimori y @KenjiFujimoriH para terminar la obra teatral, la @BankadaFP volverán los 73 y #PPK seguirá quedándose solo y despidiéndose de su banda.",
+                "doc_count": 29
               }
             ]
           }
@@ -838,6 +2760,58 @@
               }
             ]
           },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 64,
+            "sum_other_doc_count": 9248,
+            "buckets": [
+              {
+                "key": "fujimori",
+                "doc_count": 155
+              },
+              {
+                "key": "kenji",
+                "doc_count": 118
+              },
+              {
+                "key": "indulto",
+                "doc_count": 117
+              },
+              {
+                "key": "favor",
+                "doc_count": 76
+              },
+              {
+                "key": "kuczynski",
+                "doc_count": 74
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 1,
+            "sum_other_doc_count": 19,
+            "buckets": [
+              {
+                "key": "fuerzapopular",
+                "doc_count": 6
+              },
+              {
+                "key": "vacanciapresidencial",
+                "doc_count": 6
+              },
+              {
+                "key": "horadelareconciliación",
+                "doc_count": 4
+              },
+              {
+                "key": "fujimori",
+                "doc_count": 2
+              },
+              {
+                "key": "indultoturbulento",
+                "doc_count": 2
+              }
+            ]
+          },
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
@@ -853,6 +2827,47 @@
               {
                 "key": "pos",
                 "doc_count": 100
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 584,
+            "buckets": [
+              {
+                "key": "evaayllon",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 1091590
+                }
+              },
+              {
+                "key": "heduardo50",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 688587
+                }
+              },
+              {
+                "key": "elmundomedellin",
+                "doc_count": 2,
+                "agg_avg_author_followers_count": {
+                  "value": 168148
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 2,
+            "sum_other_doc_count": 299,
+            "buckets": [
+              {
+                "key": "La influencia de Kenji Fujimori es tan nociva que convirtió a Pedro Pablo Kuczynski en Pedro Pablo Fujimori. Si el indulto ya era un insulto, ese mensaje fue peor. Un error histórico que pagaremos todos los peruanos",
+                "doc_count": 45
+              },
+              {
+                "key": "Esta es la portada de EXPRESO del 26/12/2017 @ppkamigo @albertofujimori @KenjiFujimoriH @KeikoFujimori @congresoperu @BankadaFP ",
+                "doc_count": 16
               }
             ]
           }
@@ -887,6 +2902,58 @@
               }
             ]
           },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 38,
+            "sum_other_doc_count": 8730,
+            "buckets": [
+              {
+                "key": "fujimori",
+                "doc_count": 121
+              },
+              {
+                "key": "kenji",
+                "doc_count": 116
+              },
+              {
+                "key": "indulto",
+                "doc_count": 56
+              },
+              {
+                "key": "fujimorismo",
+                "doc_count": 55
+              },
+              {
+                "key": "padre",
+                "doc_count": 55
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 1,
+            "sum_other_doc_count": 26,
+            "buckets": [
+              {
+                "key": "estamosenlos90s",
+                "doc_count": 27
+              },
+              {
+                "key": "ppktraidor",
+                "doc_count": 27
+              },
+              {
+                "key": "anavega",
+                "doc_count": 2
+              },
+              {
+                "key": "fujimori",
+                "doc_count": 2
+              },
+              {
+                "key": "albertofujimori",
+                "doc_count": 1
+              }
+            ]
+          },
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
@@ -902,6 +2969,47 @@
               {
                 "key": "pos",
                 "doc_count": 115
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 614,
+            "buckets": [
+              {
+                "key": "noticiAmerica",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 2486600
+                }
+              },
+              {
+                "key": "Mauriciomulder",
+                "doc_count": 2,
+                "agg_avg_author_followers_count": {
+                  "value": 350679.5
+                }
+              },
+              {
+                "key": "peruenlanoticia",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 149419
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 4,
+            "sum_other_doc_count": 369,
+            "buckets": [
+              {
+                "key": "Todo queda en familia #EstamosEnLos90s #PPKtraidor El nuevo Ministro del Interior, Vicente Romero Fernández al lado del nuevo líder del Fujimorismo, Kenji Fujimori @pcmperu @MininterPeru @KenjiFujimoriH ",
+                "doc_count": 27
+              },
+              {
+                "key": "¿Pq los Fujimoristas cuestionaban tanto a Patricia García y Marisol Pérez Tello y a los nuevos Ministros nada? cc. @KenjiFujimoriH @KeikoFujimori @BankadaFP",
+                "doc_count": 19
               }
             ]
           }
@@ -936,6 +3044,58 @@
               }
             ]
           },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 33,
+            "sum_other_doc_count": 5793,
+            "buckets": [
+              {
+                "key": "indulto",
+                "doc_count": 132
+              },
+              {
+                "key": "kenji",
+                "doc_count": 132
+              },
+              {
+                "key": "fujimori",
+                "doc_count": 128
+              },
+              {
+                "key": "votos",
+                "doc_count": 55
+              },
+              {
+                "key": "llamó",
+                "doc_count": 53
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 1,
+            "sum_other_doc_count": 32,
+            "buckets": [
+              {
+                "key": "ppktraidor",
+                "doc_count": 22
+              },
+              {
+                "key": "diegouceda",
+                "doc_count": 9
+              },
+              {
+                "key": "terrorismonuncamas",
+                "doc_count": 8
+              },
+              {
+                "key": "indultoesinsulto",
+                "doc_count": 5
+              },
+              {
+                "key": "ceciiii",
+                "doc_count": 4
+              }
+            ]
+          },
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
@@ -951,6 +3111,47 @@
               {
                 "key": "pos",
                 "doc_count": 69
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 512,
+            "buckets": [
+              {
+                "key": "heduardo50",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 692020
+                }
+              },
+              {
+                "key": "ChinoyAdolfo",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 379530
+                }
+              },
+              {
+                "key": "Chajles",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 55584
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 4,
+            "sum_other_doc_count": 289,
+            "buckets": [
+              {
+                "key": "Se filtra video de @roloreategui celebrando el indulto y la moto 🏍 enviado por @KenjiFujimoriH para desaparecerlo (El primero de la lista de la venganza 🗡) ",
+                "doc_count": 48
+              },
+              {
+                "key": "En @Caretas revelan que Mercedes Araoz @mecheaf llamó a Diego Uceda para dialogar con Kenji Fujimori y obtener votos para que @ppkamigo no sea vacado en el @congresoperu ",
+                "doc_count": 42
               }
             ]
           }
@@ -985,6 +3186,58 @@
               }
             ]
           },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 20,
+            "sum_other_doc_count": 4089,
+            "buckets": [
+              {
+                "key": "indulto",
+                "doc_count": 63
+              },
+              {
+                "key": "fujimori",
+                "doc_count": 57
+              },
+              {
+                "key": "kenji",
+                "doc_count": 38
+              },
+              {
+                "key": "lista",
+                "doc_count": 34
+              },
+              {
+                "key": "celebrando",
+                "doc_count": 33
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 1,
+            "sum_other_doc_count": 24,
+            "buckets": [
+              {
+                "key": "tomalacalle",
+                "doc_count": 9
+              },
+              {
+                "key": "indultoesinsulto",
+                "doc_count": 6
+              },
+              {
+                "key": "28dic",
+                "doc_count": 4
+              },
+              {
+                "key": "nportada",
+                "doc_count": 3
+              },
+              {
+                "key": "ppktraidor",
+                "doc_count": 3
+              }
+            ]
+          },
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
@@ -1000,6 +3253,47 @@
               {
                 "key": "pos",
                 "doc_count": 70
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 415,
+            "buckets": [
+              {
+                "key": "JuanSheput",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 149146
+                }
+              },
+              {
+                "key": "Pasos_Perdidos",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 23982
+                }
+              },
+              {
+                "key": "CibernautasFP",
+                "doc_count": 2,
+                "agg_avg_author_followers_count": {
+                  "value": 14243.5
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 4,
+            "sum_other_doc_count": 258,
+            "buckets": [
+              {
+                "key": "Se filtra video de @roloreategui celebrando el indulto y la moto 🏍 enviado por @KenjiFujimoriH para desaparecerlo (El primero de la lista de la venganza 🗡) ",
+                "doc_count": 31
+              },
+              {
+                "key": "La situación está muy clara, hay quienes no quieren ver lo que es evidente.@MavilaHuertasC @canalN_ @KenjiFujimoriH @albertofujimori @CIDH @CesarNakazaki @RPPNoticias @exitosape @Cuarto_Poder @PanamericanaTV @Latina_Noticias @peru21noticias @Gestionpe ",
+                "doc_count": 24
               }
             ]
           }
@@ -1034,6 +3328,58 @@
               }
             ]
           },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 26,
+            "sum_other_doc_count": 3759,
+            "buckets": [
+              {
+                "key": "fujimori",
+                "doc_count": 52
+              },
+              {
+                "key": "indulto",
+                "doc_count": 40
+              },
+              {
+                "key": "presidente",
+                "doc_count": 32
+              },
+              {
+                "key": "perú",
+                "doc_count": 28
+              },
+              {
+                "key": "buen",
+                "doc_count": 21
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 13,
+            "buckets": [
+              {
+                "key": "quenoteconfundan",
+                "doc_count": 3
+              },
+              {
+                "key": "apus",
+                "doc_count": 1
+              },
+              {
+                "key": "año2017",
+                "doc_count": 1
+              },
+              {
+                "key": "cojukenji",
+                "doc_count": 1
+              },
+              {
+                "key": "conclulatam",
+                "doc_count": 1
+              }
+            ]
+          },
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
@@ -1049,6 +3395,47 @@
               {
                 "key": "pos",
                 "doc_count": 90
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 334,
+            "buckets": [
+              {
+                "key": "wardofmusic1",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 102896
+                }
+              },
+              {
+                "key": "yoni3556_luis",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 9792
+                }
+              },
+              {
+                "key": "DianayMarioI",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 7400
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 2,
+            "sum_other_doc_count": 202,
+            "buckets": [
+              {
+                "key": "La situación está muy clara, hay quienes no quieren ver lo que es evidente.@MavilaHuertasC @canalN_ @KenjiFujimoriH @albertofujimori @CIDH @CesarNakazaki @RPPNoticias @exitosape @Cuarto_Poder @PanamericanaTV @Latina_Noticias @peru21noticias @Gestionpe ",
+                "doc_count": 17
+              },
+              {
+                "key": "Para los q niegan la realidad hoy 56% aprueba indulto a Alberto Fujimori, Presidente @ppkamigo sube 7 puntos y @KenjiFujimoriH es el político con mayor aprobación en el Perú q evalúa positivamente su comportamiento. Tsunami siglo XXI ",
+                "doc_count": 11
               }
             ]
           }
@@ -1083,6 +3470,58 @@
               }
             ]
           },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 2634,
+            "buckets": [
+              {
+                "key": "perú",
+                "doc_count": 30
+              },
+              {
+                "key": "año",
+                "doc_count": 28
+              },
+              {
+                "key": "fujimori",
+                "doc_count": 28
+              },
+              {
+                "key": "país",
+                "doc_count": 25
+              },
+              {
+                "key": "feliz",
+                "doc_count": 21
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 5,
+            "buckets": [
+              {
+                "key": "terrorismonuncamas",
+                "doc_count": 17
+              },
+              {
+                "key": "justiniano",
+                "doc_count": 3
+              },
+              {
+                "key": "vacanciapresidencial",
+                "doc_count": 3
+              },
+              {
+                "key": "bartradesafuero",
+                "doc_count": 1
+              },
+              {
+                "key": "feliz2018",
+                "doc_count": 1
+              }
+            ]
+          },
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
@@ -1098,6 +3537,47 @@
               {
                 "key": "pos",
                 "doc_count": 57
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 218,
+            "buckets": [
+              {
+                "key": "ebelinortiz",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 52376
+                }
+              },
+              {
+                "key": "LDavelouis",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 38945
+                }
+              },
+              {
+                "key": "VIRGUIT",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 38410
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 116,
+            "buckets": [
+              {
+                "key": "@Manifiesto_pe @IDL_Seguridad @KenjiFujimoriH @IDL_R @FiscaliaPeru @LaFuerzape @BankadaFP @Poder_Judicial_ @Ideele @albertofujimori Los de IDL y el 100% de los periódicos callados, no dicen nada del tema.",
+                "doc_count": 6
+              },
+              {
+                "key": "Para los q niegan la realidad hoy 56% aprueba indulto a Alberto Fujimori, Presidente @ppkamigo sube 7 puntos y @KenjiFujimoriH es el político con mayor aprobación en el Perú q evalúa positivamente su comportamiento. Tsunami siglo XXI ",
+                "doc_count": 6
               }
             ]
           }
@@ -1132,6 +3612,58 @@
               }
             ]
           },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 4195,
+            "buckets": [
+              {
+                "key": "indulto",
+                "doc_count": 158
+              },
+              {
+                "key": "fujimori",
+                "doc_count": 136
+              },
+              {
+                "key": "kenji",
+                "doc_count": 96
+              },
+              {
+                "key": "humanitario",
+                "doc_count": 78
+              },
+              {
+                "key": "año",
+                "doc_count": 74
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 7,
+            "buckets": [
+              {
+                "key": "loúltimo",
+                "doc_count": 23
+              },
+              {
+                "key": "indultoesinsulto",
+                "doc_count": 2
+              },
+              {
+                "key": "farsadenavidad",
+                "doc_count": 1
+              },
+              {
+                "key": "feliz2018",
+                "doc_count": 1
+              },
+              {
+                "key": "fujimorinuncamas",
+                "doc_count": 1
+              }
+            ]
+          },
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
@@ -1147,6 +3679,47 @@
               {
                 "key": "pos",
                 "doc_count": 131
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 415,
+            "buckets": [
+              {
+                "key": "rmapalacios",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 2713746
+                }
+              },
+              {
+                "key": "larepublica_pe",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 1751278
+                }
+              },
+              {
+                "key": "moniquepard",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 51763
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 256,
+            "buckets": [
+              {
+                "key": "#LoÚltimo | En distintos puntos de Lima han aparecido pintas y carteles agradeciendo a Pedro Pablo Kuczynski por el indulto a Alberto Fujimori. Los escritos hablan de reconciliación, gratitud y del congresista Kenji Fujimori ",
+                "doc_count": 23
+              },
+              {
+                "key": "Juan Carlos Tafur: PPK debió pensar bien antes de emprender el camino sin retorno de un indulto 'humanitario' vulgarmente pactado con los congresistas de Kenji Fujimori. [#VIDEO] ►  #luzroja @jctafur ",
+                "doc_count": 18
               }
             ]
           }
@@ -1181,6 +3754,58 @@
               }
             ]
           },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 4057,
+            "buckets": [
+              {
+                "key": "fujimori",
+                "doc_count": 137
+              },
+              {
+                "key": "indulto",
+                "doc_count": 136
+              },
+              {
+                "key": "humanitario",
+                "doc_count": 92
+              },
+              {
+                "key": "importante",
+                "doc_count": 75
+              },
+              {
+                "key": "morelli",
+                "doc_count": 73
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 14,
+            "buckets": [
+              {
+                "key": "loúltimo",
+                "doc_count": 17
+              },
+              {
+                "key": "electroooo",
+                "doc_count": 2
+              },
+              {
+                "key": "5deabrilfujimorinuncamás",
+                "doc_count": 1
+              },
+              {
+                "key": "campañadevalores",
+                "doc_count": 1
+              },
+              {
+                "key": "dictaduranuncamás",
+                "doc_count": 1
+              }
+            ]
+          },
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
@@ -1196,6 +3821,47 @@
               {
                 "key": "pos",
                 "doc_count": 67
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 344,
+            "buckets": [
+              {
+                "key": "BenditaVerdad",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 6798
+                }
+              },
+              {
+                "key": "Pussicat2017",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 6644
+                }
+              },
+              {
+                "key": "Charitocrema",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 6035
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 207,
+            "buckets": [
+              {
+                "key": "Juan Carlos Tafur: PPK debió pensar bien antes de emprender el camino sin retorno de un indulto 'humanitario' vulgarmente pactado con los congresistas de Kenji Fujimori. [#VIDEO] ►  #luzroja @jctafur ",
+                "doc_count": 18
+              },
+              {
+                "key": "#LoÚltimo | En distintos puntos de Lima han aparecido pintas y carteles agradeciendo a Pedro Pablo Kuczynski por el indulto a Alberto Fujimori. Los escritos hablan de reconciliación, gratitud y del congresista Kenji Fujimori ",
+                "doc_count": 17
               }
             ]
           }
@@ -1230,6 +3896,58 @@
               }
             ]
           },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 2758,
+            "buckets": [
+              {
+                "key": "kenji",
+                "doc_count": 75
+              },
+              {
+                "key": "fujimori",
+                "doc_count": 74
+              },
+              {
+                "key": "perú",
+                "doc_count": 37
+              },
+              {
+                "key": "democracia",
+                "doc_count": 32
+              },
+              {
+                "key": "congresistas",
+                "doc_count": 31
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 22,
+            "buckets": [
+              {
+                "key": "kojukenji",
+                "doc_count": 9
+              },
+              {
+                "key": "reconciliacion",
+                "doc_count": 9
+              },
+              {
+                "key": "loúltimo",
+                "doc_count": 4
+              },
+              {
+                "key": "acciónpopular",
+                "doc_count": 1
+              },
+              {
+                "key": "anavega",
+                "doc_count": 1
+              }
+            ]
+          },
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
@@ -1245,6 +3963,47 @@
               {
                 "key": "pos",
                 "doc_count": 89
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 327,
+            "buckets": [
+              {
+                "key": "noticiAmerica",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 2491571
+                }
+              },
+              {
+                "key": "RPPNoticias",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 1524329
+                }
+              },
+              {
+                "key": "uterope",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 1208286
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 224,
+            "buckets": [
+              {
+                "key": "Cuando renuncia el Perú a la @CIDH Q? faltan huevos en el @congresoperu o hay mucho invitado y poco militante. @BankadaFP @PPKbancada @YeniVilcatoma2 @hectorbecerrilr @KenjiFujimoriH ",
+                "doc_count": 10
+              },
+              {
+                "key": "@KenjiFujimoriH Niño VIEJO #KojuKenji🤔¿celebra DESLEALTAD con @BankadaFP y canje para salvar pellejo del corrupto mitómano @ppkamigo?🤔",
+                "doc_count": 9
               }
             ]
           }
@@ -1279,6 +4038,58 @@
               }
             ]
           },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 4292,
+            "buckets": [
+              {
+                "key": "fujimori",
+                "doc_count": 114
+              },
+              {
+                "key": "nadie",
+                "doc_count": 77
+              },
+              {
+                "key": "fujimoristas",
+                "doc_count": 73
+              },
+              {
+                "key": "kenji",
+                "doc_count": 64
+              },
+              {
+                "key": "ppk",
+                "doc_count": 61
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 42,
+            "buckets": [
+              {
+                "key": "tomalacalle",
+                "doc_count": 12
+              },
+              {
+                "key": "loúltimo",
+                "doc_count": 9
+              },
+              {
+                "key": "kojukenji",
+                "doc_count": 5
+              },
+              {
+                "key": "reconciliacion",
+                "doc_count": 5
+              },
+              {
+                "key": "último",
+                "doc_count": 5
+              }
+            ]
+          },
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
@@ -1294,6 +4105,47 @@
               {
                 "key": "pos",
                 "doc_count": 116
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 808,
+            "buckets": [
+              {
+                "key": "rmapalacios",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 2719719
+                }
+              },
+              {
+                "key": "FernandoArmasCa",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 967341
+                }
+              },
+              {
+                "key": "AdrianzenEduard",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 252694
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 373,
+            "buckets": [
+              {
+                "key": "Necesitamos partidos sólidos y defender lo avanzado. Es hora de que se encuentren las voces sólidas y maduras de @PFuerzaPopular y resuelvan en bien del país. Urgente. cc. @KeikoFujimori @KenjiFujimoriH @A_Aguinaga @_OctavioSalazar @MarthaChavezC",
+                "doc_count": 30
+              },
+              {
+                "key": "@rmapalacios @KeikoFujimori @ppkamigo @KenjiFujimoriH no se olviden #TomaLaCalle ",
+                "doc_count": 12
               }
             ]
           }
@@ -1328,6 +4180,58 @@
               }
             ]
           },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 1661,
+            "buckets": [
+              {
+                "key": "fujimori",
+                "doc_count": 17
+              },
+              {
+                "key": "kenji",
+                "doc_count": 16
+              },
+              {
+                "key": "alberto",
+                "doc_count": 11
+              },
+              {
+                "key": "fuerza",
+                "doc_count": 11
+              },
+              {
+                "key": "kuczynski",
+                "doc_count": 11
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 37,
+            "buckets": [
+              {
+                "key": "último",
+                "doc_count": 11
+              },
+              {
+                "key": "odebrecht",
+                "doc_count": 5
+              },
+              {
+                "key": "noalbullying",
+                "doc_count": 4
+              },
+              {
+                "key": "fujimontesiapristas",
+                "doc_count": 3
+              },
+              {
+                "key": "fujitrolls",
+                "doc_count": 3
+              }
+            ]
+          },
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
@@ -1343,6 +4247,47 @@
               {
                 "key": "pos",
                 "doc_count": 137
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 812,
+            "buckets": [
+              {
+                "key": "larepublica_pe",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 1754269
+                }
+              },
+              {
+                "key": "Cuarto_Poder",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 1489662
+                }
+              },
+              {
+                "key": "diariocorreo",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 746029
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 456,
+            "buckets": [
+              {
+                "key": "Conoce a Pierre Figari, el asesor de @KeikoFujimori y jefe de @BankadaFP cc. @KenjiFujimoriH, @albertofujimori ",
+                "doc_count": 17
+              },
+              {
+                "key": "Conoce a Ana Hertz de Vega, la asesora de @KeikoFujimori y jefa de @BankadaFP cc. @KenjiFujimoriH, @albertofujimori ",
+                "doc_count": 11
               }
             ]
           }
@@ -1377,6 +4322,58 @@
               }
             ]
           },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 679,
+            "buckets": [
+              {
+                "key": "fujimori",
+                "doc_count": 5
+              },
+              {
+                "key": "kenji",
+                "doc_count": 5
+              },
+              {
+                "key": "alberto",
+                "doc_count": 4
+              },
+              {
+                "key": "expresidente",
+                "doc_count": 4
+              },
+              {
+                "key": "fuerza",
+                "doc_count": 4
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 20,
+            "buckets": [
+              {
+                "key": "fujimorilibertad",
+                "doc_count": 3
+              },
+              {
+                "key": "loúltimo",
+                "doc_count": 2
+              },
+              {
+                "key": "papafrancisco",
+                "doc_count": 2
+              },
+              {
+                "key": "11e",
+                "doc_count": 1
+              },
+              {
+                "key": "alertacapital",
+                "doc_count": 1
+              }
+            ]
+          },
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
@@ -1392,6 +4389,47 @@
               {
                 "key": "pos",
                 "doc_count": 63
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 465,
+            "buckets": [
+              {
+                "key": "JuanSheput",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 154841
+                }
+              },
+              {
+                "key": "Politica_ECpe",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 138866
+                }
+              },
+              {
+                "key": "ExpresoPeru",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 35676
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 250,
+            "buckets": [
+              {
+                "key": "Esta es la portada de EXPRESO del 06/01/2018 @albertofujimori @Poder_Judicial_ @cgt_peru @KenjiFujimoriH ",
+                "doc_count": 19
+              },
+              {
+                "key": ".@KenjiFujimoriH en Twitter: “Nunca se dejen atropellar por mototaxis”  ",
+                "doc_count": 6
               }
             ]
           }
@@ -1426,6 +4464,58 @@
               }
             ]
           },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 548,
+            "buckets": [
+              {
+                "key": "fujimori",
+                "doc_count": 5
+              },
+              {
+                "key": "kenji",
+                "doc_count": 5
+              },
+              {
+                "key": "decisión",
+                "doc_count": 3
+              },
+              {
+                "key": "vacancia",
+                "doc_count": 3
+              },
+              {
+                "key": "apoyar",
+                "doc_count": 2
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 35,
+            "buckets": [
+              {
+                "key": "goldenglobes",
+                "doc_count": 34
+              },
+              {
+                "key": "cuartopoder",
+                "doc_count": 12
+              },
+              {
+                "key": "11e",
+                "doc_count": 4
+              },
+              {
+                "key": "argentina",
+                "doc_count": 4
+              },
+              {
+                "key": "laplata",
+                "doc_count": 4
+              }
+            ]
+          },
           "agg_terms_sample_sentiment.keyword": {
             "doc_count_error_upper_bound": 0,
             "sum_other_doc_count": 0,
@@ -1443,6 +4533,615 @@
                 "doc_count": 160
               }
             ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 589,
+            "buckets": [
+              {
+                "key": "noticiAmerica",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 2494541
+                }
+              },
+              {
+                "key": "Cuarto_Poder",
+                "doc_count": 2,
+                "agg_avg_author_followers_count": {
+                  "value": 1489828
+                }
+              },
+              {
+                "key": "americatv_peru",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 1359392
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 343,
+            "buckets": [
+              {
+                "key": "Para empezar recomendaría a @KenjiFujimoriH y @AlbertoBelaunde Historia de las doctrinas Económicas de Erich Roll y Los Enemigos del Comercio I,II,III de @AEscohotado. Aviso: no son cuentos ni tienen dibujitos, solo conocimiento. ",
+                "doc_count": 45
+              },
+              {
+                "key": "Esta es la portada de EXPRESO del 07/01/2018 @ppkamigo @MecheAF @albertofujimori @KenjiFujimoriH @jdealthaus ",
+                "doc_count": 24
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "1515387600000",
+          "key": 1515387600000,
+          "doc_count": 590,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mad",
+                "doc_count": 207
+              },
+              {
+                "key": "neutral",
+                "doc_count": 168
+              },
+              {
+                "key": "sad",
+                "doc_count": 138
+              },
+              {
+                "key": "glad",
+                "doc_count": 50
+              },
+              {
+                "key": "scared",
+                "doc_count": 27
+              }
+            ]
+          },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 745,
+            "buckets": [
+              {
+                "key": "alberto",
+                "doc_count": 6
+              },
+              {
+                "key": "fujimori",
+                "doc_count": 6
+              },
+              {
+                "key": "kenji",
+                "doc_count": 6
+              },
+              {
+                "key": "kuczynski",
+                "doc_count": 6
+              },
+              {
+                "key": "pablo",
+                "doc_count": 6
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 57,
+            "buckets": [
+              {
+                "key": "fujimorismounsolosentimiento",
+                "doc_count": 30
+              },
+              {
+                "key": "goldenglobes",
+                "doc_count": 26
+              },
+              {
+                "key": "cuartopoder",
+                "doc_count": 22
+              },
+              {
+                "key": "nportada",
+                "doc_count": 13
+              },
+              {
+                "key": "video",
+                "doc_count": 7
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 266
+              },
+              {
+                "key": "neutral",
+                "doc_count": 177
+              },
+              {
+                "key": "pos",
+                "doc_count": 147
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 587,
+            "buckets": [
+              {
+                "key": "noticiAmerica",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 2494661
+                }
+              },
+              {
+                "key": "canalN_",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 2380016
+                }
+              },
+              {
+                "key": "Capital967",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 2028535
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 375,
+            "buckets": [
+              {
+                "key": "¿Por qué el periodismo caviar le pega a @KeikoFujimori y levanta a @KenjiFujimoriH? Porque a él no lo ven rival todavía. Cuando hayan destruido a Keiko, piensan que Kenji les resultará más fácil, o al menos, más conversable.",
+                "doc_count": 31
+              },
+              {
+                "key": "Para empezar recomendaría a @KenjiFujimoriH y @AlbertoBelaunde Historia de las doctrinas Económicas de Erich Roll y Los Enemigos del Comercio I,II,III de @AEscohotado. Aviso: no son cuentos ni tienen dibujitos, solo conocimiento. ",
+                "doc_count": 17
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "1515474000000",
+          "key": 1515474000000,
+          "doc_count": 777,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mad",
+                "doc_count": 340
+              },
+              {
+                "key": "neutral",
+                "doc_count": 230
+              },
+              {
+                "key": "sad",
+                "doc_count": 106
+              },
+              {
+                "key": "glad",
+                "doc_count": 62
+              },
+              {
+                "key": "scared",
+                "doc_count": 39
+              }
+            ]
+          },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 812,
+            "buckets": [
+              {
+                "key": "fujimori",
+                "doc_count": 11
+              },
+              {
+                "key": "kenji",
+                "doc_count": 11
+              },
+              {
+                "key": "contra",
+                "doc_count": 9
+              },
+              {
+                "key": "fuerza",
+                "doc_count": 8
+              },
+              {
+                "key": "popular",
+                "doc_count": 8
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 83,
+            "buckets": [
+              {
+                "key": "loúltimo",
+                "doc_count": 54
+              },
+              {
+                "key": "video",
+                "doc_count": 28
+              },
+              {
+                "key": "fujimori",
+                "doc_count": 7
+              },
+              {
+                "key": "tampocotampoco",
+                "doc_count": 7
+              },
+              {
+                "key": "9ene",
+                "doc_count": 6
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 412
+              },
+              {
+                "key": "neutral",
+                "doc_count": 262
+              },
+              {
+                "key": "pos",
+                "doc_count": 103
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 773,
+            "buckets": [
+              {
+                "key": "noticiAmerica",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 2495831
+                }
+              },
+              {
+                "key": "larepublica_pe",
+                "doc_count": 2,
+                "agg_avg_author_followers_count": {
+                  "value": 1756987.5
+                }
+              },
+              {
+                "key": "americatv_peru",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 1359628
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 537,
+            "buckets": [
+              {
+                "key": "#LOÚLTIMO La bancada de Fuerza Popular informa que ha aprobado por unanimidad abrir proceso disciplinario al bloque de Kenji Fujimori por transgredir reglamento del grupo parlamentario.",
+                "doc_count": 54
+              },
+              {
+                "key": "Kenji Fujimori cree qué los Peruanos somos IDIOTAS Sí todos sabemos quién negoció directamente con PPK fue el mismo Alberto Fujimori.",
+                "doc_count": 19
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "1515560400000",
+          "key": 1515560400000,
+          "doc_count": 1283,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mad",
+                "doc_count": 655
+              },
+              {
+                "key": "neutral",
+                "doc_count": 364
+              },
+              {
+                "key": "sad",
+                "doc_count": 143
+              },
+              {
+                "key": "glad",
+                "doc_count": 64
+              },
+              {
+                "key": "scared",
+                "doc_count": 57
+              }
+            ]
+          },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 1266,
+            "buckets": [
+              {
+                "key": "fujimori",
+                "doc_count": 13
+              },
+              {
+                "key": "kenji",
+                "doc_count": 13
+              },
+              {
+                "key": "kuczynski",
+                "doc_count": 10
+              },
+              {
+                "key": "contra",
+                "doc_count": 9
+              },
+              {
+                "key": "fuerza",
+                "doc_count": 9
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 136,
+            "buckets": [
+              {
+                "key": "loúltimo",
+                "doc_count": 85
+              },
+              {
+                "key": "sodalicio",
+                "doc_count": 31
+              },
+              {
+                "key": "política",
+                "doc_count": 11
+              },
+              {
+                "key": "fujimori",
+                "doc_count": 9
+              },
+              {
+                "key": "fuerzapopular",
+                "doc_count": 8
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 673
+              },
+              {
+                "key": "neutral",
+                "doc_count": 451
+              },
+              {
+                "key": "pos",
+                "doc_count": 159
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 1277,
+            "buckets": [
+              {
+                "key": "noticiAmerica",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 2496150
+                }
+              },
+              {
+                "key": "canalN_",
+                "doc_count": 3,
+                "agg_avg_author_followers_count": {
+                  "value": 2382463.6666666665
+                }
+              },
+              {
+                "key": "MilagrosLeivaG",
+                "doc_count": 2,
+                "agg_avg_author_followers_count": {
+                  "value": 1862302.5
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 788,
+            "buckets": [
+              {
+                "key": "#LOÚLTIMO La bancada de Fuerza Popular informa que ha aprobado por unanimidad abrir proceso disciplinario al bloque de Kenji Fujimori por transgredir reglamento del grupo parlamentario.",
+                "doc_count": 85
+              },
+              {
+                "key": "Hablando de reconciliación, FP somete a disciplina a los nueve congresistas cercanos a Kenji Fujimori y el APRA expulsa a Javier Barreda y Abel Salinas por haber aceptado las carteras ministeriales. Parece ser el año de los conflictos internos partidarios ",
+                "doc_count": 49
+              }
+            ]
+          }
+        },
+        {
+          "key_as_string": "1515646800000",
+          "key": 1515646800000,
+          "doc_count": 446,
+          "agg_terms_sample_emotions.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "mad",
+                "doc_count": 211
+              },
+              {
+                "key": "neutral",
+                "doc_count": 158
+              },
+              {
+                "key": "sad",
+                "doc_count": 48
+              },
+              {
+                "key": "glad",
+                "doc_count": 20
+              },
+              {
+                "key": "scared",
+                "doc_count": 9
+              }
+            ]
+          },
+          "agg_terms_sample_words": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 670,
+            "buckets": [
+              {
+                "key": "fujimori",
+                "doc_count": 9
+              },
+              {
+                "key": "kenji",
+                "doc_count": 9
+              },
+              {
+                "key": "congreso",
+                "doc_count": 5
+              },
+              {
+                "key": "fuerza",
+                "doc_count": 5
+              },
+              {
+                "key": "nbsp",
+                "doc_count": 5
+              }
+            ]
+          },
+          "agg_terms_sample_hashtags.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 47,
+            "buckets": [
+              {
+                "key": "sodalicio",
+                "doc_count": 21
+              },
+              {
+                "key": "política",
+                "doc_count": 9
+              },
+              {
+                "key": "encuesta21",
+                "doc_count": 5
+              },
+              {
+                "key": "figari",
+                "doc_count": 5
+              },
+              {
+                "key": "kenjigranhijo",
+                "doc_count": 5
+              }
+            ]
+          },
+          "agg_terms_sample_sentiment.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "neg",
+                "doc_count": 207
+              },
+              {
+                "key": "neutral",
+                "doc_count": 189
+              },
+              {
+                "key": "pos",
+                "doc_count": 50
+              }
+            ]
+          },
+          "agg_terms_author_screen_name.keyword": {
+            "doc_count_error_upper_bound": -1,
+            "sum_other_doc_count": 442,
+            "buckets": [
+              {
+                "key": "ElUniversal",
+                "doc_count": 2,
+                "agg_avg_author_followers_count": {
+                  "value": 4777755
+                }
+              },
+              {
+                "key": "noticiAmerica",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 2496823
+                }
+              },
+              {
+                "key": "canalN_",
+                "doc_count": 1,
+                "agg_avg_author_followers_count": {
+                  "value": 2383152
+                }
+              }
+            ]
+          },
+          "agg_terms_sample_text.keyword": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 328,
+            "buckets": [
+              {
+                "key": "Kenji Fujimori sobre Caso #Sodalicio: “Esperamos que los que encubrieron a Luis Figari, no entorpezcan investigación profunda” ► ",
+                "doc_count": 16
+              },
+              {
+                "key": "Daniel Salaverry: “El objetivo de Kenji Fujimori es hacerse del poder en Fuerza Popular” ► ",
+                "doc_count": 15
+              }
+            ]
           }
         }
       ]
@@ -1453,15 +5152,15 @@
       "buckets": [
         {
           "key": "u",
-          "doc_count": 4961
+          "doc_count": 10291
         },
         {
           "key": "m",
-          "doc_count": 1965
+          "doc_count": 3816
         },
         {
           "key": "f",
-          "doc_count": 1625
+          "doc_count": 3314
         }
       ]
     },
@@ -1471,11 +5170,11 @@
       "buckets": [
         {
           "key": "mas25",
-          "doc_count": 7105
+          "doc_count": 14873
         },
         {
           "key": "menos25",
-          "doc_count": 1446
+          "doc_count": 2548
         }
       ]
     }
