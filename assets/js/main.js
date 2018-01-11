@@ -531,6 +531,9 @@
 
         new LazyLoad();
 
+        // RENDER TIMELINE
+
+
       })
       .fail(function() {
         console.log( "error" );
