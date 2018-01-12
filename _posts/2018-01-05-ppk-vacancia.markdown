@@ -10,6 +10,8 @@ social_tracker:
   type: infografia
   exclude_terms:
     - ppk
+    - vacancia
+    - perú
 tags:
   - infografia
   - actualidad

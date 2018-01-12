@@ -1604,7 +1604,8 @@ small {
     float: left;
     border: 1px solid #f1f2f6;
     border-radius: 4px;
-    padding: 20px;
+    padding: 1em;
+    padding-top: .5em;
     position: relative;
     /*-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);*/
@@ -1690,6 +1691,7 @@ small {
   }
   h4.timeline-title  {
     margin: 0;
+    margin-top: 1em;
     padding: 0;
     font-size: .8em;
     font-weight: lighter;
@@ -1743,6 +1745,9 @@ small {
       border-right-width: 15px;
       left: -15px;
       right: auto;
+    }
+    .black:before {
+      background: #001D26;
     }
 
     ul.timeline > li > .timeline-panel:after {

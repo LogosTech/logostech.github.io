@@ -37,18 +37,18 @@
 
 <script type="text/template" class="tmpl_timeline">
   <% _.each( items, function( item, index ){ %>
-    <li class="<%= (index % 2 == 0) ? '' : 'timeline-inverted' %>">
+    <li class="<%= (index % 2 == 0) ? '' : 'timeline-inverted' %> wow fadeIn" data-wow-delay="0.75s">
       <div class="timeline-badge <%- item.color %>">
         <span class="percent"><%- item.max_score %>&#37;</span>
       </div>
       <div class="timeline-panel <%= (item.important) ? 'black' : '' %>">
+        <div class="indicator">
+          <span class="bg_a" style="width:<%- item.scores[0] %>%"></span>
+          <span class="bg_b" style="width:<%- item.scores[1] %>%"></span>
+          <span class="bg_c" style="width:<%- item.scores[2] %>%"></span>
+        </div>
         <div class="timeline-heading">
           <h4 class="timeline-title"><%- item.words.join(', ') %></h4>
-          <div class="indicator">
-            <span class="bg_a" style="width:<%- item.scores[0] %>%"></span>
-            <span class="bg_b" style="width:<%- item.scores[1] %>%"></span>
-            <span class="bg_c" style="width:<%- item.scores[2] %>%"></span>
-          </div>
           <p><small class="text-muted"><%- item.date %> | <%- item.total %> Muestras</small></p>
         </div>
         <div class="timeline-body">
@@ -60,7 +60,7 @@
           <% _.each( item.influencers, function( item ){ %>
             <li>
               <a href="<%- item.href %>" target="_blank">
-                <img alt="<%- item.key %>" data-src="https://avatars.io/twitter/<%- item.account %>" width="40" height="40">
+                <img alt="@" data-src="https://avatars.io/twitter/<%- item.account %>" width="40" height="40">
               </a>
             </li>
           <% }); %>
@@ -224,7 +224,7 @@
       <h1>
         Timelime
       </h1>
-      <ul id="render_timeline" class="timeline wow fadeIn" data-wow-delay="0.75s"></ul>
+      <ul id="render_timeline" class="timeline"></ul>
     </div>
   </div>
 </div>

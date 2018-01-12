@@ -294,7 +294,7 @@
               }
             }
 
-            var pattern = ['neg', 'neutral', 'pos'];
+            var patterns = ['neg', 'neutral', 'pos'];
             var pattern_color = ['bg_a', 'bg_b', 'bg_c'];
             var bucket_sentiment = item
               ['agg_terms_sample_sentiment.keyword']
@@ -313,13 +313,14 @@
                 }
               });
 
-            for (var s of bucket_sentiment) {
-              if (pattern.includes(s.key)) {
-                scores.push(s.doc_count / total * 100);
-              } else {
-                scores.push(0);
+            for (var pattern of patterns) {
+              for (var s of bucket_sentiment) {
+                if (pattern == s.key) {
+                  scores.push(s.doc_count / total * 100);
+                }
               }
             }
+
             var max_score = Math.max(...scores);
             var result = {
               total: total.toLocaleString(),
