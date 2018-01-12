@@ -19,9 +19,4 @@ tags:
   - social-tracker
 ---
 
-No arranca con buen pie el 2018, pero el alta de Alberto Fujimori dispara los indicadores de alegria.
-
-# Resumen
-## 04 y 05 de Enero
-
-Un suceso importante. [Alberto Fujimori sale de la clínica Centenario](http://larepublica.pe/politica/1166618-indulto-a-alberto-fujimori-kenji-publica-foto-con-su-padre-tras-salir-de-la-clinica).
+No arranca con buen pie el 2018, pero el el tema del indulto hace que baje su carga negativa.

@@ -1,1433 +1,4974 @@
 {
-  "took": 1733,
-  "timed_out": false,
-  "_shards": {
-    "total": 4,
-    "successful": 4,
-    "failed": 0
-  },
-  "hits": {
-    "total": 191640,
-    "max_score": 0,
-    "hits": []
-  },
-  "aggregations": {
-    "agg_terms_sample_hashtags.keyword": {
-      "doc_count_error_upper_bound": 355,
-      "sum_other_doc_count": 25653,
-      "buckets": [
-        {
-          "key": "ppk",
-          "doc_count": 12823,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 6629
-              },
-              {
-                "key": "neg",
-                "doc_count": 4399
-              },
-              {
-                "key": "pos",
-                "doc_count": 1795
-              }
-            ]
-          }
-        },
-        {
-          "key": "mensajealanacion",
-          "doc_count": 1203,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 628
-              },
-              {
-                "key": "pos",
-                "doc_count": 343
-              },
-              {
-                "key": "neutral",
-                "doc_count": 232
-              }
-            ]
-          }
-        },
-        {
-          "key": "crisispresidencial",
-          "doc_count": 1108,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 479
-              },
-              {
-                "key": "neutral",
-                "doc_count": 460
-              },
-              {
-                "key": "pos",
-                "doc_count": 169
-              }
-            ]
-          }
-        },
-        {
-          "key": "sevantodos",
-          "doc_count": 1005,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 709
-              },
-              {
-                "key": "pos",
-                "doc_count": 283
-              },
-              {
-                "key": "neg",
-                "doc_count": 13
-              }
-            ]
-          }
-        },
-        {
-          "key": "odebrecht",
-          "doc_count": 935,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 462
-              },
-              {
-                "key": "neutral",
-                "doc_count": 391
-              },
-              {
-                "key": "pos",
-                "doc_count": 82
-              }
-            ]
-          }
-        },
-        {
-          "key": "exclusivo",
-          "doc_count": 917,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 554
-              },
-              {
-                "key": "neg",
-                "doc_count": 235
-              },
-              {
-                "key": "pos",
-                "doc_count": 128
-              }
-            ]
-          }
-        },
-        {
-          "key": "vacanciapresidencial",
-          "doc_count": 910,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 383
-              },
-              {
-                "key": "neg",
-                "doc_count": 269
-              },
-              {
-                "key": "pos",
-                "doc_count": 258
-              }
-            ]
-          }
-        },
-        {
-          "key": "video",
-          "doc_count": 739,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 404
-              },
-              {
-                "key": "neg",
-                "doc_count": 252
-              },
-              {
-                "key": "pos",
-                "doc_count": 83
-              }
-            ]
-          }
-        },
-        {
-          "key": "noalgolpefujimorista",
-          "doc_count": 589,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 301
-              },
-              {
-                "key": "neutral",
-                "doc_count": 199
-              },
-              {
-                "key": "pos",
-                "doc_count": 89
-              }
-            ]
-          }
-        },
-        {
-          "key": "urgente",
-          "doc_count": 553,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 337
-              },
-              {
-                "key": "neg",
-                "doc_count": 146
-              },
-              {
-                "key": "pos",
-                "doc_count": 70
-              }
-            ]
-          }
-        }
-      ]
-    },
-    "agg_terms_sample_words": {
-      "doc_count_error_upper_bound": 6792,
-      "sum_other_doc_count": 2135559,
-      "buckets": [
-        {
-          "key": "ppk",
-          "doc_count": 175704,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 79381
-              },
-              {
-                "key": "neutral",
-                "doc_count": 63249
-              },
-              {
-                "key": "pos",
-                "doc_count": 33074
-              }
-            ]
-          }
-        },
-        {
-          "key": "vacancia",
-          "doc_count": 26390,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 10550
-              },
-              {
-                "key": "neg",
-                "doc_count": 10492
-              },
-              {
-                "key": "pos",
-                "doc_count": 5348
-              }
-            ]
-          }
-        },
-        {
-          "key": "keiko",
-          "doc_count": 20680,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 11167
-              },
-              {
-                "key": "neutral",
-                "doc_count": 7982
-              },
-              {
-                "key": "pos",
-                "doc_count": 1531
-              }
-            ]
-          }
-        },
-        {
-          "key": "fujimori",
-          "doc_count": 18763,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 12215
-              },
-              {
-                "key": "neutral",
-                "doc_count": 3992
-              },
-              {
-                "key": "pos",
-                "doc_count": 2556
-              }
-            ]
-          }
-        },
-        {
-          "key": "presidente",
-          "doc_count": 18477,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 7585
-              },
-              {
-                "key": "neutral",
-                "doc_count": 6772
-              },
-              {
-                "key": "pos",
-                "doc_count": 4120
-              }
-            ]
-          }
-        },
-        {
-          "key": "perú",
-          "doc_count": 18246,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 10402
-              },
-              {
-                "key": "neutral",
-                "doc_count": 4250
-              },
-              {
-                "key": "pos",
-                "doc_count": 3594
-              }
-            ]
-          }
-        },
-        {
-          "key": "contra",
-          "doc_count": 15052,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 8268
-              },
-              {
-                "key": "neutral",
-                "doc_count": 4796
-              },
-              {
-                "key": "pos",
-                "doc_count": 1988
-              }
-            ]
-          }
-        },
-        {
-          "key": "congreso",
-          "doc_count": 13745,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 6329
-              },
-              {
-                "key": "neutral",
-                "doc_count": 4486
-              },
-              {
-                "key": "pos",
-                "doc_count": 2930
-              }
-            ]
-          }
-        },
-        {
-          "key": "indulto",
-          "doc_count": 12972,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 6727
-              },
-              {
-                "key": "neutral",
-                "doc_count": 4111
-              },
-              {
-                "key": "pos",
-                "doc_count": 2134
-              }
-            ]
-          }
-        },
-        {
-          "key": "odebrecht",
-          "doc_count": 12811,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 6313
-              },
-              {
-                "key": "neutral",
-                "doc_count": 5607
-              },
-              {
-                "key": "pos",
-                "doc_count": 891
-              }
-            ]
-          }
-        }
-      ]
-    },
-    "agg_terms_sample_sentiment.keyword": {
-      "doc_count_error_upper_bound": 0,
-      "sum_other_doc_count": 0,
-      "buckets": [
-        {
-          "key": "neg",
-          "doc_count": 84778
-        },
-        {
-          "key": "neutral",
-          "doc_count": 71219
-        },
-        {
-          "key": "pos",
-          "doc_count": 35643
-        }
-      ]
-    },
-    "agg_terms_sample_mentions.keyword": {
-      "doc_count_error_upper_bound": 1387,
-      "sum_other_doc_count": 184073,
-      "buckets": [
-        {
-          "key": "ppkamigo",
-          "doc_count": 8706,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 3932
-              },
-              {
-                "key": "pos",
-                "doc_count": 2993
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1781
-              }
-            ]
-          }
-        },
-        {
-          "key": "rmapalacios",
-          "doc_count": 6486,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 2982
-              },
-              {
-                "key": "neg",
-                "doc_count": 2249
-              },
-              {
-                "key": "pos",
-                "doc_count": 1255
-              }
-            ]
-          }
-        },
-        {
-          "key": "YeniVilcatoma2",
-          "doc_count": 5596,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 2232
-              },
-              {
-                "key": "neg",
-                "doc_count": 2009
-              },
-              {
-                "key": "pos",
-                "doc_count": 1355
-              }
-            ]
-          }
-        },
-        {
-          "key": "JBCPERU",
-          "doc_count": 4635,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 2431
-              },
-              {
-                "key": "neg",
-                "doc_count": 1763
-              },
-              {
-                "key": "pos",
-                "doc_count": 441
-              }
-            ]
-          }
-        },
-        {
-          "key": "chicharronpress",
-          "doc_count": 4197,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 4140
-              },
-              {
-                "key": "neg",
-                "doc_count": 46
-              },
-              {
-                "key": "pos",
-                "doc_count": 11
-              }
-            ]
-          }
-        },
-        {
-          "key": "heduardo50",
-          "doc_count": 3754,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 1650
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1388
-              },
-              {
-                "key": "pos",
-                "doc_count": 716
-              }
-            ]
-          }
-        },
-        {
-          "key": "Politica_ECpe",
-          "doc_count": 2957,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 1157
-              },
-              {
-                "key": "neg",
-                "doc_count": 1146
-              },
-              {
-                "key": "pos",
-                "doc_count": 654
-              }
-            ]
-          }
-        },
-        {
-          "key": "canalN_",
-          "doc_count": 2503,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 1220
-              },
-              {
-                "key": "neutral",
-                "doc_count": 806
-              },
-              {
-                "key": "pos",
-                "doc_count": 477
-              }
-            ]
-          }
-        },
-        {
-          "key": "larepublica_pe",
-          "doc_count": 2473,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 1063
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1015
-              },
-              {
-                "key": "pos",
-                "doc_count": 395
-              }
-            ]
-          }
-        },
-        {
-          "key": "MadeleineOster3",
-          "doc_count": 2440,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 1068
-              },
-              {
-                "key": "pos",
-                "doc_count": 781
-              },
-              {
-                "key": "neg",
-                "doc_count": 591
-              }
-            ]
-          }
-        }
-      ]
-    },
-    "agg_terms_author_screen_name.keyword": {
-      "doc_count_error_upper_bound": -1,
-      "sum_other_doc_count": 191617,
-      "buckets": [
-        {
-          "key": "la_patilla",
-          "doc_count": 5,
-          "agg_avg_author_followers_count": {
-            "value": 6693328.8
-          }
-        },
-        {
-          "key": "RevistaSemana",
-          "doc_count": 2,
-          "agg_avg_author_followers_count": {
-            "value": 3880531
-          }
-        },
-        {
-          "key": "DeniseDresserG",
-          "doc_count": 1,
-          "agg_avg_author_followers_count": {
-            "value": 3819752
-          }
-        },
-        {
-          "key": "malditaternura",
-          "doc_count": 7,
-          "agg_avg_author_followers_count": {
-            "value": 3401475.5714285714
-          }
-        },
-        {
-          "key": "24HorasTVN",
-          "doc_count": 7,
-          "agg_avg_author_followers_count": {
-            "value": 3271837.285714286
-          }
-        },
-        {
-          "key": "nelsonbocaranda",
-          "doc_count": 1,
-          "agg_avg_author_followers_count": {
-            "value": 2894537
-          }
-        }
-      ]
-    },
-    "agg_terms_author_gender.keyword": {
-      "doc_count_error_upper_bound": 0,
-      "sum_other_doc_count": 0,
-      "buckets": [
-        {
-          "key": "u",
-          "doc_count": 110019
-        },
-        {
-          "key": "m",
-          "doc_count": 42593
-        },
-        {
-          "key": "f",
-          "doc_count": 39028
-        }
-      ]
-    },
-    "agg_date_histogram_sample_created_at": {
-      "buckets": [
-        {
-          "key_as_string": "1513659600000",
-          "key": 1513659600000,
-          "doc_count": 33928,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 18695
-              },
-              {
-                "key": "neutral",
-                "doc_count": 10362
-              },
-              {
-                "key": "sad",
-                "doc_count": 3470
-              },
-              {
-                "key": "scared",
-                "doc_count": 787
-              },
-              {
-                "key": "glad",
-                "doc_count": 614
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 14881
-              },
-              {
-                "key": "neutral",
-                "doc_count": 14752
-              },
-              {
-                "key": "pos",
-                "doc_count": 4295
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1513746000000",
-          "key": 1513746000000,
-          "doc_count": 40337,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 19358
-              },
-              {
-                "key": "neutral",
-                "doc_count": 14911
-              },
-              {
-                "key": "sad",
-                "doc_count": 3245
-              },
-              {
-                "key": "glad",
-                "doc_count": 1593
-              },
-              {
-                "key": "scared",
-                "doc_count": 1230
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 16974
-              },
-              {
-                "key": "neg",
-                "doc_count": 16548
-              },
-              {
-                "key": "pos",
-                "doc_count": 6815
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1513832400000",
-          "key": 1513832400000,
-          "doc_count": 51825,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 26225
-              },
-              {
-                "key": "neutral",
-                "doc_count": 15879
-              },
-              {
-                "key": "sad",
-                "doc_count": 5860
-              },
-              {
-                "key": "scared",
-                "doc_count": 1994
-              },
-              {
-                "key": "glad",
-                "doc_count": 1867
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 22438
-              },
-              {
-                "key": "neutral",
-                "doc_count": 18719
-              },
-              {
-                "key": "pos",
-                "doc_count": 10668
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1513918800000",
-          "key": 1513918800000,
-          "doc_count": 20329,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 8986
-              },
-              {
-                "key": "neutral",
-                "doc_count": 6707
-              },
-              {
-                "key": "sad",
-                "doc_count": 2860
-              },
-              {
-                "key": "glad",
-                "doc_count": 1232
-              },
-              {
-                "key": "scared",
-                "doc_count": 544
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 9069
-              },
-              {
-                "key": "neutral",
-                "doc_count": 6090
-              },
-              {
-                "key": "pos",
-                "doc_count": 5170
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514005200000",
-          "key": 1514005200000,
-          "doc_count": 4375,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 2305
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1326
-              },
-              {
-                "key": "sad",
-                "doc_count": 419
-              },
-              {
-                "key": "glad",
-                "doc_count": 176
-              },
-              {
-                "key": "scared",
-                "doc_count": 149
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 1925
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1383
-              },
-              {
-                "key": "pos",
-                "doc_count": 1067
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514091600000",
-          "key": 1514091600000,
-          "doc_count": 5478,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 3274
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1309
-              },
-              {
-                "key": "sad",
-                "doc_count": 355
-              },
-              {
-                "key": "glad",
-                "doc_count": 281
-              },
-              {
-                "key": "scared",
-                "doc_count": 259
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 2493
-              },
-              {
-                "key": "pos",
-                "doc_count": 1555
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1430
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514178000000",
-          "key": 1514178000000,
-          "doc_count": 5781,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 3392
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1353
-              },
-              {
-                "key": "sad",
-                "doc_count": 397
-              },
-              {
-                "key": "scared",
-                "doc_count": 347
-              },
-              {
-                "key": "glad",
-                "doc_count": 292
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 3184
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1442
-              },
-              {
-                "key": "pos",
-                "doc_count": 1155
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514264400000",
-          "key": 1514264400000,
-          "doc_count": 5293,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 2806
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1637
-              },
-              {
-                "key": "sad",
-                "doc_count": 354
-              },
-              {
-                "key": "glad",
-                "doc_count": 263
-              },
-              {
-                "key": "scared",
-                "doc_count": 233
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 3051
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1407
-              },
-              {
-                "key": "pos",
-                "doc_count": 835
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514350800000",
-          "key": 1514350800000,
-          "doc_count": 5135,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 2805
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1694
-              },
-              {
-                "key": "sad",
-                "doc_count": 336
-              },
-              {
-                "key": "glad",
-                "doc_count": 173
-              },
-              {
-                "key": "scared",
-                "doc_count": 127
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 2686
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1380
-              },
-              {
-                "key": "pos",
-                "doc_count": 1069
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514437200000",
-          "key": 1514437200000,
-          "doc_count": 5065,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 3077
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1351
-              },
-              {
-                "key": "sad",
-                "doc_count": 326
-              },
-              {
-                "key": "scared",
-                "doc_count": 158
-              },
-              {
-                "key": "glad",
-                "doc_count": 153
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 2362
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1853
-              },
-              {
-                "key": "pos",
-                "doc_count": 850
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514523600000",
-          "key": 1514523600000,
-          "doc_count": 5025,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 2600
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1788
-              },
-              {
-                "key": "sad",
-                "doc_count": 356
-              },
-              {
-                "key": "scared",
-                "doc_count": 144
-              },
-              {
-                "key": "glad",
-                "doc_count": 137
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 2244
-              },
-              {
-                "key": "neutral",
-                "doc_count": 2144
-              },
-              {
-                "key": "pos",
-                "doc_count": 637
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514610000000",
-          "key": 1514610000000,
-          "doc_count": 4839,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 2835
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1656
-              },
-              {
-                "key": "sad",
-                "doc_count": 178
-              },
-              {
-                "key": "scared",
-                "doc_count": 106
-              },
-              {
-                "key": "glad",
-                "doc_count": 64
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 2112
-              },
-              {
-                "key": "neutral",
-                "doc_count": 2090
-              },
-              {
-                "key": "pos",
-                "doc_count": 637
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514696400000",
-          "key": 1514696400000,
-          "doc_count": 4230,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 2221
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1375
-              },
-              {
-                "key": "sad",
-                "doc_count": 291
-              },
-              {
-                "key": "scared",
-                "doc_count": 219
-              },
-              {
-                "key": "glad",
-                "doc_count": 124
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 1785
-              },
-              {
-                "key": "neutral",
-                "doc_count": 1555
-              },
-              {
-                "key": "pos",
-                "doc_count": 890
-              }
-            ]
-          }
-        }
-      ]
-    },
-    "agg_terms_author_age.keyword": {
-      "doc_count_error_upper_bound": 0,
-      "sum_other_doc_count": 0,
-      "buckets": [
-        {
-          "key": "mas25",
-          "doc_count": 183447
-        },
-        {
-          "key": "menos25",
-          "doc_count": 8193
-        }
-      ]
-    }
-  }
+	"took": 7153,
+	"timed_out": false,
+	"_shards": {
+		"total": 11,
+		"successful": 11,
+		"failed": 0
+	},
+	"hits": {
+		"total": 326926,
+		"max_score": 0,
+		"hits": []
+	},
+	"aggregations": {
+		"agg_terms_sample_words": {
+			"doc_count_error_upper_bound": 8697,
+			"sum_other_doc_count": 2862196,
+			"buckets": [{
+					"key": "ppk",
+					"doc_count": 152252,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 81671
+							},
+							{
+								"key": "neutral",
+								"doc_count": 47947
+							},
+							{
+								"key": "pos",
+								"doc_count": 22634
+							}
+						]
+					}
+				},
+				{
+					"key": "vacancia",
+					"doc_count": 54215,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 30389
+							},
+							{
+								"key": "neutral",
+								"doc_count": 18370
+							},
+							{
+								"key": "pos",
+								"doc_count": 5456
+							}
+						]
+					}
+				},
+				{
+					"key": "presidente",
+					"doc_count": 29336,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 12128
+							},
+							{
+								"key": "neutral",
+								"doc_count": 9846
+							},
+							{
+								"key": "pos",
+								"doc_count": 7362
+							}
+						]
+					}
+				},
+				{
+					"key": "congreso",
+					"doc_count": 29326,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 12956
+							},
+							{
+								"key": "neutral",
+								"doc_count": 12873
+							},
+							{
+								"key": "pos",
+								"doc_count": 3497
+							}
+						]
+					}
+				},
+				{
+					"key": "fujimoristas",
+					"doc_count": 22243,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 15568
+							},
+							{
+								"key": "neutral",
+								"doc_count": 4818
+							},
+							{
+								"key": "pos",
+								"doc_count": 1857
+							}
+						]
+					}
+				},
+				{
+					"key": "perú",
+					"doc_count": 21220,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 12389
+							},
+							{
+								"key": "neutral",
+								"doc_count": 5139
+							},
+							{
+								"key": "pos",
+								"doc_count": 3692
+							}
+						]
+					}
+				},
+				{
+					"key": "fujimori",
+					"doc_count": 18277,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 10144
+							},
+							{
+								"key": "neutral",
+								"doc_count": 5334
+							},
+							{
+								"key": "pos",
+								"doc_count": 2799
+							}
+						]
+					}
+				},
+				{
+					"key": "contra",
+					"doc_count": 17271,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 8710
+							},
+							{
+								"key": "neutral",
+								"doc_count": 6489
+							},
+							{
+								"key": "pos",
+								"doc_count": 2072
+							}
+						]
+					}
+				},
+				{
+					"key": "indulto",
+					"doc_count": 15326,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 8116
+							},
+							{
+								"key": "neutral",
+								"doc_count": 5329
+							},
+							{
+								"key": "pos",
+								"doc_count": 1881
+							}
+						]
+					}
+				},
+				{
+					"key": "país",
+					"doc_count": 13925,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 9390
+							},
+							{
+								"key": "neutral",
+								"doc_count": 2847
+							},
+							{
+								"key": "pos",
+								"doc_count": 1688
+							}
+						]
+					}
+				}
+			]
+		},
+		"agg_terms_sample_hashtags.keyword": {
+			"doc_count_error_upper_bound": 258,
+			"sum_other_doc_count": 24693,
+			"buckets": [{
+					"key": "ppk",
+					"doc_count": 8300,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 4535
+							},
+							{
+								"key": "neg",
+								"doc_count": 2963
+							},
+							{
+								"key": "pos",
+								"doc_count": 802
+							}
+						]
+					}
+				},
+				{
+					"key": "odebrecht",
+					"doc_count": 1266,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 627
+							},
+							{
+								"key": "neg",
+								"doc_count": 592
+							},
+							{
+								"key": "pos",
+								"doc_count": 47
+							}
+						]
+					}
+				},
+				{
+					"key": "loúltimo",
+					"doc_count": 671,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 390
+							},
+							{
+								"key": "neg",
+								"doc_count": 231
+							},
+							{
+								"key": "pos",
+								"doc_count": 50
+							}
+						]
+					}
+				},
+				{
+					"key": "fujimori",
+					"doc_count": 650,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 343
+							},
+							{
+								"key": "neutral",
+								"doc_count": 265
+							},
+							{
+								"key": "pos",
+								"doc_count": 42
+							}
+						]
+					}
+				},
+				{
+					"key": "perú",
+					"doc_count": 639,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 333
+							},
+							{
+								"key": "neg",
+								"doc_count": 235
+							},
+							{
+								"key": "pos",
+								"doc_count": 71
+							}
+						]
+					}
+				},
+				{
+					"key": "urgente",
+					"doc_count": 629,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 401
+							},
+							{
+								"key": "neg",
+								"doc_count": 197
+							},
+							{
+								"key": "pos",
+								"doc_count": 31
+							}
+						]
+					}
+				},
+				{
+					"key": "ahora",
+					"doc_count": 578,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 353
+							},
+							{
+								"key": "neg",
+								"doc_count": 141
+							},
+							{
+								"key": "pos",
+								"doc_count": 84
+							}
+						]
+					}
+				},
+				{
+					"key": "crisispresidencial",
+					"doc_count": 548,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 345
+							},
+							{
+								"key": "neg",
+								"doc_count": 156
+							},
+							{
+								"key": "pos",
+								"doc_count": 47
+							}
+						]
+					}
+				},
+				{
+					"key": "video",
+					"doc_count": 547,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 259
+							},
+							{
+								"key": "neg",
+								"doc_count": 241
+							},
+							{
+								"key": "pos",
+								"doc_count": 47
+							}
+						]
+					}
+				},
+				{
+					"key": "indulto",
+					"doc_count": 492,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 264
+							},
+							{
+								"key": "neg",
+								"doc_count": 186
+							},
+							{
+								"key": "pos",
+								"doc_count": 42
+							}
+						]
+					}
+				}
+			]
+		},
+		"agg_terms_sample_sentiment.keyword": {
+			"doc_count_error_upper_bound": 0,
+			"sum_other_doc_count": 0,
+			"buckets": [{
+					"key": "neg",
+					"doc_count": 173786
+				},
+				{
+					"key": "neutral",
+					"doc_count": 103608
+				},
+				{
+					"key": "pos",
+					"doc_count": 49532
+				}
+			]
+		},
+		"agg_terms_sample_mentions.keyword": {
+			"doc_count_error_upper_bound": 1814,
+			"sum_other_doc_count": 211227,
+			"buckets": [{
+					"key": "ppkamigo",
+					"doc_count": 14011,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 7199
+							},
+							{
+								"key": "neutral",
+								"doc_count": 5241
+							},
+							{
+								"key": "pos",
+								"doc_count": 1571
+							}
+						]
+					}
+				},
+				{
+					"key": "rmapalacios",
+					"doc_count": 6425,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 3291
+							},
+							{
+								"key": "neutral",
+								"doc_count": 2521
+							},
+							{
+								"key": "pos",
+								"doc_count": 613
+							}
+						]
+					}
+				},
+				{
+					"key": "Politica_ECpe",
+					"doc_count": 5337,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 2625
+							},
+							{
+								"key": "neutral",
+								"doc_count": 2016
+							},
+							{
+								"key": "pos",
+								"doc_count": 696
+							}
+						]
+					}
+				},
+				{
+					"key": "larepublica_pe",
+					"doc_count": 5048,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 2637
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1845
+							},
+							{
+								"key": "pos",
+								"doc_count": 566
+							}
+						]
+					}
+				},
+				{
+					"key": "canalN_",
+					"doc_count": 4815,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 2461
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1776
+							},
+							{
+								"key": "pos",
+								"doc_count": 578
+							}
+						]
+					}
+				},
+				{
+					"key": "MecheAF",
+					"doc_count": 4393,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 2236
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1587
+							},
+							{
+								"key": "pos",
+								"doc_count": 570
+							}
+						]
+					}
+				},
+				{
+					"key": "YeniVilcatoma2",
+					"doc_count": 4034,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 2348
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1334
+							},
+							{
+								"key": "pos",
+								"doc_count": 352
+							}
+						]
+					}
+				},
+				{
+					"key": "vozdelatierra",
+					"doc_count": 3901,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 2252
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1205
+							},
+							{
+								"key": "pos",
+								"doc_count": 444
+							}
+						]
+					}
+				},
+				{
+					"key": "JuanSheput",
+					"doc_count": 3278,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 1775
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1196
+							},
+							{
+								"key": "pos",
+								"doc_count": 307
+							}
+						]
+					}
+				},
+				{
+					"key": "diariocorreo",
+					"doc_count": 3127,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 1507
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1308
+							},
+							{
+								"key": "pos",
+								"doc_count": 312
+							}
+						]
+					}
+				}
+			]
+		},
+		"agg_terms_author_screen_name.keyword": {
+			"doc_count_error_upper_bound": -1,
+			"sum_other_doc_count": 326893,
+			"buckets": [{
+					"key": "lopezdoriga",
+					"doc_count": 1,
+					"agg_avg_author_followers_count": {
+						"value": 7876618
+					}
+				},
+				{
+					"key": "el_pais",
+					"doc_count": 2,
+					"agg_avg_author_followers_count": {
+						"value": 6500198.5
+					}
+				},
+				{
+					"key": "NTN24",
+					"doc_count": 4,
+					"agg_avg_author_followers_count": {
+						"value": 3734339.5
+					}
+				},
+				{
+					"key": "UNoticias",
+					"doc_count": 2,
+					"agg_avg_author_followers_count": {
+						"value": 3715248
+					}
+				},
+				{
+					"key": "malditaternura",
+					"doc_count": 16,
+					"agg_avg_author_followers_count": {
+						"value": 3395968.5
+					}
+				},
+				{
+					"key": "24HorasTVN",
+					"doc_count": 8,
+					"agg_avg_author_followers_count": {
+						"value": 3271321.625
+					}
+				}
+			]
+		},
+		"agg_date_histogram_sample_created_at": {
+			"buckets": [{
+					"key_as_string": "1513054800000",
+					"key": 1513054800000,
+					"doc_count": 950,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 449
+							},
+							{
+								"key": "neutral",
+								"doc_count": 345
+							},
+							{
+								"key": "sad",
+								"doc_count": 101
+							},
+							{
+								"key": "scared",
+								"doc_count": 34
+							},
+							{
+								"key": "glad",
+								"doc_count": 21
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 57,
+						"sum_other_doc_count": 10157,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 699
+							},
+							{
+								"key": "presidente",
+								"doc_count": 190
+							},
+							{
+								"key": "comisión",
+								"doc_count": 158
+							},
+							{
+								"key": "odebrecht",
+								"doc_count": 135
+							},
+							{
+								"key": "verdad",
+								"doc_count": 108
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 1,
+						"sum_other_doc_count": 49,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 108
+							},
+							{
+								"key": "bartranoseva",
+								"doc_count": 24
+							},
+							{
+								"key": "todosesabe",
+								"doc_count": 18
+							},
+							{
+								"key": "lavajato",
+								"doc_count": 11
+							},
+							{
+								"key": "odebrecht",
+								"doc_count": 10
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 477
+							},
+							{
+								"key": "neutral",
+								"doc_count": 408
+							},
+							{
+								"key": "pos",
+								"doc_count": 65
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 947,
+						"buckets": [{
+								"key": "noticiAmerica",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2475895
+								}
+							},
+							{
+								"key": "MilagrosLeivaG",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 1834959
+								}
+							},
+							{
+								"key": "RPPNoticias",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 1496156
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 4,
+						"sum_other_doc_count": 619,
+						"buckets": [{
+								"key": "Señor Presidente #Ppk no se esconda tras el sillón presidencial, diga la verdad sobre sus asesorías directas e indirectas a Odebrecht y sus consorciadas peruanas. ",
+								"doc_count": 50
+							},
+							{
+								"key": "LavaJato es la pesadilla del Ejecutivo, aparecen más indicios y nexos con mafia brasileña. #PPK se ha mostrado renuente a declarar ante comisión. Apoyo a .@rosamariabartra, quien debe continuar al frente. #BartraNoSeVa ",
+								"doc_count": 36
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1513141200000",
+					"key": 1513141200000,
+					"doc_count": 6209,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 3229
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1881
+							},
+							{
+								"key": "sad",
+								"doc_count": 656
+							},
+							{
+								"key": "scared",
+								"doc_count": 230
+							},
+							{
+								"key": "glad",
+								"doc_count": 213
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 323,
+						"sum_other_doc_count": 63633,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 4185
+							},
+							{
+								"key": "odebrecht",
+								"doc_count": 1070
+							},
+							{
+								"key": "fujimoristas",
+								"doc_count": 783
+							},
+							{
+								"key": "presidente",
+								"doc_count": 693
+							},
+							{
+								"key": "comisión",
+								"doc_count": 613
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 5,
+						"sum_other_doc_count": 466,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 367
+							},
+							{
+								"key": "odebrecht",
+								"doc_count": 220
+							},
+							{
+								"key": "últimominuto",
+								"doc_count": 92
+							},
+							{
+								"key": "perú",
+								"doc_count": 64
+							},
+							{
+								"key": "renunciappk",
+								"doc_count": 49
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 3857
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1797
+							},
+							{
+								"key": "pos",
+								"doc_count": 555
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 6197,
+						"buckets": [{
+								"key": "rmapalacios",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 2674644
+								}
+							},
+							{
+								"key": "noticiAmerica",
+								"doc_count": 7,
+								"agg_avg_author_followers_count": {
+									"value": 2476259.8571428573
+								}
+							},
+							{
+								"key": "canalN_",
+								"doc_count": 3,
+								"agg_avg_author_followers_count": {
+									"value": 2347244.6666666665
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 28,
+						"sum_other_doc_count": 4790,
+						"buckets": [{
+								"key": "Esto ya es un ¡rompan filas, sálvese el que pueda! Si la soberana del apañamiento palaciego tiembla y toma distancia del pobre #PPK, ello significa que aún falta lo peor... y los caviares lo saben. ",
+								"doc_count": 94
+							},
+							{
+								"key": "#ÚLTIMOMINUTO Odebrecht dice que le pagó US$782 mil a empresa de PPK por asesorías ► ",
+								"doc_count": 69
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1513227600000",
+					"key": 1513227600000,
+					"doc_count": 12501,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 5894
+							},
+							{
+								"key": "neutral",
+								"doc_count": 4118
+							},
+							{
+								"key": "sad",
+								"doc_count": 1430
+							},
+							{
+								"key": "glad",
+								"doc_count": 613
+							},
+							{
+								"key": "scared",
+								"doc_count": 446
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 481,
+						"sum_other_doc_count": 122188,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 8073
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 1654
+							},
+							{
+								"key": "congreso",
+								"doc_count": 1604
+							},
+							{
+								"key": "fujimoristas",
+								"doc_count": 1204
+							},
+							{
+								"key": "keiko",
+								"doc_count": 1203
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 23,
+						"sum_other_doc_count": 1145,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 515
+							},
+							{
+								"key": "odebrecht",
+								"doc_count": 269
+							},
+							{
+								"key": "fuerzapopular",
+								"doc_count": 102
+							},
+							{
+								"key": "apra",
+								"doc_count": 101
+							},
+							{
+								"key": "loúltimo",
+								"doc_count": 90
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 7278
+							},
+							{
+								"key": "neutral",
+								"doc_count": 3952
+							},
+							{
+								"key": "pos",
+								"doc_count": 1271
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 12489,
+						"buckets": [{
+								"key": "malditaternura",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 3388742
+								}
+							},
+							{
+								"key": "rmapalacios",
+								"doc_count": 3,
+								"agg_avg_author_followers_count": {
+									"value": 2676190
+								}
+							},
+							{
+								"key": "noticiAmerica",
+								"doc_count": 8,
+								"agg_avg_author_followers_count": {
+									"value": 2476731.75
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 35,
+						"sum_other_doc_count": 9969,
+						"buckets": [{
+								"key": "Se requieren 87 votos para la vacancia presidencial: Fuerza Popular 71 Yeni Vilcatoma 1 Apra 5 Vitocho 1 Frente Amplio 10 PPK verá al Papa por televisión. ",
+								"doc_count": 184
+							},
+							{
+								"key": "¿Por qué Bartra pide información a Odebrecht sobre PPK y no sobre Keiko?  ",
+								"doc_count": 96
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1513314000000",
+					"key": 1513314000000,
+					"doc_count": 26653,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 12206
+							},
+							{
+								"key": "neutral",
+								"doc_count": 7991
+							},
+							{
+								"key": "sad",
+								"doc_count": 3946
+							},
+							{
+								"key": "glad",
+								"doc_count": 1507
+							},
+							{
+								"key": "scared",
+								"doc_count": 1003
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 1036,
+						"sum_other_doc_count": 238695,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 11767
+							},
+							{
+								"key": "congreso",
+								"doc_count": 5087
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 4522
+							},
+							{
+								"key": "presidente",
+								"doc_count": 2883
+							},
+							{
+								"key": "fujimoristas",
+								"doc_count": 2388
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 40,
+						"sum_other_doc_count": 2050,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 690
+							},
+							{
+								"key": "odebrecht",
+								"doc_count": 137
+							},
+							{
+								"key": "fujimorinuncamas",
+								"doc_count": 115
+							},
+							{
+								"key": "loúltimo",
+								"doc_count": 106
+							},
+							{
+								"key": "envivo",
+								"doc_count": 93
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 14114
+							},
+							{
+								"key": "neutral",
+								"doc_count": 9217
+							},
+							{
+								"key": "pos",
+								"doc_count": 3322
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 26645,
+						"buckets": [{
+								"key": "NTN24",
+								"doc_count": 3,
+								"agg_avg_author_followers_count": {
+									"value": 3733409
+								}
+							},
+							{
+								"key": "malditaternura",
+								"doc_count": 4,
+								"agg_avg_author_followers_count": {
+									"value": 3391298.75
+								}
+							},
+							{
+								"key": "24HorasTVN",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 3268514
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 49,
+						"sum_other_doc_count": 22530,
+						"buckets": [{
+								"key": "Así se ven los fujimoristas diciéndole corrupto a PPK. ",
+								"doc_count": 190
+							},
+							{
+								"key": "Amigos míos, a sincerarse: Si le creen a Paolo Guerrero lo del té contaminado, también deberían creerle a PPK lo de Westfield.",
+								"doc_count": 185
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1513400400000",
+					"key": 1513400400000,
+					"doc_count": 16961,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 8299
+							},
+							{
+								"key": "neutral",
+								"doc_count": 5048
+							},
+							{
+								"key": "sad",
+								"doc_count": 2213
+							},
+							{
+								"key": "glad",
+								"doc_count": 946
+							},
+							{
+								"key": "scared",
+								"doc_count": 455
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 978,
+						"sum_other_doc_count": 196548,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 9640
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 4342
+							},
+							{
+								"key": "presidente",
+								"doc_count": 2212
+							},
+							{
+								"key": "contra",
+								"doc_count": 2183
+							},
+							{
+								"key": "congreso",
+								"doc_count": 2101
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 13,
+						"sum_other_doc_count": 1060,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 399
+							},
+							{
+								"key": "perú",
+								"doc_count": 95
+							},
+							{
+								"key": "odebrecht",
+								"doc_count": 80
+							},
+							{
+								"key": "yonomarchoconcorruptos",
+								"doc_count": 70
+							},
+							{
+								"key": "fujimorinuncamas",
+								"doc_count": 66
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 9481
+							},
+							{
+								"key": "neutral",
+								"doc_count": 5682
+							},
+							{
+								"key": "pos",
+								"doc_count": 1798
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 16958,
+						"buckets": [{
+								"key": "lopezdoriga",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 7876618
+								}
+							},
+							{
+								"key": "el_pais",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 6497453
+								}
+							},
+							{
+								"key": "malditaternura",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 3393035
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 81,
+						"sum_other_doc_count": 12720,
+						"buckets": [{
+								"key": "URGENTE - CRISIS EN PERÚ: Con 93 votos a favor y 17 en contra se aprueba pedido de vacancia presidencial del pdte Pedro Pablo Kuczynski. El jueves 21 a las 0900 hora de Lima se decidirá si el Pdte continúa en el poder o es destituído por incapacidad moral.",
+								"doc_count": 349
+							},
+							{
+								"key": "En vez de aprovechar la inminente caída de PPK para hacer algo de autocrítica respecto de su pasado corrupto, fujimoristas optan por el negacionismo y quedan en evidencia. No les interesa el país, les obsesiona el poder. 👎",
+								"doc_count": 207
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1513486800000",
+					"key": 1513486800000,
+					"doc_count": 19082,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 9321
+							},
+							{
+								"key": "neutral",
+								"doc_count": 5770
+							},
+							{
+								"key": "sad",
+								"doc_count": 2404
+							},
+							{
+								"key": "glad",
+								"doc_count": 915
+							},
+							{
+								"key": "scared",
+								"doc_count": 672
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 712,
+						"sum_other_doc_count": 184973,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 11365
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 3150
+							},
+							{
+								"key": "congreso",
+								"doc_count": 2673
+							},
+							{
+								"key": "presidente",
+								"doc_count": 1962
+							},
+							{
+								"key": "fujimoristas",
+								"doc_count": 1942
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 17,
+						"sum_other_doc_count": 1047,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 334
+							},
+							{
+								"key": "13dic",
+								"doc_count": 104
+							},
+							{
+								"key": "puntofinal",
+								"doc_count": 56
+							},
+							{
+								"key": "odebrecht",
+								"doc_count": 55
+							},
+							{
+								"key": "17dic",
+								"doc_count": 46
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 10637
+							},
+							{
+								"key": "neutral",
+								"doc_count": 6063
+							},
+							{
+								"key": "pos",
+								"doc_count": 2382
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 19073,
+						"buckets": [{
+								"key": "noticiAmerica",
+								"doc_count": 3,
+								"agg_avg_author_followers_count": {
+									"value": 2478435
+								}
+							},
+							{
+								"key": "canalN_",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2351223
+								}
+							},
+							{
+								"key": "alvarezrodrich",
+								"doc_count": 5,
+								"agg_avg_author_followers_count": {
+									"value": 1926645
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 40,
+						"sum_other_doc_count": 15270,
+						"buckets": [{
+								"key": "-Hola soy del Frente Amplio y apoyo a los fujimoristas en la vacancia del Presidente. -Hola soy del Frente Amplio y saldré a marchar contra el fujigolpe para vacar al Presidente. ¿qué esquizofrenia es esta?",
+								"doc_count": 135
+							},
+							{
+								"key": "URGENTE - CRISIS EN PERÚ: Con 93 votos a favor y 17 en contra se aprueba pedido de vacancia presidencial del pdte Pedro Pablo Kuczynski. El jueves 21 a las 0900 hora de Lima se decidirá si el Pdte continúa en el poder o es destituído por incapacidad moral.",
+								"doc_count": 106
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1513573200000",
+					"key": 1513573200000,
+					"doc_count": 13820,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 6923
+							},
+							{
+								"key": "neutral",
+								"doc_count": 4055
+							},
+							{
+								"key": "sad",
+								"doc_count": 1740
+							},
+							{
+								"key": "glad",
+								"doc_count": 651
+							},
+							{
+								"key": "scared",
+								"doc_count": 451
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 548,
+						"sum_other_doc_count": 146572,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 8025
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 3106
+							},
+							{
+								"key": "presidente",
+								"doc_count": 1384
+							},
+							{
+								"key": "congreso",
+								"doc_count": 1308
+							},
+							{
+								"key": "fujimoristas",
+								"doc_count": 1253
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 22,
+						"sum_other_doc_count": 1250,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 373
+							},
+							{
+								"key": "singuion",
+								"doc_count": 95
+							},
+							{
+								"key": "facebooklive",
+								"doc_count": 94
+							},
+							{
+								"key": "crisispresidencial",
+								"doc_count": 81
+							},
+							{
+								"key": "odebrecht",
+								"doc_count": 78
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 7452
+							},
+							{
+								"key": "neutral",
+								"doc_count": 5005
+							},
+							{
+								"key": "pos",
+								"doc_count": 1363
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 13815,
+						"buckets": [{
+								"key": "malditaternura",
+								"doc_count": 3,
+								"agg_avg_author_followers_count": {
+									"value": 3395914.6666666665
+								}
+							},
+							{
+								"key": "ActualidadRT",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2824166
+								}
+							},
+							{
+								"key": "rmapalacios",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2681138
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 42,
+						"sum_other_doc_count": 10868,
+						"buckets": [{
+								"key": "Si Fujimori no sabía lo q hacía Montesinos en su gobierno.. Por qué le resulta tan yuca a los fujimoristas creer q PPK no sabía lo q hacían en su empresa? La la la....",
+								"doc_count": 226
+							},
+							{
+								"key": "anoche @MecheAF me dijo que ella y @MartinVizcarraC estan comprometidos al gobernar Peru hasta 2021 si @ppkamigo pierde el voto de vacancia el jueves. defenderian el gobierno de la oposicion planteando la cuestion de confianza de ser necesario ",
+								"doc_count": 115
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1513659600000",
+					"key": 1513659600000,
+					"doc_count": 13350,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 6757
+							},
+							{
+								"key": "neutral",
+								"doc_count": 3962
+							},
+							{
+								"key": "sad",
+								"doc_count": 1629
+							},
+							{
+								"key": "glad",
+								"doc_count": 574
+							},
+							{
+								"key": "scared",
+								"doc_count": 428
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 535,
+						"sum_other_doc_count": 148403,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 7498
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 4236
+							},
+							{
+								"key": "presidente",
+								"doc_count": 1321
+							},
+							{
+								"key": "congreso",
+								"doc_count": 1169
+							},
+							{
+								"key": "fujimorismo",
+								"doc_count": 1041
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 25,
+						"sum_other_doc_count": 1214,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 574
+							},
+							{
+								"key": "ahora",
+								"doc_count": 86
+							},
+							{
+								"key": "noalgolpefujimorista",
+								"doc_count": 71
+							},
+							{
+								"key": "leychlimper",
+								"doc_count": 52
+							},
+							{
+								"key": "odebrecht",
+								"doc_count": 52
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 6763
+							},
+							{
+								"key": "neutral",
+								"doc_count": 5321
+							},
+							{
+								"key": "pos",
+								"doc_count": 1266
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 13338,
+						"buckets": [{
+								"key": "malditaternura",
+								"doc_count": 3,
+								"agg_avg_author_followers_count": {
+									"value": 3397112
+								}
+							},
+							{
+								"key": "Latina_pe",
+								"doc_count": 3,
+								"agg_avg_author_followers_count": {
+									"value": 2856561.3333333335
+								}
+							},
+							{
+								"key": "rmapalacios",
+								"doc_count": 6,
+								"agg_avg_author_followers_count": {
+									"value": 2682709.5
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 50,
+						"sum_other_doc_count": 10031,
+						"buckets": [{
+								"key": "La solicitud de Vacancia la presentó el FA y la admitieron a trámite 93 congresistas. 34 de ellos NO fujimoristas. Pero PPK acusa de todo al fujimorismo. Jugar al antifujimorismo rabioso denota falta de entendimiento de los procesos sociales del país. ",
+								"doc_count": 263
+							},
+							{
+								"key": "Pregunta a la “media trainer” de PPK , es verdad ¿ cobró por servicios a Graña&amp;Montero y al @MininterPeru a través de una conocida empresa de comunicaciones en el último año ? ",
+								"doc_count": 167
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1513746000000",
+					"key": 1513746000000,
+					"doc_count": 24579,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 10073
+							},
+							{
+								"key": "neutral",
+								"doc_count": 7820
+							},
+							{
+								"key": "sad",
+								"doc_count": 3767
+							},
+							{
+								"key": "glad",
+								"doc_count": 2000
+							},
+							{
+								"key": "scared",
+								"doc_count": 919
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 793,
+						"sum_other_doc_count": 221323,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 11289
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 4631
+							},
+							{
+								"key": "congreso",
+								"doc_count": 3821
+							},
+							{
+								"key": "presidente",
+								"doc_count": 3332
+							},
+							{
+								"key": "fujimoristas",
+								"doc_count": 1826
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 24,
+						"sum_other_doc_count": 1628,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 851
+							},
+							{
+								"key": "opinión",
+								"doc_count": 197
+							},
+							{
+								"key": "urgente",
+								"doc_count": 151
+							},
+							{
+								"key": "sevantodos",
+								"doc_count": 91
+							},
+							{
+								"key": "toledo",
+								"doc_count": 73
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 11271
+							},
+							{
+								"key": "neutral",
+								"doc_count": 8742
+							},
+							{
+								"key": "pos",
+								"doc_count": 4566
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 24575,
+						"buckets": [{
+								"key": "malditaternura",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 3398313
+								}
+							},
+							{
+								"key": "24HorasTVN",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 3270883
+								}
+							},
+							{
+								"key": "Latina_pe",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 2856876
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 58,
+						"sum_other_doc_count": 20379,
+						"buckets": [{
+								"key": "RECETA para ABRIR LOS OJOS sobre el modus operandi que sostiene la votación de vacancia a @PPKamigo en Perú: VER más de una vez, la entrevista-lección de #periodismo de @MavilaHuertasC a @dsalaverryv  ",
+								"doc_count": 272
+							},
+							{
+								"key": "Keiko pide postergar su declaración ante la fiscalía por 3ra vez. Dice que su abogado no tiene aún todos los documentos. Más de 1 mes postergando. A PPK le han dado menos de una semana para presentar papeles de hace 12 años. Qué cosas, ¿no?",
+								"doc_count": 194
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1513832400000",
+					"key": 1513832400000,
+					"doc_count": 57538,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 25195
+							},
+							{
+								"key": "neutral",
+								"doc_count": 14921
+							},
+							{
+								"key": "sad",
+								"doc_count": 9818
+							},
+							{
+								"key": "glad",
+								"doc_count": 5113
+							},
+							{
+								"key": "scared",
+								"doc_count": 2491
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 1603,
+						"sum_other_doc_count": 427942,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 16956
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 8175
+							},
+							{
+								"key": "congreso",
+								"doc_count": 7099
+							},
+							{
+								"key": "presidente",
+								"doc_count": 5237
+							},
+							{
+								"key": "perú",
+								"doc_count": 3335
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 48,
+						"sum_other_doc_count": 3101,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 766
+							},
+							{
+								"key": "sevantodos",
+								"doc_count": 277
+							},
+							{
+								"key": "crisispresidencial",
+								"doc_count": 268
+							},
+							{
+								"key": "video",
+								"doc_count": 136
+							},
+							{
+								"key": "vacanciappk",
+								"doc_count": 126
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 30339
+							},
+							{
+								"key": "neutral",
+								"doc_count": 17231
+							},
+							{
+								"key": "pos",
+								"doc_count": 9968
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 57532,
+						"buckets": [{
+								"key": "NTN24",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 3737131
+								}
+							},
+							{
+								"key": "malditaternura",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 3401722
+								}
+							},
+							{
+								"key": "24HorasTVN",
+								"doc_count": 4,
+								"agg_avg_author_followers_count": {
+									"value": 3271507.75
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 41,
+						"sum_other_doc_count": 51987,
+						"buckets": [{
+								"key": "PPK ",
+								"doc_count": 136
+							},
+							{
+								"key": "#NO al golpe de Estado. #No a la vacancia presidencial. Respetemos el debido proceso. ",
+								"doc_count": 109
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1513918800000",
+					"key": 1513918800000,
+					"doc_count": 25165,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 10070
+							},
+							{
+								"key": "neutral",
+								"doc_count": 7483
+							},
+							{
+								"key": "sad",
+								"doc_count": 3715
+							},
+							{
+								"key": "glad",
+								"doc_count": 3050
+							},
+							{
+								"key": "scared",
+								"doc_count": 847
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 1147,
+						"sum_other_doc_count": 259136,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 10389
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 5055
+							},
+							{
+								"key": "perú",
+								"doc_count": 2384
+							},
+							{
+								"key": "contra",
+								"doc_count": 2155
+							},
+							{
+								"key": "favor",
+								"doc_count": 1946
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 21,
+						"sum_other_doc_count": 1449,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 390
+							},
+							{
+								"key": "loúltimo",
+								"doc_count": 87
+							},
+							{
+								"key": "odebrecht",
+								"doc_count": 72
+							},
+							{
+								"key": "vacanciapresidencial",
+								"doc_count": 58
+							},
+							{
+								"key": "albertofujimori",
+								"doc_count": 47
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 12215
+							},
+							{
+								"key": "neutral",
+								"doc_count": 7289
+							},
+							{
+								"key": "pos",
+								"doc_count": 5661
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 25161,
+						"buckets": [{
+								"key": "el_pais",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 6502944
+								}
+							},
+							{
+								"key": "UNoticias",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 3715156
+								}
+							},
+							{
+								"key": "malditaternura",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 3404704.5
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 45,
+						"sum_other_doc_count": 20544,
+						"buckets": [{
+								"key": "Tras perder la votación, Luz Salgado no solo gritó frases contra la bancada de PPK, sino que negó violentamente el saludo a su colega de Fuerza Popular, Clayton Galván, quien no votó a favor de vacancia. ",
+								"doc_count": 820
+							},
+							{
+								"key": "—Ollanta y Nadine Heredia en la cárcel. —Alianza Lima sale campeón. —Perú va al mundial. —Paolo Guerrero va a jugar el mundial. —PPK se queda en el gobierno. 2017 TE QUIERES IR HACIENDO HISTORIA.",
+								"doc_count": 158
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1514005200000",
+					"key": 1514005200000,
+					"doc_count": 7437,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 3492
+							},
+							{
+								"key": "neutral",
+								"doc_count": 2205
+							},
+							{
+								"key": "sad",
+								"doc_count": 1009
+							},
+							{
+								"key": "glad",
+								"doc_count": 451
+							},
+							{
+								"key": "scared",
+								"doc_count": 280
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 338,
+						"sum_other_doc_count": 88468,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 4208
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 2005
+							},
+							{
+								"key": "presidente",
+								"doc_count": 648
+							},
+							{
+								"key": "perú",
+								"doc_count": 597
+							},
+							{
+								"key": "fujimoristas",
+								"doc_count": 579
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 11,
+						"sum_other_doc_count": 520,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 200
+							},
+							{
+								"key": "albertofujimori",
+								"doc_count": 44
+							},
+							{
+								"key": "juanantoniovega",
+								"doc_count": 42
+							},
+							{
+								"key": "médico",
+								"doc_count": 29
+							},
+							{
+								"key": "rppinforma",
+								"doc_count": 17
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 3545
+							},
+							{
+								"key": "neutral",
+								"doc_count": 2773
+							},
+							{
+								"key": "pos",
+								"doc_count": 1119
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 7433,
+						"buckets": [{
+								"key": "UNoticias",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 3715340
+								}
+							},
+							{
+								"key": "Latina_pe",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2858914
+								}
+							},
+							{
+								"key": "rmapalacios",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 2693951
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 28,
+						"sum_other_doc_count": 5453,
+						"buckets": [{
+								"key": "Las dos primeras fotos son rostros de fujimoristas que impidieron que el keikismo vaque a PPK, tras la votación frente al panel. La última, es el rostro de un pescador secuestrado por piratas somalíes en el momento de ser liberado. No diremos más. ",
+								"doc_count": 206
+							},
+							{
+								"key": "Tras perder la votación, Luz Salgado no solo gritó frases contra la bancada de PPK, sino que negó violentamente el saludo a su colega de Fuerza Popular, Clayton Galván, quien no votó a favor de vacancia. ",
+								"doc_count": 163
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1514091600000",
+					"key": 1514091600000,
+					"doc_count": 13108,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 7139
+							},
+							{
+								"key": "neutral",
+								"doc_count": 3006
+							},
+							{
+								"key": "sad",
+								"doc_count": 1285
+							},
+							{
+								"key": "glad",
+								"doc_count": 1174
+							},
+							{
+								"key": "scared",
+								"doc_count": 504
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 564,
+						"sum_other_doc_count": 131666,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 8980
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 3146
+							},
+							{
+								"key": "indulto",
+								"doc_count": 1919
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 1899
+							},
+							{
+								"key": "presidente",
+								"doc_count": 1128
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 11,
+						"sum_other_doc_count": 722,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 196
+							},
+							{
+								"key": "frenteamplio",
+								"doc_count": 103
+							},
+							{
+								"key": "indulto",
+								"doc_count": 79
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 57
+							},
+							{
+								"key": "noalindulto",
+								"doc_count": 45
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 7591
+							},
+							{
+								"key": "neutral",
+								"doc_count": 3223
+							},
+							{
+								"key": "pos",
+								"doc_count": 2294
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 13101,
+						"buckets": [{
+								"key": "rmapalacios",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 2695250
+								}
+							},
+							{
+								"key": "canalN_",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2360257
+								}
+							},
+							{
+								"key": "larepublica_pe",
+								"doc_count": 4,
+								"agg_avg_author_followers_count": {
+									"value": 1744353
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 31,
+						"sum_other_doc_count": 10477,
+						"buckets": [{
+								"key": "¿Viste Cuarto Poder, @ppkamigo? AG no es tu amigo. AG solo es amigo de AG. Ordenó tu vacancia antes de escuchar tu defensa. No cree en el debido proceso, salvo cuando lo reclama para él. Escoge bien a tus amigos, PPK amigo. ",
+								"doc_count": 279
+							},
+							{
+								"key": "PPK LIBERARÍA MAÑANA A FUJIMORI: Acaban años de prisión para expresidente. Resolución de libertad ya habría llegado a @DiarioElPeruano para publicación este domingo. ¿Libertad por vacancia? ",
+								"doc_count": 127
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1514178000000",
+					"key": 1514178000000,
+					"doc_count": 17523,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 9205
+							},
+							{
+								"key": "neutral",
+								"doc_count": 4068
+							},
+							{
+								"key": "sad",
+								"doc_count": 1842
+							},
+							{
+								"key": "glad",
+								"doc_count": 1436
+							},
+							{
+								"key": "scared",
+								"doc_count": 972
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 697,
+						"sum_other_doc_count": 181778,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 12231
+							},
+							{
+								"key": "indulto",
+								"doc_count": 3521
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 3375
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 3264
+							},
+							{
+								"key": "presidente",
+								"doc_count": 1761
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 12,
+						"sum_other_doc_count": 868,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 334
+							},
+							{
+								"key": "frenteamplio",
+								"doc_count": 196
+							},
+							{
+								"key": "indulto",
+								"doc_count": 186
+							},
+							{
+								"key": "urgente",
+								"doc_count": 75
+							},
+							{
+								"key": "indultoesinsulto",
+								"doc_count": 48
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 10106
+							},
+							{
+								"key": "neutral",
+								"doc_count": 4302
+							},
+							{
+								"key": "pos",
+								"doc_count": 3115
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 17514,
+						"buckets": [{
+								"key": "T13",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 2856872
+								}
+							},
+							{
+								"key": "noticiAmerica",
+								"doc_count": 5,
+								"agg_avg_author_followers_count": {
+									"value": 2484430.8
+								}
+							},
+							{
+								"key": "Emol",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 1797106.5
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 44,
+						"sum_other_doc_count": 14132,
+						"buckets": [{
+								"key": "La compra venta de votos más descarada del mundo en 2017 en Perú 10 fujimoristas salvaron de la destitución a PPK (el Presidente) y a cambio de ello éste puso en libertad a Fujimori Que opina?",
+								"doc_count": 198
+							},
+							{
+								"key": "Lo más irónico de todo esto es que si el #FrenteAmplio se hubiera abstenido en la vacancia, el gobierno no hubiera necesitado de los votos de Kenji y los otros 9 fujimoristas. No se hubiera negociado el indulto a #AlbertoFujimori.",
+								"doc_count": 192
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1514264400000",
+					"key": 1514264400000,
+					"doc_count": 12058,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 5897
+							},
+							{
+								"key": "neutral",
+								"doc_count": 2838
+							},
+							{
+								"key": "sad",
+								"doc_count": 1498
+							},
+							{
+								"key": "scared",
+								"doc_count": 973
+							},
+							{
+								"key": "glad",
+								"doc_count": 852
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 458,
+						"sum_other_doc_count": 130853,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 6683
+							},
+							{
+								"key": "indulto",
+								"doc_count": 2396
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 2242
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 1915
+							},
+							{
+								"key": "presidente",
+								"doc_count": 1249
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 8,
+						"sum_other_doc_count": 493,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 145
+							},
+							{
+								"key": "indultoesinsulto",
+								"doc_count": 72
+							},
+							{
+								"key": "indulto",
+								"doc_count": 38
+							},
+							{
+								"key": "video",
+								"doc_count": 38
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 33
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 7239
+							},
+							{
+								"key": "neutral",
+								"doc_count": 2975
+							},
+							{
+								"key": "pos",
+								"doc_count": 1844
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 12051,
+						"buckets": [{
+								"key": "T13",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2856984
+								}
+							},
+							{
+								"key": "rmapalacios",
+								"doc_count": 3,
+								"agg_avg_author_followers_count": {
+									"value": 2702899
+								}
+							},
+							{
+								"key": "noticiAmerica",
+								"doc_count": 3,
+								"agg_avg_author_followers_count": {
+									"value": 2485617.6666666665
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 26,
+						"sum_other_doc_count": 9599,
+						"buckets": [{
+								"key": "✊ PPK le otorgó el indulto a Alberto Fujimori en Navidad porque creyó que te quedarías tomando chocolate en la casa de tu abuela mientras mirabas Mi pobre angelito, pero se equivocó  ",
+								"doc_count": 139
+							},
+							{
+								"key": "La compra venta de votos más descarada del mundo en 2017 en Perú 10 fujimoristas salvaron de la destitución a PPK (el Presidente) y a cambio de ello éste puso en libertad a Fujimori Que opina?",
+								"doc_count": 54
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1514350800000",
+					"key": 1514350800000,
+					"doc_count": 7599,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 3486
+							},
+							{
+								"key": "neutral",
+								"doc_count": 2119
+							},
+							{
+								"key": "sad",
+								"doc_count": 997
+							},
+							{
+								"key": "scared",
+								"doc_count": 528
+							},
+							{
+								"key": "glad",
+								"doc_count": 469
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 268,
+						"sum_other_doc_count": 82404,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 4319
+							},
+							{
+								"key": "indulto",
+								"doc_count": 1192
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 1101
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 1004
+							},
+							{
+								"key": "presidente",
+								"doc_count": 564
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 8,
+						"sum_other_doc_count": 489,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 188
+							},
+							{
+								"key": "ppktraidor",
+								"doc_count": 47
+							},
+							{
+								"key": "indultoesinsulto",
+								"doc_count": 46
+							},
+							{
+								"key": "loúltimo",
+								"doc_count": 41
+							},
+							{
+								"key": "indulto",
+								"doc_count": 35
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 4167
+							},
+							{
+								"key": "neutral",
+								"doc_count": 2249
+							},
+							{
+								"key": "pos",
+								"doc_count": 1183
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 7592,
+						"buckets": [{
+								"key": "T13",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 2857385
+								}
+							},
+							{
+								"key": "rmapalacios",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 2704495
+								}
+							},
+							{
+								"key": "noticiAmerica",
+								"doc_count": 3,
+								"agg_avg_author_followers_count": {
+									"value": 2486301.3333333335
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 19,
+						"sum_other_doc_count": 6060,
+						"buckets": [{
+								"key": "Presente mi renuncia a la Bancada PPK y di cuenta, como corresponde, a mis colegas en reunión de Bancada. Los tiempos son de Dios! ",
+								"doc_count": 136
+							},
+							{
+								"key": "@AlbertoBelaunde ha usado el tema Fujimori como pretexto para renunciar a la bancada PPK.Hace tiempo estaba en conversaciones con @MarisaGlave @RobertoVieiraP en @canalN_",
+								"doc_count": 67
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1514437200000",
+					"key": 1514437200000,
+					"doc_count": 6537,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 3573
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1401
+							},
+							{
+								"key": "sad",
+								"doc_count": 743
+							},
+							{
+								"key": "glad",
+								"doc_count": 411
+							},
+							{
+								"key": "scared",
+								"doc_count": 409
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 229,
+						"sum_other_doc_count": 67668,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 3757
+							},
+							{
+								"key": "indulto",
+								"doc_count": 1008
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 1003
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 929
+							},
+							{
+								"key": "contra",
+								"doc_count": 460
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 11,
+						"sum_other_doc_count": 733,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 199
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 100
+							},
+							{
+								"key": "indultoesinsulto",
+								"doc_count": 67
+							},
+							{
+								"key": "ppktraidor",
+								"doc_count": 65
+							},
+							{
+								"key": "toledo",
+								"doc_count": 58
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 3923
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1746
+							},
+							{
+								"key": "pos",
+								"doc_count": 868
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 6532,
+						"buckets": [{
+								"key": "24HorasTVN",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 3273519
+								}
+							},
+							{
+								"key": "rmapalacios",
+								"doc_count": 3,
+								"agg_avg_author_followers_count": {
+									"value": 2706933.3333333335
+								}
+							},
+							{
+								"key": "noticiAmerica",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2487318
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 20,
+						"sum_other_doc_count": 5174,
+						"buckets": [{
+								"key": "Arberto, no te voy a dar el nombre de este kongresista (su tuiter es @MIKI_Torres_) pero le dijo a Kenji: ctm tu viejo me llega al p...! Si no votas por la vacancia te reviento! Fíjate, fijate, fijate ",
+								"doc_count": 137
+							},
+							{
+								"key": "Presente mi renuncia a la Bancada PPK y di cuenta, como corresponde, a mis colegas en reunión de Bancada. Los tiempos son de Dios! ",
+								"doc_count": 83
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1514523600000",
+					"key": 1514523600000,
+					"doc_count": 4429,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 2293
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1041
+							},
+							{
+								"key": "sad",
+								"doc_count": 465
+							},
+							{
+								"key": "scared",
+								"doc_count": 349
+							},
+							{
+								"key": "glad",
+								"doc_count": 281
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 169,
+						"sum_other_doc_count": 44775,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 2463
+							},
+							{
+								"key": "indulto",
+								"doc_count": 658
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 607
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 551
+							},
+							{
+								"key": "contra",
+								"doc_count": 337
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 11,
+						"sum_other_doc_count": 448,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 176
+							},
+							{
+								"key": "video",
+								"doc_count": 41
+							},
+							{
+								"key": "indultoesinsulto",
+								"doc_count": 37
+							},
+							{
+								"key": "exclusivo",
+								"doc_count": 33
+							},
+							{
+								"key": "ppktraidor",
+								"doc_count": 27
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 2519
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1363
+							},
+							{
+								"key": "pos",
+								"doc_count": 547
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 4424,
+						"buckets": [{
+								"key": "rmapalacios",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2709312
+								}
+							},
+							{
+								"key": "noticiAmerica",
+								"doc_count": 3,
+								"agg_avg_author_followers_count": {
+									"value": 2487964
+								}
+							},
+							{
+								"key": "Capital967",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2021323
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 17,
+						"sum_other_doc_count": 3515,
+						"buckets": [{
+								"key": "Primero apoyó a #PPK a llevarlo a la presidencia, luego lo defendió abiertamente contra la vacancia, ahora lo acusa y marcha contra él. ¡Cuánto CINISMO! ",
+								"doc_count": 84
+							},
+							{
+								"key": "Verónika Mendoza a PPK: “No es más nuestro presidente, renuncie”  ",
+								"doc_count": 43
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1514610000000",
+					"key": 1514610000000,
+					"doc_count": 3760,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 2268
+							},
+							{
+								"key": "neutral",
+								"doc_count": 923
+							},
+							{
+								"key": "sad",
+								"doc_count": 285
+							},
+							{
+								"key": "scared",
+								"doc_count": 168
+							},
+							{
+								"key": "glad",
+								"doc_count": 116
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 239,
+						"sum_other_doc_count": 42331,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 2197
+							},
+							{
+								"key": "indulto",
+								"doc_count": 701
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 608
+							},
+							{
+								"key": "odebrecht",
+								"doc_count": 527
+							},
+							{
+								"key": "keiko",
+								"doc_count": 484
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 11,
+						"sum_other_doc_count": 458,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 193
+							},
+							{
+								"key": "urgente",
+								"doc_count": 110
+							},
+							{
+								"key": "indultoafujimori",
+								"doc_count": 59
+							},
+							{
+								"key": "odebrecht",
+								"doc_count": 53
+							},
+							{
+								"key": "mariovargasllosa",
+								"doc_count": 45
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 2160
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1246
+							},
+							{
+								"key": "pos",
+								"doc_count": 354
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 3755,
+						"buckets": [{
+								"key": "noticiAmerica",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2488466
+								}
+							},
+							{
+								"key": "MilagrosLeivaG",
+								"doc_count": 3,
+								"agg_avg_author_followers_count": {
+									"value": 1854465
+								}
+							},
+							{
+								"key": "larepublica_pe",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 1749991
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 18,
+						"sum_other_doc_count": 2609,
+						"buckets": [{
+								"key": "#URGENTE Confesión de Odebrecht compromete a PPK, Alan García, Keiko, Toledo y Humala  ",
+								"doc_count": 98
+							},
+							{
+								"key": "Mario Vargas Llosa: PPK se ha convertido en cómplice y rehén de Alberto Fujimori",
+								"doc_count": 47
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1514696400000",
+					"key": 1514696400000,
+					"doc_count": 2939,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 1531
+							},
+							{
+								"key": "neutral",
+								"doc_count": 790
+							},
+							{
+								"key": "sad",
+								"doc_count": 247
+							},
+							{
+								"key": "scared",
+								"doc_count": 191
+							},
+							{
+								"key": "glad",
+								"doc_count": 180
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 33278,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 2031
+							},
+							{
+								"key": "indulto",
+								"doc_count": 511
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 426
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 424
+							},
+							{
+								"key": "perú",
+								"doc_count": 265
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 284,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 73
+							},
+							{
+								"key": "indultoafujimori",
+								"doc_count": 43
+							},
+							{
+								"key": "odebrecht",
+								"doc_count": 27
+							},
+							{
+								"key": "mariovargasllosa",
+								"doc_count": 24
+							},
+							{
+								"key": "golpedeestado",
+								"doc_count": 23
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 1572
+							},
+							{
+								"key": "neutral",
+								"doc_count": 986
+							},
+							{
+								"key": "pos",
+								"doc_count": 381
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 2935,
+						"buckets": [{
+								"key": "bbcmundo",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2607414
+								}
+							},
+							{
+								"key": "latercera",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 1846148
+								}
+							},
+							{
+								"key": "JulianaOxenford",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 1549293
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 2104,
+						"buckets": [{
+								"key": "Mario Vargas Llosa: PPK se ha convertido en cómplice y rehén de Alberto Fujimori",
+								"doc_count": 49
+							},
+							{
+								"key": "Bueno, este Marqués español dice que fue traicionado por Toledo, Humala y ahora PPK. No será que Vargas nos traicionó a todos por culpa de su odio y resentimiento porque perdió elecciones ante @albertofujimori ???? ",
+								"doc_count": 47
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1514782800000",
+					"key": 1514782800000,
+					"doc_count": 1534,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 736
+							},
+							{
+								"key": "neutral",
+								"doc_count": 327
+							},
+							{
+								"key": "glad",
+								"doc_count": 324
+							},
+							{
+								"key": "sad",
+								"doc_count": 103
+							},
+							{
+								"key": "scared",
+								"doc_count": 44
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 18595,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 1251
+							},
+							{
+								"key": "indulto",
+								"doc_count": 283
+							},
+							{
+								"key": "fujimoristas",
+								"doc_count": 259
+							},
+							{
+								"key": "feliz",
+								"doc_count": 252
+							},
+							{
+								"key": "arberto",
+								"doc_count": 236
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 116,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 67
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 28
+							},
+							{
+								"key": "cidh",
+								"doc_count": 25
+							},
+							{
+								"key": "arbizu",
+								"doc_count": 24
+							},
+							{
+								"key": "kuczynski",
+								"doc_count": 16
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 684
+							},
+							{
+								"key": "neutral",
+								"doc_count": 439
+							},
+							{
+								"key": "pos",
+								"doc_count": 411
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 1531,
+						"buckets": [{
+								"key": "T13",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2858753
+								}
+							},
+							{
+								"key": "bbcmundo",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2607636
+								}
+							},
+							{
+								"key": "latercera",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 1846219
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 1004,
+						"buckets": [{
+								"key": "Feliz 1992! Que el Sr ilumine a Arberto y nombre un gabinete con los fujimoristas menos delincuentes y le permita a PPK poner un par de ministros aparte de Meche!",
+								"doc_count": 207
+							},
+							{
+								"key": "El agresor de mujeres @JMendoza_Peru le gusta decir mermeleros a todos, resultó más mermelero al facturar S/.164,220 al Estado. Cuando lo dejaron de contratar comenzó a criticar a Ollanta y PPK. ",
+								"doc_count": 35
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1514869200000",
+					"key": 1514869200000,
+					"doc_count": 1677,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 926
+							},
+							{
+								"key": "neutral",
+								"doc_count": 425
+							},
+							{
+								"key": "sad",
+								"doc_count": 146
+							},
+							{
+								"key": "scared",
+								"doc_count": 98
+							},
+							{
+								"key": "glad",
+								"doc_count": 82
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 19998,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 1231
+							},
+							{
+								"key": "indulto",
+								"doc_count": 377
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 335
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 181
+							},
+							{
+								"key": "presidente",
+								"doc_count": 136
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 205,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 87
+							},
+							{
+								"key": "marceloodebrecht",
+								"doc_count": 27
+							},
+							{
+								"key": "alacarcelvillaran",
+								"doc_count": 12
+							},
+							{
+								"key": "indulto",
+								"doc_count": 10
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 9
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 838
+							},
+							{
+								"key": "neutral",
+								"doc_count": 573
+							},
+							{
+								"key": "pos",
+								"doc_count": 266
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 1673,
+						"buckets": [{
+								"key": "rmapalacios",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 2714906
+								}
+							},
+							{
+								"key": "noticiAmerica",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2490569
+								}
+							},
+							{
+								"key": "alvarezrodrich",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 1951798
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 1222,
+						"buckets": [{
+								"key": "Escuchar a los fujimoristas y sus hueleguisos decirle a PPK que todo va a estar bien me recuerda a la serpiente Kaa, de El libro de la selva, tratando de hipnotizar a Mowgli para comérselo.",
+								"doc_count": 54
+							},
+							{
+								"key": "Este informe aporta datos claves para entender cómo se pactó el indulto político dado a Fujimori. Seguir llamando «humanitaria» a la decisión de PPK no tiene sentido alguno dada la contundencia de la evidencia en contrario. ",
+								"doc_count": 38
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1514955600000",
+					"key": 1514955600000,
+					"doc_count": 2589,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 1295
+							},
+							{
+								"key": "neutral",
+								"doc_count": 663
+							},
+							{
+								"key": "sad",
+								"doc_count": 279
+							},
+							{
+								"key": "scared",
+								"doc_count": 221
+							},
+							{
+								"key": "glad",
+								"doc_count": 131
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 26782,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 1566
+							},
+							{
+								"key": "indulto",
+								"doc_count": 365
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 349
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 200
+							},
+							{
+								"key": "perú",
+								"doc_count": 167
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 237,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 45
+							},
+							{
+								"key": "urgente",
+								"doc_count": 16
+							},
+							{
+								"key": "3ene",
+								"doc_count": 10
+							},
+							{
+								"key": "felizmiércoles",
+								"doc_count": 10
+							},
+							{
+								"key": "lechuguinos",
+								"doc_count": 10
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 1269
+							},
+							{
+								"key": "neutral",
+								"doc_count": 914
+							},
+							{
+								"key": "pos",
+								"doc_count": 406
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 2581,
+						"buckets": [{
+								"key": "rmapalacios",
+								"doc_count": 5,
+								"agg_avg_author_followers_count": {
+									"value": 2716359.8
+								}
+							},
+							{
+								"key": "canalN_",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 2376269.5
+								}
+							},
+							{
+								"key": "alvarezrodrich",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 1953264
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 1986,
+						"buckets": [{
+								"key": "Vergüenza internacional: diputado de EEUU se pronuncia en contra del indulto de PPK a Fujimori --&gt;  ",
+								"doc_count": 45
+							},
+							{
+								"key": "Quién lo diría. Aparecen carteles y pintas Fujimoristas agradeciendo a PPK. Qué tal reconciliación!!! Si seguimos así el próximo Premier es Kenji. Esto y la renuncia del Ministro de Defensa. 7.30pm @Latina_pe",
+								"doc_count": 41
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1515042000000",
+					"key": 1515042000000,
+					"doc_count": 3938,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 1852
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1264
+							},
+							{
+								"key": "sad",
+								"doc_count": 409
+							},
+							{
+								"key": "scared",
+								"doc_count": 263
+							},
+							{
+								"key": "glad",
+								"doc_count": 150
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 19826,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 1305
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 343
+							},
+							{
+								"key": "indulto",
+								"doc_count": 277
+							},
+							{
+								"key": "gabinete",
+								"doc_count": 203
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 182
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 329,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 107
+							},
+							{
+								"key": "video",
+								"doc_count": 66
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 52
+							},
+							{
+								"key": "dammert",
+								"doc_count": 43
+							},
+							{
+								"key": "4ene",
+								"doc_count": 27
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 1920
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1498
+							},
+							{
+								"key": "pos",
+								"doc_count": 520
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 3934,
+						"buckets": [{
+								"key": "biobio",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2742866
+								}
+							},
+							{
+								"key": "rmapalacios",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 2719092.5
+								}
+							},
+							{
+								"key": "Studio92",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 1838281
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 2842,
+						"buckets": [{
+								"key": "Si los fujimoristas pudieron llegar sin problemas a la casa de PPK, no debería haber ningún problema si la marcha del 11 de enero también lo visita, verdad? #IndultoEsInsulto @noakeikope @COLECTIVODIGNID @noakeiko ",
+								"doc_count": 119
+							},
+							{
+								"key": "A ver, a ver, PPK lo indulta porque cree que Alberto Fujimori está muy enfermo ... pero Kenji lo quiere como asesor de los naranjas!!!!! ¿Se recuperó tan pronto? ¿PPK lo llamará para que sea su consejero y elegir juntos a los nuevos ministros?",
+								"doc_count": 62
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1515128400000",
+					"key": 1515128400000,
+					"doc_count": 4473,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 2254
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1053
+							},
+							{
+								"key": "glad",
+								"doc_count": 545
+							},
+							{
+								"key": "sad",
+								"doc_count": 363
+							},
+							{
+								"key": "scared",
+								"doc_count": 258
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 2749,
+						"buckets": [{
+								"key": "fujimori",
+								"doc_count": 19
+							},
+							{
+								"key": "indulto",
+								"doc_count": 19
+							},
+							{
+								"key": "ppk",
+								"doc_count": 19
+							},
+							{
+								"key": "alberto",
+								"doc_count": 17
+							},
+							{
+								"key": "kuczynski",
+								"doc_count": 15
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 188,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 123
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 67
+							},
+							{
+								"key": "perú",
+								"doc_count": 37
+							},
+							{
+								"key": "video",
+								"doc_count": 32
+							},
+							{
+								"key": "siempredepie",
+								"doc_count": 27
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 2524
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1317
+							},
+							{
+								"key": "pos",
+								"doc_count": 632
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 4466,
+						"buckets": [{
+								"key": "noticiAmerica",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 2492857
+								}
+							},
+							{
+								"key": "teleSURtv",
+								"doc_count": 4,
+								"agg_avg_author_followers_count": {
+									"value": 1507327
+								}
+							},
+							{
+								"key": "Cuarto_Poder",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 1489662
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 3047,
+						"buckets": [{
+								"key": "Así vive la impunidad en el Perú: 1900 m2, S/. 16, 250 soles de alquiler al mes. PPK lo hizo. ",
+								"doc_count": 310
+							},
+							{
+								"key": "Hoy Fujimori regresa a casa gracias al indulto otorgado por @ppkamigo, a disfrutar del dinero ilícitamente robado a todos los peruanos. PPK no solo se baño las manos de sangre sino es cómplice del gobierno más corrupto de la historia del Perú. ",
+								"doc_count": 89
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1515214800000",
+					"key": 1515214800000,
+					"doc_count": 3060,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 1721
+							},
+							{
+								"key": "neutral",
+								"doc_count": 726
+							},
+							{
+								"key": "sad",
+								"doc_count": 273
+							},
+							{
+								"key": "glad",
+								"doc_count": 193
+							},
+							{
+								"key": "scared",
+								"doc_count": 147
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 709,
+						"buckets": [{
+								"key": "fujimori",
+								"doc_count": 5
+							},
+							{
+								"key": "alberto",
+								"doc_count": 4
+							},
+							{
+								"key": "gabinete",
+								"doc_count": 4
+							},
+							{
+								"key": "indulto",
+								"doc_count": 4
+							},
+							{
+								"key": "partido",
+								"doc_count": 4
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 343,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 149
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 47
+							},
+							{
+								"key": "dakar2018",
+								"doc_count": 26
+							},
+							{
+								"key": "lavajato",
+								"doc_count": 26
+							},
+							{
+								"key": "indultoesinsulto",
+								"doc_count": 25
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 1521
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1007
+							},
+							{
+								"key": "pos",
+								"doc_count": 532
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 3057,
+						"buckets": [{
+								"key": "Latina_pe",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2864225
+								}
+							},
+							{
+								"key": "MilagrosLeivaG",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 1860047
+								}
+							},
+							{
+								"key": "Emol",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 1799864
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 2271,
+						"buckets": [{
+								"key": "Así vive la impunidad en el Perú: 1900 m2, S/. 16, 250 soles de alquiler al mes. PPK lo hizo. ",
+								"doc_count": 53
+							},
+							{
+								"key": "Se mudó PPK ",
+								"doc_count": 50
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1515301200000",
+					"key": 1515301200000,
+					"doc_count": 3433,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 1949
+							},
+							{
+								"key": "neutral",
+								"doc_count": 771
+							},
+							{
+								"key": "sad",
+								"doc_count": 359
+							},
+							{
+								"key": "glad",
+								"doc_count": 197
+							},
+							{
+								"key": "scared",
+								"doc_count": 157
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 1497,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 14
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 13
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 13
+							},
+							{
+								"key": "presidente",
+								"doc_count": 12
+							},
+							{
+								"key": "kuczynski",
+								"doc_count": 11
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 318,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 139
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 74
+							},
+							{
+								"key": "indultoesinsulto",
+								"doc_count": 25
+							},
+							{
+								"key": "kenjifujimori",
+								"doc_count": 25
+							},
+							{
+								"key": "cuartopoder",
+								"doc_count": 22
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 1692
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1242
+							},
+							{
+								"key": "pos",
+								"doc_count": 499
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 3428,
+						"buckets": [{
+								"key": "noticiAmerica",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2494541
+								}
+							},
+							{
+								"key": "Cuarto_Poder",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 1489803
+								}
+							},
+							{
+								"key": "americatv_peru",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 1359366
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 2379,
+						"buckets": [{
+								"key": "El colmo de los colmos PPK haciéndose pagar por el estado los abogados para ir a la comisión Lava Jato, pese a haber reconocido que “ganó algo” con sus tratos con Odebrecht. ¡¡Que se defienda con la suya!!!",
+								"doc_count": 109
+							},
+							{
+								"key": "Me da la impresión que el ciudadano japonés Alberto Fujimori esta asumiendo que es el eterno Presidente. O PPK también le entrego su cargo? Inadmisible lo que estamos viviendo. Nos vemos el 11 de enero.",
+								"doc_count": 81
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1515387600000",
+					"key": 1515387600000,
+					"doc_count": 4211,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 2176
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1022
+							},
+							{
+								"key": "glad",
+								"doc_count": 398
+							},
+							{
+								"key": "sad",
+								"doc_count": 370
+							},
+							{
+								"key": "scared",
+								"doc_count": 245
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 2212,
+						"buckets": [{
+								"key": "vacancia",
+								"doc_count": 20
+							},
+							{
+								"key": "ppk",
+								"doc_count": 18
+							},
+							{
+								"key": "indulto",
+								"doc_count": 17
+							},
+							{
+								"key": "kuczynski",
+								"doc_count": 17
+							},
+							{
+								"key": "pablo",
+								"doc_count": 17
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 451,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 166
+							},
+							{
+								"key": "singuion",
+								"doc_count": 36
+							},
+							{
+								"key": "lrtv",
+								"doc_count": 35
+							},
+							{
+								"key": "envivo",
+								"doc_count": 34
+							},
+							{
+								"key": "cuartopoder",
+								"doc_count": 29
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 1977
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1490
+							},
+							{
+								"key": "pos",
+								"doc_count": 744
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 4203,
+						"buckets": [{
+								"key": "rmapalacios",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2725019
+								}
+							},
+							{
+								"key": "noticiAmerica",
+								"doc_count": 3,
+								"agg_avg_author_followers_count": {
+									"value": 2494680.6666666665
+								}
+							},
+							{
+								"key": "canalN_",
+								"doc_count": 4,
+								"agg_avg_author_followers_count": {
+									"value": 2379846.25
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 3015,
+						"buckets": [{
+								"key": "El colmo de los colmos PPK haciéndose pagar por el estado los abogados para ir a la comisión Lava Jato, pese a haber reconocido que “ganó algo” con sus tratos con Odebrecht. ¡¡Que se defienda con la suya!!!",
+								"doc_count": 58
+							},
+							{
+								"key": "12 años después de que el juez CSM condenara.@albertofujimori(fallo“ retocado” con asistencia del hoy abogado de PPK) confiesa q jamás lo sentenció x crímenes de lesa humanidad, como durante 1 década se sostuvo “NO FUE CONDENADO POR LESA HUMANIDAD”",
+								"doc_count": 55
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1515474000000",
+					"key": 1515474000000,
+					"doc_count": 3511,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 1792
+							},
+							{
+								"key": "neutral",
+								"doc_count": 916
+							},
+							{
+								"key": "sad",
+								"doc_count": 389
+							},
+							{
+								"key": "glad",
+								"doc_count": 225
+							},
+							{
+								"key": "scared",
+								"doc_count": 189
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 4561,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 52
+							},
+							{
+								"key": "presidente",
+								"doc_count": 37
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 36
+							},
+							{
+								"key": "pablo",
+								"doc_count": 33
+							},
+							{
+								"key": "pedro",
+								"doc_count": 33
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 333,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 124
+							},
+							{
+								"key": "ahora",
+								"doc_count": 30
+							},
+							{
+								"key": "keikofujimori",
+								"doc_count": 22
+							},
+							{
+								"key": "undíacomohoy",
+								"doc_count": 21
+							},
+							{
+								"key": "loúltimo",
+								"doc_count": 20
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 1644
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1230
+							},
+							{
+								"key": "pos",
+								"doc_count": 637
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 3500,
+						"buckets": [{
+								"key": "noticiAmerica",
+								"doc_count": 4,
+								"agg_avg_author_followers_count": {
+									"value": 2495692
+								}
+							},
+							{
+								"key": "canalN_",
+								"doc_count": 4,
+								"agg_avg_author_followers_count": {
+									"value": 2381326.75
+								}
+							},
+							{
+								"key": "MilagrosLeivaG",
+								"doc_count": 3,
+								"agg_avg_author_followers_count": {
+									"value": 1861674
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 2710,
+						"buckets": [{
+								"key": "Al confirmarse la felonia de Javier Barreda de juramentarse ser ministro de PPK, el Apra, a través de la Secretaria de Disciplina y con acuerdo de la Comisión Política procede a su inmediata expulsión definitiva del partido",
+								"doc_count": 70
+							},
+							{
+								"key": "🤔 ¿se reconciliarán PPK y Rosa María Palacios? ¿Alan García y Popy? ¿Castañeda y la naturaleza? mejor veamos estos memes  ",
+								"doc_count": 33
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1515560400000",
+					"key": 1515560400000,
+					"doc_count": 4093,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 2235
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1011
+							},
+							{
+								"key": "sad",
+								"doc_count": 363
+							},
+							{
+								"key": "scared",
+								"doc_count": 261
+							},
+							{
+								"key": "glad",
+								"doc_count": 223
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 3031,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 22
+							},
+							{
+								"key": "kuczynski",
+								"doc_count": 17
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 16
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 15
+							},
+							{
+								"key": "nbsp",
+								"doc_count": 15
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 521,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 158
+							},
+							{
+								"key": "11e",
+								"doc_count": 142
+							},
+							{
+								"key": "indultoesinsulto",
+								"doc_count": 53
+							},
+							{
+								"key": "fuerappk",
+								"doc_count": 50
+							},
+							{
+								"key": "perú",
+								"doc_count": 46
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 1989
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1421
+							},
+							{
+								"key": "pos",
+								"doc_count": 683
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 4088,
+						"buckets": [{
+								"key": "rmapalacios",
+								"doc_count": 3,
+								"agg_avg_author_followers_count": {
+									"value": 2728250.3333333335
+								}
+							},
+							{
+								"key": "noticiAmerica",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2496173
+								}
+							},
+							{
+								"key": "canalN_",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2382479
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 2728,
+						"buckets": [{
+								"key": "Productores de papa reciben 0.10 céntimos el kg. porque se importa papa precocida del extranjero. Igual que la leche y conservas de pescado bamba que se importan. Alto al abuso PPK ",
+								"doc_count": 83
+							},
+							{
+								"key": "Mañana somos Segunda Marcha #11E contra el traidor de Presidente PPK @ppkamigo que ya perdió el control de un gobierno respetuoso de los derechos humanos y crímenes ¡Tomemos la calle! ",
+								"doc_count": 74
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1515646800000",
+					"key": 1515646800000,
+					"doc_count": 2209,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 1253
+							},
+							{
+								"key": "neutral",
+								"doc_count": 509
+							},
+							{
+								"key": "sad",
+								"doc_count": 227
+							},
+							{
+								"key": "scared",
+								"doc_count": 115
+							},
+							{
+								"key": "glad",
+								"doc_count": 105
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 2297,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 16
+							},
+							{
+								"key": "nbsp",
+								"doc_count": 15
+							},
+							{
+								"key": "kuczynski",
+								"doc_count": 14
+							},
+							{
+								"key": "vacancia",
+								"doc_count": 13
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 12
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 330,
+						"buckets": [{
+								"key": "ppk",
+								"doc_count": 64
+							},
+							{
+								"key": "11e",
+								"doc_count": 61
+							},
+							{
+								"key": "envivo",
+								"doc_count": 58
+							},
+							{
+								"key": "indultoesinsulto",
+								"doc_count": 36
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 29
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 1022
+							},
+							{
+								"key": "neutral",
+								"doc_count": 907
+							},
+							{
+								"key": "pos",
+								"doc_count": 280
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 2206,
+						"buckets": [{
+								"key": "noticiAmerica",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2497010
+								}
+							},
+							{
+								"key": "canalN_",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2383232
+								}
+							},
+							{
+								"key": "alvarezrodrich",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 1964018
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 1563,
+						"buckets": [{
+								"key": "#ENVIVO Así despertó Arequipa hoy, protestando desde temprano contra el indulto a Alberto Fujimori y por la vacancia de PKK. [VIDEOS] --►  #IndultoEsInsulto #FueraPPK",
+								"doc_count": 54
+							},
+							{
+								"key": "Sra. Cisneros, la única mafia es la de ustedes. Quisieron manejar a PPK como marioneta y como se les volteó, pretenden sacarlo a toda costa, pero ya perdieron su oportunidad. Vaya a reclamar a la casa de Glave y compañía. ",
+								"doc_count": 35
+							}
+						]
+					}
+				}
+			]
+		},
+		"agg_terms_author_gender.keyword": {
+			"doc_count_error_upper_bound": 0,
+			"sum_other_doc_count": 0,
+			"buckets": [{
+					"key": "m",
+					"doc_count": 130882
+				},
+				{
+					"key": "u",
+					"doc_count": 104632
+				},
+				{
+					"key": "f",
+					"doc_count": 91412
+				}
+			]
+		},
+		"agg_terms_author_age.keyword": {
+			"doc_count_error_upper_bound": 0,
+			"sum_other_doc_count": 0,
+			"buckets": [{
+					"key": "mas25",
+					"doc_count": 297876
+				},
+				{
+					"key": "menos25",
+					"doc_count": 29050
+				}
+			]
+		}
+	}
 }

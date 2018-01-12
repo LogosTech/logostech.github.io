@@ -5,7 +5,12 @@ date:   2018-01-07 08:30:15 +0000
 categories: politica
 image: george-soros.jpg
 comments: true
-show_report: george-soros.json
+social_tracker:
+  file: george-soros.json
+  type: infografia
+  exclude_terms:
+    - george
+    - soros
 tags:
   - infografia
   - actualidad
