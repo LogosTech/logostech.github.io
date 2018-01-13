@@ -1821,3 +1821,13 @@ small {
     max-width: 500px;
     margin: 20px auto;
   }
+
+  .bubble_metrics .icofont { font-size: 1.5em; }
+  .bubble_metrics .tag { font-size: .7em; }
+  .bubble_metrics {
+    padding: 1em;
+    color: white;
+    text-align: center;
+    border-radius: 3%;
+    background: #001D26;
+  }

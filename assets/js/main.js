@@ -635,7 +635,7 @@
       }
 
       // POST /users
-      fetchival('http://api.logos.technology/text/all').post({
+      fetchival('//api.logos.technology/text/all').post({
       // fetchival('http://localhost:5000/text/all').post({
         text: sample_text,
         name: 'listening'
