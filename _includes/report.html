@@ -38,7 +38,12 @@
 <script type="text/template" class="tmpl_timeline">
   <% _.each( items, function( item, index ){ %>
     <li class="<%= (index % 2 == 0) ? '' : 'timeline-inverted' %> wow fadeIn" data-wow-delay="0.75s">
-      <div class="timeline-badge <%- item.color %>">
+      <div
+        class="timeline-badge <%- item.color %>"
+        <% if(index == 0) { %>
+          data-intro="Mayor Porcentaje de sentimiento en el dia, el color determina el sentimiento"
+        <% } %>
+        >
         <span class="percent"><%- item.max_score %>&#37;</span>
       </div>
       <div class="timeline-panel <%= (item.important) ? 'black' : '' %>">
@@ -73,19 +78,30 @@
 <!-- TEMPLATE ZONE -->
 
 <div class="row">
-  <div class="chart_card col-md-12 wow fadeIn" data-wow-delay="0.75s">
+  <div
+    class="chart_card col-md-12 wow fadeIn"
+    data-wow-delay="0.75s"
+    data-intro="Muestra la cantidad de datos acumulados por Día"
+    >
     <div class="is_chart">
-      <h1>
-        <span id="samples_count">0</span> Muestras Analizadas
-        <!-- <i class="icofont icofont-social-wechat right"></i> -->
+      <h1 data-intro="Cantidad de muestras (tweets, comentarios, noticias) que se han obtenido en este periodo">
+        <span class="samples_count">0</span> Muestras Analizadas
+        <a href="javascript:void(0)" id="startTour" class="right">
+          <i class="icofont icofont-life-ring"></i>
+        </a>
       </h1>
       <div class="ct-chart ct-major-tenth" id="chart1"></div>
-      <h2>desde el <span id="range_from">*</span> hasta <span id="range_to">*</span></h2>
+      <h2 data-intro="Rango de fechas que abarca este reporte">
+        desde el <span id="range_from">*</span> hasta <span id="range_to">*</span>
+      </h2>
     </div>
   </div>
 </div>
 <div class="row">
-  <div class="chart_card col-md-4 wow fadeIn" data-wow-delay="0.75s">
+  <div
+    class="chart_card col-md-4 wow fadeIn"
+    data-wow-delay="0.75s"
+    data-intro="Logos AGE: Detecta el rango de edad mediante la escritura. *Experimental">
     <div class="is_chart">
       <h1>
         Edad
@@ -99,7 +115,11 @@
     </div>
   </div>
 
-  <div class="chart_card col-md-4 wow fadeIn" data-wow-delay="0.75s">
+  <div
+    class="chart_card col-md-4 wow fadeIn"
+    data-wow-delay="0.75s"
+    data-intro="Logos Gender: Detecta el genero de la persona en base al Nombre de Usuario"
+    >
     <div class="is_chart">
       <h1>
         Genero
@@ -113,7 +133,11 @@
     </div>
   </div>
 
-  <div class="chart_card col-md-4 wow fadeIn" data-wow-delay="0.75s">
+  <div
+    class="chart_card col-md-4 wow fadeIn"
+    data-wow-delay="0.75s"
+    data-intro="Distribucion de polaridad contextual del contenido de las muestras"
+    >
     <div class="is_chart">
       <h1>
         Sentimiento
@@ -162,7 +186,11 @@
   </div>
 </div>
 <div class="row">
-  <div class="chart_card col-md-12 wow fadeIn" data-wow-delay="0.75s">
+  <div
+    class="chart_card col-md-12 wow fadeIn"
+    data-wow-delay="0.75s"
+    data-intro="Cuentas de las personas mas influyentes (mayor cantidad de followers), que comentaron el tema por lo menos 1 vez."
+    >
     <div class="is_chart">
       <h1>
         influenciadores

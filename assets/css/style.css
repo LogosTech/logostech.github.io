@@ -1831,3 +1831,7 @@ small {
     border-radius: 3%;
     background: #001D26;
   }
+
+  .introjs-tooltiptext {
+    font-size: .8em;
+  }

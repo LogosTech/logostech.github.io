@@ -515,7 +515,7 @@
 
         // RENDER GRAPHS
 
-        $('#samples_count').text(render_data.count.toLocaleString());
+        $('.samples_count').text(render_data.count.toLocaleString());
         $('#range_from').text(render_data.range.from);
         $('#range_to').text(render_data.range.to);
 
@@ -698,7 +698,7 @@
         );
         $(analize_text_button).removeAttr("disabled");
       }).catch(function(err) {
-        console.log(err);cargados
+        console.log(err);
         $.magnificPopup.open({
           closeBtnInside: true,
           items: {
@@ -709,7 +709,14 @@
         $("#sample_text").focus();
       });
 
+    });
 
+    $("#startTour").on('click', function(e) {
+      var tour = introJs()
+			tour.setOption('tooltipPosition', 'auto');
+			tour.setOption('positionPrecedence', ['left', 'right', 'bottom', 'top']);
+      console.log(tour);
+			tour.start()
     });
 
 }(jQuery));
