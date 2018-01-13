@@ -608,4 +608,108 @@
 
     }
 
+    var maxLength = 512;
+    if ($('textarea')) {
+      $('textarea').keyup(function() {
+        var textlen = maxLength - $(this).val().length;
+        $('#rchars').text(textlen);
+      });
+    }
+
+    // DEMO TEXT
+    var analize_text_button = $('#analize_text');
+    $(analize_text_button).on('click', function(e) {
+      $(analize_text_button).attr("disabled", "disabled");
+      e.preventDefault();
+      var sample_text = $('#sample_text').val();
+      if (sample_text.length <= 36) {
+        $.magnificPopup.open({
+          closeBtnInside: true,
+          items: {
+            type: 'inline',
+            src: '<div class="white-popup">Ingrese un texto con mayor cantidad de palabras.</div>',
+          }
+        });
+        $("#sample_text").focus();
+        return false;
+      }
+
+      // POST /users
+      fetchival('http://api.logos.technology/text/all').post({
+      // fetchival('http://localhost:5000/text/all').post({
+        text: sample_text,
+        name: 'listening'
+      })
+      .then(function(json) {
+
+        var data = {};
+
+        data = json;
+
+        // RENDER TIMELINE
+        var template = _.template($('script.tmpl_render_text_result').html());
+        $('#result').html(template({ items: data }));
+
+        var get_options_pie = function (series) {
+          var sum = function(a, b) { return a + b };
+          return {
+            // plugins: [tooltip],
+            donut: true,
+            // showLabel: false,
+            donutWidth: 30,
+            startAngle: 150,
+            labelInterpolationFnc: function(value) {
+              return Math.round(value / series.reduce(sum) * 100) + '%';
+            }
+          }
+        };
+
+        // var tooltip = Chartist.plugins.tooltip();
+        var sent_scores = data.sentiment.scores;
+        data.chart1 = {
+          labels: [],
+          series: [
+            sent_scores.neg*100,
+            sent_scores.neutral*100,
+            sent_scores.pos*100,
+          ]
+        };
+        new Chartist.Pie(
+          '#chart1',
+          data.chart1,
+          get_options_pie(data.chart1.series)
+        );
+
+        var sent_scores = data.emotions.scores;
+        data.chart2 = {
+          labels: [],
+          series: [
+            sent_scores.mad*100,
+            sent_scores.scared*100,
+            sent_scores.glad*100,
+            sent_scores.sad*100,
+            // sent_scores.neutral*100,
+          ]
+        };
+        new Chartist.Pie(
+          '#chart2',
+          data.chart2,
+          get_options_pie(data.chart2.series)
+        );
+        $(analize_text_button).removeAttr("disabled");
+      }).catch(function(err) {
+        console.log(err);cargados
+        $.magnificPopup.open({
+          closeBtnInside: true,
+          items: {
+            type: 'inline',
+            src: '<div class="white-popup">Oop! Estamos un poco ocupados. Vuelve intentarlo m&aacute; tarde.</div>',
+          }
+        });
+        $("#sample_text").focus();
+      });
+
+
+    });
+
 }(jQuery));

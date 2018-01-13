@@ -1806,8 +1806,18 @@ small {
   .demo_text_area {
     width: 100%;
     padding: 1em;
-    border: 0;
-
-    font-size: .7em;
+    border: 1px solid #f1f2f6;
+    color: #555;
+    font-size: .8em;
     height: 10em;
+  }
+
+  .white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width:auto;
+    font-size: .8em;
+    max-width: 500px;
+    margin: 20px auto;
   }

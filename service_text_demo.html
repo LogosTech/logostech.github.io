@@ -7,13 +7,74 @@ permalink: /demo/text
   <!-- <p class="wow fadeIn"><small>Pruebe nuestras apis de procesamiento de texto</small></p> -->
   <h2 class="wow fadeIn" data-wow-delay="0.25s">Demo</h2>
   <span class="wow fadeIn" data-wow-delay="0.5s"></span>
-  <p class="wow fadeIn" data-wow-delay="0.75s">Pruebe nuestras apis de procesamiento de texto</p>
+  <p class="wow fadeIn" data-wow-delay="0.75s">Pruebe nuestras API's de procesamiento de texto</p>
 </div>
 
 <div class="row">
   <div class="chart_card col-md-12 wow fadeIn" data-wow-delay="0.75s">
     <div class="is_chart">
-      <textarea name="text" class="demo_text_area" placeholder="Ingrese un texto" maxlength="512"></textarea>
+      <textarea id="sample_text" name="text" class="demo_text_area" placeholder="Ingrese un texto" maxlength="512"></textarea>
+      <button id="analize_text" type="button" class="btn btn-contact btn-submit" name="do">Analizar</button>
+      <br>
+      <h2>Quedan <span id="rchars">512</span> Caracteres</h2>
     </div>
   </div>
 </div>
+
+<script type="text/template" class="tmpl_render_text_result">
+
+  <div class="chart_card col-md-2 wow bounceInUp" data-wow-delay="0.25s">
+    <div class="is_chart">
+      <h1>
+        Edad
+      </h1>
+      <div class="metrics">
+        <div class="tag"><%- items.age.tag %></div>
+      </div>
+      <div class="ct-chart ct-minor-seventh"></div>
+    </div>
+  </div>
+  <div class="chart_card col-md-2 wow bounceInUp" data-wow-delay="0.5s">
+    <div class="is_chart">
+      <h1>
+        Genero
+      </h1>
+      <div class="metrics">
+        <div class="tag"><%- items.gender.tag %></div>
+      </div>
+      <div class="ct-chart ct-minor-seventh"></div>
+    </div>
+  </div>
+  <div class="chart_card col-md-4 wow bounceInUp" data-wow-delay="0.75s">
+    <div class="is_chart">
+      <h1>
+        Sentimiento
+        <!-- <i class="icofont icofont-ui-check right"></i> -->
+      </h1>
+      <div class="metrics">
+        <span class="badge badge-pill bg_a">Negativo</span>
+        <span class="badge badge-pill bg_b">Neutral</span>
+        <span class="badge badge-pill bg_c">Positivo</span>
+      </div>
+      <div class="ct-chart ct-minor-seventh" id="chart1"></div>
+    </div>
+  </div>
+  <div class="chart_card col-md-4 wow bounceInUp" data-wow-delay="1s">
+    <div class="is_chart">
+      <h1>
+        Emociones
+        <!-- <i class="icofont icofont-emo-laughing right"></i> -->
+      </h1>
+      <div class="metrics">
+        <span class="badge badge-pill bg_a">Enojo</span>
+        <!-- <span class="badge badge-pill bg_b">Neutral</span> -->
+        <span class="badge badge-pill bg_b">Miedo</span>
+        <span class="badge badge-pill bg_c">Alegria</span>
+        <span class="badge badge-pill bg_d">Tristeza</span>
+      </div>
+      <div class="ct-chart ct-minor-seventh" id="chart2"></div>
+    </div>
+  </div>
+</script>
+
+<div class="row" id="result"></div>
