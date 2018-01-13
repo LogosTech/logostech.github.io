@@ -1,1316 +1,1977 @@
 {
-  "took": 125,
-  "timed_out": false,
-  "_shards": {
-    "total": 4,
-    "successful": 4,
-    "failed": 0
-  },
-  "hits": {
-    "total": 9314,
-    "max_score": 0,
-    "hits": []
-  },
-  "aggregations": {
-    "agg_terms_sample_hashtags.keyword": {
-      "doc_count_error_upper_bound": 5,
-      "sum_other_doc_count": 346,
-      "buckets": [
-        {
-          "key": "accionpopular",
-          "doc_count": 86,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 86
-              }
-            ]
-          }
-        },
-        {
-          "key": "dakar2018",
-          "doc_count": 77,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 77
-              }
-            ]
-          }
-        },
-        {
-          "key": "alacarcelvillaran",
-          "doc_count": 73,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 73
-              }
-            ]
-          }
-        },
-        {
-          "key": "ppk",
-          "doc_count": 59,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 27
-              },
-              {
-                "key": "neutral",
-                "doc_count": 21
-              },
-              {
-                "key": "neg",
-                "doc_count": 11
-              }
-            ]
-          }
-        },
-        {
-          "key": "perú",
-          "doc_count": 34,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 22
-              },
-              {
-                "key": "neg",
-                "doc_count": 8
-              },
-              {
-                "key": "neutral",
-                "doc_count": 4
-              }
-            ]
-          }
-        },
-        {
-          "key": "reconciliacion",
-          "doc_count": 21,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 9
-              },
-              {
-                "key": "neg",
-                "doc_count": 7
-              },
-              {
-                "key": "pos",
-                "doc_count": 5
-              }
-            ]
-          }
-        },
-        {
-          "key": "ppktraidor",
-          "doc_count": 14,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 6
-              },
-              {
-                "key": "neutral",
-                "doc_count": 6
-              },
-              {
-                "key": "pos",
-                "doc_count": 2
-              }
-            ]
-          }
-        },
-        {
-          "key": "noalindulto",
-          "doc_count": 13,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 13
-              }
-            ]
-          }
-        },
-        {
-          "key": "navidadsinimpunidad",
-          "doc_count": 12,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 12
-              }
-            ]
-          }
-        },
-        {
-          "key": "kuczynski",
-          "doc_count": 9,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 7
-              },
-              {
-                "key": "pos",
-                "doc_count": 2
-              }
-            ]
-          }
-        }
-      ]
-    },
-    "agg_terms_sample_words": {
-      "doc_count_error_upper_bound": 732,
-      "sum_other_doc_count": 88136,
-      "buckets": [
-        {
-          "key": "gabinete",
-          "doc_count": 4956,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 2375
-              },
-              {
-                "key": "pos",
-                "doc_count": 1594
-              },
-              {
-                "key": "neg",
-                "doc_count": 987
-              }
-            ]
-          }
-        },
-        {
-          "key": "ano",
-          "doc_count": 2648,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 2435
-              },
-              {
-                "key": "neutral",
-                "doc_count": 131
-              },
-              {
-                "key": "neg",
-                "doc_count": 82
-              }
-            ]
-          }
-        },
-        {
-          "key": "ppk",
-          "doc_count": 2526,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 1117
-              },
-              {
-                "key": "pos",
-                "doc_count": 851
-              },
-              {
-                "key": "neg",
-                "doc_count": 558
-              }
-            ]
-          }
-        },
-        {
-          "key": "feliz",
-          "doc_count": 2460,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 2424
-              },
-              {
-                "key": "neg",
-                "doc_count": 24
-              },
-              {
-                "key": "neutral",
-                "doc_count": 12
-              }
-            ]
-          }
-        },
-        {
-          "key": "keiko",
-          "doc_count": 2094,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 1620
-              },
-              {
-                "key": "neutral",
-                "doc_count": 251
-              },
-              {
-                "key": "neg",
-                "doc_count": 223
-              }
-            ]
-          }
-        },
-        {
-          "key": "nuevo",
-          "doc_count": 2060,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 1571
-              },
-              {
-                "key": "neutral",
-                "doc_count": 438
-              },
-              {
-                "key": "neg",
-                "doc_count": 51
-              }
-            ]
-          }
-        },
-        {
-          "key": "reconciliacion",
-          "doc_count": 1667,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 755
-              },
-              {
-                "key": "pos",
-                "doc_count": 518
-              },
-              {
-                "key": "neg",
-                "doc_count": 394
-              }
-            ]
-          }
-        },
-        {
-          "key": "familia",
-          "doc_count": 1496,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 1466
-              },
-              {
-                "key": "neg",
-                "doc_count": 30
-              }
-            ]
-          }
-        },
-        {
-          "key": "presidente",
-          "doc_count": 1246,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 785
-              },
-              {
-                "key": "pos",
-                "doc_count": 391
-              },
-              {
-                "key": "neg",
-                "doc_count": 70
-              }
-            ]
-          }
-        },
-        {
-          "key": "kuczynski",
-          "doc_count": 1232,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 959
-              },
-              {
-                "key": "pos",
-                "doc_count": 180
-              },
-              {
-                "key": "neg",
-                "doc_count": 93
-              }
-            ]
-          }
-        }
-      ]
-    },
-    "agg_terms_sample_sentiment.keyword": {
-      "doc_count_error_upper_bound": 0,
-      "sum_other_doc_count": 0,
-      "buckets": [
-        {
-          "key": "pos",
-          "doc_count": 5002
-        },
-        {
-          "key": "neutral",
-          "doc_count": 2606
-        },
-        {
-          "key": "neg",
-          "doc_count": 1706
-        }
-      ]
-    },
-    "agg_terms_sample_mentions.keyword": {
-      "doc_count_error_upper_bound": 43,
-      "sum_other_doc_count": 3476,
-      "buckets": [
-        {
-          "key": "ppkamigo",
-          "doc_count": 1226,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 438
-              },
-              {
-                "key": "neg",
-                "doc_count": 405
-              },
-              {
-                "key": "pos",
-                "doc_count": 383
-              }
-            ]
-          }
-        },
-        {
-          "key": "MavilaHuertasC",
-          "doc_count": 635,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 635
-              }
-            ]
-          }
-        },
-        {
-          "key": "DanielUrresti1",
-          "doc_count": 486,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 352
-              },
-              {
-                "key": "neutral",
-                "doc_count": 127
-              },
-              {
-                "key": "neg",
-                "doc_count": 7
-              }
-            ]
-          }
-        },
-        {
-          "key": "rmapalacios",
-          "doc_count": 348,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 274
-              },
-              {
-                "key": "neg",
-                "doc_count": 72
-              },
-              {
-                "key": "pos",
-                "doc_count": 2
-              }
-            ]
-          }
-        },
-        {
-          "key": "MecheAF",
-          "doc_count": 333,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 202
-              },
-              {
-                "key": "pos",
-                "doc_count": 72
-              },
-              {
-                "key": "neutral",
-                "doc_count": 59
-              }
-            ]
-          }
-        },
-        {
-          "key": "KeikoFujimori",
-          "doc_count": 266,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 194
-              },
-              {
-                "key": "neg",
-                "doc_count": 68
-              },
-              {
-                "key": "pos",
-                "doc_count": 4
-              }
-            ]
-          }
-        },
-        {
-          "key": "KenjiFujimoriH",
-          "doc_count": 207,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 192
-              },
-              {
-                "key": "neg",
-                "doc_count": 10
-              },
-              {
-                "key": "pos",
-                "doc_count": 5
-              }
-            ]
-          }
-        },
-        {
-          "key": "nicolasyerovi",
-          "doc_count": 144,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 143
-              },
-              {
-                "key": "neg",
-                "doc_count": 1
-              }
-            ]
-          }
-        },
-        {
-          "key": "BrunoGEsc",
-          "doc_count": 127,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 121
-              },
-              {
-                "key": "neg",
-                "doc_count": 3
-              },
-              {
-                "key": "neutral",
-                "doc_count": 3
-              }
-            ]
-          }
-        },
-        {
-          "key": "AIdoMariategui",
-          "doc_count": 121,
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 121
-              }
-            ]
-          }
-        }
-      ]
-    },
-    "agg_terms_author_screen_name.keyword": {
-      "doc_count_error_upper_bound": -1,
-      "sum_other_doc_count": 9302,
-      "buckets": [
-        {
-          "key": "WRadioColombia",
-          "doc_count": 2,
-          "agg_avg_author_followers_count": {
-            "value": 3385586
-          }
-        },
-        {
-          "key": "24HorasTVN",
-          "doc_count": 1,
-          "agg_avg_author_followers_count": {
-            "value": 3273516
-          }
-        },
-        {
-          "key": "Latina_pe",
-          "doc_count": 3,
-          "agg_avg_author_followers_count": {
-            "value": 2862618
-          }
-        },
-        {
-          "key": "ActualidadRT",
-          "doc_count": 1,
-          "agg_avg_author_followers_count": {
-            "value": 2831876
-          }
-        },
-        {
-          "key": "rmapalacios",
-          "doc_count": 4,
-          "agg_avg_author_followers_count": {
-            "value": 2719063.25
-          }
-        },
-        {
-          "key": "Cooperativa",
-          "doc_count": 1,
-          "agg_avg_author_followers_count": {
-            "value": 2627894
-          }
-        }
-      ]
-    },
-    "agg_terms_author_gender.keyword": {
-      "doc_count_error_upper_bound": 0,
-      "sum_other_doc_count": 0,
-      "buckets": [
-        {
-          "key": "u",
-          "doc_count": 3278
-        },
-        {
-          "key": "m",
-          "doc_count": 3090
-        },
-        {
-          "key": "f",
-          "doc_count": 2946
-        }
-      ]
-    },
-    "agg_date_histogram_sample_created_at": {
-      "buckets": [
-        {
-          "key_as_string": "1514437200000",
-          "key": 1514437200000,
-          "doc_count": 588,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 260
-              },
-              {
-                "key": "glad",
-                "doc_count": 147
-              },
-              {
-                "key": "neutral",
-                "doc_count": 130
-              },
-              {
-                "key": "sad",
-                "doc_count": 43
-              },
-              {
-                "key": "scared",
-                "doc_count": 8
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 258
-              },
-              {
-                "key": "pos",
-                "doc_count": 205
-              },
-              {
-                "key": "neg",
-                "doc_count": 125
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514523600000",
-          "key": 1514523600000,
-          "doc_count": 291,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 129
-              },
-              {
-                "key": "mad",
-                "doc_count": 121
-              },
-              {
-                "key": "glad",
-                "doc_count": 30
-              },
-              {
-                "key": "sad",
-                "doc_count": 9
-              },
-              {
-                "key": "scared",
-                "doc_count": 2
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 148
-              },
-              {
-                "key": "neg",
-                "doc_count": 86
-              },
-              {
-                "key": "neutral",
-                "doc_count": 57
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514610000000",
-          "key": 1514610000000,
-          "doc_count": 269,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 224
-              },
-              {
-                "key": "neutral",
-                "doc_count": 19
-              },
-              {
-                "key": "glad",
-                "doc_count": 17
-              },
-              {
-                "key": "sad",
-                "doc_count": 6
-              },
-              {
-                "key": "scared",
-                "doc_count": 3
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neg",
-                "doc_count": 93
-              },
-              {
-                "key": "neutral",
-                "doc_count": 92
-              },
-              {
-                "key": "pos",
-                "doc_count": 84
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514696400000",
-          "key": 1514696400000,
-          "doc_count": 1374,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "glad",
-                "doc_count": 884
-              },
-              {
-                "key": "neutral",
-                "doc_count": 229
-              },
-              {
-                "key": "mad",
-                "doc_count": 175
-              },
-              {
-                "key": "sad",
-                "doc_count": 80
-              },
-              {
-                "key": "scared",
-                "doc_count": 6
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 1038
-              },
-              {
-                "key": "neutral",
-                "doc_count": 178
-              },
-              {
-                "key": "neg",
-                "doc_count": 158
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514782800000",
-          "key": 1514782800000,
-          "doc_count": 2563,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "glad",
-                "doc_count": 1918
-              },
-              {
-                "key": "neutral",
-                "doc_count": 255
-              },
-              {
-                "key": "mad",
-                "doc_count": 242
-              },
-              {
-                "key": "sad",
-                "doc_count": 123
-              },
-              {
-                "key": "scared",
-                "doc_count": 25
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 2124
-              },
-              {
-                "key": "neg",
-                "doc_count": 302
-              },
-              {
-                "key": "neutral",
-                "doc_count": 137
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514869200000",
-          "key": 1514869200000,
-          "doc_count": 474,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "glad",
-                "doc_count": 224
-              },
-              {
-                "key": "mad",
-                "doc_count": 138
-              },
-              {
-                "key": "neutral",
-                "doc_count": 64
-              },
-              {
-                "key": "sad",
-                "doc_count": 34
-              },
-              {
-                "key": "scared",
-                "doc_count": 14
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 282
-              },
-              {
-                "key": "neg",
-                "doc_count": 150
-              },
-              {
-                "key": "neutral",
-                "doc_count": 42
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1514955600000",
-          "key": 1514955600000,
-          "doc_count": 574,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 219
-              },
-              {
-                "key": "mad",
-                "doc_count": 207
-              },
-              {
-                "key": "glad",
-                "doc_count": 79
-              },
-              {
-                "key": "sad",
-                "doc_count": 61
-              },
-              {
-                "key": "scared",
-                "doc_count": 8
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 196
-              },
-              {
-                "key": "pos",
-                "doc_count": 192
-              },
-              {
-                "key": "neg",
-                "doc_count": 186
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1515042000000",
-          "key": 1515042000000,
-          "doc_count": 1069,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 500
-              },
-              {
-                "key": "neutral",
-                "doc_count": 359
-              },
-              {
-                "key": "glad",
-                "doc_count": 105
-              },
-              {
-                "key": "sad",
-                "doc_count": 100
-              },
-              {
-                "key": "scared",
-                "doc_count": 5
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 461
-              },
-              {
-                "key": "pos",
-                "doc_count": 361
-              },
-              {
-                "key": "neg",
-                "doc_count": 247
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1515128400000",
-          "key": 1515128400000,
-          "doc_count": 465,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 203
-              },
-              {
-                "key": "neutral",
-                "doc_count": 150
-              },
-              {
-                "key": "sad",
-                "doc_count": 67
-              },
-              {
-                "key": "glad",
-                "doc_count": 38
-              },
-              {
-                "key": "scared",
-                "doc_count": 7
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "pos",
-                "doc_count": 189
-              },
-              {
-                "key": "neutral",
-                "doc_count": 178
-              },
-              {
-                "key": "neg",
-                "doc_count": 98
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1515214800000",
-          "key": 1515214800000,
-          "doc_count": 423,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 169
-              },
-              {
-                "key": "mad",
-                "doc_count": 106
-              },
-              {
-                "key": "sad",
-                "doc_count": 98
-              },
-              {
-                "key": "scared",
-                "doc_count": 29
-              },
-              {
-                "key": "glad",
-                "doc_count": 21
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 204
-              },
-              {
-                "key": "pos",
-                "doc_count": 123
-              },
-              {
-                "key": "neg",
-                "doc_count": 96
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1515301200000",
-          "key": 1515301200000,
-          "doc_count": 957,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "sad",
-                "doc_count": 668
-              },
-              {
-                "key": "mad",
-                "doc_count": 126
-              },
-              {
-                "key": "neutral",
-                "doc_count": 93
-              },
-              {
-                "key": "glad",
-                "doc_count": 38
-              },
-              {
-                "key": "scared",
-                "doc_count": 32
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 703
-              },
-              {
-                "key": "pos",
-                "doc_count": 159
-              },
-              {
-                "key": "neg",
-                "doc_count": 95
-              }
-            ]
-          }
-        },
-        {
-          "key_as_string": "1515387600000",
-          "key": 1515387600000,
-          "doc_count": 267,
-          "agg_terms_sample_emotions.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "mad",
-                "doc_count": 109
-              },
-              {
-                "key": "neutral",
-                "doc_count": 55
-              },
-              {
-                "key": "glad",
-                "doc_count": 51
-              },
-              {
-                "key": "sad",
-                "doc_count": 43
-              },
-              {
-                "key": "scared",
-                "doc_count": 9
-              }
-            ]
-          },
-          "agg_terms_sample_sentiment.keyword": {
-            "doc_count_error_upper_bound": 0,
-            "sum_other_doc_count": 0,
-            "buckets": [
-              {
-                "key": "neutral",
-                "doc_count": 100
-              },
-              {
-                "key": "pos",
-                "doc_count": 97
-              },
-              {
-                "key": "neg",
-                "doc_count": 70
-              }
-            ]
-          }
-        }
-      ]
-    },
-    "agg_terms_author_age.keyword": {
-      "doc_count_error_upper_bound": 0,
-      "sum_other_doc_count": 0,
-      "buckets": [
-        {
-          "key": "mas25",
-          "doc_count": 7518
-        },
-        {
-          "key": "menos25",
-          "doc_count": 1796
-        }
-      ]
-    }
-  }
+	"took": 2206,
+	"timed_out": false,
+	"_shards": {
+		"total": 11,
+		"successful": 11,
+		"failed": 0
+	},
+	"hits": {
+		"total": 1188,
+		"max_score": 0,
+		"hits": []
+	},
+	"aggregations": {
+		"agg_terms_sample_words": {
+			"doc_count_error_upper_bound": 11,
+			"sum_other_doc_count": 1206,
+			"buckets": [{
+					"key": "reconciliacion",
+					"doc_count": 109,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 76
+							},
+							{
+								"key": "neutral",
+								"doc_count": 17
+							},
+							{
+								"key": "pos",
+								"doc_count": 16
+							}
+						]
+					}
+				},
+				{
+					"key": "quieren",
+					"doc_count": 27,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+							"key": "neg",
+							"doc_count": 27
+						}]
+					}
+				},
+				{
+					"key": "presidente",
+					"doc_count": 26,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 16
+							},
+							{
+								"key": "pos",
+								"doc_count": 9
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1
+							}
+						]
+					}
+				},
+				{
+					"key": "año",
+					"doc_count": 23,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 15
+							},
+							{
+								"key": "pos",
+								"doc_count": 5
+							},
+							{
+								"key": "neutral",
+								"doc_count": 3
+							}
+						]
+					}
+				},
+				{
+					"key": "impunidad",
+					"doc_count": 23,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 22
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1
+							}
+						]
+					}
+				},
+				{
+					"key": "falsa",
+					"doc_count": 20,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 19
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1
+							}
+						]
+					}
+				},
+				{
+					"key": "pais",
+					"doc_count": 20,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 19
+							},
+							{
+								"key": "pos",
+								"doc_count": 1
+							}
+						]
+					}
+				},
+				{
+					"key": "fujimori",
+					"doc_count": 18,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "pos",
+								"doc_count": 12
+							},
+							{
+								"key": "neg",
+								"doc_count": 4
+							},
+							{
+								"key": "neutral",
+								"doc_count": 2
+							}
+						]
+					}
+				},
+				{
+					"key": "feliz",
+					"doc_count": 17,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 14
+							},
+							{
+								"key": "pos",
+								"doc_count": 3
+							}
+						]
+					}
+				},
+				{
+					"key": "justicia",
+					"doc_count": 17,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 16
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1
+							}
+						]
+					}
+				}
+			]
+		},
+		"agg_terms_sample_hashtags.keyword": {
+			"doc_count_error_upper_bound": 3,
+			"sum_other_doc_count": 165,
+			"buckets": [{
+					"key": "gabinetedelaimpunidad",
+					"doc_count": 192,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 132
+							},
+							{
+								"key": "neg",
+								"doc_count": 55
+							},
+							{
+								"key": "pos",
+								"doc_count": 5
+							}
+						]
+					}
+				},
+				{
+					"key": "reconciliacion",
+					"doc_count": 77,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 28
+							},
+							{
+								"key": "neutral",
+								"doc_count": 26
+							},
+							{
+								"key": "pos",
+								"doc_count": 23
+							}
+						]
+					}
+				},
+				{
+					"key": "gabinetedelprontuario",
+					"doc_count": 29,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+							"key": "neutral",
+							"doc_count": 29
+						}]
+					}
+				},
+				{
+					"key": "honor",
+					"doc_count": 12,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+							"key": "neg",
+							"doc_count": 12
+						}]
+					}
+				},
+				{
+					"key": "honra",
+					"doc_count": 12,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+							"key": "neg",
+							"doc_count": 12
+						}]
+					}
+				},
+				{
+					"key": "integridad",
+					"doc_count": 12,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+							"key": "neg",
+							"doc_count": 12
+						}]
+					}
+				},
+				{
+					"key": "respeto",
+					"doc_count": 12,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+							"key": "neg",
+							"doc_count": 12
+						}]
+					}
+				},
+				{
+					"key": "peru",
+					"doc_count": 7,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 3
+							},
+							{
+								"key": "pos",
+								"doc_count": 3
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1
+							}
+						]
+					}
+				},
+				{
+					"key": "ppk",
+					"doc_count": 7,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 4
+							},
+							{
+								"key": "pos",
+								"doc_count": 2
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1
+							}
+						]
+					}
+				},
+				{
+					"key": "11e",
+					"doc_count": 6,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 4
+							},
+							{
+								"key": "neg",
+								"doc_count": 2
+							}
+						]
+					}
+				}
+			]
+		},
+		"agg_terms_sample_sentiment.keyword": {
+			"doc_count_error_upper_bound": 0,
+			"sum_other_doc_count": 0,
+			"buckets": [{
+					"key": "neg",
+					"doc_count": 598
+				},
+				{
+					"key": "neutral",
+					"doc_count": 472
+				},
+				{
+					"key": "pos",
+					"doc_count": 118
+				}
+			]
+		},
+		"agg_terms_sample_mentions.keyword": {
+			"doc_count_error_upper_bound": 14,
+			"sum_other_doc_count": 1060,
+			"buckets": [{
+					"key": "Mov_NuevoPeru",
+					"doc_count": 149,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 101
+							},
+							{
+								"key": "neg",
+								"doc_count": 48
+							}
+						]
+					}
+				},
+				{
+					"key": "MecheAF",
+					"doc_count": 147,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 73
+							},
+							{
+								"key": "neg",
+								"doc_count": 60
+							},
+							{
+								"key": "pos",
+								"doc_count": 14
+							}
+						]
+					}
+				},
+				{
+					"key": "ppkamigo",
+					"doc_count": 123,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 63
+							},
+							{
+								"key": "neutral",
+								"doc_count": 45
+							},
+							{
+								"key": "pos",
+								"doc_count": 15
+							}
+						]
+					}
+				},
+				{
+					"key": "MarisaGlave",
+					"doc_count": 96,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 51
+							},
+							{
+								"key": "neutral",
+								"doc_count": 44
+							},
+							{
+								"key": "pos",
+								"doc_count": 1
+							}
+						]
+					}
+				},
+				{
+					"key": "MaritzaGarciaJ",
+					"doc_count": 62,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 46
+							},
+							{
+								"key": "pos",
+								"doc_count": 13
+							},
+							{
+								"key": "neg",
+								"doc_count": 3
+							}
+						]
+					}
+				},
+				{
+					"key": "JNE_Peru",
+					"doc_count": 47,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 46
+							},
+							{
+								"key": "neg",
+								"doc_count": 1
+							}
+						]
+					}
+				},
+				{
+					"key": "Vero_Mendoza_F",
+					"doc_count": 46,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+							"key": "neg",
+							"doc_count": 46
+						}]
+					}
+				},
+				{
+					"key": "Mechearaozf",
+					"doc_count": 42,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+							"key": "neutral",
+							"doc_count": 42
+						}]
+					}
+				},
+				{
+					"key": "NicolasLucar",
+					"doc_count": 42,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+							"key": "neutral",
+							"doc_count": 42
+						}]
+					}
+				},
+				{
+					"key": "elcomercio_peru",
+					"doc_count": 40,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 26
+							},
+							{
+								"key": "neutral",
+								"doc_count": 8
+							},
+							{
+								"key": "pos",
+								"doc_count": 6
+							}
+						]
+					}
+				}
+			]
+		},
+		"agg_terms_author_screen_name.keyword": {
+			"doc_count_error_upper_bound": -1,
+			"sum_other_doc_count": 1182,
+			"buckets": [{
+					"key": "FernandoArmasCa",
+					"doc_count": 1,
+					"agg_avg_author_followers_count": {
+						"value": 969624
+					}
+				},
+				{
+					"key": "lamula",
+					"doc_count": 1,
+					"agg_avg_author_followers_count": {
+						"value": 903186
+					}
+				},
+				{
+					"key": "NicolasLucar",
+					"doc_count": 1,
+					"agg_avg_author_followers_count": {
+						"value": 229099
+					}
+				},
+				{
+					"key": "CristianHidaIgo",
+					"doc_count": 1,
+					"agg_avg_author_followers_count": {
+						"value": 222276
+					}
+				},
+				{
+					"key": "MarisaGlave",
+					"doc_count": 1,
+					"agg_avg_author_followers_count": {
+						"value": 192641
+					}
+				},
+				{
+					"key": "peruenlanoticia",
+					"doc_count": 1,
+					"agg_avg_author_followers_count": {
+						"value": 149714
+					}
+				}
+			]
+		},
+		"agg_date_histogram_sample_created_at": {
+			"buckets": [{
+					"key_as_string": "1514782800000",
+					"key": 1514782800000,
+					"doc_count": 49,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "glad",
+								"doc_count": 23
+							},
+							{
+								"key": "mad",
+								"doc_count": 17
+							},
+							{
+								"key": "sad",
+								"doc_count": 5
+							},
+							{
+								"key": "neutral",
+								"doc_count": 2
+							},
+							{
+								"key": "scared",
+								"doc_count": 2
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 371,
+						"buckets": [{
+								"key": "reconciliacion",
+								"doc_count": 43
+							},
+							{
+								"key": "año",
+								"doc_count": 19
+							},
+							{
+								"key": "impunidad",
+								"doc_count": 18
+							},
+							{
+								"key": "falsa",
+								"doc_count": 17
+							},
+							{
+								"key": "feliz",
+								"doc_count": 16
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "fujimorismonuncamas",
+								"doc_count": 3
+							},
+							{
+								"key": "biendelaeconomia",
+								"doc_count": 1
+							},
+							{
+								"key": "miperu",
+								"doc_count": 1
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 32
+							},
+							{
+								"key": "pos",
+								"doc_count": 11
+							},
+							{
+								"key": "neutral",
+								"doc_count": 6
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 46,
+						"buckets": [{
+								"key": "TubinoCarlos",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 37537
+								}
+							},
+							{
+								"key": "ANDRESAR16",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2864
+								}
+							},
+							{
+								"key": "UUUNIKKKO",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 1485
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 24,
+						"buckets": [{
+								"key": "No a la impunidad que este gobierno pretende imponer con su falsa reconciliacion, mediante un indulto ilegal. @JuanSheput @ppkamigo @MecheAF @SalvadorHeresi",
+								"doc_count": 3
+							},
+							{
+								"key": "@TubinoCarlos Aunque nos pongan mil obstáculos seguiremos caminando a paso FIRME rumbo a la RECONCILIACION 🇵🇪🙅 Feliz Año Sr Tubino, bendiciones a su familia",
+								"doc_count": 2
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1514869200000",
+					"key": 1514869200000,
+					"doc_count": 31,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 14
+							},
+							{
+								"key": "sad",
+								"doc_count": 8
+							},
+							{
+								"key": "glad",
+								"doc_count": 6
+							},
+							{
+								"key": "neutral",
+								"doc_count": 3
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 248,
+						"buckets": [{
+								"key": "reconciliacion",
+								"doc_count": 25
+							},
+							{
+								"key": "indulto",
+								"doc_count": 6
+							},
+							{
+								"key": "impunidad",
+								"doc_count": 5
+							},
+							{
+								"key": "gobierno",
+								"doc_count": 4
+							},
+							{
+								"key": "año",
+								"doc_count": 3
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 12,
+						"buckets": [{
+								"key": "odebrecht",
+								"doc_count": 2
+							},
+							{
+								"key": "reconciliacion",
+								"doc_count": 2
+							},
+							{
+								"key": "asesores",
+								"doc_count": 1
+							},
+							{
+								"key": "bancadas",
+								"doc_count": 1
+							},
+							{
+								"key": "blindajes",
+								"doc_count": 1
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 21
+							},
+							{
+								"key": "neutral",
+								"doc_count": 6
+							},
+							{
+								"key": "pos",
+								"doc_count": 4
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 28,
+						"buckets": [{
+								"key": "LavaJatoNews",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 7741
+								}
+							},
+							{
+								"key": "LlamaPs",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 557
+								}
+							},
+							{
+								"key": "LuisFelipePolo",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 357
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 20,
+						"buckets": [{
+								"key": "@YeniVilcatoma2 El Pueblo pide Reconciliacion SI Impunidad NO. Siga @LavaJato_Peru #Odebrecht amplien Diroes @MininterPeru @MinjusDH_Peru @FiscaliaPeru @CANTICORRUPCION @Poder_Judicial_ @KeikoFujimori @MecheAF @AFloresAraoz @luissolarif @KASiusLA",
+								"doc_count": 2
+							},
+							{
+								"key": "No a la impunidad que este gobierno pretende imponer con su falsa reconciliacion, mediante un indulto ilegal. @JuanSheput @ppkamigo @MecheAF @SalvadorHeresi",
+								"doc_count": 2
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1514955600000",
+					"key": 1514955600000,
+					"doc_count": 37,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 16
+							},
+							{
+								"key": "mad",
+								"doc_count": 14
+							},
+							{
+								"key": "sad",
+								"doc_count": 3
+							},
+							{
+								"key": "scared",
+								"doc_count": 3
+							},
+							{
+								"key": "glad",
+								"doc_count": 1
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 313,
+						"buckets": [{
+								"key": "reconciliacion",
+								"doc_count": 20
+							},
+							{
+								"key": "fujimori",
+								"doc_count": 12
+							},
+							{
+								"key": "democracia",
+								"doc_count": 11
+							},
+							{
+								"key": "presidente",
+								"doc_count": 11
+							},
+							{
+								"key": "ex",
+								"doc_count": 10
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 10,
+						"buckets": [{
+								"key": "reconciliacion",
+								"doc_count": 14
+							},
+							{
+								"key": "anulacion",
+								"doc_count": 1
+							},
+							{
+								"key": "bambalinas",
+								"doc_count": 1
+							},
+							{
+								"key": "clinica",
+								"doc_count": 1
+							},
+							{
+								"key": "gabinete",
+								"doc_count": 1
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "pos",
+								"doc_count": 17
+							},
+							{
+								"key": "neg",
+								"doc_count": 11
+							},
+							{
+								"key": "neutral",
+								"doc_count": 9
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 34,
+						"buckets": [{
+								"key": "CibernautasFP",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 14281
+								}
+							},
+							{
+								"key": "mardewe",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 6441
+								}
+							},
+							{
+								"key": "PETO184",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 4532
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 16,
+						"buckets": [{
+								"key": "#KenjiPeru  #Reconciliacion=Reestructuracion",
+								"doc_count": 1
+							},
+							{
+								"key": "@JulianaOxenford PPK debio hablar claro , el quiere un gabinete de la reconciliacion con keiko",
+								"doc_count": 1
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1515042000000",
+					"key": 1515042000000,
+					"doc_count": 45,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 21
+							},
+							{
+								"key": "mad",
+								"doc_count": 16
+							},
+							{
+								"key": "sad",
+								"doc_count": 6
+							},
+							{
+								"key": "glad",
+								"doc_count": 1
+							},
+							{
+								"key": "scared",
+								"doc_count": 1
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 288,
+						"buckets": [{
+								"key": "reconciliacion",
+								"doc_count": 21
+							},
+							{
+								"key": "juan",
+								"doc_count": 12
+							},
+							{
+								"key": "ahorita",
+								"doc_count": 11
+							},
+							{
+								"key": "autoria",
+								"doc_count": 11
+							},
+							{
+								"key": "avergonzante",
+								"doc_count": 11
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 7,
+						"buckets": [{
+								"key": "reconciliacion",
+								"doc_count": 9
+							},
+							{
+								"key": "17añossinsentencia",
+								"doc_count": 1
+							},
+							{
+								"key": "amiste",
+								"doc_count": 1
+							},
+							{
+								"key": "asesores",
+								"doc_count": 1
+							},
+							{
+								"key": "fuji",
+								"doc_count": 1
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 31
+							},
+							{
+								"key": "neutral",
+								"doc_count": 8
+							},
+							{
+								"key": "pos",
+								"doc_count": 6
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 42,
+						"buckets": [{
+								"key": "Pulmon_de_Susan",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 13540
+								}
+							},
+							{
+								"key": "ArgosMozart",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 11488
+								}
+							},
+							{
+								"key": "PipoHUERTA",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2382
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 23,
+						"buckets": [{
+								"key": "Ahorita en @exitosape estan tratando el lamentable y avergonzante caso del Gral EP Juan Rivero Lazo (ret.). Esta cojudez de la autoria mediata debe terminar. Si @ppkamigo y @MecheAF quieren reconciliacion, que NOS SAQUEN de la CIDH. El tono cambiara...",
+								"doc_count": 11
+							},
+							{
+								"key": "#RECONCILIACION es una palabra hueca, vacía, difundida por el gobierno de @ppkamigo y su premier @MecheAF ... pero, si quieren saber lo que REALMENTE SIGNIFICA. primero deben reconciliarse consigo mismo.",
+								"doc_count": 2
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1515128400000",
+					"key": 1515128400000,
+					"doc_count": 74,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 35
+							},
+							{
+								"key": "mad",
+								"doc_count": 21
+							},
+							{
+								"key": "sad",
+								"doc_count": 10
+							},
+							{
+								"key": "glad",
+								"doc_count": 4
+							},
+							{
+								"key": "scared",
+								"doc_count": 4
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": []
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "reconciliacion",
+								"doc_count": 9
+							},
+							{
+								"key": "keikocorrupta",
+								"doc_count": 1
+							},
+							{
+								"key": "kenjinegociado",
+								"doc_count": 1
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 40
+							},
+							{
+								"key": "neg",
+								"doc_count": 25
+							},
+							{
+								"key": "pos",
+								"doc_count": 9
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 71,
+						"buckets": [{
+								"key": "peruenlanoticia",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 149714
+								}
+							},
+							{
+								"key": "SolCn",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 55400
+								}
+							},
+							{
+								"key": "ArgosMozart",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 11487
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 19,
+						"buckets": [{
+								"key": "#RECONCILIACION es una palabra hueca, vacía, difundida por el gobierno de @ppkamigo y su premier @MecheAF ... pero, si quieren saber lo que REALMENTE SIGNIFICA. primero deben reconciliarse consigo mismo.",
+								"doc_count": 3
+							},
+							{
+								"key": "@CarlosCapristan @eldiarionegro @lamula reconciliacion entre PPK y los fujimoristas.....para que no haya vacancia..",
+								"doc_count": 1
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1515214800000",
+					"key": 1515214800000,
+					"doc_count": 73,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 36
+							},
+							{
+								"key": "neutral",
+								"doc_count": 21
+							},
+							{
+								"key": "sad",
+								"doc_count": 10
+							},
+							{
+								"key": "glad",
+								"doc_count": 5
+							},
+							{
+								"key": "scared",
+								"doc_count": 1
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": []
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "reconciliacion",
+								"doc_count": 6
+							},
+							{
+								"key": "dialogo",
+								"doc_count": 1
+							},
+							{
+								"key": "impunidad",
+								"doc_count": 1
+							},
+							{
+								"key": "indultoesinsulto",
+								"doc_count": 1
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 34
+							},
+							{
+								"key": "neutral",
+								"doc_count": 26
+							},
+							{
+								"key": "pos",
+								"doc_count": 13
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 70,
+						"buckets": [{
+								"key": "vozdelatierra",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 46537
+								}
+							},
+							{
+								"key": "YeniVilcatoma2",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 34960
+								}
+							},
+							{
+								"key": "ArgosMozart",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 11496
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 38,
+						"buckets": [{
+								"key": "#RECONCILIACION es una palabra hueca, vacía, difundida por el gobierno de @ppkamigo y su premier @MecheAF ... pero, si quieren saber lo que REALMENTE SIGNIFICA. primero deben reconciliarse consigo mismo.",
+								"doc_count": 2
+							},
+							{
+								"key": "@uterope RECONCILIACION??? EL AÑO DE LA NEGOCIACION: INDULTO/NO-VACANCIA A quien quieres engañar PPKUTRERO",
+								"doc_count": 2
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1515301200000",
+					"key": 1515301200000,
+					"doc_count": 128,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 72
+							},
+							{
+								"key": "neutral",
+								"doc_count": 25
+							},
+							{
+								"key": "sad",
+								"doc_count": 15
+							},
+							{
+								"key": "glad",
+								"doc_count": 11
+							},
+							{
+								"key": "scared",
+								"doc_count": 5
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": []
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "11e",
+								"doc_count": 4
+							},
+							{
+								"key": "reconciliacion",
+								"doc_count": 3
+							},
+							{
+								"key": "ppk",
+								"doc_count": 2
+							},
+							{
+								"key": "capitalteescucha",
+								"doc_count": 1
+							},
+							{
+								"key": "rodolfoorellana",
+								"doc_count": 1
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 86
+							},
+							{
+								"key": "neutral",
+								"doc_count": 25
+							},
+							{
+								"key": "pos",
+								"doc_count": 17
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 125,
+						"buckets": [{
+								"key": "CristianHidaIgo",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 222276
+								}
+							},
+							{
+								"key": "ANDRESAR16",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2881
+								}
+							},
+							{
+								"key": "ciudadano1921",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 1800
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 79,
+						"buckets": [{
+								"key": "@MecheAF @elcomercio_peru renuncia sinverguenza.No puedes imponer una reconciliacion",
+								"doc_count": 3
+							},
+							{
+								"key": "@vickyruela @vozdelatierra El pueblo está de acuerdo con el indulto y para sus resentimientos no lo mencionen, ustedes son unos cuantos resentidos. Reconciliacion es necesaria.",
+								"doc_count": 3
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1515387600000",
+					"key": 1515387600000,
+					"doc_count": 80,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 34
+							},
+							{
+								"key": "glad",
+								"doc_count": 23
+							},
+							{
+								"key": "sad",
+								"doc_count": 11
+							},
+							{
+								"key": "neutral",
+								"doc_count": 10
+							},
+							{
+								"key": "scared",
+								"doc_count": 2
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": []
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 8,
+						"buckets": [{
+								"key": "reconciliacion",
+								"doc_count": 5
+							},
+							{
+								"key": "peru",
+								"doc_count": 4
+							},
+							{
+								"key": "corrupcion",
+								"doc_count": 2
+							},
+							{
+								"key": "lavajato",
+								"doc_count": 2
+							},
+							{
+								"key": "presidentedeslegitimado",
+								"doc_count": 2
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 40
+							},
+							{
+								"key": "neutral",
+								"doc_count": 29
+							},
+							{
+								"key": "pos",
+								"doc_count": 11
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 77,
+						"buckets": [{
+								"key": "Pulmon_de_Susan",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 13613
+								}
+							},
+							{
+								"key": "virgilio_acuna",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 6126
+								}
+							},
+							{
+								"key": "matacaviares",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 4236
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 42,
+						"buckets": [{
+								"key": "'CIA Perú, una novela de espías', es el libro más reciente de Alejandro Neyra, próximo ministro de Cultura del gabinete PPK. La obra aborda el Gob de Fujimori.",
+								"doc_count": 14
+							},
+							{
+								"key": "RECONCILIACION modelo PPK ....  FRATRICIDIO al AGRO https://www.facebook.com/carlos.machuca.3591/videos/192410934646062/",
+								"doc_count": 1
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1515474000000",
+					"key": 1515474000000,
+					"doc_count": 230,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 115
+							},
+							{
+								"key": "neutral",
+								"doc_count": 52
+							},
+							{
+								"key": "glad",
+								"doc_count": 33
+							},
+							{
+								"key": "sad",
+								"doc_count": 26
+							},
+							{
+								"key": "scared",
+								"doc_count": 4
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": []
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 33,
+						"buckets": [{
+								"key": "gabinetedelaimpunidad",
+								"doc_count": 67
+							},
+							{
+								"key": "reconciliacion",
+								"doc_count": 11
+							},
+							{
+								"key": "gabinetereconciliación",
+								"doc_count": 6
+							},
+							{
+								"key": "indultoesinsulto",
+								"doc_count": 3
+							},
+							{
+								"key": "11e",
+								"doc_count": 2
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 113
+							},
+							{
+								"key": "neg",
+								"doc_count": 99
+							},
+							{
+								"key": "pos",
+								"doc_count": 18
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 226,
+						"buckets": [{
+								"key": "FernandoArmasCa",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 969624
+								}
+							},
+							{
+								"key": "pocovicio",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 20453.5
+								}
+							},
+							{
+								"key": "ManuelDammert",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 14975
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 139,
+						"buckets": [{
+								"key": "Mañana presentaremos una ACUSACIÓN CONSTITUCIONAL contra @MecheAF y Enrique Mendoza POR MENTIRLE A LOS PERUANOS en el proceso de indulto. #GabineteMinisterial #GabineteDeLaImpunidad  ",
+								"doc_count": 15
+							},
+							{
+								"key": "Será un “gabinete de la reconciliación” pero entre la derecha con el fujimorismo. No con la ciudadanía. #GabineteDeLaImpunidad ",
+								"doc_count": 13
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1515560400000",
+					"key": 1515560400000,
+					"doc_count": 280,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 138
+							},
+							{
+								"key": "glad",
+								"doc_count": 56
+							},
+							{
+								"key": "neutral",
+								"doc_count": 44
+							},
+							{
+								"key": "sad",
+								"doc_count": 37
+							},
+							{
+								"key": "scared",
+								"doc_count": 5
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": []
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 26,
+						"buckets": [{
+								"key": "gabinetedelaimpunidad",
+								"doc_count": 89
+							},
+							{
+								"key": "gabinetedelprontuario",
+								"doc_count": 20
+							},
+							{
+								"key": "reconciliacion",
+								"doc_count": 7
+							},
+							{
+								"key": "honor",
+								"doc_count": 3
+							},
+							{
+								"key": "honra",
+								"doc_count": 3
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 159
+							},
+							{
+								"key": "neg",
+								"doc_count": 113
+							},
+							{
+								"key": "pos",
+								"doc_count": 8
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 277,
+						"buckets": [{
+								"key": "lamula",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 903186
+								}
+							},
+							{
+								"key": "NicolasLucar",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 229099
+								}
+							},
+							{
+								"key": "MarisaGlave",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 192641
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 121,
+						"buckets": [{
+								"key": "Sigue la Reconciliacion : @MarisaGlave y Nuevo Perú presentan acusación Constitucional contra @Mechearaozf y Enrique Mendoza por indulto a @albertofujimori",
+								"doc_count": 31
+							},
+							{
+								"key": "Congresista @MarisaGlave: Ese es un gabinete de la burla, de la mentira, de prontuariados.Esto ocurre porque nadie quiere apoyar el gabinete de @MecheAF y tiene que recurrir a prontuariados #GabineteDeLaImpunidad",
+								"doc_count": 25
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1515646800000",
+					"key": 1515646800000,
+					"doc_count": 161,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "mad",
+								"doc_count": 100
+							},
+							{
+								"key": "sad",
+								"doc_count": 26
+							},
+							{
+								"key": "neutral",
+								"doc_count": 16
+							},
+							{
+								"key": "glad",
+								"doc_count": 15
+							},
+							{
+								"key": "scared",
+								"doc_count": 4
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": []
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 61,
+						"buckets": [{
+								"key": "gabinetedelaimpunidad",
+								"doc_count": 36
+							},
+							{
+								"key": "reconciliacion",
+								"doc_count": 11
+							},
+							{
+								"key": "honor",
+								"doc_count": 9
+							},
+							{
+								"key": "honra",
+								"doc_count": 9
+							},
+							{
+								"key": "integridad",
+								"doc_count": 9
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 106
+							},
+							{
+								"key": "neutral",
+								"doc_count": 51
+							},
+							{
+								"key": "pos",
+								"doc_count": 4
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 158,
+						"buckets": [{
+								"key": "monvalpa",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 48590
+								}
+							},
+							{
+								"key": "JorgeRojasOrr",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 7184
+								}
+							},
+							{
+								"key": "virgilio_acuna",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 6137
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 56,
+						"buckets": [{
+								"key": "Congresista @MarisaGlave: Ese es un gabinete de la burla, de la mentira, de prontuariados.Esto ocurre porque nadie quiere apoyar el gabinete de @MecheAF y tiene que recurrir a prontuariados #GabineteDeLaImpunidad",
+								"doc_count": 14
+							},
+							{
+								"key": "Sigue la Reconciliacion : @MarisaGlave y Nuevo Perú presentan acusación Constitucional contra @Mechearaozf y Enrique Mendoza por indulto a @albertofujimori",
+								"doc_count": 11
+							}
+						]
+					}
+				}
+			]
+		},
+		"agg_terms_author_gender.keyword": {
+			"doc_count_error_upper_bound": 0,
+			"sum_other_doc_count": 0,
+			"buckets": [{
+					"key": "u",
+					"doc_count": 721
+				},
+				{
+					"key": "m",
+					"doc_count": 319
+				},
+				{
+					"key": "f",
+					"doc_count": 148
+				}
+			]
+		},
+		"agg_terms_author_age.keyword": {
+			"doc_count_error_upper_bound": 0,
+			"sum_other_doc_count": 0,
+			"buckets": [{
+					"key": "mas25",
+					"doc_count": 1051
+				},
+				{
+					"key": "menos25",
+					"doc_count": 137
+				}
+			]
+		}
+	}
 }

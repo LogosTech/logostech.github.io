@@ -5,7 +5,13 @@ date:   2018-01-08 08:30:15 +0000
 categories: politica
 image: gabinete-reco.jpg
 comments: true
-show_report: gabinete-reconciliacion.json
+social_tracker:
+  file: gabinete-reconciliacion.json
+  type: infografia
+  exclude_terms:
+    - gabinete
+    - reconciliación
+    - reconciliacion
 tags:
   - infografia
   - social-tracker

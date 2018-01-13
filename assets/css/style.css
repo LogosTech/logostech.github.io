@@ -1746,9 +1746,6 @@ small {
       left: -15px;
       right: auto;
     }
-    .black:before {
-      background: #001D26;
-    }
 
     ul.timeline > li > .timeline-panel:after {
       border-left-width: 0;
@@ -1775,6 +1772,12 @@ small {
     box-shadow: 0 1px 6px rgba(255,255,255,1);
   }
 
+
+  .timeline > li > .black:after {
+    border-left: 14px solid #001D26;
+    border-right: 0 solid #001D26;
+  }
+
   .timeline-influencers h3 {
     font-size: .7em;
     text-overflow: ellipsis;
@@ -1796,4 +1799,15 @@ small {
   .timeline-influencers li a {
     text-decoration: none;
     border: 0;
+  }
+
+  /* DEMO AREA */
+
+  .demo_text_area {
+    width: 100%;
+    padding: 1em;
+    border: 0;
+
+    font-size: .7em;
+    height: 10em;
   }

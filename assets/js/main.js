@@ -284,6 +284,9 @@
             var buckets_words = item
               .agg_terms_sample_words
               .buckets;
+							console.log(item
+	              ['agg_terms_sample_text.keyword']
+	              .buckets);
             var sample = item
               ['agg_terms_sample_text.keyword']
               .buckets[0].key;
