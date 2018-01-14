@@ -1,0 +1,15 @@
+---
+layout: blog
+---
+
+<div class="section-title">
+  <div class="CoverImage FlexEmbed FlexEmbed--2by1"
+    style="background-image:url({{ "/assets/img/blog/" | append: page.image | prepend: site.baseurl }})">
+  </div>
+  <h2 class="wow fadeIn" data-wow-delay="0.25s">{{ page.title }}</h2>
+  <span class="wow fadeIn" data-wow-delay="0.5s"></span>
+</div>
+
+<article class="post-content">
+  {{ page.content | markdownify }}
+</article>

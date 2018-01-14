@@ -1,14 +1,15 @@
 ---
 layout: post
 title:  "Vacancia!"
-date:   2018-01-05 07:40:15 +0000
-categories: politica
+date:   2017-12-31 07:40:15 +0000
+categories: social-tracker
 image: ppk.jpg
 comments: true
 social_tracker:
   file: ppk-vacancia.json
   type: infografia
   exclude_terms:
+    - politica
     - ppk
     - vacancia
     - perú

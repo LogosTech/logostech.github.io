@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Kenji 2018"
-date:   2018-01-07 08:30:15 +0000
-categories: politica
+date:   2018-01-08 08:30:15 +0000
+categories: social-tracker
 image: kenji.jpg
 comments: true
 
@@ -16,7 +16,7 @@ tags:
   - infografia
   - actualidad
   - nacional
-  - social-tracker
+  - politica
 ---
 
 No arranca con buen pie el 2018, pero el el tema del indulto hace que baje su carga negativa.

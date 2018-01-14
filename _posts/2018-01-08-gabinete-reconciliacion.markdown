@@ -2,7 +2,7 @@
 layout: post
 title:  "Gabinete Reconciliación"
 date:   2018-01-08 08:30:15 +0000
-categories: politica
+categories: social-tracker
 image: gabinete-reco.jpg
 comments: true
 social_tracker:
@@ -14,7 +14,9 @@ social_tracker:
     - reconciliacion
 tags:
   - infografia
-  - social-tracker
+  - politica
+  - congreso
+  - ppk
 ---
 
 Tras dos semanas de especulación, PPK dio a conocer a nuevos ministros tras la crisis política por el indulto a Alberto Fujimori.

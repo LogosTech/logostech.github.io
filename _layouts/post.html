@@ -17,12 +17,13 @@ layout: blog
   </p>
 </div>
 
-<article class="post-content">
-  {% if page.social_tracker %}
-    {% include report.html %}
-  {% endif %}
+{% if page.social_tracker %}
+  {% include report.html %}
+{% endif %}
 
+<article class="post-content">
   {{ page.content | remove: page.excerpt }}
+
   <div class="tags">
     {% for tag in page.tags %}
       <span class="badge badge-pill badge-primary">

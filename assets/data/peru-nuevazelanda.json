@@ -1,0 +1,1697 @@
+{
+	"took": 4803,
+	"timed_out": false,
+	"_shards": {
+		"total": 11,
+		"successful": 11,
+		"failed": 0
+	},
+	"hits": {
+		"total": 62433,
+		"max_score": 0,
+		"hits": []
+	},
+	"aggregations": {
+		"agg_terms_sample_words": {
+			"doc_count_error_upper_bound": 2912,
+			"sum_other_doc_count": 483393,
+			"buckets": [{
+					"key": "mundial",
+					"doc_count": 15806,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 9301
+							},
+							{
+								"key": "pos",
+								"doc_count": 5966
+							},
+							{
+								"key": "neg",
+								"doc_count": 539
+							}
+						]
+					}
+				},
+				{
+					"key": "perú",
+					"doc_count": 10960,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "pos",
+								"doc_count": 5391
+							},
+							{
+								"key": "neutral",
+								"doc_count": 4193
+							},
+							{
+								"key": "neg",
+								"doc_count": 1376
+							}
+						]
+					}
+				},
+				{
+					"key": "selecciones",
+					"doc_count": 7031,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 6845
+							},
+							{
+								"key": "pos",
+								"doc_count": 117
+							},
+							{
+								"key": "neg",
+								"doc_count": 69
+							}
+						]
+					}
+				},
+				{
+					"key": "gareca",
+					"doc_count": 5707,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "pos",
+								"doc_count": 3957
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1157
+							},
+							{
+								"key": "neg",
+								"doc_count": 593
+							}
+						]
+					}
+				},
+				{
+					"key": "rusia",
+					"doc_count": 4950,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 3400
+							},
+							{
+								"key": "pos",
+								"doc_count": 1338
+							},
+							{
+								"key": "neg",
+								"doc_count": 212
+							}
+						]
+					}
+				},
+				{
+					"key": "gracias",
+					"doc_count": 4498,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "pos",
+								"doc_count": 4388
+							},
+							{
+								"key": "neutral",
+								"doc_count": 72
+							},
+							{
+								"key": "neg",
+								"doc_count": 38
+							}
+						]
+					}
+				},
+				{
+					"key": "Italia",
+					"doc_count": 4070,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 3551
+							},
+							{
+								"key": "pos",
+								"doc_count": 329
+							},
+							{
+								"key": "neg",
+								"doc_count": 190
+							}
+						]
+					}
+				},
+				{
+					"key": "irlanda",
+					"doc_count": 3890,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 3746
+							},
+							{
+								"key": "pos",
+								"doc_count": 123
+							},
+							{
+								"key": "neg",
+								"doc_count": 21
+							}
+						]
+					}
+				},
+				{
+					"key": "sorteo",
+					"doc_count": 3755,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 3714
+							},
+							{
+								"key": "pos",
+								"doc_count": 31
+							},
+							{
+								"key": "neg",
+								"doc_count": 10
+							}
+						]
+					}
+				},
+				{
+					"key": "felicitaciones",
+					"doc_count": 3558,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 2182
+							},
+							{
+								"key": "pos",
+								"doc_count": 1346
+							},
+							{
+								"key": "neg",
+								"doc_count": 30
+							}
+						]
+					}
+				}
+			]
+		},
+		"agg_terms_sample_hashtags.keyword": {
+			"doc_count_error_upper_bound": 517,
+			"sum_other_doc_count": 37686,
+			"buckets": [{
+					"key": "rusia2018",
+					"doc_count": 39185,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 26884
+							},
+							{
+								"key": "pos",
+								"doc_count": 9709
+							},
+							{
+								"key": "neg",
+								"doc_count": 2592
+							}
+						]
+					}
+				},
+				{
+					"key": "perualmundial",
+					"doc_count": 4770,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 2412
+							},
+							{
+								"key": "pos",
+								"doc_count": 1500
+							},
+							{
+								"key": "neg",
+								"doc_count": 858
+							}
+						]
+					}
+				},
+				{
+					"key": "vamosperu",
+					"doc_count": 3232,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "pos",
+								"doc_count": 1697
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1036
+							},
+							{
+								"key": "neg",
+								"doc_count": 499
+							}
+						]
+					}
+				},
+				{
+					"key": "perú",
+					"doc_count": 2127,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 1373
+							},
+							{
+								"key": "pos",
+								"doc_count": 656
+							},
+							{
+								"key": "neg",
+								"doc_count": 98
+							}
+						]
+					}
+				},
+				{
+					"key": "claroquevamos",
+					"doc_count": 1757,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "pos",
+								"doc_count": 819
+							},
+							{
+								"key": "neutral",
+								"doc_count": 556
+							},
+							{
+								"key": "neg",
+								"doc_count": 382
+							}
+						]
+					}
+				},
+				{
+					"key": "nuevazelanda",
+					"doc_count": 1741,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 1109
+							},
+							{
+								"key": "pos",
+								"doc_count": 567
+							},
+							{
+								"key": "neg",
+								"doc_count": 65
+							}
+						]
+					}
+				},
+				{
+					"key": "contigoperu",
+					"doc_count": 1473,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "pos",
+								"doc_count": 668
+							},
+							{
+								"key": "neg",
+								"doc_count": 477
+							},
+							{
+								"key": "neutral",
+								"doc_count": 328
+							}
+						]
+					}
+				},
+				{
+					"key": "arribaperu",
+					"doc_count": 1313,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "pos",
+								"doc_count": 757
+							},
+							{
+								"key": "neutral",
+								"doc_count": 435
+							},
+							{
+								"key": "neg",
+								"doc_count": 121
+							}
+						]
+					}
+				},
+				{
+					"key": "peru",
+					"doc_count": 1261,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "pos",
+								"doc_count": 705
+							},
+							{
+								"key": "neutral",
+								"doc_count": 458
+							},
+							{
+								"key": "neg",
+								"doc_count": 98
+							}
+						]
+					}
+				},
+				{
+					"key": "vamosperú",
+					"doc_count": 1143,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "pos",
+								"doc_count": 682
+							},
+							{
+								"key": "neutral",
+								"doc_count": 392
+							},
+							{
+								"key": "neg",
+								"doc_count": 69
+							}
+						]
+					}
+				}
+			]
+		},
+		"agg_terms_sample_sentiment.keyword": {
+			"doc_count_error_upper_bound": 0,
+			"sum_other_doc_count": 0,
+			"buckets": [{
+					"key": "neutral",
+					"doc_count": 35731
+				},
+				{
+					"key": "pos",
+					"doc_count": 21826
+				},
+				{
+					"key": "neg",
+					"doc_count": 4876
+				}
+			]
+		},
+		"agg_terms_sample_mentions.keyword": {
+			"doc_count_error_upper_bound": 308,
+			"sum_other_doc_count": 47763,
+			"buckets": [{
+					"key": "fifaworldcup_es",
+					"doc_count": 5014,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 2803
+							},
+							{
+								"key": "pos",
+								"doc_count": 2052
+							},
+							{
+								"key": "neg",
+								"doc_count": 159
+							}
+						]
+					}
+				},
+				{
+					"key": "SeleccionPeru",
+					"doc_count": 3655,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "pos",
+								"doc_count": 2496
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1078
+							},
+							{
+								"key": "neg",
+								"doc_count": 81
+							}
+						]
+					}
+				},
+				{
+					"key": "2010MisterChip",
+					"doc_count": 3167,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 3042
+							},
+							{
+								"key": "pos",
+								"doc_count": 99
+							},
+							{
+								"key": "neg",
+								"doc_count": 26
+							}
+						]
+					}
+				},
+				{
+					"key": "TuFPF",
+					"doc_count": 1271,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "pos",
+								"doc_count": 741
+							},
+							{
+								"key": "neutral",
+								"doc_count": 412
+							},
+							{
+								"key": "neg",
+								"doc_count": 118
+							}
+						]
+					}
+				},
+				{
+					"key": "GabrielObiang",
+					"doc_count": 1122,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+							"key": "neutral",
+							"doc_count": 1122
+						}]
+					}
+				},
+				{
+					"key": "LaRoja",
+					"doc_count": 841,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "pos",
+								"doc_count": 811
+							},
+							{
+								"key": "neutral",
+								"doc_count": 29
+							},
+							{
+								"key": "neg",
+								"doc_count": 1
+							}
+						]
+					}
+				},
+				{
+					"key": "SergioRamos",
+					"doc_count": 630,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "pos",
+								"doc_count": 627
+							},
+							{
+								"key": "neutral",
+								"doc_count": 3
+							}
+						]
+					}
+				},
+				{
+					"key": "marca",
+					"doc_count": 623,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 593
+							},
+							{
+								"key": "pos",
+								"doc_count": 26
+							},
+							{
+								"key": "neg",
+								"doc_count": 4
+							}
+						]
+					}
+				},
+				{
+					"key": "otravezandres",
+					"doc_count": 583,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 577
+							},
+							{
+								"key": "pos",
+								"doc_count": 5
+							},
+							{
+								"key": "neg",
+								"doc_count": 1
+							}
+						]
+					}
+				},
+				{
+					"key": "Politica_ECpe",
+					"doc_count": 576,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 562
+							},
+							{
+								"key": "pos",
+								"doc_count": 12
+							},
+							{
+								"key": "neg",
+								"doc_count": 2
+							}
+						]
+					}
+				}
+			]
+		},
+		"agg_terms_author_screen_name.keyword": {
+			"doc_count_error_upper_bound": -1,
+			"sum_other_doc_count": 62407,
+			"buckets": [{
+					"key": "CNNEE",
+					"doc_count": 1,
+					"agg_avg_author_followers_count": {
+						"value": 16257691
+					}
+				},
+				{
+					"key": "AristeguiOnline",
+					"doc_count": 1,
+					"agg_avg_author_followers_count": {
+						"value": 7730671
+					}
+				},
+				{
+					"key": "el_pais",
+					"doc_count": 1,
+					"agg_avg_author_followers_count": {
+						"value": 6466601
+					}
+				},
+				{
+					"key": "marca",
+					"doc_count": 16,
+					"agg_avg_author_followers_count": {
+						"value": 4771143.9375
+					}
+				},
+				{
+					"key": "ElUniversal",
+					"doc_count": 6,
+					"agg_avg_author_followers_count": {
+						"value": 4753213.666666667
+					}
+				},
+				{
+					"key": "diegotorres",
+					"doc_count": 1,
+					"agg_avg_author_followers_count": {
+						"value": 4697580
+					}
+				}
+			]
+		},
+		"agg_date_histogram_sample_created_at": {
+			"buckets": [{
+					"key_as_string": "1510462800000",
+					"key": 1510462800000,
+					"doc_count": 6892,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "glad",
+								"doc_count": 2526
+							},
+							{
+								"key": "mad",
+								"doc_count": 1856
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1709
+							},
+							{
+								"key": "sad",
+								"doc_count": 660
+							},
+							{
+								"key": "scared",
+								"doc_count": 141
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 50720,
+						"buckets": [{
+								"key": "mundial",
+								"doc_count": 1476
+							},
+							{
+								"key": "seguimos",
+								"doc_count": 1221
+							},
+							{
+								"key": "rusia",
+								"doc_count": 889
+							},
+							{
+								"key": "suiza",
+								"doc_count": 817
+							},
+							{
+								"key": "felicitaciones",
+								"doc_count": 743
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 4090,
+						"buckets": [{
+								"key": "rusia2018",
+								"doc_count": 5243
+							},
+							{
+								"key": "vamosespaña",
+								"doc_count": 590
+							},
+							{
+								"key": "civmar",
+								"doc_count": 381
+							},
+							{
+								"key": "morroco",
+								"doc_count": 379
+							},
+							{
+								"key": "vamosperu",
+								"doc_count": 245
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 4089
+							},
+							{
+								"key": "pos",
+								"doc_count": 2480
+							},
+							{
+								"key": "neg",
+								"doc_count": 323
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 6883,
+						"buckets": [{
+								"key": "CNNEE",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 16257691
+								}
+							},
+							{
+								"key": "CaracolRadio",
+								"doc_count": 7,
+								"agg_avg_author_followers_count": {
+									"value": 3216815.5714285714
+								}
+							},
+							{
+								"key": "MeridianoTV",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 2900660
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 5072,
+						"buckets": [{
+								"key": "Victoria, buenas sensaciones, visita especial y más grupo. Seguimos para #Rusia2018. #VamosEspaña ",
+								"doc_count": 590
+							},
+							{
+								"key": "Gran partido de todo el equipo!! Seguimos preparándonos para el objetivo... #Rusia2018 🇪🇸⚽️😃 ",
+								"doc_count": 504
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1510549200000",
+					"key": 1510549200000,
+					"doc_count": 5827,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "glad",
+								"doc_count": 2267
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1290
+							},
+							{
+								"key": "mad",
+								"doc_count": 1000
+							},
+							{
+								"key": "sad",
+								"doc_count": 991
+							},
+							{
+								"key": "scared",
+								"doc_count": 279
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 222,
+						"sum_other_doc_count": 38744,
+						"buckets": [{
+								"key": "Italia",
+								"doc_count": 1769
+							},
+							{
+								"key": "mundial",
+								"doc_count": 1665
+							},
+							{
+								"key": "suecia",
+								"doc_count": 887
+							},
+							{
+								"key": "rusia",
+								"doc_count": 720
+							},
+							{
+								"key": "marrueco",
+								"doc_count": 447
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 52,
+						"sum_other_doc_count": 3834,
+						"buckets": [{
+								"key": "rusia2018",
+								"doc_count": 4536
+							},
+							{
+								"key": "italia",
+								"doc_count": 430
+							},
+							{
+								"key": "suecia",
+								"doc_count": 224
+							},
+							{
+								"key": "civmar",
+								"doc_count": 219
+							},
+							{
+								"key": "morroco",
+								"doc_count": 219
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 4162
+							},
+							{
+								"key": "pos",
+								"doc_count": 1177
+							},
+							{
+								"key": "neg",
+								"doc_count": 488
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 5822,
+						"buckets": [{
+								"key": "AristeguiOnline",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 7730671
+								}
+							},
+							{
+								"key": "marca",
+								"doc_count": 3,
+								"agg_avg_author_followers_count": {
+									"value": 4770376.333333333
+								}
+							},
+							{
+								"key": "Milenio",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 4013594
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 39,
+						"sum_other_doc_count": 4921,
+						"buckets": [{
+								"key": "Felicitaciones Marruecos!! Nos vemos en Rusia!! #CIVMAR #Morroco #Rusia2018 ",
+								"doc_count": 219
+							},
+							{
+								"key": "Mañana 🇷🇺 vs 🇪🇸 #Rusia2018 ",
+								"doc_count": 173
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1510635600000",
+					"key": 1510635600000,
+					"doc_count": 8056,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "glad",
+								"doc_count": 3364
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1821
+							},
+							{
+								"key": "mad",
+								"doc_count": 1284
+							},
+							{
+								"key": "sad",
+								"doc_count": 1265
+							},
+							{
+								"key": "scared",
+								"doc_count": 322
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 324,
+						"sum_other_doc_count": 56093,
+						"buckets": [{
+								"key": "mundial",
+								"doc_count": 2176
+							},
+							{
+								"key": "Italia",
+								"doc_count": 1164
+							},
+							{
+								"key": "dinamarca",
+								"doc_count": 832
+							},
+							{
+								"key": "perú",
+								"doc_count": 687
+							},
+							{
+								"key": "rusia",
+								"doc_count": 633
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 101,
+						"sum_other_doc_count": 6144,
+						"buckets": [{
+								"key": "rusia2018",
+								"doc_count": 5962
+							},
+							{
+								"key": "vamosperu",
+								"doc_count": 421
+							},
+							{
+								"key": "italia",
+								"doc_count": 383
+							},
+							{
+								"key": "dinamarca",
+								"doc_count": 229
+							},
+							{
+								"key": "suecia",
+								"doc_count": 147
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 5717
+							},
+							{
+								"key": "pos",
+								"doc_count": 1643
+							},
+							{
+								"key": "neg",
+								"doc_count": 696
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 8045,
+						"buckets": [{
+								"key": "el_pais",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 6466601
+								}
+							},
+							{
+								"key": "marca",
+								"doc_count": 8,
+								"agg_avg_author_followers_count": {
+									"value": 4770807.125
+								}
+							},
+							{
+								"key": "ElUniversal",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 4752922.5
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 51,
+						"sum_other_doc_count": 7351,
+						"buckets": [{
+								"key": "Tras la clasificación de Suecia al Mundial, ¿debe el técnico Janne Andersson llamar a Zlatan Ibrahimovic para afrontar #Rusia2018? RT - SÍ Like - NO ",
+								"doc_count": 129
+							},
+							{
+								"key": "Felicitaciones Marruecos!! Nos vemos en Rusia!! #CIVMAR #Morroco #Rusia2018 ",
+								"doc_count": 126
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1510722000000",
+					"key": 1510722000000,
+					"doc_count": 13339,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "glad",
+								"doc_count": 6701
+							},
+							{
+								"key": "neutral",
+								"doc_count": 3911
+							},
+							{
+								"key": "mad",
+								"doc_count": 1238
+							},
+							{
+								"key": "sad",
+								"doc_count": 1213
+							},
+							{
+								"key": "scared",
+								"doc_count": 276
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 1938,
+						"sum_other_doc_count": 117975,
+						"buckets": [{
+								"key": "perú",
+								"doc_count": 3010
+							},
+							{
+								"key": "mundial",
+								"doc_count": 2558
+							},
+							{
+								"key": "selecciones",
+								"doc_count": 2374
+							},
+							{
+								"key": "quedaron",
+								"doc_count": 2123
+							},
+							{
+								"key": "afuera",
+								"doc_count": 2089
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 238,
+						"sum_other_doc_count": 12595,
+						"buckets": [{
+								"key": "rusia2018",
+								"doc_count": 7863
+							},
+							{
+								"key": "perualmundial",
+								"doc_count": 1658
+							},
+							{
+								"key": "vamosperu",
+								"doc_count": 1200
+							},
+							{
+								"key": "claroquevamos",
+								"doc_count": 981
+							},
+							{
+								"key": "nuevazelanda",
+								"doc_count": 883
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 7606
+							},
+							{
+								"key": "pos",
+								"doc_count": 4457
+							},
+							{
+								"key": "neg",
+								"doc_count": 1276
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 13335,
+						"buckets": [{
+								"key": "marca",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 4771225
+								}
+							},
+							{
+								"key": "ElUniversal",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 4753068
+								}
+							},
+							{
+								"key": "Milenio",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 4014379
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 58,
+						"sum_other_doc_count": 11294,
+						"buckets": [{
+								"key": "Selecciones que se quedaron afuera de #Rusia2018: Canadá Holanda Italia Lituania Estados Unidos Venezuela Omán Sudáfrica Turquía Albania Montenegro Bolivia Irlanda Eslovaquia Noruega Leer como ACROSTICO. Primera letra de cada nombre, hacia abajo.",
+								"doc_count": 742
+							},
+							{
+								"key": "Selecciones que se quedaron afuera de #Rusia2018 Canadá Holanda Italia Lituania Estados Unidos Venezuela Omán Sudáfrica Turquía Albania Montenegro Bolivia Irlanda Eslovaquia Noruega Leer primera letra de cada nombre, hacia abajo :P",
+								"doc_count": 350
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1510808400000",
+					"key": 1510808400000,
+					"doc_count": 14730,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "glad",
+								"doc_count": 8998
+							},
+							{
+								"key": "neutral",
+								"doc_count": 2254
+							},
+							{
+								"key": "mad",
+								"doc_count": 1895
+							},
+							{
+								"key": "sad",
+								"doc_count": 1316
+							},
+							{
+								"key": "scared",
+								"doc_count": 267
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 790,
+						"sum_other_doc_count": 106386,
+						"buckets": [{
+								"key": "mundial",
+								"doc_count": 4617
+							},
+							{
+								"key": "perú",
+								"doc_count": 4381
+							},
+							{
+								"key": "gareca",
+								"doc_count": 2190
+							},
+							{
+								"key": "gracias",
+								"doc_count": 2055
+							},
+							{
+								"key": "ano",
+								"doc_count": 1826
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 204,
+						"sum_other_doc_count": 9137,
+						"buckets": [{
+								"key": "rusia2018",
+								"doc_count": 7214
+							},
+							{
+								"key": "perualmundial",
+								"doc_count": 2063
+							},
+							{
+								"key": "vamosperu",
+								"doc_count": 889
+							},
+							{
+								"key": "perú",
+								"doc_count": 846
+							},
+							{
+								"key": "claroquevamos",
+								"doc_count": 629
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "pos",
+								"doc_count": 7253
+							},
+							{
+								"key": "neutral",
+								"doc_count": 6449
+							},
+							{
+								"key": "neg",
+								"doc_count": 1028
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 14726,
+						"buckets": [{
+								"key": "marca",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 4771922
+								}
+							},
+							{
+								"key": "ElUniversal",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 4753650.5
+								}
+							},
+							{
+								"key": "diegotorres",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 4697580
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 151,
+						"sum_other_doc_count": 12655,
+						"buckets": [{
+								"key": "🇵🇪 ✈️ 🇷🇺 ¡Perú consigue el último pasaje mundialista a #Rusia2018! La ‘Blanquirroja’ regresa a la Copa Mundial 36 años después. ¡Felicitaciones! 👏 ",
+								"doc_count": 510
+							},
+							{
+								"key": "Un abrazo a nuestros hermanos de @SeleccionPeru y a todo el pueblo peruano que cada día nos prestigia con su presencia a lo largo de Chile. ¡Vayan y rómpanla en #Rusia2018! 👏🏻",
+								"doc_count": 495
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1510894800000",
+					"key": 1510894800000,
+					"doc_count": 8695,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "glad",
+								"doc_count": 5799
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1221
+							},
+							{
+								"key": "mad",
+								"doc_count": 940
+							},
+							{
+								"key": "sad",
+								"doc_count": 427
+							},
+							{
+								"key": "scared",
+								"doc_count": 308
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 1309,
+						"sum_other_doc_count": 77016,
+						"buckets": [{
+								"key": "mundial",
+								"doc_count": 2204
+							},
+							{
+								"key": "selecciones",
+								"doc_count": 1837
+							},
+							{
+								"key": "argentina",
+								"doc_count": 1606
+							},
+							{
+								"key": "sorteo",
+								"doc_count": 1585
+							},
+							{
+								"key": "perú",
+								"doc_count": 1574
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 58,
+						"sum_other_doc_count": 3370,
+						"buckets": [{
+								"key": "rusia2018",
+								"doc_count": 5161
+							},
+							{
+								"key": "perualmundial",
+								"doc_count": 695
+							},
+							{
+								"key": "vamosperu",
+								"doc_count": 240
+							},
+							{
+								"key": "contigoperu",
+								"doc_count": 206
+							},
+							{
+								"key": "estamosdevuelta",
+								"doc_count": 201
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 4835
+							},
+							{
+								"key": "pos",
+								"doc_count": 3188
+							},
+							{
+								"key": "neg",
+								"doc_count": 672
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 8690,
+						"buckets": [{
+								"key": "marca",
+								"doc_count": 3,
+								"agg_avg_author_followers_count": {
+									"value": 4772523.333333333
+								}
+							},
+							{
+								"key": "fifacom_es",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 4513325
+								}
+							},
+							{
+								"key": "ElNacionalWeb",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 4426433
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 82,
+						"sum_other_doc_count": 6475,
+						"buckets": [{
+								"key": "Un abrazo a nuestros hermanos de @SeleccionPeru y a todo el pueblo peruano que cada día nos prestigia con su presencia a lo largo de Chile. ¡Vayan y rómpanla en #Rusia2018! 👏🏻",
+								"doc_count": 236
+							},
+							{
+								"key": "¡Para qué abrimos la bocota! 🤣🤣🤣 Promesa cumplidaaaaa #Rusia2018 #Estamosdevuelta ",
+								"doc_count": 190
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1510981200000",
+					"key": 1510981200000,
+					"doc_count": 4894,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "glad",
+								"doc_count": 3027
+							},
+							{
+								"key": "neutral",
+								"doc_count": 824
+							},
+							{
+								"key": "mad",
+								"doc_count": 554
+							},
+							{
+								"key": "sad",
+								"doc_count": 351
+							},
+							{
+								"key": "scared",
+								"doc_count": 138
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 795,
+						"sum_other_doc_count": 43698,
+						"buckets": [{
+								"key": "mundial",
+								"doc_count": 1108
+							},
+							{
+								"key": "sorteo",
+								"doc_count": 1004
+							},
+							{
+								"key": "selecciones",
+								"doc_count": 986
+							},
+							{
+								"key": "argentina",
+								"doc_count": 885
+							},
+							{
+								"key": "brasil",
+								"doc_count": 848
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 34,
+						"sum_other_doc_count": 2305,
+						"buckets": [{
+								"key": "rusia2018",
+								"doc_count": 3206
+							},
+							{
+								"key": "perualmundial",
+								"doc_count": 292
+							},
+							{
+								"key": "perú",
+								"doc_count": 135
+							},
+							{
+								"key": "mundial2018",
+								"doc_count": 123
+							},
+							{
+								"key": "worldcup",
+								"doc_count": 120
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 2873
+							},
+							{
+								"key": "pos",
+								"doc_count": 1628
+							},
+							{
+								"key": "neg",
+								"doc_count": 393
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 4877,
+						"buckets": [{
+								"key": "ElNacionalWeb",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 4427281
+								}
+							},
+							{
+								"key": "MeridianoTV",
+								"doc_count": 14,
+								"agg_avg_author_followers_count": {
+									"value": 2901335.4285714286
+								}
+							},
+							{
+								"key": "Latina_pe",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 2842927
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 35,
+						"sum_other_doc_count": 3646,
+						"buckets": [{
+								"key": "¡Para qué abrimos la bocota! 🤣🤣🤣 Promesa cumplidaaaaa #Rusia2018 #Estamosdevuelta ",
+								"doc_count": 81
+							},
+							{
+								"key": "Un abrazo a nuestros hermanos de @SeleccionPeru y a todo el pueblo peruano que cada día nos prestigia con su presencia a lo largo de Chile. ¡Vayan y rómpanla en #Rusia2018! 👏🏻",
+								"doc_count": 66
+							}
+						]
+					}
+				}
+			]
+		},
+		"agg_terms_author_gender.keyword": {
+			"doc_count_error_upper_bound": 0,
+			"sum_other_doc_count": 0,
+			"buckets": [{
+					"key": "u",
+					"doc_count": 39002
+				},
+				{
+					"key": "m",
+					"doc_count": 12652
+				},
+				{
+					"key": "f",
+					"doc_count": 10779
+				}
+			]
+		},
+		"agg_terms_author_age.keyword": {
+			"doc_count_error_upper_bound": 0,
+			"sum_other_doc_count": 0,
+			"buckets": [{
+					"key": "menos25",
+					"doc_count": 33320
+				},
+				{
+					"key": "mas25",
+					"doc_count": 29113
+				}
+			]
+		}
+	}
+}

@@ -1,12 +1,13 @@
 ---
 layout: post
 title:  "Docker"
-date:   2017-01-05 07:40:15 +0000
-categories: vm docker
+date:   2018-01-05 07:40:15 +0000
+categories: informatica
 image: docker.png
 comments: true
 tags:
   - docker
+  - vm
 ---
 Descubre cómo instalar imágenes y poner en marcha contenedores de Docker a través de este detallado tutorial.
 

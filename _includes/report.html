@@ -46,20 +46,45 @@
         >
         <span class="percent"><%- item.max_score %>&#37;</span>
       </div>
-      <div class="timeline-panel <%= (item.important) ? 'black' : '' %>">
-        <div class="indicator">
+      <div
+        class="timeline-panel <%= (item.important) ? 'black' : '' %>"
+        <% if(index == 0) { %>
+          data-intro="Si el color de fondo es oscuro, este dia fue muy importane"
+        <% } %>
+        >
+        <div
+          class="indicator"
+          <% if(index == 0) { %>
+            data-intro="Distribuci&oacute;n del sentimiendo del d&iacute;a"
+          <% } %>
+        >
           <span class="bg_a" style="width:<%- item.scores[0] %>%"></span>
           <span class="bg_b" style="width:<%- item.scores[1] %>%"></span>
           <span class="bg_c" style="width:<%- item.scores[2] %>%"></span>
         </div>
-        <div class="timeline-heading">
+        <div
+          class="timeline-heading"
+          <% if(index == 0) { %>
+            data-intro="Palabras destacadas, fecha y cantidad de muestras recolectadas"
+          <% } %>
+          >
           <h4 class="timeline-title"><%- item.words.join(', ') %></h4>
           <p><small class="text-muted"><%- item.date %> | <%- item.total %> Muestras</small></p>
         </div>
-        <div class="timeline-body">
+        <div
+          class="timeline-body"
+          <% if(index == 0) { %>
+            data-intro="Tweet o Comentario m&aacute;s destacado del d&iacute;a"
+          <% } %>
+          >
           <p><%- item.sample %></p>
         </div>
-        <div class="timeline-influencers">
+        <div
+          class="timeline-influencers"
+          <% if(index == 0) { %>
+            data-intro="Cuentas de Twitter m&aacute;s influyentes en esta fecha"
+          <% } %>
+          >
           <ul>
           <% _.each( item.influencers, function( item ){ %>
             <li>
@@ -92,7 +117,7 @@
       </h1>
       <div class="ct-chart ct-major-tenth" id="chart1"></div>
       <h2 data-intro="Rango de fechas que abarca este reporte">
-        desde el <span id="range_from">*</span> hasta <span id="range_to">*</span>
+        Desde el <span id="range_from">*</span> Hasta <span id="range_to">*</span>
       </h2>
     </div>
   </div>

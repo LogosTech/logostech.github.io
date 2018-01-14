@@ -1,16 +1,20 @@
 ---
 layout: post
 title:  "Retails 2017"
-date:   2017-12-26 08:30:15 +0000
-categories: retail
+date:   2017-12-20 08:30:15 +0000
+categories: social-tracker
 image: retail-2017.jpg
 comments: true
 social_tracker:
   file: retails-2017.json
   type: infografia
 tags:
+  - retails
   - infografia
-  - social-tracker
+  - saga-falabella
+  - ripley
+  - oeshle
+  - metro
 ---
 
 Se acercan las fiestas y es hora de analizar la reputación de nuestros retails locales en el Perú.

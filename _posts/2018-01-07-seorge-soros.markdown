@@ -2,7 +2,7 @@
 layout: post
 title:  "George Soros"
 date:   2018-01-07 08:30:15 +0000
-categories: politica
+categories: social-tracker
 image: george-soros.jpg
 comments: true
 social_tracker:
@@ -13,9 +13,9 @@ social_tracker:
     - soros
 tags:
   - infografia
+  - politica
   - actualidad
   - internacional
-  - social-tracker
 ---
 
 Durante los días que extraíamos información de varios países de Latinoamérica encontramos la repetición de un apellido SOROS
