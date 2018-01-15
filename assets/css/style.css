@@ -1851,3 +1851,9 @@ small {
   .introjs-tooltiptext {
     font-size: .8em;
   }
+ .bg_gris {
+   background: #F5F5F5;
+ }
+ .pd_long {
+   padding: 2em;
+ }
