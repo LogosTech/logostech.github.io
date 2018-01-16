@@ -1439,7 +1439,7 @@ small {
   .is_chart i {
     font-size: 1.1em;
   }
-  .is_chart h1, .is_chart h2 {
+  .is_chart h1, .is_chart h2, .is_chart h3 {
     text-transform: uppercase;
   }
 
