@@ -1439,6 +1439,9 @@ small {
   .is_chart i {
     font-size: 1.1em;
   }
+  .is_chart h1, .is_chart h2 {
+    text-transform: uppercase;
+  }
 
   code {
     color: #576276;
@@ -1856,4 +1859,8 @@ small {
  }
  .pd_long {
    padding: 2em;
+ }
+
+ #startTour {
+   color: #001D26;
  }
