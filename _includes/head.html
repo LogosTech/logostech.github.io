@@ -3,6 +3,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow" />
 
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@{{ site.twitter_username }}">
+  <meta name="twitter:title" content="{{ post.title }}" />
+  <meta name="twitter:description" content="{{ post.excerpt }}" />
+  <meta name="twitter:image:src" content="{{ "/assets/img/blog/" | append: post.image | prepend: site.baseurl }}" />
+  <meta name="twitter:domain" content="{{ site.url }}">
+
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="{{ "/assets/img/common/favicon.png" | prepend: site.baseurl }}">
 
