@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "#MarchaPorLaPaz"
+title:  "Marcha Por la Paz"
 date:   2018-01-13 07:40:15 +0000
 categories: social-tracker
 image: marcha-paz-fuji.jpg

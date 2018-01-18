@@ -1,0 +1,1819 @@
+{
+	"took": 3398,
+	"timed_out": false,
+	"_shards": {
+		"total": 11,
+		"successful": 11,
+		"failed": 0
+	},
+	"hits": {
+		"total": 90267,
+		"max_score": 0,
+		"hits": []
+	},
+	"aggregations": {
+		"agg_terms_sample_words": {
+			"doc_count_error_upper_bound": 82,
+			"sum_other_doc_count": 40883,
+			"buckets": [{
+					"key": "papa",
+					"doc_count": 556,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 414
+							},
+							{
+								"key": "pos",
+								"doc_count": 92
+							},
+							{
+								"key": "neg",
+								"doc_count": 50
+							}
+						]
+					}
+				},
+				{
+					"key": "francisco",
+					"doc_count": 552,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 412
+							},
+							{
+								"key": "pos",
+								"doc_count": 94
+							},
+							{
+								"key": "neg",
+								"doc_count": 46
+							}
+						]
+					}
+				},
+				{
+					"key": "pontífice",
+					"doc_count": 338,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 249
+							},
+							{
+								"key": "pos",
+								"doc_count": 60
+							},
+							{
+								"key": "neg",
+								"doc_count": 29
+							}
+						]
+					}
+				},
+				{
+					"key": "visita",
+					"doc_count": 276,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 229
+							},
+							{
+								"key": "pos",
+								"doc_count": 38
+							},
+							{
+								"key": "neg",
+								"doc_count": 9
+							}
+						]
+					}
+				},
+				{
+					"key": "sumo",
+					"doc_count": 256,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 187
+							},
+							{
+								"key": "pos",
+								"doc_count": 47
+							},
+							{
+								"key": "neg",
+								"doc_count": 22
+							}
+						]
+					}
+				},
+				{
+					"key": "nbsp",
+					"doc_count": 246,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 214
+							},
+							{
+								"key": "pos",
+								"doc_count": 21
+							},
+							{
+								"key": "neg",
+								"doc_count": 11
+							}
+						]
+					}
+				},
+				{
+					"key": "chile",
+					"doc_count": 217,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 169
+							},
+							{
+								"key": "pos",
+								"doc_count": 31
+							},
+							{
+								"key": "neg",
+								"doc_count": 17
+							}
+						]
+					}
+				},
+				{
+					"key": "perú",
+					"doc_count": 201,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 156
+							},
+							{
+								"key": "pos",
+								"doc_count": 33
+							},
+							{
+								"key": "neg",
+								"doc_count": 12
+							}
+						]
+					}
+				},
+				{
+					"key": "enero",
+					"doc_count": 184,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 147
+							},
+							{
+								"key": "pos",
+								"doc_count": 30
+							},
+							{
+								"key": "neg",
+								"doc_count": 7
+							}
+						]
+					}
+				},
+				{
+					"key": "país",
+					"doc_count": 182,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 145
+							},
+							{
+								"key": "pos",
+								"doc_count": 24
+							},
+							{
+								"key": "neg",
+								"doc_count": 13
+							}
+						]
+					}
+				}
+			]
+		},
+		"agg_terms_sample_hashtags.keyword": {
+			"doc_count_error_upper_bound": 242,
+			"sum_other_doc_count": 27635,
+			"buckets": [{
+					"key": "papafrancisco",
+					"doc_count": 22830,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 11709
+							},
+							{
+								"key": "pos",
+								"doc_count": 6082
+							},
+							{
+								"key": "neg",
+								"doc_count": 5039
+							}
+						]
+					}
+				},
+				{
+					"key": "franciscoenchile",
+					"doc_count": 5006,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 2366
+							},
+							{
+								"key": "pos",
+								"doc_count": 1789
+							},
+							{
+								"key": "neg",
+								"doc_count": 851
+							}
+						]
+					}
+				},
+				{
+					"key": "chile",
+					"doc_count": 4345,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 2234
+							},
+							{
+								"key": "pos",
+								"doc_count": 1336
+							},
+							{
+								"key": "neg",
+								"doc_count": 775
+							}
+						]
+					}
+				},
+				{
+					"key": "modopapa",
+					"doc_count": 3574,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 2021
+							},
+							{
+								"key": "pos",
+								"doc_count": 1130
+							},
+							{
+								"key": "neg",
+								"doc_count": 423
+							}
+						]
+					}
+				},
+				{
+					"key": "unidosporlaesperanza",
+					"doc_count": 1974,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 1131
+							},
+							{
+								"key": "pos",
+								"doc_count": 638
+							},
+							{
+								"key": "neg",
+								"doc_count": 205
+							}
+						]
+					}
+				},
+				{
+					"key": "franciscoenperú",
+					"doc_count": 1735,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 890
+							},
+							{
+								"key": "pos",
+								"doc_count": 672
+							},
+							{
+								"key": "neg",
+								"doc_count": 173
+							}
+						]
+					}
+				},
+				{
+					"key": "papafranciscoenchile",
+					"doc_count": 1523,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 733
+							},
+							{
+								"key": "pos",
+								"doc_count": 527
+							},
+							{
+								"key": "neg",
+								"doc_count": 263
+							}
+						]
+					}
+				},
+				{
+					"key": "papaenchile",
+					"doc_count": 1047,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 553
+							},
+							{
+								"key": "pos",
+								"doc_count": 258
+							},
+							{
+								"key": "neg",
+								"doc_count": 236
+							}
+						]
+					}
+				},
+				{
+					"key": "perú",
+					"doc_count": 1032,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 551
+							},
+							{
+								"key": "pos",
+								"doc_count": 323
+							},
+							{
+								"key": "neg",
+								"doc_count": 158
+							}
+						]
+					}
+				},
+				{
+					"key": "iquique",
+					"doc_count": 709,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 378
+							},
+							{
+								"key": "pos",
+								"doc_count": 300
+							},
+							{
+								"key": "neg",
+								"doc_count": 31
+							}
+						]
+					}
+				}
+			]
+		},
+		"agg_terms_sample_sentiment.keyword": {
+			"doc_count_error_upper_bound": 0,
+			"sum_other_doc_count": 0,
+			"buckets": [{
+					"key": "neutral",
+					"doc_count": 40301
+				},
+				{
+					"key": "pos",
+					"doc_count": 30656
+				},
+				{
+					"key": "neg",
+					"doc_count": 19310
+				}
+			]
+		},
+		"agg_terms_sample_mentions.keyword": {
+			"doc_count_error_upper_bound": 469,
+			"sum_other_doc_count": 63092,
+			"buckets": [{
+					"key": "Pontifex_es",
+					"doc_count": 5032,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 2201
+							},
+							{
+								"key": "pos",
+								"doc_count": 2071
+							},
+							{
+								"key": "neg",
+								"doc_count": 760
+							}
+						]
+					}
+				},
+				{
+					"key": "vaticannews_es",
+					"doc_count": 1891,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 881
+							},
+							{
+								"key": "pos",
+								"doc_count": 801
+							},
+							{
+								"key": "neg",
+								"doc_count": 209
+							}
+						]
+					}
+				},
+				{
+					"key": "ElPapaEnPeru",
+					"doc_count": 1517,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 983
+							},
+							{
+								"key": "pos",
+								"doc_count": 430
+							},
+							{
+								"key": "neg",
+								"doc_count": 104
+							}
+						]
+					}
+				},
+				{
+					"key": "ClaudioAndrade_",
+					"doc_count": 1434,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+							"key": "neutral",
+							"doc_count": 1434
+						}]
+					}
+				},
+				{
+					"key": "ppkamigo",
+					"doc_count": 1290,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "pos",
+								"doc_count": 1176
+							},
+							{
+								"key": "neutral",
+								"doc_count": 62
+							},
+							{
+								"key": "neg",
+								"doc_count": 52
+							}
+						]
+					}
+				},
+				{
+					"key": "Papihuesos",
+					"doc_count": 1210,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neg",
+								"doc_count": 1207
+							},
+							{
+								"key": "pos",
+								"doc_count": 2
+							},
+							{
+								"key": "neutral",
+								"doc_count": 1
+							}
+						]
+					}
+				},
+				{
+					"key": "lagordaniembro",
+					"doc_count": 1146,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+							"key": "pos",
+							"doc_count": 1146
+						}]
+					}
+				},
+				{
+					"key": "aciprensa",
+					"doc_count": 1127,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 476
+							},
+							{
+								"key": "pos",
+								"doc_count": 426
+							},
+							{
+								"key": "neg",
+								"doc_count": 225
+							}
+						]
+					}
+				},
+				{
+					"key": "sebastianpinera",
+					"doc_count": 1120,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "pos",
+								"doc_count": 998
+							},
+							{
+								"key": "neg",
+								"doc_count": 86
+							},
+							{
+								"key": "neutral",
+								"doc_count": 36
+							}
+						]
+					}
+				},
+				{
+					"key": "PajaritaTW",
+					"doc_count": 1077,
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+							"key": "neg",
+							"doc_count": 1077
+						}]
+					}
+				}
+			]
+		},
+		"agg_terms_author_screen_name.keyword": {
+			"doc_count_error_upper_bound": -1,
+			"sum_other_doc_count": 90237,
+			"buckets": [{
+					"key": "CNNEE",
+					"doc_count": 11,
+					"agg_avg_author_followers_count": {
+						"value": 16409214.454545455
+					}
+				},
+				{
+					"key": "g1",
+					"doc_count": 2,
+					"agg_avg_author_followers_count": {
+						"value": 9635345.5
+					}
+				},
+				{
+					"key": "VEJA",
+					"doc_count": 1,
+					"agg_avg_author_followers_count": {
+						"value": 8081243
+					}
+				},
+				{
+					"key": "lopezdoriga",
+					"doc_count": 8,
+					"agg_avg_author_followers_count": {
+						"value": 7897005.875
+					}
+				},
+				{
+					"key": "NoticiasCaracol",
+					"doc_count": 7,
+					"agg_avg_author_followers_count": {
+						"value": 7838101.714285715
+					}
+				},
+				{
+					"key": "AristeguiOnline",
+					"doc_count": 1,
+					"agg_avg_author_followers_count": {
+						"value": 7816354
+					}
+				}
+			]
+		},
+		"agg_date_histogram_sample_created_at": {
+			"buckets": [{
+					"key_as_string": "1515646800000",
+					"key": 1515646800000,
+					"doc_count": 3281,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 1164
+							},
+							{
+								"key": "mad",
+								"doc_count": 642
+							},
+							{
+								"key": "scared",
+								"doc_count": 542
+							},
+							{
+								"key": "glad",
+								"doc_count": 491
+							},
+							{
+								"key": "sad",
+								"doc_count": 442
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 1739,
+						"buckets": [{
+								"key": "papa",
+								"doc_count": 20
+							},
+							{
+								"key": "francisco",
+								"doc_count": 19
+							},
+							{
+								"key": "nbsp",
+								"doc_count": 12
+							},
+							{
+								"key": "visita",
+								"doc_count": 8
+							},
+							{
+								"key": "pontífice",
+								"doc_count": 7
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 1014,
+						"buckets": [{
+								"key": "papafrancisco",
+								"doc_count": 555
+							},
+							{
+								"key": "modopapa",
+								"doc_count": 141
+							},
+							{
+								"key": "unidosporlaesperanza",
+								"doc_count": 108
+							},
+							{
+								"key": "chile",
+								"doc_count": 62
+							},
+							{
+								"key": "franciscoenchile",
+								"doc_count": 55
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 1428
+							},
+							{
+								"key": "neg",
+								"doc_count": 954
+							},
+							{
+								"key": "pos",
+								"doc_count": 899
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 3277,
+						"buckets": [{
+								"key": "la_patilla",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 6713094
+								}
+							},
+							{
+								"key": "todonoticias",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 4533839
+								}
+							},
+							{
+								"key": "elespectador",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 4450148
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 2538,
+						"buckets": [{
+								"key": "Alcalde peruano pide a los ladrones que no roben cuando esté el papa Francisco  ",
+								"doc_count": 165
+							},
+							{
+								"key": "PAPA FRANCISCO ",
+								"doc_count": 93
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1515733200000",
+					"key": 1515733200000,
+					"doc_count": 7100,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 2789
+							},
+							{
+								"key": "scared",
+								"doc_count": 1608
+							},
+							{
+								"key": "glad",
+								"doc_count": 1169
+							},
+							{
+								"key": "mad",
+								"doc_count": 925
+							},
+							{
+								"key": "sad",
+								"doc_count": 609
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 2462,
+						"buckets": [{
+								"key": "francisco",
+								"doc_count": 35
+							},
+							{
+								"key": "papa",
+								"doc_count": 34
+							},
+							{
+								"key": "pontífice",
+								"doc_count": 19
+							},
+							{
+								"key": "país",
+								"doc_count": 17
+							},
+							{
+								"key": "visita",
+								"doc_count": 17
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 2565,
+						"buckets": [{
+								"key": "papafrancisco",
+								"doc_count": 1580
+							},
+							{
+								"key": "chile",
+								"doc_count": 211
+							},
+							{
+								"key": "modopapa",
+								"doc_count": 180
+							},
+							{
+								"key": "franciscoenperú",
+								"doc_count": 141
+							},
+							{
+								"key": "unidosporlaesperanza",
+								"doc_count": 139
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 3454
+							},
+							{
+								"key": "pos",
+								"doc_count": 2090
+							},
+							{
+								"key": "neg",
+								"doc_count": 1556
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 7096,
+						"buckets": [{
+								"key": "CNNEE",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 16395716
+								}
+							},
+							{
+								"key": "lopezdoriga",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 7894772
+								}
+							},
+							{
+								"key": "NoticiasCaracol",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 7833135
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 5995,
+						"buckets": [{
+								"key": "Condeno los actos de violencia contra Iglesias de Peñalolén, Estación Central y Recoleta esta madrugada. El odio y la intolerancia no pueden primar por sobre el respeto y el Estado de Derecho. Recibamos al Papa Francisco con alegría y en paz.",
+								"doc_count": 180
+							},
+							{
+								"key": "Si ya almorzaste y aun no has vomitado te invito a oír esta canción: Viva el Papa #PapaFrancisco",
+								"doc_count": 180
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1515819600000",
+					"key": 1515819600000,
+					"doc_count": 5134,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 1665
+							},
+							{
+								"key": "glad",
+								"doc_count": 1395
+							},
+							{
+								"key": "scared",
+								"doc_count": 1158
+							},
+							{
+								"key": "mad",
+								"doc_count": 609
+							},
+							{
+								"key": "sad",
+								"doc_count": 307
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 2945,
+						"buckets": [{
+								"key": "francisco",
+								"doc_count": 38
+							},
+							{
+								"key": "papa",
+								"doc_count": 37
+							},
+							{
+								"key": "visita",
+								"doc_count": 18
+							},
+							{
+								"key": "enero",
+								"doc_count": 16
+							},
+							{
+								"key": "perú",
+								"doc_count": 16
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 1788,
+						"buckets": [{
+								"key": "papafrancisco",
+								"doc_count": 1528
+							},
+							{
+								"key": "modopapa",
+								"doc_count": 264
+							},
+							{
+								"key": "chile",
+								"doc_count": 236
+							},
+							{
+								"key": "unidosporlaesperanza",
+								"doc_count": 200
+							},
+							{
+								"key": "franciscoenperú",
+								"doc_count": 109
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 1914
+							},
+							{
+								"key": "pos",
+								"doc_count": 1684
+							},
+							{
+								"key": "neg",
+								"doc_count": 1536
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 5126,
+						"buckets": [{
+								"key": "CNNEE",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 16398256
+								}
+							},
+							{
+								"key": "la_patilla",
+								"doc_count": 6,
+								"agg_avg_author_followers_count": {
+									"value": 6714716.166666667
+								}
+							},
+							{
+								"key": "el_pais",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 6523150
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 3971,
+						"buckets": [{
+								"key": "Si ya almorzaste y aun no has vomitado te invito a oír esta canción: Viva el Papa #PapaFrancisco ",
+								"doc_count": 268
+							},
+							{
+								"key": "El Papa acaba de encomendar a la Virgen el viaje a Chile y Perú, que inicia el lunes #PapaFrancisco ",
+								"doc_count": 186
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1515906000000",
+					"key": 1515906000000,
+					"doc_count": 6029,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 2329
+							},
+							{
+								"key": "glad",
+								"doc_count": 1440
+							},
+							{
+								"key": "mad",
+								"doc_count": 1235
+							},
+							{
+								"key": "scared",
+								"doc_count": 681
+							},
+							{
+								"key": "sad",
+								"doc_count": 344
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 4291,
+						"buckets": [{
+								"key": "francisco",
+								"doc_count": 37
+							},
+							{
+								"key": "papa",
+								"doc_count": 35
+							},
+							{
+								"key": "nbsp",
+								"doc_count": 19
+							},
+							{
+								"key": "visita",
+								"doc_count": 19
+							},
+							{
+								"key": "perú",
+								"doc_count": 16
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 1587,
+						"buckets": [{
+								"key": "papafrancisco",
+								"doc_count": 1656
+							},
+							{
+								"key": "modopapa",
+								"doc_count": 307
+							},
+							{
+								"key": "chile",
+								"doc_count": 240
+							},
+							{
+								"key": "unidosporlaesperanza",
+								"doc_count": 180
+							},
+							{
+								"key": "franciscoenchile",
+								"doc_count": 135
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 2405
+							},
+							{
+								"key": "pos",
+								"doc_count": 2263
+							},
+							{
+								"key": "neg",
+								"doc_count": 1361
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 6025,
+						"buckets": [{
+								"key": "CNNEE",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 16400713
+								}
+							},
+							{
+								"key": "lopezdoriga",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 7896366
+								}
+							},
+							{
+								"key": "NoticiasCaracol",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 7835652
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 4079,
+						"buckets": [{
+								"key": "Papa Francisco ",
+								"doc_count": 833
+							},
+							{
+								"key": "Si ya almorzaste y aun no has vomitado te invito a oír esta canción: Viva el Papa #PapaFrancisco",
+								"doc_count": 461
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1515992400000",
+					"key": 1515992400000,
+					"doc_count": 15605,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "glad",
+								"doc_count": 5466
+							},
+							{
+								"key": "neutral",
+								"doc_count": 4964
+							},
+							{
+								"key": "scared",
+								"doc_count": 2091
+							},
+							{
+								"key": "mad",
+								"doc_count": 1687
+							},
+							{
+								"key": "sad",
+								"doc_count": 1397
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 5524,
+						"buckets": [{
+								"key": "papa",
+								"doc_count": 81
+							},
+							{
+								"key": "francisco",
+								"doc_count": 80
+							},
+							{
+								"key": "pontífice",
+								"doc_count": 56
+							},
+							{
+								"key": "chile",
+								"doc_count": 49
+							},
+							{
+								"key": "visita",
+								"doc_count": 45
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 6248,
+						"buckets": [{
+								"key": "papafrancisco",
+								"doc_count": 4357
+							},
+							{
+								"key": "chile",
+								"doc_count": 1047
+							},
+							{
+								"key": "franciscoenchile",
+								"doc_count": 1021
+							},
+							{
+								"key": "modopapa",
+								"doc_count": 666
+							},
+							{
+								"key": "papafranciscoenchile",
+								"doc_count": 456
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "pos",
+								"doc_count": 6682
+							},
+							{
+								"key": "neutral",
+								"doc_count": 6458
+							},
+							{
+								"key": "neg",
+								"doc_count": 2465
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 15599,
+						"buckets": [{
+								"key": "CNNEE",
+								"doc_count": 3,
+								"agg_avg_author_followers_count": {
+									"value": 16404379.666666666
+								}
+							},
+							{
+								"key": "lopezdoriga",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 7897208
+								}
+							},
+							{
+								"key": "AristeguiOnline",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 7816354
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 13386,
+						"buckets": [{
+								"key": "Papa Francisco ",
+								"doc_count": 390
+							},
+							{
+								"key": "Buen momento para recordar esta carta que la Exitosa Abogada le mandó al Sumo Pontífice. Parece chiste pero no lo fue. Fue de verdad. Y lo peor es que hay un montón de llorasobres que dicen que ELLA es una estadista. IMPERDIBLE. ",
+								"doc_count": 324
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1516078800000",
+					"key": 1516078800000,
+					"doc_count": 23646,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 8253
+							},
+							{
+								"key": "glad",
+								"doc_count": 4737
+							},
+							{
+								"key": "sad",
+								"doc_count": 3954
+							},
+							{
+								"key": "scared",
+								"doc_count": 3826
+							},
+							{
+								"key": "mad",
+								"doc_count": 2876
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 7849,
+						"buckets": [{
+								"key": "papa",
+								"doc_count": 110
+							},
+							{
+								"key": "francisco",
+								"doc_count": 103
+							},
+							{
+								"key": "pontífice",
+								"doc_count": 80
+							},
+							{
+								"key": "visita",
+								"doc_count": 64
+							},
+							{
+								"key": "sumo",
+								"doc_count": 58
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 7526,
+						"buckets": [{
+								"key": "papafrancisco",
+								"doc_count": 6363
+							},
+							{
+								"key": "franciscoenchile",
+								"doc_count": 1712
+							},
+							{
+								"key": "chile",
+								"doc_count": 1360
+							},
+							{
+								"key": "modopapa",
+								"doc_count": 832
+							},
+							{
+								"key": "papafranciscoenchile",
+								"doc_count": 591
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 9915
+							},
+							{
+								"key": "pos",
+								"doc_count": 7523
+							},
+							{
+								"key": "neg",
+								"doc_count": 6208
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 23643,
+						"buckets": [{
+								"key": "CNNEE",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 16414221
+								}
+							},
+							{
+								"key": "VEJA",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 8081243
+								}
+							},
+							{
+								"key": "lopezdoriga",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 7897843
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 19593,
+						"buckets": [{
+								"key": "Buen momento para recordar esta carta que la Exitosa Abogada le mandó al Sumo Pontífice. Parece chiste pero no lo fue. Fue de verdad. Y lo peor es que hay un montón de llorasobres que dicen que ELLA es una estadista. IMPERDIBLE. ",
+								"doc_count": 689
+							},
+							{
+								"key": "¡Primer milagro del Papa Francisco en Perú! En dos días las descuidadas calles y pistas de mierda por las que va a pasar en su visita están sin huecos y recién pintadas! ¡Aleluya! Che, Bergoglio, no querés pasar por la Tomás Vashe, fierita?",
+								"doc_count": 555
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1516165200000",
+					"key": 1516165200000,
+					"doc_count": 18772,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 6058
+							},
+							{
+								"key": "glad",
+								"doc_count": 4727
+							},
+							{
+								"key": "scared",
+								"doc_count": 3307
+							},
+							{
+								"key": "mad",
+								"doc_count": 2423
+							},
+							{
+								"key": "sad",
+								"doc_count": 2257
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 8271,
+						"buckets": [{
+								"key": "papa",
+								"doc_count": 134
+							},
+							{
+								"key": "francisco",
+								"doc_count": 132
+							},
+							{
+								"key": "pontífice",
+								"doc_count": 75
+							},
+							{
+								"key": "nbsp",
+								"doc_count": 62
+							},
+							{
+								"key": "misa",
+								"doc_count": 61
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 7263,
+						"buckets": [{
+								"key": "papafrancisco",
+								"doc_count": 4287
+							},
+							{
+								"key": "franciscoenchile",
+								"doc_count": 1311
+							},
+							{
+								"key": "chile",
+								"doc_count": 910
+							},
+							{
+								"key": "modopapa",
+								"doc_count": 748
+							},
+							{
+								"key": "franciscoenperú",
+								"doc_count": 544
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 9635
+							},
+							{
+								"key": "pos",
+								"doc_count": 5551
+							},
+							{
+								"key": "neg",
+								"doc_count": 3586
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 18767,
+						"buckets": [{
+								"key": "CNNEE",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 16417850
+								}
+							},
+							{
+								"key": "g1",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 9635345.5
+								}
+							},
+							{
+								"key": "lopezdoriga",
+								"doc_count": 2,
+								"agg_avg_author_followers_count": {
+									"value": 7898939
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 15236,
+						"buckets": [{
+								"key": "El papa Francisco no recibió al presidente Sebastián Piñera y lo saludó fríamente en Chile. Piñera fue el primer mandatario que rompió en su gobierno de derecha el récord de inversión en salud y educación pública en ese país. No fue el socialismo.",
+								"doc_count": 1291
+							},
+							{
+								"key": "Ni un terremoto ha sido capaz de suspender la absoluta y devota cobertura periodística del papa. Hay quienes nos interesa saber más qué pasó con los damnificados en Arequipa que lo que comerá el sumo pontífice a su llegada... increíble.",
+								"doc_count": 283
+							}
+						]
+					}
+				},
+				{
+					"key_as_string": "1516251600000",
+					"key": 1516251600000,
+					"doc_count": 10700,
+					"agg_terms_sample_emotions.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 3692
+							},
+							{
+								"key": "glad",
+								"doc_count": 3294
+							},
+							{
+								"key": "scared",
+								"doc_count": 1550
+							},
+							{
+								"key": "mad",
+								"doc_count": 1129
+							},
+							{
+								"key": "sad",
+								"doc_count": 1035
+							}
+						]
+					},
+					"agg_terms_sample_words": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 8798,
+						"buckets": [{
+								"key": "francisco",
+								"doc_count": 108
+							},
+							{
+								"key": "papa",
+								"doc_count": 105
+							},
+							{
+								"key": "pontífice",
+								"doc_count": 69
+							},
+							{
+								"key": "visita",
+								"doc_count": 51
+							},
+							{
+								"key": "perú",
+								"doc_count": 50
+							}
+						]
+					},
+					"agg_terms_sample_hashtags.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 4746,
+						"buckets": [{
+								"key": "papafrancisco",
+								"doc_count": 2504
+							},
+							{
+								"key": "franciscoenchile",
+								"doc_count": 573
+							},
+							{
+								"key": "iquique",
+								"doc_count": 495
+							},
+							{
+								"key": "modopapa",
+								"doc_count": 436
+							},
+							{
+								"key": "franciscoenperú",
+								"doc_count": 433
+							}
+						]
+					},
+					"agg_terms_sample_sentiment.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 0,
+						"buckets": [{
+								"key": "neutral",
+								"doc_count": 5092
+							},
+							{
+								"key": "pos",
+								"doc_count": 3964
+							},
+							{
+								"key": "neg",
+								"doc_count": 1644
+							}
+						]
+					},
+					"agg_terms_author_screen_name.keyword": {
+						"doc_count_error_upper_bound": -1,
+						"sum_other_doc_count": 10695,
+						"buckets": [{
+								"key": "CNNEE",
+								"doc_count": 3,
+								"agg_avg_author_followers_count": {
+									"value": 16420488
+								}
+							},
+							{
+								"key": "NoticiasCaracol",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 7841790
+								}
+							},
+							{
+								"key": "NoticiasRCN",
+								"doc_count": 1,
+								"agg_avg_author_followers_count": {
+									"value": 7314227
+								}
+							}
+						]
+					},
+					"agg_terms_sample_text.keyword": {
+						"doc_count_error_upper_bound": 0,
+						"sum_other_doc_count": 9299,
+						"buckets": [{
+								"key": "Hoy recibimos al Papa Francisco con los brazos abiertos. Bienvenido! El Perú te recibe con fe y esperanza! Vivamos juntos estos días tan especiales de alegría católica! #UnidosPorLaEsperanza ",
+								"doc_count": 257
+							},
+							{
+								"key": "Papa Francisco ",
+								"doc_count": 187
+							}
+						]
+					}
+				}
+			]
+		},
+		"agg_terms_author_gender.keyword": {
+			"doc_count_error_upper_bound": 0,
+			"sum_other_doc_count": 0,
+			"buckets": [{
+					"key": "u",
+					"doc_count": 57191
+				},
+				{
+					"key": "f",
+					"doc_count": 17404
+				},
+				{
+					"key": "m",
+					"doc_count": 15672
+				}
+			]
+		},
+		"agg_terms_author_age.keyword": {
+			"doc_count_error_upper_bound": 0,
+			"sum_other_doc_count": 0,
+			"buckets": [{
+					"key": "mas25",
+					"doc_count": 48819
+				},
+				{
+					"key": "menos25",
+					"doc_count": 41448
+				}
+			]
+		}
+	}
+}

@@ -290,6 +290,11 @@
             var sample = item
               ['agg_terms_sample_text.keyword']
               .buckets[0].key;
+            if (sample.length <= 20) {
+              sample = item
+                ['agg_terms_sample_text.keyword']
+                .buckets[1].key;
+            }
 
             for (var word of buckets_words) {
               if (!exlude_terms.includes(word.key)) {

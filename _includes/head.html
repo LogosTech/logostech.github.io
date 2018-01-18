@@ -3,11 +3,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow" />
 
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@{{ site.twitter_username }}">
+  <meta name="twitter:creator" content="@{{ site.twitter_username }}">
   <meta name="twitter:title" content="{{ page.title }}" />
-  <meta name="twitter:description" content="{{ page.excerpt | remove: '<p>' | remove: '</p>' }}" />
-  <meta name="twitter:image:src" content="{{ "/assets/img/blog/" | append: page.image | prepend: site.baseurl }}" />
+  <meta name="twitter:description" content="{{ page.excerpt | remove: '<p>' | remove: '</p>' | strip }}" />
+  <meta name="twitter:image:src" content="{{ "/assets/img/blog/" | append: page.image | prepend: site.url }}" />
   <meta name="twitter:domain" content="{{ site.url }}">
 
   <!-- Favicon -->
