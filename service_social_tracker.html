@@ -19,23 +19,25 @@ permalink: /social-tracker
     <div class="masonry-grid">
       {% assign sorted-posts = site.posts | where: "categories","social-tracker" %}
       {% for post in sorted-posts limit:12 %}
-        <div class="masonry-column wow fadeIn">
-          <div class="single-blog">
+      <div class="masonry-column wow fadeIn">
+        <div class="single-blog">
+          <a href="{{ post.url | prepend: site.baseurl }}">
             <div class="blog-img">
               <!-- 450 x 300 -->
               <img src="{{ "/assets/img/blog/" | append: post.image | prepend: site.baseurl }}" alt="">
             </div>
-            <div class="blog-content">
-              <h3 class="blog-title">
-                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-              </h3>
-              <div class="blog-meta">
-                <p><i class="icofont icofont-clock-time"></i> <small>{{ post.date | date: "%b %-d, %Y" }}</small></p>
-              </div>
-              <p>{{ post.excerpt }}</p>
+          </a>
+          <div class="blog-content">
+            <h3 class="blog-title">
+              {{ post.title }}
+            </h3>
+            <div class="blog-meta">
+              <p><i class="icofont icofont-clock-time"></i> <small>{{ post.date | date: "%b %-d, %Y" }}</small></p>
             </div>
+            <p>{{ post.excerpt }}</p>
           </div>
         </div>
+      </div>
       {% endfor %}
 
     </div>

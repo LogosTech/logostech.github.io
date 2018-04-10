@@ -332,6 +332,7 @@ small {
   }
 
   .section-title h2 {
+    margin-top: 20px;
     margin-bottom: 20px;
     text-transform: uppercase;
   }
@@ -1065,6 +1066,7 @@ small {
   .single-blog .blog-img img {
     width: 100%;
     position: relative;
+    /* border-radius: 50% */
     z-index: -1;
   }
 
