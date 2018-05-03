@@ -63,12 +63,16 @@
     ## Smooth Scroll
     *****************************************/
     var $smooth_scroll = $('a.smooth_scroll'),
-        $htmlbody = $('html,body'),
+        $htmlbody = $('html, body'),
         $heightFixedNav = $('.header').outerHeight() - 30;
 
-    $smooth_scroll.on('click',function(e){
-        e.preventDefault();
-        $htmlbody.animate({scrollTop:$(this.hash).offset().top - $heightFixedNav}, "slow");
+    $smooth_scroll.on('click', function(e){
+      e.preventDefault();
+      console.log(this.hash);
+      let scrollTopVal = this.hash == '#top-header' ? 0 : $(this.hash).offset().top - $heightFixedNav;
+      
+      $htmlbody.animate({ scrollTop: scrollTopVal }, "slow");
+      // $htmlbody.animate({ scrollTop: 0 }, "slow");
     });
 
     /*****************************************
