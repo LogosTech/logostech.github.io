@@ -475,6 +475,10 @@ small {
     background-image: url(../img/slider/slide-bg-2.jpg);
   }
 
+  .slide-cognitive-1 {
+    background-image: url(../img/slider/slide-cognitive-1.jpg);
+  }
+
   /* Slider area */
   .single-slide-item {
     background-color: #ddd;
@@ -1066,7 +1070,6 @@ small {
   .single-blog .blog-img img {
     width: 100%;
     position: relative;
-    /* border-radius: 50% */
     z-index: -1;
   }
 
@@ -1092,6 +1095,7 @@ small {
   .single-blog .blog-img {
     overflow: hidden;
     box-shadow: inset 0 0 10px -5px #000;
+    background: rgba(0, 29, 38, 0.3);
   }
 
   .single-blog .blog-img img {
@@ -1395,9 +1399,9 @@ small {
 
 
   .FlexEmbed {
-    border-radius: 1%!important;
     display: block;
     overflow: hidden;
+    border-radius: 50%;
     position: relative;
   }
 
@@ -1412,7 +1416,9 @@ small {
   }
 
   .FlexEmbed--2by1:before {
-    padding-bottom: 50%;
+    padding-bottom: 100%;
+
+    background: rgba(0, 29, 38, 0.3);
   }
 
   .FlexEmbed--16by9:before {
@@ -1428,8 +1434,8 @@ small {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto 1em;
-    max-height: 600px;
-    max-width: 300px;
+    max-height: 500px;
+    max-width: 200px;
   }
 
   .is_chart {

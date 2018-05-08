@@ -82,15 +82,16 @@
 
     jQuery(document).on('ready', function($) {
 		$homepageSlides.owlCarousel({
-            items: 1,
-            nav: true,
-            dots: false,
-            autoplay: true,
-            loop: true,
-            navText: ["<i class='icofont icofont-arrow-left'></i>", "<i class='icofont icofont-arrow-right'></i>"],
-            mouseDrag: false,
-            touchDrag: false,
-        });
+      items: 1,
+      nav: true,
+      dots: false,
+      autoplay: false,
+      smartSpeed: 500,
+      loop: true,
+      navText: ["<i class='icofont icofont-arrow-left'></i>", "<i class='icofont icofont-arrow-right'></i>"],
+      mouseDrag: true,
+      touchDrag: true,
+    });
 	});
 
 
@@ -100,13 +101,13 @@
     var wowSel = 'wow';
 
     var wow = new WOW({
-        boxClass: wowSel,
-        animateClass: 'animated',
-        offset: 0,
-        mobile: true,
-        live: true,
-        callback: function(box) {},
-        scrollContainer: null
+      boxClass: wowSel,
+      animateClass: 'animated',
+      offset: 0,
+      mobile: true,
+      live: true,
+      callback: function(box) {},
+      scrollContainer: null
     });
 
     wow.init();

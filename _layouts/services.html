@@ -8,12 +8,10 @@
     <!-- Header -->
     {% include header.html %}
 
-    <!-- Content -->
-    <div id="blog" class="post section-padding">
-      <div class="container">
-        {{ content }}
-      </div>
-    </div>
+    <!-- Navbar -->
+    {% include nav_blog.html %}
+
+    {{ content }}
 
     <!-- Services -->
     {% include services.html minimal=true %}
