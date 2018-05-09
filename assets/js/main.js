@@ -85,12 +85,14 @@
       items: 1,
       nav: true,
       dots: false,
-      autoplay: false,
-      smartSpeed: 500,
+      autoplay: true,
+      autoplayTimeout: 8000,
+      // animateOut: 'fadeOut',      
+      // smartSpeed: 500,
       loop: true,
       navText: ["<i class='icofont icofont-arrow-left'></i>", "<i class='icofont icofont-arrow-right'></i>"],
       mouseDrag: true,
-      touchDrag: true,
+      touchDrag: false,
     });
 	});
 

@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 name: Logos.Technology
-title: Logos | Technology
+title: Logos Technology
 email: info@logos.technology
 contact_phone: "+(511)-564-5744"
 location: "Lima - Perú"
