@@ -2,7 +2,7 @@
 layout: post
 title:  "Perú al Mundial!"
 date:   2017-11-18 08:30:15 +0000
-categories: social-tracker
+categories: indicate
 image: peru-mundial.jpg
 comments: true
 social_tracker:

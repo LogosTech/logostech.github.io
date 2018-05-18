@@ -2,7 +2,7 @@
 layout: post
 title:  "Kenji 2018"
 date:   2018-01-08 08:30:15 +0000
-categories: social-tracker
+categories: indicate
 image: kenji.jpg
 comments: true
 

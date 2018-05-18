@@ -479,6 +479,18 @@ small {
     background-image: url(../img/slider/slide-cognitive-1.jpg);
   }
 
+  .slide-cognitive-2 {
+    background-image: url(../img/slider/slide-cognitive-2.jpg);
+  }
+
+  .slide-indicate-1 {
+    background-image: url(../img/slider/slide-indicate-1.jpg);
+  }
+
+  .slide-indicate-2 {
+    background-image: url(../img/slider/slide-indicate-2.jpg);
+  }
+
   /* Slider area */
   .single-slide-item {
     background-color: #ddd;

@@ -3,6 +3,9 @@ layout: services
 permalink: productos/indicate
 ---
 
+<!-- Slider -->
+{% include slider_indicate.html %}
+
 <div id="blog" class="blog section-padding">
   <div class="container">
     <div class="row">
@@ -15,7 +18,7 @@ permalink: productos/indicate
       </div>
     </div>
     <div class="masonry-grid">
-      {% assign sorted-posts = site.posts | where: "categories","social-tracker" %}
+      {% assign sorted-posts = site.posts | where: "categories","indicate" %}
       {% for post in sorted-posts limit:12 %}
       <div class="masonry-column wow fadeIn">
         <div class="single-blog">
