@@ -2,7 +2,7 @@
 layout: post
 title:  "George Soros"
 date:   2018-01-07 08:30:15 +0000
-categories: social-tracker
+categories: indicate
 image: george-soros.jpg
 comments: true
 social_tracker:

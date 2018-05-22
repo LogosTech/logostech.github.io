@@ -2,7 +2,7 @@
 layout: post
 title:  "Vacancia!"
 date:   2017-12-31 07:40:15 +0000
-categories: social-tracker
+categories: indicate
 image: ppk.jpg
 comments: true
 social_tracker:

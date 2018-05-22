@@ -2,7 +2,7 @@
 layout: post
 title:  "Gabinete Reconciliación"
 date:   2018-01-08 08:30:15 +0000
-categories: social-tracker
+categories: indicate
 image: gabinete-reco.jpg
 comments: true
 social_tracker:

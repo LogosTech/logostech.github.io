@@ -2,7 +2,7 @@
 layout: post
 title:  "Papa Francisco en Perú"
 date:   2018-01-18 13:40:15 +0000
-categories: social-tracker
+categories: indicate
 image: papa-francisco.jpg
 comments: true
 social_tracker:
