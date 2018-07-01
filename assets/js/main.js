@@ -20,7 +20,7 @@
         $height = $('.header').outerHeight(),
         $nextEl = $('.homepage-slides-wrapper');
 
-    $window.on('scroll', function () {
+    $window.on('scroll', function () {|
         if ($window.scrollTop() > 200) {
             $body.addClass('fixed-nav');
             $nextEl.css("margin-top", $height+"px");
