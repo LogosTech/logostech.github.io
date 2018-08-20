@@ -291,9 +291,6 @@
             var buckets_words = item
               .agg_terms_sample_words
               .buckets;
-							console.log(item
-	              ['agg_terms_sample_text.keyword']
-	              .buckets);
             var sample = item
               ['agg_terms_sample_text.keyword']
               .buckets[0].key;
@@ -338,8 +335,8 @@
 
             function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
-            max_score = Math.max.apply(Math, _toConsumableArray(scores));
-
+            var max_score = Math.max.apply(Math, _toConsumableArray(scores));
+            console.log('pattern', patterns, max_score);
             var result = {
               total: total.toLocaleString(),
               date: moment(item.key).format('DD-MMM-YY'),
@@ -349,7 +346,7 @@
               important: (total >= render_data.avg_important) ? true : false,
               scores: scores,
               max_score: parseInt(max_score),
-              sentiment: pattern[scores.indexOf(max_score)],
+              sentiment: patterns[scores.indexOf(max_score)],
               color: pattern_color[scores.indexOf(max_score)]
             };
             return result;
