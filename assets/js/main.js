@@ -68,7 +68,6 @@
 
     $smooth_scroll.on('click', function(e){
       e.preventDefault();
-      console.log(this.hash);
       var scrollTopVal = this.hash == '#top-header' ? 0 : $(this.hash).offset().top - $heightFixedNav;
 
       $htmlbody.animate({ scrollTop: scrollTopVal }, "slow");
@@ -254,7 +253,7 @@
       })
       .done(function(data) {
         var exlude_terms = $("#main").attr("data-exclude-terms") ? $("#main").attr("data-exclude-terms").split(" ") : [];
-        console.log(data);
+        // console.log(data);
         var render_data = {
           count: 0,
           chart1: { labels: [], series: [] },
@@ -336,7 +335,6 @@
             function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
             var max_score = Math.max.apply(Math, _toConsumableArray(scores));
-            console.log('pattern', patterns, max_score);
             var result = {
               total: total.toLocaleString(),
               date: moment(item.key).format('DD-MMM-YY'),
@@ -521,8 +519,6 @@
               .toLocaleString()
           };
         });
-
-        console.log(render_data);
 
         // RENDER GRAPHS
 
@@ -726,7 +722,6 @@
       var tour = introJs();
 			tour.setOption('tooltipPosition', 'auto');
 			tour.setOption('positionPrecedence', ['left', 'right', 'bottom', 'top']);
-      console.log(tour);
 			tour.start();
     });
 

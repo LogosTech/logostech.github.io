@@ -1796,8 +1796,8 @@ small {
 
   .timeline-influencers img {
     border-radius: 50%;
-    -webkit-box-shadow: 0 1px 16px rgba(0, 0, 0, 0.175);
-    box-shadow: 0 1px 16px rgba(0, 0, 0, 0.175);
+    /* -webkit-box-shadow: 0 1px 16px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 16px rgba(0, 0, 0, 0.175); */
     margin-bottom: 1em;
   }
 
@@ -1806,11 +1806,10 @@ small {
     color: white;
   }
 
-  .black img{
+  /* .black img{
     -webkit-box-shadow: 0 1px 6px rgba(255,255,255,1);
     box-shadow: 0 1px 6px rgba(255,255,255,1);
-  }
-
+  } */
 
   .timeline > li > .black:after {
     border-left: 14px solid #001D26;
