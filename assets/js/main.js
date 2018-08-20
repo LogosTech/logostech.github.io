@@ -20,7 +20,7 @@
         $height = $('.header').outerHeight(),
         $nextEl = $('.homepage-slides-wrapper');
 
-    $window.on('scroll', function () {|
+    $window.on('scroll', function () {
         if ($window.scrollTop() > 200) {
             $body.addClass('fixed-nav');
             $nextEl.css("margin-top", $height+"px");
@@ -69,8 +69,8 @@
     $smooth_scroll.on('click', function(e){
       e.preventDefault();
       console.log(this.hash);
-      let scrollTopVal = this.hash == '#top-header' ? 0 : $(this.hash).offset().top - $heightFixedNav;
-      
+      var scrollTopVal = this.hash == '#top-header' ? 0 : $(this.hash).offset().top - $heightFixedNav;
+
       $htmlbody.animate({ scrollTop: scrollTopVal }, "slow");
       // $htmlbody.animate({ scrollTop: 0 }, "slow");
     });
@@ -87,7 +87,7 @@
       dots: false,
       autoplay: true,
       autoplayTimeout: 8000,
-      // animateOut: 'fadeOut',      
+      // animateOut: 'fadeOut',
       // smartSpeed: 500,
       loop: true,
       navText: ["<i class='icofont icofont-arrow-left'></i>", "<i class='icofont icofont-arrow-right'></i>"],
@@ -303,11 +303,11 @@
                 .buckets[1].key;
             }
 
-            for (var word of buckets_words) {
-              if (!exlude_terms.includes(word.key)) {
+						buckets_words.map(function(word) {
+							if (!exlude_terms.includes(word.key)) {
                 words.push(word.key);
               }
-            }
+						});
 
             var patterns = ['neg', 'neutral', 'pos'];
             var pattern_color = ['bg_a', 'bg_b', 'bg_c'];
@@ -325,25 +325,28 @@
                   href: 'https://twitter.com/' + item.key,
                   score: parseInt(item.agg_avg_author_followers_count.value)
                     .toLocaleString()
-                }
+                };
               });
 
-            for (var pattern of patterns) {
-              for (var s of bucket_sentiment) {
+            patterns.map(function(pattern){
+              bucket_sentiment.map(function(s){
                 if (pattern == s.key) {
                   scores.push(s.doc_count / total * 100);
                 }
-              }
-            }
+              });
+            });
 
-            var max_score = Math.max(...scores);
+            function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+            max_score = Math.max.apply(Math, _toConsumableArray(scores));
+
             var result = {
               total: total.toLocaleString(),
               date: moment(item.key).format('DD-MMM-YY'),
               words: words.slice(0, 3),
               influencers: influencers,
               sample: sample,
-              important: total >= render_data.avg_important ? true : false,
+              important: (total >= render_data.avg_important) ? true : false,
               scores: scores,
               max_score: parseInt(max_score),
               sentiment: pattern[scores.indexOf(max_score)],
@@ -355,7 +358,7 @@
         render_data.range = {
           from: moment(render_data.chart1.labels[0]).format('DD/MM/YY'),
           to: moment(render_data.chart1.labels.slice(-1)[0]).format('DD/MM/YY')
-        }
+        };
 
         render_data.chart1.series.push(histogram
           .map(function(item) {
@@ -363,44 +366,42 @@
           }));
 
         // CHART 2: ACUMULADO DE EMO x DIAS
-        var pattern = ['mad', 'neutral', 'sad', 'glad', 'scared'];
+        // var pattern = ['mad', 'neutral', 'sad', 'glad', 'scared'];
         var pattern = ['mad', 'sad', 'glad', 'scared'];
         var tmp_data = histogram
           .map(function(item) {
             var buckets = item['agg_terms_sample_emotions.keyword'].buckets;
             var result = {};
-            for (var i of buckets) { result[i.key] = i.doc_count;}
+            buckets.map(function(i){ result[i.key] = i.doc_count; });
             return result;
           });
         render_data.chart2.labels = render_data.chart1.labels;
-        for (var key of pattern) {
+        pattern.map(function(key){
           var serie_x = [];
-          for (var item of tmp_data) {
-            serie_x.push(item[key] ? item[key] : 0);
-          }
+          tmp_data.map(function(item){ serie_x.push(item[key] ? item[key] : 0); });
           render_data.chart2.series.push(serie_x);
-        }
+        });
 
         // CHART 3: ACUMULADO DE SENTIMIENTO x DIAS
-        var pattern = ['neg', 'neutral', 'pos'];
-        var tmp_data = histogram
+        pattern = ['neg', 'neutral', 'pos'];
+        tmp_data = histogram
           .map(function(item) {
             var buckets = item['agg_terms_sample_sentiment.keyword'].buckets;
             var result = {};
-            for (var i of buckets) { result[i.key] = i.doc_count;}
+            buckets.map(function(i){ result[i.key] = i.doc_count; });
             return result;
           });
         render_data.chart3.labels = render_data.chart1.labels;
-        for (var key of pattern) {
+        pattern.map( function(key){
           var serie_x = [];
-          for (var item of tmp_data) {
+          tmp_data.map( function(item){
             serie_x.push(item[key] ? item[key] : 0);
-          }
+          });
           render_data.chart3.series.push(serie_x);
-        }
+        });
 
         // CHART 4: PIE AGE
-        var pattern = ['mas25', 'menos25'];
+        pattern = ['mas25', 'menos25'];
         // render_data.chart4.labels = pattern
 
         var buckets = data
@@ -409,42 +410,43 @@
           .buckets;
 
         var result = {};
-        for (var i of buckets) { result[i.key] = i.doc_count;}
-        var tmp_data = result;
+        buckets.map( function(i){ result[i.key] = i.doc_count; });
+        tmp_data = result;
 
         render_data.chart4.series = pattern.map(function(key) {
           return tmp_data[key] ? tmp_data[key] : 0;
         });
 
         // CHART 5: PIE GENDER
-        var pattern = ['m', 'f'];
+        pattern = ['m', 'f'];
         // render_data.chart5.labels = pattern
 
-        var buckets = data
+        buckets = data
           .aggregations
           ['agg_terms_author_gender.keyword']
           .buckets;
 
-        var result = {};
-        for (var i of buckets) { result[i.key] = i.doc_count;}
-        var tmp_data = result;
+        result = {};
+        buckets.map(function(i){ result[i.key] = i.doc_count; });
+        tmp_data = result;
 
         render_data.chart5.series = pattern.map(function(key) {
           return tmp_data[key] ? tmp_data[key] : 0;
         });
 
         // CHART 6: PIE SENTIMENT
-        var pattern = ['neg', 'neutral', 'pos'];
+        pattern = ['neg', 'neutral', 'pos'];
         // render_data.chart6.labels = pattern
 
-        var buckets = data
+        buckets = data
           .aggregations
           ['agg_terms_sample_sentiment.keyword']
           .buckets;
 
-        var result = {};
-        for (var i of buckets) { result[i.key] = i.doc_count;}
-        var tmp_data = result;
+        result = {};
+        // for (var i of buckets)
+				buckets.map(function(i){ result[i.key] = i.doc_count; });
+        tmp_data = result;
 
         render_data.chart6.series = pattern.map(function(key) {
           return tmp_data[key] ? tmp_data[key] : 0;
@@ -452,8 +454,8 @@
 
         // ANALISIS SEMANTICO
         // WORDS
-        var pattern = ['neg', 'neutral', 'pos'];
-        var buckets = data
+        pattern = ['neg', 'neutral', 'pos'];
+        buckets = data
           .aggregations
           .agg_terms_sample_words
           .buckets;
@@ -461,17 +463,17 @@
           var total = item.doc_count;
           var scores = item['agg_terms_sample_sentiment.keyword'].buckets;
           var result = {};
-          for (var i of scores) { result[i.key] = i.doc_count;}
+          scores.map(function(i){ result[i.key] = i.doc_count; });
           return {
             key: item.key,
             href: 'https://twitter.com/search?q=' + item.key,
             scores: pattern.map(function(key) {
               return result[key] ? result[key] / total * 100 : 0;
             })
-          }
+          };
         });
         // MENTIONS
-        var buckets = data
+        buckets = data
           .aggregations
           ['agg_terms_sample_mentions.keyword']
           .buckets;
@@ -479,17 +481,17 @@
           var total = item.doc_count;
           var scores = item['agg_terms_sample_sentiment.keyword'].buckets;
           var result = {};
-          for (var i of scores) { result[i.key] = i.doc_count;}
+          scores.map(function(i){ result[i.key] = i.doc_count; });
           return {
             key: '@' + item.key,
             href: 'https://twitter.com/' + item.key,
             scores: pattern.map(function(key) {
               return result[key] ? result[key] / total * 100 : 0;
             })
-          }
+          };
         });
         // HASHTAGS
-        var buckets = data
+        buckets = data
           .aggregations
           ['agg_terms_sample_hashtags.keyword']
           .buckets;
@@ -497,18 +499,18 @@
           var total = item.doc_count;
           var scores = item['agg_terms_sample_sentiment.keyword'].buckets;
           var result = {};
-          for (var i of scores) { result[i.key] = i.doc_count;}
+          scores.map(function(i){ result[i.key] = i.doc_count; });
           return {
             key: '#' + item.key,
             href: 'https://twitter.com/hashtag/' + item.key,
             scores: pattern.map(function(key) {
               return result[key] ? result[key] / total * 100 : 0;
             })
-          }
+          };
         });
 
         // INFLUENCERS
-        var buckets = data
+        buckets = data
           .aggregations
           ['agg_terms_author_screen_name.keyword']
           .buckets;
@@ -520,7 +522,7 @@
             href: 'https://twitter.com/' + item.key,
             score: parseInt(item.agg_avg_author_followers_count.value)
               .toLocaleString()
-          }
+          };
         });
 
         console.log(render_data);
@@ -559,12 +561,12 @@
             showGrid: false,
             labelInterpolationFnc: function(value, index) {
               return index % 2 === 0 ? moment(value).format('DD') : null;
-              return moment(value).format('DD');
+              // return moment(value).format('DD');
             }
           }
         };
         var get_options_pie = function (series) {
-          var sum = function(a, b) { return a + b };
+          var sum = function(a, b) { return a + b; };
           return {
             plugins: [tooltip],
             donut: true,
@@ -574,7 +576,7 @@
             labelInterpolationFnc: function(value) {
               return Math.round(value / series.reduce(sum) * 100) + '%';
             }
-          }
+          };
         };
 
         new Chartist.Bar('#chart1', render_data.chart1, options_bar);
@@ -604,11 +606,11 @@
         $('#sentiment_of_mentions').html(template({ items: render_data.mentions }));
 
         // RENDER INFLUENCERS
-        var template = _.template($('script.tmpl_top_influencers').html());
+        template = _.template($('script.tmpl_top_influencers').html());
         $('#top_influencers').html(template({ items: render_data.influencers }));
 
         // RENDER TIMELINE
-        var template = _.template($('script.tmpl_timeline').html());
+        template = _.template($('script.tmpl_timeline').html());
         $('#render_timeline').html(template({ items: render_data.timeline }));
 
         new LazyLoad();
@@ -663,7 +665,7 @@
         $('#result').html(template({ items: data }));
 
         var get_options_pie = function (series) {
-          var sum = function(a, b) { return a + b };
+          var sum = function(a, b) { return a + b; };
           return {
             // plugins: [tooltip],
             donut: true,
@@ -673,7 +675,7 @@
             labelInterpolationFnc: function(value) {
               return Math.round(value / series.reduce(sum) * 100) + '%';
             }
-          }
+          };
         };
 
         // var tooltip = Chartist.plugins.tooltip();
@@ -692,7 +694,7 @@
           get_options_pie(data.chart1.series)
         );
 
-        var sent_scores = data.emotions.scores;
+        sent_scores = data.emotions.scores;
         data.chart2 = {
           labels: [],
           series: [
@@ -724,11 +726,11 @@
     });
 
     $("#startTour").on('click', function(e) {
-      var tour = introJs()
+      var tour = introJs();
 			tour.setOption('tooltipPosition', 'auto');
 			tour.setOption('positionPrecedence', ['left', 'right', 'bottom', 'top']);
       console.log(tour);
-			tour.start()
+			tour.start();
     });
 
 }(jQuery));
