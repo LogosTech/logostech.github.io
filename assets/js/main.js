@@ -642,67 +642,35 @@
       }
 
       // POST /users
-      fetchival('//api.logos.technology/text/all').post({
+      fetchival('//81.17.56.130:5000/text/politics').post({
       // fetchival('http://localhost:5000/text/all').post({
-        text: sample_text,
-        name: 'listening'
+        text: sample_text
       })
       .then(function(json) {
 
         var data = {};
 
         data = json;
+        data.clf_sentiment = Math.round(data.clf_sentiment*100)/100;
+        var sent_scores = data.clf_emotions.scores;
+        var emo_scores = {
+          mad: Math.round(sent_scores.mad*100, -2),
+          scared: Math.round(sent_scores.scared*100, -2),
+          glad: Math.round(sent_scores.glad*100, -2),
+          sad: Math.round(sent_scores.sad*100, -2),
+          neutral: Math.round(sent_scores.neutral*100, -2)
+        };
+
+        data.clf_emotions.scores = emo_scores;
+        console.log(data);
 
         // RENDER TIMELINE
         var template = _.template($('script.tmpl_render_text_result').html());
         $('#result').html(template({ items: data }));
 
-        var get_options_pie = function (series) {
-          var sum = function(a, b) { return a + b; };
-          return {
-            // plugins: [tooltip],
-            donut: true,
-            // showLabel: false,
-            donutWidth: 30,
-            startAngle: 150,
-            labelInterpolationFnc: function(value) {
-              return Math.round(value / series.reduce(sum) * 100) + '%';
-            }
-          };
-        };
+        var tooltip = Chartist.plugins.tooltip();
+        var sent_scores = {};
 
-        // var tooltip = Chartist.plugins.tooltip();
-        var sent_scores = data.sentiment.scores;
-        data.chart1 = {
-          labels: [],
-          series: [
-            sent_scores.neg*100,
-            sent_scores.neutral*100,
-            sent_scores.pos*100,
-          ]
-        };
-        new Chartist.Pie(
-          '#chart1',
-          data.chart1,
-          get_options_pie(data.chart1.series)
-        );
-
-        sent_scores = data.emotions.scores;
-        data.chart2 = {
-          labels: [],
-          series: [
-            sent_scores.mad*100,
-            sent_scores.scared*100,
-            sent_scores.glad*100,
-            sent_scores.sad*100,
-            // sent_scores.neutral*100,
-          ]
-        };
-        new Chartist.Pie(
-          '#chart2',
-          data.chart2,
-          get_options_pie(data.chart2.series)
-        );
         $(analize_text_button).removeAttr("disabled");
       }).catch(function(err) {
         console.log(err);
