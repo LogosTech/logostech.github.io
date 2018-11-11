@@ -664,6 +664,18 @@
         data.clf_emotions.scores = emo_scores;
         console.log(data);
 
+				var gender_clf = Math.round(data.clf_gender_float*100);
+
+				gender_clf = (gender_clf > -10 && gender_clf < 10) ? 0 : gender_clf;
+        var gender_str = gender_clf < 0 ? 'Fem' : 'Mas';
+
+				data.clf_gender_float_obj = {
+          value: gender_clf < 0 ? gender_clf*-1 : gender_clf,
+          gender: gender_str
+        };
+
+        console.log(data.clf_gender_float_obj);
+
         // RENDER TIMELINE
         var template = _.template($('script.tmpl_render_text_result').html());
         $('#result').html(template({ items: data }));

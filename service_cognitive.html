@@ -55,12 +55,11 @@ permalink: /productos/cognitive
                   <div class="bubble_metrics">
                     <i class="icofont icofont-users-alt-4"></i>
                     <div class="tag">
-                      <% if(items.clf_gender == 'f') { %>
-                        Femenino
-                      <% } else if(items.clf_gender == 'm') { %>
-                        Masculino
+                      <% if(items.clf_gender_float_obj.value == 0) { %>
+                        &#63;&#63;&#63;
                       <% } else { %>
-                        Desconocido
+                        <%=items.clf_gender_float_obj.value %>&#37;
+                        <%=items.clf_gender_float_obj.gender %>
                       <% } %>
                     </div>
                   </div>
@@ -98,13 +97,7 @@ permalink: /productos/cognitive
                   <div class="bubble_metrics">
                     <i class="icofont icofont-clock-time"></i>
                     <div class="tag">
-                      <% if(items.tag_tense == 'pres') { %>
-                        Presente
-                      <% } else if(items.tag_tense == 'past') { %>
-                        Pasado
-                      <% } else { %>
-                        Futuro
-                      <% } %>
+                      <%=items.tag_tense.join(', ') %>
                     </div>
                   </div>
                 </div>
@@ -113,20 +106,14 @@ permalink: /productos/cognitive
                 <div class="bubble_metrics">
                   <i class="icofont icofont-listing-number"></i>
                   <div class="tag">
-                    <% if(items.tag_number == 'sing') { %>
-                      Singular
-                    <% } else if(items.tag_number == 'past') { %>
-                      Plural
-                    <% } else { %>
-                      Futuro
-                    <% } %>
+                    <%=items.tag_number.join(', ') %>
                   </div>
                 </div>
                 </div>
                 <div class="chart_card col-md-2 wow bounceInUp" data-wow-delay="1s">
-                <h1>Poseci&oacute;n</h1>
+                <h1>Posesivos</h1>
                 <div class="bubble_metrics">
-                  <i class="icofont icofont-clock-time"></i>
+                  <i class="icofont icofont-street-view"></i>
                   <div class="tag">
                     <% if(items.tag_poss) { %>
                       Sí
@@ -141,7 +128,7 @@ permalink: /productos/cognitive
                 <div class="bubble_metrics">
                   <i class="icofont icofont-users"></i>
                   <div class="tag">
-                    <%=items.tag_person %>&deg;
+                    <%=items.tag_person.join('&deg;, ') %>&deg;
                   </div>
                 </div>
                 </div>
